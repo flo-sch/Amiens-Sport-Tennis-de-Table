@@ -1,0 +1,20 @@
+Bonjour,
+
+Vous vous êtes inscrit pour le trophée national sur le site www.amienssport-tt.com.
+
+Civilité : {{ infos.civility }}
+Prénom : {{ infos.firstname }}
+Nom de famille : {{ infos.lastname }}
+N° de licence : {{ infos.licence }}
+Points : {{ infos.points }}
+
+Séries demandées :
+Samedi :
+{% for serie in infos.series['1'] %}
+Série {{ serie }}
+{% endfor %}
+
+Dimanche :
+{% for serie in infos.series['2'] %}
+Série {{ serie }}
+{% endfor %}

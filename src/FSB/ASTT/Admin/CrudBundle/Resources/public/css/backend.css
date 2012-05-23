@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-repeat: repeat-x;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #9c2e2e;
+    background-image: url('../../fsbasttfront/images/grid-18px-masked.png');
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header h1 a {
+    color: black;
+}
+
+.header h1 a:hover {
+    text-decoration: none;
+}
+
+/* Surcharge responsive bootstrap displaying */
+.navbar .dropdown-menu { display:none; }
+
+.admin form textarea {
+    width: 100%;
+    height: 300px;
+}

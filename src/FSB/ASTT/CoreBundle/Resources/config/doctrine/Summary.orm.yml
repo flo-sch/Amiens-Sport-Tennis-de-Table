@@ -1,0 +1,50 @@
+FSB\ASTT\CoreBundle\Entity\Summary:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\SummaryRepository
+  table: summaries
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    tournament:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+    type:
+      type: string
+      length: 1
+      fixed: false
+      nullable: false
+    date:
+      type: datetime
+      nullable: false
+    description:
+      type: text
+      nullable: false
+  oneToOne:
+    event:
+      targetEntity: Event
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        event:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

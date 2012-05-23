@@ -1,0 +1,44 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Liste des événements</h1>
+
+    <a class="btn btn-primary" href="{{ path('event_new') }}">Ajouter un événement</a>
+    <table class="records_list table table-striped table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Lieu</th>
+                <th>Date</th>
+                <th>Trophée National ?</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('event_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.title|capitalize }}</td>
+                <td>{{ entity.description|e('html')|nl2br }}</td>
+                <td>{{ entity.place|capitalize }}</td>
+                <td>{% if entity.date %}{{ entity.date|date('d/m/Y') }}{% endif%}</td>
+                <td>{% if entity.isTournament %}Oui{% else %}Non{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a class="btn btn-primary" href="{{ path('event_show', { 'id': entity.id }) }}">Détail</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="{{ path('event_edit', { 'id': entity.id }) }}">Edition</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('event_new') }}">Ajouter un événement</a>
+{% endblock %}

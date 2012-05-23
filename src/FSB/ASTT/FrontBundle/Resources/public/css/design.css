@@ -1,0 +1,114 @@
+/* */
+
+.header {
+    background-color: #2e3d9c;
+    background-image: url('../images/grid-18px-masked.png');
+}
+
+.header a {
+    color: black;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header h1 {
+    color: #111;
+    text-shadow: 0 1px 100px #FFF;
+}
+
+.header .header_links {
+    text-transform: uppercase;
+}
+
+.header .header_links a {
+    color: #FFF;
+}
+
+/* MAIN CONTAINER */
+.page_title {
+    text-transform: uppercase;
+}
+
+.news-nav {
+    background: #DDF;
+}
+
+.news-nav h4 {
+    text-align: center;
+}
+
+.news-nav .news_links {
+    list-style: none;
+}
+
+.news-nav .news_links li {
+    text-transform: capitalize;
+    font-size: 0.9em;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* HOME */
+.news-img-left {
+    float: left;
+    margin: 0 5px;
+}
+
+.news-img-right {
+    float: right;
+    margin: 0 5px;
+}
+
+/* LIVRE OR */
+.messages .message {
+    border-top: 1px dashed black;
+}
+
+.messages .message h4 {
+    
+}
+
+.messages .message h5 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.messages .message p {
+    text-align: justify;
+}
+
+/* FOOTER */
+.footer #footerTabContent .events_list {
+    
+}
+
+.footer #footerTabContent .calendar_min {
+    
+}
+
+.footer #footerTabContent .coverflow {
+    
+}
+
+/* TOOLS */
+.display-single h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.display-single h5 {
+    color: grey;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.display-single p {
+    text-align: justify
+}
+
+td.grey {
+    color: grey;
+}

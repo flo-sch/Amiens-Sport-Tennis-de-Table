@@ -1,0 +1,36 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Liste des messages</h1>
+
+    <table class="records_list table table-striped table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Posté le</th>
+                <th>Auteur</th>
+                <th>Club</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('message_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{% if entity.createdAt %}{{ entity.createdAt|date('d/m/Y H:i:s') }}{% endif%}</td>
+                <td>{{ entity.author }}</td>
+                <td>{{ entity.club }}</td>
+                <td>{{ entity.description[0:300]|e('html')|nl2br }}[...]</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a class="btn btn-primary" href="{{ path('message_show', { 'id': entity.id }) }}">Détail</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

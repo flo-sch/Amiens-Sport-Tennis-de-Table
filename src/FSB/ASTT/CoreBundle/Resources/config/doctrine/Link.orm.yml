@@ -1,0 +1,38 @@
+FSB\ASTT\CoreBundle\Entity\Link:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\LinkRepository
+  table: links
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    category:
+      type: integer
+      unsigned: false
+      nullable: false
+    title:
+      type: string
+      length: 60
+      fixed: false
+      nullable: false
+    url:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+  lifecycleCallbacks: {  }

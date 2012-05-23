@@ -1,0 +1,28 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Partenaire</h1>
+    
+    <div class="partner display-single centered">
+        <h3>{{ entity.title|capitalize }}</h3>
+        {% if entity.phone %}
+            <h4>{{ entity.phone[0:2] }} {{ entity.phone[2:2] }} {{ entity.phone[4:2] }} {{ entity.phone[6:2] }} {{ entity.phone[8:2] }}</h4>
+        {% endif %}
+        <a class="btn btn-info" href="{{ entity.link }}" target="_blank">{{ entity.link }}</a>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('partner') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('partner_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('partner_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends('FSBASTTFrontBundle::layout.html.twig') %}
+
+{% block main %}
+    <div class="news-nav">
+        <h4>Flux d'actualités</h4>
+        {% block news_flux %}
+            <ul class="news-nav-links">
+                {% for key, news in news_flux %}
+                    <li><a class="news_link" href="{{ path('FSBASTTFrontBundle_newspage', { 'id': news.id}) }}" title="Voir l'actualité">{{ news.title|capitalize }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endblock %}
+    </div>
+    <div class="main_container">
+        <h1 class="page_title">{% block page_title %}{% endblock %}</h1>
+        <div class="content">
+            <div class="alerts">
+                {% for key, message in app.session.getFlashes() %}
+                    <div class="alert alert-{{ key }}">
+                        <a class="close" data-dismiss="alert">×</a>
+                        <h4>{{ key|title }}!</h4>
+                        <p>{{ message }}<p>
+                    </div>
+                {% endfor %}
+            </div>
+            {% block content %}
+                
+            {% endblock %}
+        </div>
+        <div class="spacer"></div>
+    </div>
+{% endblock %}

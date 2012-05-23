@@ -1,0 +1,64 @@
+FSB\ASTT\CoreBundle\Entity\News:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\NewsRepository
+  table: news
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    starttime:
+      type: datetime
+      nullable: true
+    endtime:
+      type: datetime
+      nullable: true
+    title:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    description:
+      type: text
+      nullable: true
+    place:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    date:
+      type: datetime
+      nullable: true
+    presentation:
+      type: boolean
+      nullable: true
+    screen:
+      type: string
+      length: 500
+      fixed: false
+      nullable: true
+  oneToOne:
+    weBestPlayer:
+      targetEntity: Player
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        we_best_player:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

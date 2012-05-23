@@ -1,0 +1,48 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Liste des résultats du championnat par équipe</h1>
+    
+    <a class="btn btn-primary" href="{{ path('result_new') }}">Ajouter un résultat</a>
+    <table class="records_list table table-striped table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Equipe</th>
+                <th>N° de journée</th>
+                <th>Date</th>
+                <th>Lieu</th>
+                <th>Adversaire</th>
+                <th>Score</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('result_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.team }}</td>
+                <td>{{ entity.week }}</td>
+                <td>{% if entity.date %}{{ entity.date|date('d/m/Y') }}{% endif%}</td>
+                <td>{{ entity.place }}</td>
+                <td>{{ entity.opponent }}</td>
+                <td>{{ entity.team }} --- {{ entity.teamScore }} - {{ entity.opponentScore }} --- {{ entity.opponent }}</td>
+                <td>{{ entity.description[0:300]|e('html')|nl2br }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a class="btn btn-primary" href="{{ path('result_show', { 'id': entity.id }) }}">Détail</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="{{ path('result_edit', { 'id': entity.id }) }}">Editer</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('result_new') }}">Ajouter un résultat</a>
+{% endblock %}

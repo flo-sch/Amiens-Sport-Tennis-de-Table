@@ -1,0 +1,28 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Evénement</h1>
+
+    <div class="event display-single">
+        <h3>{{ entity.title|capitalize }}</h3>
+        <h4>{{ entity.place|capitalize }}</h4>
+        <h5>{{ entity.date|date('d/m/Y') }}</h5>
+        <p>{{ entity.description|e('html')|nl2br }}</p>
+        <h6><strong>{% if entity.isTournament %}Trophée National{% endif %}</strong></h6>
+    </div>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('event') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('event_edit', { 'id': entity.id }) }}">Edition</a>
+        </li>
+        <li>
+            <form action="{{ path('event_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

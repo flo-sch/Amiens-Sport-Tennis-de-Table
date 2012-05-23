@@ -1,0 +1,27 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <table class="records_list table table-striped table-bordered table-condensed">
+        <tbody>
+        {% for category, links in linksArray %}
+            <tr>
+                <td colspan="4">{{ category }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <th>Lien</th>
+            </tr>
+            {% for link in links %}
+                <tr>
+                    <td>{{ link.title|capitalize }}</td>
+                    <td><a class="btn btn-primary" href="{{ link.url }}" target="_blank">{{ link.url }}</a></td>
+                </tr>
+            {% endfor %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

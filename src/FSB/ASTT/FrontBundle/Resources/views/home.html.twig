@@ -1,0 +1,75 @@
+{% extends('FSBASTTFrontBundle::layout.html.twig') %}
+
+
+{% block main %}
+    <div class="main_container">
+        <h1 class="page_title">{{ page_title }}</h1>
+        
+        <div class="content">
+            <div class="alerts">
+                {% for key, message in app.session.getFlashes() %}
+                    <div class="alert alert-{{ key }}">
+                        <a class="close" data-dismiss="alert">×</a>
+                        <h4>{{ key|title }}!</h4>
+                        <p>{{ message }}<p>
+                    </div>
+                {% endfor %}
+            </div>
+            {% block content %}
+                {% for key, element in news %}
+                    {% if key < 6 %}
+                        {% if ((key in [0, 2]) or ((key == 4) and (key != (news|length) - 1))) %}
+                            <div class="news_row">
+                        {% endif %}
+                                <div class="news news_{{ key }}">
+                                    <h4 class="news_title">{{ element.title|capitalize }}</h4>
+                                    <h5 class="news_infos">
+                                        {% if element.date %}Le {{ element.date|date('d-m-Y') }}
+                                            {% if element.place %} - {{ element.place|capitalize }}{% endif %}
+                                        {% else %}
+                                            {% if element.place %}{{ element.place|title }}{% endif %}
+                                        {% endif %}
+                                    </h5>
+                                    {% if element.presentation == 1 %}
+                                        {% if element.screen %}
+                                            <img class="news-img-left" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                        {% endif %}
+                                    {% elseif element.presentation == 2 %}
+                                        {% if element.screen %}
+                                            <img class="news-img-right" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                        {% endif %}
+                                    {% elseif element.presentation == 3 %}
+                                        {% if element.screen %}
+                                            <img class="news-img-center" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                        {% endif %}
+                                    {% endif %}
+                                    <p class="news_description">
+                                        {% if element.description|length > 250 %}
+                                            {{ element.description|slice(0, 250)|e('html')|nl2br }}[...]
+                                        {% else %}
+                                            {{ element.description|e('html')|nl2br }}
+                                        {% endif %}
+                                    </p>
+                                    <span class="news_links">
+                                        <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_newspage', { 'id': element.id }) }}">Voir la suite</a>
+                                        {% if element.weBestPlayer %}
+                                            <a class="btn btn-info" href="{{ path('player_show', { 'id': element.weBestPlayer.id } ) }}">Voir le joueur</a>
+                                        {% endif %}
+                                    </span>
+                                </div>
+                        {% if ((key in [1, 3]) or ((key == 5) or (key == (news|length) - 1))) %}    
+                            </div>
+                        {% endif %}
+                    {% elseif key == 6 %}
+                        <ul class="other_news_links">
+                    {% elseif key == (news|length) - 1 %}    
+                        </ul>
+                    {% else %}
+                        <li><a href="{{ path('news_show', { 'id': element.id }) }}" title="Voir la suite">{{ element.title|title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+        <div class="spacer"></div>
+    </div>
+{% endblock %}

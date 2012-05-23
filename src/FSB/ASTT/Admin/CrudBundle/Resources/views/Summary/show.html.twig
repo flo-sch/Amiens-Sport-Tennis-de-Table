@@ -1,0 +1,27 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Résumé d'une compétition</h1>
+    
+    <div class="summary display-single centered">
+        <h3>{{ entity.event }}</h3>
+        <h4>{{ entity.type }} --> {{ entity.tournament }}</h4>
+        <h5>Le {{ entity.date|date('d/m/Y') }}</h5>
+        <p>{{ entity.description|e('html')|nl2br }}</p>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('summary') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('summary_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('summary_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

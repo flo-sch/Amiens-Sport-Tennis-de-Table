@@ -1,0 +1,16 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Ajout d'un partenaire</h1>
+
+    <form action="{{ path('partner_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <button class="btn btn-success" type="submit">Créer</button>
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('partner') }}">Revenir à la liste</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,44 @@
+FSB\ASTT\CoreBundle\Entity\Event:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\EventRepository
+  table: events
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    title:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    description:
+      type: text
+      nullable: true
+    place:
+      type: string
+      length: 45
+      fixed: false
+      nullable: true
+    date:
+      type: datetime
+      nullable: true
+    isTournament:
+      type: boolean
+      nullable: true
+      column: is_tournament
+  lifecycleCallbacks: {  }

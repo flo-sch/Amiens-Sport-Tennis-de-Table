@@ -1,0 +1,25 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Message</h1>
+    
+    <div class="message">
+        <h4>{{ entity.author|capitalize }}{% if entity.club %} [{{ entity.club }}]{% endif %}</h4>
+        <h5>Ecrit le {{ entity.createdAt|date('d-m-Y') }}</h5>
+        <p>
+            {{ entity.description|e('html')|nl2br }}
+        </p>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('message') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <form action="{{ path('message_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,30 @@
+team:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:index" }
+
+team_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:show" }
+
+team_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:new" }
+
+team_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:create" }
+    requirements: { _method: post }
+
+team_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:edit" }
+
+team_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:update" }
+    requirements: { _method: post }
+
+team_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Team:delete" }
+    requirements: { _method: post }

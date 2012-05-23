@@ -1,0 +1,28 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Résultat d'un match de championnat</h1>
+    
+    <div class="result display-single centered">
+        <h3>{{ entity.team }}</h3>
+        <h5>Journée N° {{ entity.week }} le {{ entity.date|date('d/mY') }}{% if entity.place %} à {{ entity.place|title }}{% endif %}</h5>
+        <div>Adversaire : {{ entity.opponent }}</div>
+        <div>Score: {{ entity.team }} --- {{ entity.teamScore }} - {{ entity.opponentScore }} --- {{ entity.opponent }}</div>
+        <p>{{ entity.description[0:300]|e('html')|nl2br }}</p>
+    </div>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('result') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('result_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('result_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    {% for ind, calendar in calendars %}
+        <table class="table table-stripped table-condensed table-bordered table-calendar">
+            <caption>{{ calendar.name }}</caption>
+            <thead>
+                <tr>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for semaine, jours in calendar.events %}
+                    <tr>
+                        {% for ind, jour in jours %}
+                            {% if jour|length > 2 %}
+                                {% if jour['events']|length > 0 %}
+                                    <td><a title="{% for event in jour['events'] %}{{ event.title }}{% if loop.last != true %}{{ '\n' }}{% endif %}{% endfor %}" href="{{ path('FSBASTTFrontBundle_event_day_page', { 'day':jour['starttime']|date('d') , 'month':jour['starttime']|date('m') , 'year':jour['starttime']|date('y') }) }}">{{ ind }}</a></td>
+                                {% else %}
+                                    <td>{{ ind }}</td>
+                                {% endif %}
+                            {% else %}
+                                <td class="grey">{{ jour }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}

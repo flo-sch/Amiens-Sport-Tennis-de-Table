@@ -1,0 +1,57 @@
+# Remember that this routing is called with prefix /admin/
+
+FSBASTTAdminCrudBundle_login:
+    pattern: /login
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Session:login" }
+
+FSBASTTAdminCrudBundle_login_check:
+    pattern: /login_check
+    #defaults: { _controller: "FSBASTTAdminCrudBundle:Session:login_check" }
+    
+FSBASTTAdminCrudBundle_logout:
+    pattern: /logout
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Session:logout" }
+
+FSBASTTAdminCrudBundle_article:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/article.yml"
+    prefix: /articles/
+
+FSBASTTAdminCrudBundle_event:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/event.yml"
+    prefix: /events/
+
+FSBASTTAdminCrudBundle_interview:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/interview.yml"
+    prefix: /interviews/
+
+FSBASTTAdminCrudBundle_link:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/link.yml"
+    prefix: /links/
+
+FSBASTTAdminCrudBundle_message:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/message.yml"
+    prefix: /messages/
+
+FSBASTTAdminCrudBundle_news:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/news.yml"
+    prefix: /news/
+
+FSBASTTAdminCrudBundle_partner:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/partner.yml"
+    prefix: /partners/
+
+FSBASTTAdminCrudBundle_player:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/player.yml"
+    prefix: /players/
+
+FSBASTTAdminCrudBundle_result:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/result.yml"
+    prefix: /results/
+
+FSBASTTAdminCrudBundle_summary:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/summary.yml"
+    prefix: /summaries/
+
+FSBASTTAdminCrudBundle_team:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/team.yml"
+    prefix: /teams/

@@ -1,0 +1,37 @@
+FSB\ASTT\CoreBundle\Entity\Message:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\MessageRepository
+  table: messages
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    author:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    club:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+    description:
+      type: text
+      nullable: false
+  lifecycleCallbacks: {  }

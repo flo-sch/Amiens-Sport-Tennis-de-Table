@@ -1,0 +1,16 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>PAjout d'un joueur</h1>
+
+    <form action="{{ path('player_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <button class="btn btn-success" type="submit">Créer</button>
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('player') }}">Revenir à la liste</a>
+        </li>
+    </ul>
+{% endblock %}

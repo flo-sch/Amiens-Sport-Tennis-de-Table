@@ -1,0 +1,89 @@
+FSB\ASTT\CoreBundle\Entity\Player:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\PlayerRepository
+  table: players
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    hidden:
+      type: boolean
+      nullable: true
+    licence:
+      type: string
+      length: 10
+      fixed: false
+      nullable: false
+    firstname:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    lastname:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    birthday:
+      type: datetime
+      nullable: false
+    civility:
+      type: string
+      length: 1
+      fixed: true
+      nullable: false
+    category:
+      type: string
+      length: 2
+      fixed: false
+      nullable: false
+    points:
+      type: integer
+      unsigned: false
+      nullable: false
+    classement:
+      type: string
+      length: 5
+      fixed: false
+      nullable: false
+  oneToOne:
+    mainTeam:
+      targetEntity: Team
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        main_team:
+          referencedColumnName: id
+      orphanRemoval: false
+    secondTeam:
+      targetEntity: Team
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        second_team:
+          referencedColumnName: id
+      orphanRemoval: false
+    thirdTeam:
+      targetEntity: Team
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        third_team:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

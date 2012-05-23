@@ -1,0 +1,42 @@
+FSB\ASTT\CoreBundle\Entity\Article:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\ArticleRepository
+  table: articles
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    title:
+      type: string
+      length: 45
+      fixed: false
+      nullable: false
+    subject:
+      type: string
+      length: 45
+      fixed: false
+      nullable: true
+    date:
+      type: datetime
+      nullable: true
+    file:
+      type: string
+      length: 500
+      fixed: false
+      nullable: false
+  lifecycleCallbacks: {  }

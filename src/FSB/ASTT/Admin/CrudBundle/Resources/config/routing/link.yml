@@ -1,0 +1,30 @@
+link:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:index" }
+
+link_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:show" }
+
+link_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:new" }
+
+link_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:create" }
+    requirements: { _method: post }
+
+link_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:edit" }
+
+link_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:update" }
+    requirements: { _method: post }
+
+link_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Link:delete" }
+    requirements: { _method: post }

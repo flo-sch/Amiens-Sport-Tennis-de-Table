@@ -1,0 +1,30 @@
+partner:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:index" }
+
+partner_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:show" }
+
+partner_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:new" }
+
+partner_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:create" }
+    requirements: { _method: post }
+
+partner_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:edit" }
+
+partner_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:update" }
+    requirements: { _method: post }
+
+partner_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Partner:delete" }
+    requirements: { _method: post }

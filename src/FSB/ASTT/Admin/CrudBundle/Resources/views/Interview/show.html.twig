@@ -1,0 +1,27 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Interview</h1>
+
+    
+    <div class="interview display-single centered">
+        <h3>{{ entity.player }}</h3>
+        <h5>{{ entity.date|date('d/m/Y') }}</h5>
+        <p>{{ entity.description|e('html')|nl2br }}</p>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('interview') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('interview_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('interview_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

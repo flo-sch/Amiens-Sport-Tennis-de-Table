@@ -1,0 +1,37 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="global-wrapper display-single centered">
+        <h4>Club de tennis de table amiénois, créé en 1945 par Albéric Labaume.</h4>
+        <br />
+        <br />
+        <p>123 joueurs sont actuellement licenciés au club.</p>
+        <p>
+            17 équipes participent au championnat par équipes national, avec toujours de plus en plus de jeunes formés au club.
+            <br />
+            Du niveau départemental au niveau national, les équipes amiénoises défendent leurs couleurs à chaque échelon.
+            <br />
+            Le club possède actuellement 24 tables permettant d'acceuillir beaucoup de personnes pour le loisir comme la compétition.
+        </p>
+        <p>
+            Plusieurs groupes d'entraînements de niveaux variés permettent à chacune et chacun de vivre sa passion à sa manière.
+            <br />
+            Jeunes, très jeunes, moins jeunes, filles comme garçons, en loisir comme en compétition, en passant par le groupe Handisport, le club acceuille tout le monde.
+        </p>
+        <p>
+            7 entraîneurs et 8 relanceurs bénévoles contribuent à la bonne progression des jeunes joueuses et joueurs du club.
+            <br />
+            Une dizaine de partenaires font confiance à l'Amiens Sport Tennis de Table.
+        </p>
+
+        <div>
+            <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_accesspage') }}">Plan d'accès</a>
+            <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_training_schedulepage') }}">Planning des entraînements</a>
+            <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_livre_or_page') }}">Livre d'or</a>
+        </div>
+    </div>
+{% endblock %}

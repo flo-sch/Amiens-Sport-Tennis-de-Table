@@ -1,0 +1,7 @@
+parameters:
+#    fsbastt_core.example.class: FSB\ASTT\CoreBundle\Example
+
+services:
+#    fsbastt_core.example:
+#        class: %fsbastt_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,26 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <table class="records_list table table-striped table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Téléphone</th>
+                <th>Site internet</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for partner in partners %}
+            <tr>
+                <td>{{ partner.title }}</td>
+                <td>{{ partner.phone }}</td>
+                <td>{% if partner.link %}<a class="btn btn-primary" href="{{ partner.link }}" target="_blank">{{ partner.link }}</a>{% endif %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

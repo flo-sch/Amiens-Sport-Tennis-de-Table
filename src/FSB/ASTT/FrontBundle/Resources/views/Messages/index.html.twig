@@ -1,0 +1,39 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <!--<a class="btn btn-primary btn-form-messages-toggle" href="#">Poster</a>-->
+    <div class="form_messages">
+        <form action="{{ path('FSBASTTFrontBundle_livre_or_checkformpage') }}" method="post" {{ form_enctype(form) }}>
+            {{ form_widget(form) }}
+            <button class="btn btn-success" type="submit">Poster</button>
+        </form>
+    </div>
+    <div class="messages">
+        {% for key, message in messages %}
+            <div class="message">
+                <h4>{{ message.author|capitalize }}{% if message.club %} [{{ message.club }}]{% endif %}</h4>
+                <h5>Ecrit le {{ message.createdAt|date('d-m-Y') }}</h5>
+                <p>
+                    {{ message.description|e('html')|nl2br }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+    
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //$('.form_messages').hide();
+            
+            //$('.btn-form-messages-toggle').on('click', function() {
+                //$('.form_messages').toggle('slow');
+            //});
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,7 @@
+parameters:
+#    fsbastt_admin_crud.example.class: FSB\ASTT\Admin\CrudBundle\Example
+
+services:
+#    fsbastt_admin_crud.example:
+#        class: %fsbastt_admin_crud.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

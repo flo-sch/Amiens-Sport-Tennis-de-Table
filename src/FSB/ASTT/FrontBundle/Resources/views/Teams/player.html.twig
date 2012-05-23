@@ -1,0 +1,30 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="player display-single centered">
+        {% if photo_format %}
+            <div class="photo-wrapper">
+                <img src="{{ asset('images/joueurs/' ~ player.licence ~ photo_format) }}" class="player-photo" alt="{{ player }}" />
+            </div>
+        {% endif %}
+        <h3>{{ player }}</h3>
+        <h4>{{ player.licence }}</h4>
+        <h5>Né{% if player.civility == 'W' %}e{%endif %} le {{ player.birthday|date('d/m/Y') }}</h5>
+        <h4>Classement : {{ player.classement }} [{{ player.points }}]</h4>
+        {% if player.mainTeam %}
+            <h4>Equipe principale : {{ player.mainTeam }}</h4>
+        {% endif %}
+        {% if player.secondTeam %}
+            <h4>Equipe secondaire (championnat masculin) : {{ player.secondTeam }}</h4>
+        {% endif %}
+        {% if player.thirdTeam %}
+            <h4>Equipe jeune : {{ player.thirdTeam }}</h4>
+        {% endif %}
+        <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_teams_resultspage', { 'id': team.id }) }}">Voir les résultats de l'équipe</a>
+        <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_teamspage') }}">Revenir à la liste des équipes</a>
+    </div>
+{% endblock %}

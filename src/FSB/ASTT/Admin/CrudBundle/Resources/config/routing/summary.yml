@@ -1,0 +1,30 @@
+summary:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:index" }
+
+summary_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:show" }
+
+summary_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:new" }
+
+summary_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:create" }
+    requirements: { _method: post }
+
+summary_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:edit" }
+
+summary_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:update" }
+    requirements: { _method: post }
+
+summary_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Summary:delete" }
+    requirements: { _method: post }

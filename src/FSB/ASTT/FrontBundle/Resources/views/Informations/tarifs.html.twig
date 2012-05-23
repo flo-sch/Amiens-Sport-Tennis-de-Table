@@ -1,0 +1,81 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <table class="table table-stripped table-condensed table-bordered table-middle">
+        <caption>LICENCES</caption>
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Années de naissance</th>
+                <th>Cotisation</th>
+                <th>Critérium</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category, infos in licences %}
+                <tr>
+                    <td>{{ category }}</td>
+                    <td>{{ infos['season'] }}</td>
+                    <td>{{ infos['price'] }}€</td>
+                    <td>{{ infos['criterium'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <table class="table table-stripped table-condensed table-bordered table-middle">
+        <caption>BABYPING</caption>
+        <thead>
+            <tr>
+                <th>Années de naissance</th>
+                <th>Cotisation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ babyping['season'] }}</td>
+                <td>{{ babyping['price'] }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-stripped table-condensed table-bordered table-middle">
+        <caption>REMISES</caption>
+        <thead>
+            <tr>
+                <th>Condition</th>
+                <th>Remise</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for condition, price in remises %}
+                <tr>
+                    <td>{{ condition }} enfants{% if loop.last %} ou plus{% endif %}</td>
+                    <td>{{ price }} € sur le total</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <table class="table table-stripped table-condensed table-bordered table-middle">
+        <caption>OFFRES</caption>
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Cotisation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category, price in offres %}
+                <tr>
+                    <td>{{ category|title }}</td>
+                    <td>{{ price }}€</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

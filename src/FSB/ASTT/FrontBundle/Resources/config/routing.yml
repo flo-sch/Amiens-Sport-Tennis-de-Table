@@ -1,0 +1,144 @@
+FSBASTTFrontBundle_homepage:
+    pattern:  /
+    defaults: { _controller: FSBASTTFrontBundle:Home:index }
+
+# Club
+FSBASTTFrontBundle_presentationpage:
+    pattern: /presentation
+    defaults: { _controller: FSBASTTFrontBundle:Informations:presentation }
+
+FSBASTTFrontBundle_accesspage:
+    pattern: /access
+    defaults: { _controller: FSBASTTFrontBundle:Access:index }
+
+FSBASTTFrontBundle_historiquepage:
+    pattern: /history
+    defaults: { _controller: FSBASTTFrontBundle:Informations:historique }
+
+# Sportif
+FSBASTTFrontBundle_training_schedulepage:
+    pattern: /schedules
+    defaults: { _controller: FSBASTTFrontBundle:Informations:schedule }
+
+FSBASTTFrontBundle_training_pricespage:
+    pattern: /tarifs
+    defaults: { _controller: FSBASTTFrontBundle:Informations:prices }
+
+FSBASTTFrontBundle_babypingpage:
+    pattern: /babyping
+    defaults: { _controller: FSBASTTFrontBundle:Informations:babyping }
+
+FSBASTTFrontBundle_handisportpage:
+    pattern: /handisport
+    defaults: { _controller: FSBASTTFrontBundle:Informations:handisport }
+
+# Compétitions
+FSBASTTFrontBundle_teamspage:
+    pattern: /teams
+    defaults: { _controller: FSBASTTFrontBundle:Teams:index }
+
+FSBASTTFrontBundle_teams_showpage:
+    pattern: /team/{id}
+    defaults: { _controller: FSBASTTFrontBundle:Teams:show }
+
+FSBASTTFrontBundle_teams_resultspage:
+    pattern: /team/{id}/results
+    defaults: { _controller: FSBASTTFrontBundle:Teams:results }
+
+FSBASTTFrontBundle_teams_playerpage:
+    pattern: /team/{id}/player/{licence}
+    defaults: { _controller: FSBASTTFrontBundle:Teams:player }
+
+FSBASTTFrontBundle_tournamentspage:
+    pattern: /tournaments
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:index }
+
+FSBASTTFrontBundle_calendarpage:
+    pattern: /calendar
+    defaults: { _controller: FSBASTTFrontBundle:Calendar:index }
+
+FSBASTTFrontBundle_event_day_page:
+    pattern: /events/date/{day}/{month}/{year}
+    defaults: { _controller: FSBASTTFrontBundle:Calendar:showEventsForDate }
+
+FSBASTTFrontBundle_club_tournamentpage:
+    pattern: /national_trophee
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:clubTournament }
+
+FSBASTTFrontBundle_club_tournament_get_series_page:
+    pattern: /national_trophee/series/get
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:getSeries }
+
+FSBASTTFrontBundle_club_tournament_get_rules_page:
+    pattern: /national_trophee/rules/get
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:getRules }
+
+FSBASTTFrontBundle_club_tournament_inscription_page:
+    pattern: /national_trophee/inscription
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:inscription }
+
+FSBASTTFrontBundle_club_tournament_inscription_checkformpage:
+    pattern: /national_trophee/inscription/check
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:inscriptionCheck }
+
+FSBASTTFrontBundle_club_tournament_get_results_page:
+    pattern: /national_trophee/results/get
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:getResults }
+
+
+
+# Medias
+FSBASTTFrontBundle_medias_photopage:
+    pattern: /photos
+    defaults: { _controller: FSBASTTFrontBundle:Medias:photos }
+
+FSBASTTFrontBundle_medias_videopage:
+    pattern: /videos
+    defaults: { _controller: FSBASTTFrontBundle:Medias:videos }
+
+# Communication
+FSBASTTFrontBundle_livre_or_page:
+    pattern: /livre_or
+    defaults: { _controller: FSBASTTFrontBundle:Messages:index }
+
+FSBASTTFrontBundle_livre_or_checkformpage:
+    pattern: /livre_or/check
+    defaults: { _controller: FSBASTTFrontBundle:Messages:checkForm }
+
+FSBASTTFrontBundle_interviewspage:
+    pattern: /interviews/{id}
+    defaults: { _controller: FSBASTTFrontBundle:Interviews:index, id: 1 }
+
+FSBASTTFrontBundle_linkspage:
+    pattern: /links
+    defaults: { _controller: FSBASTTFrontBundle:Links:index }
+
+FSBASTTFrontBundle_articlespage:
+    pattern: /articles
+    defaults: { _controller: FSBASTTFrontBundle:Articles:index }
+
+FSBASTTFrontBundle_downloadpage:
+    pattern: /articles/{id}/get
+    defaults: { _controller: FSBASTTFrontBundle:Articles:download }
+
+FSBASTTFrontBundle_partnerspage:
+    pattern: /partners
+    defaults: { _controller: FSBASTTFrontBundle:Partners:index }
+
+# Global
+FSBASTTFrontBundle_newspage:
+    pattern: /news/{id}
+    defaults: { _controller: FSBASTTFrontBundle:News:show }
+
+FSBASTTFrontBundle_eventspage:
+    pattern: /event/{id}
+    defaults: { _controller: FSBASTTFrontBundle:Calendar:show }
+
+FSBASTTFrontBundle_themepage:
+    pattern: /theme/{name}
+    defaults: { _controller: FSBASTTFrontBundle:Themes:index }
+
+# Others
+FSBASTTFrontBundle_sqldump_page:
+    pattern: /dump
+    defaults: { _controller: FSBASTTFrontBundle:Dump:index }

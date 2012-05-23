@@ -1,0 +1,28 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Joueur</h1>
+    
+    <div class="player display-single centered {% if entity.civility == 'W' %}woman{% else %}man{% endif %}">
+        <h3>{{ entity.firstname|title }} {{ entity.lastname|upper }}</h3>
+        <h4>{{ entity.licence }}</h4>
+        <div>Né{% if entity.civility == 'W' %}e{% endif %} le {{ entity.birthday|date('d/m/Y') }}</div>
+        <h5>Catégorie : {{ entity.category }}</h5>
+        <div>Classement : {{ entity.classement }} [{{ entity.points }}]</div>
+    </div>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('player') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('player_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('player_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

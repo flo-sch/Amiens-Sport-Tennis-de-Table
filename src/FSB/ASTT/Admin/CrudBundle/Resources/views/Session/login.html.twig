@@ -1,0 +1,11 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}    
+    <h1>Connexion à l'interface d'administration</h1>
+    
+    <form action="{{ path('FSBASTTAdminCrudBundle_login_check') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        <button class="btn btn-success" type="submit">Connexion</button>
+    </form>
+{% endblock %}

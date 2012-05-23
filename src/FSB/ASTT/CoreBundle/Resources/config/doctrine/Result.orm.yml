@@ -1,0 +1,64 @@
+FSB\ASTT\CoreBundle\Entity\Result:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\ResultRepository
+  table: results
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    week:
+      type: integer
+      unsigned: false
+      nullable: false
+    date:
+      type: datetime
+      nullable: false
+    place:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    opponent:
+      type: string
+      length: 100
+      fixed: false
+      nullable: false
+    teamScore:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: team_score
+    opponentScore:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: opponent_score
+    description:
+      type: text
+      nullable: false
+  oneToOne:
+    team:
+      targetEntity: Team
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        team:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

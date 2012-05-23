@@ -1,0 +1,30 @@
+article:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:index" }
+
+article_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:show" }
+
+article_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:new" }
+
+article_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:create" }
+    requirements: { _method: post }
+
+article_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:edit" }
+
+article_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:update" }
+    requirements: { _method: post }
+
+article_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Article:delete" }
+    requirements: { _method: post }

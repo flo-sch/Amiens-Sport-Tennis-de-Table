@@ -1,0 +1,26 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Equipe</h1>
+    
+    <div class="team display-single centered">
+        <h3>ASTT {{ entity.number }} - {{ entity.division }}{{ entity.civility }}</h3>
+        <div>Joueurs : {{ entity.nbPlayers }}</div>
+        <a class="btn btn-info" href="{{ entity.officialLink }}" target="_blank">{{ entity.officialLink }}</a>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('team') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('team_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('team_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

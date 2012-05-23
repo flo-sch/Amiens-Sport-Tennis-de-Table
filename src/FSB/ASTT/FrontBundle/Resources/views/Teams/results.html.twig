@@ -1,0 +1,39 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <h2>Résultats de l'équipe : {{ team }}</h2>
+    {% if results %}
+        <table class="table table-stripped table-bordered table-condensed table-content">
+            <thead>
+                <tr>
+                    <th>Journée</th>
+                    <th>Date</th>
+                    <th>Lieu</th>
+                    <th>Adversaire</th>
+                    <th>Score</th>
+                    <th>Résumé</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, result in results %}
+                    <tr>
+                        <td>{{ result.week }}</td>
+                        <td>{{ result.date|date('d-m-Y') }}</td>
+                        <td>{{ result.place|capitalize }}</td>
+                        <td>{{ result.opponent|capitalize }}</td>
+                        <td>{{ result.teamScore }} - {{ result.opponentScore }}</td>
+                        <td>{{ result.description|e('html')|nl2br }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h3>Aucun joueur n'est membre de cette équipe pour le moment.</h3>
+    {% endif %}
+    <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': team.id }) }}">Composition de l'équipe</a>
+    <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_teamspage') }}">Revenir à la liste des équipes</a>
+{% endblock %}

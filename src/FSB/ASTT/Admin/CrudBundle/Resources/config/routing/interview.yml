@@ -1,0 +1,30 @@
+interview:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:index" }
+
+interview_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:show" }
+
+interview_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:new" }
+
+interview_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:create" }
+    requirements: { _method: post }
+
+interview_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:edit" }
+
+interview_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:update" }
+    requirements: { _method: post }
+
+interview_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Interview:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,20 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="trophee-infos centered">
+        {% if infos.mode == 'tournament' %}
+            <a class="btn btn-info absolute onleft onTop" href="{{ path('FSBASTTFrontBundle_club_tournament_get_series_page') }}">Séries</a>
+            <a class="btn btn-info absolute onRight onTop" href="{{ path('FSBASTTFrontBundle_club_tournament_get_rules_page') }}">Réglement</a>
+            <img class="trophee-affiche absolute onCenter" src="{{ asset('files/' ~ sport_season ~ '/trophee_national/affiche_small.png') }}" alt="Affiche du tournoi" />
+            <a class="btn btn-primary absolute onLeft onBottom" href="{{ path('FSBASTTFrontBundle_club_tournament_inscription_page') }}">Inscription</a>
+            <a class="btn btn-primary absolute onRight onBottom" href="{{ path('FSBASTTFrontBundle_accesspage') }}">Trouver la salle</a>
+        {% else %}
+            <h2>Les informations pour le tournoi de cette année n'ont pas encore été publiées.</h2>
+            <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_club_tournament_get_results_page') }}" title="Voir les résultats de l'édition précédente [{{ previous_season }}]">Voir les résultats de l'édition précédente [{{ previous_season }}]</a>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <table class="table table-stripped table-condensed table-bordered table-content">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Lieu</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for event in events %}
+                <tr>
+                    <td>{{ event.title|capitalize }}</td>
+                    <td>{{ event.place|capitalize }}</td>
+                    <td>{{ event.date|date('d/m/Y') }}</td>
+                    <td>{{ event.description|e('html')|nl2br }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_calendarpage') }}">Revenir au calendrier</a>
+{% endblock %}

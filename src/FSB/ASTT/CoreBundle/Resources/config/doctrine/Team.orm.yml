@@ -1,0 +1,59 @@
+FSB\ASTT\CoreBundle\Entity\Team:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\TeamRepository
+  table: teams
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    number:
+      type: integer
+      unsigned: false
+      nullable: false
+    civility:
+      type: string
+      length: 1
+      fixed: true
+      nullable: false
+    division:
+      type: string
+      length: 6
+      fixed: false
+      nullable: false
+    nbPlayers:
+      type: integer
+      unsigned: false
+      nullable: false
+      column: nb_players
+    officialLink:
+      type: string
+      length: 255
+      fixed: false
+      nullable: false
+      column: official_link
+  oneToOne:
+    leader:
+      targetEntity: Player
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        leader:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

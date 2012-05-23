@@ -1,0 +1,30 @@
+event:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:index" }
+
+event_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:show" }
+
+event_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:new" }
+
+event_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:create" }
+    requirements: { _method: post }
+
+event_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:edit" }
+
+event_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:update" }
+    requirements: { _method: post }
+
+event_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Event:delete" }
+    requirements: { _method: post }

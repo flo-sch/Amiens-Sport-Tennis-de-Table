@@ -1,0 +1,37 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <h2>{{ team }}</h2>
+    {% if players %}
+        <table class="table table-stripped table-bordered table-condensed table-content">
+            <thead>
+                <tr>
+                    <th>Licence</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Catégorie</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, player in players %}
+                    <tr>
+                        <td><a href="{{ path('FSBASTTFrontBundle_teams_playerpage', { 'id': team.id, 'licence': player.licence } ) }}">{{ player.licence }}</a></td>
+                        <td>{{ player.lastname|upper }}</td>
+                        <td>{{ player.firstname|title }}</td>
+                        <td>{{ player.category }}</td>
+                        <td>{{ player.points }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h3>Aucun joueur n'est membre de cette équipe pour le moment.</h3>
+    {% endif %}
+    <a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_teams_resultspage', { 'id': team.id }) }}">Voir les résultats</a>
+    <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_teamspage') }}">Revenir à la liste des équipes</a>
+{% endblock %}

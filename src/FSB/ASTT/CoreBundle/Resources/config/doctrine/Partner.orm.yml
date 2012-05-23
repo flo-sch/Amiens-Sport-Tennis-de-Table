@@ -1,0 +1,39 @@
+FSB\ASTT\CoreBundle\Entity\Partner:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\PartnerRepository
+  table: partners
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    title:
+      type: string
+      length: 80
+      fixed: false
+      nullable: false
+    link:
+      type: string
+      length: 255
+      fixed: false
+      nullable: true
+    phone:
+      type: string
+      length: 10
+      fixed: false
+      nullable: true
+  lifecycleCallbacks: {  }

@@ -1,0 +1,40 @@
+FSB\ASTT\CoreBundle\Entity\Interview:
+  type: entity
+  repositoryClass: FSB\ASTT\CoreBundle\Repository\InterviewRepository
+  table: interviews
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      nullable: false
+      generator:
+        strategy: IDENTITY
+    createdAt:
+      type: datetime
+      nullable: true
+      column: created_at
+    updatedAt:
+      type: datetime
+      nullable: true
+      column: updated_at
+    deleted:
+      type: boolean
+      nullable: true
+    description:
+      type: text
+      nullable: false
+    date:
+      type: datetime
+      nullable: true
+  oneToOne:
+    player:
+      targetEntity: Player
+      cascade: {  }
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        player:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }
