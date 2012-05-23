@@ -1,6 +1,9 @@
 # Bootstrap
 app/bootstrap*
 
+# Cache
+app/cache/*
+
 # Symfony directories
 vendor/*
 */logs/*
@@ -8,5 +11,15 @@ vendor/*
 web/uploads/*
 web/bundles/*
 
+
 # Configuration files
 app/config/parameters.ini
+
+# Sql Files
+*.sql
+
+# NetBeans Project files
+nbproject/*
+
+# Public Images
+web/images/*
