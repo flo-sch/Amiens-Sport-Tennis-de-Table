@@ -27,7 +27,7 @@ class InformationsController extends FrontController
     
     public function scheduleAction()
     {
-        return $this->downloadFile('planning.pdf', $this->getSportSeason('current').'/', 'ASTT-horaires-'.$this->getSportSeason('current').'.pdf');
+        return $this->downloadFile('planning.pdf', $this->getSportSeason(0).'/', 'ASTT-horaires-'.$this->getSportSeason(0).'.pdf');
     }
     
     public function pricesAction()

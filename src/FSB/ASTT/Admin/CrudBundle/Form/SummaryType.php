@@ -14,7 +14,7 @@ class SummaryType extends AbstractType
             //->add('updatedAt')
             //->add('deleted')
             ->add('type', 'choice', array('label' => 'Type', 'required' => true, 'choices' => array('I' => 'Individuelle', 'T' => 'Par équipe')))
-            ->add('tournament', 'choice', array('label' => 'Compétition', 'required' => true, 'choices' => array('Cr' => 'Critérium', 'Ch' => 'Championnat', 'Fi' => 'Finales par classement', 'In' => 'Interclubs', 'CS' => 'Coupe de la Somme')))
+            ->add('tournament', 'choice', array('label' => 'Compétition', 'required' => true, 'choices' => array('Cr' => 'Critérium Fédéral', 'Ch' => 'Championnats Individuels', 'Fi' => 'Finales par classement', 'To' => 'Tops', 'BJ' => 'Challenge Bernard Jeu', 'CS' => 'Coupe de la Somme', 'In' => 'Interclubs')))
             ->add('date', 'date', array('label' => 'Date', 'required' => true, 'widget' => 'single_text', 'format' => 'MM/dd/yyyy', 'attr' => array('class' => 'datepicker')))
             ->add('description', 'textarea', array('label' => 'Description', 'required' => true))
             ->add('event', 'entity', array('label' => 'Evénement concerné', 'required' => true, 'empty_value' => 'Choisissez l\'événement concerné', 'class' => 'FSBASTTCoreBundle:Event',

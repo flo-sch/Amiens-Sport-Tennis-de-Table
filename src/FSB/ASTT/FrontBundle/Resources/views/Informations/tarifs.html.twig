@@ -21,7 +21,7 @@
                     <td>{{ category }}</td>
                     <td>{{ infos['season'] }}</td>
                     <td>{{ infos['price'] }}€</td>
-                    <td>{{ infos['criterium'] }}</td>
+                    <td>{{ infos['criterium'] }}€</td>
                 </tr>
             {% endfor %}
         </tbody>
@@ -38,7 +38,7 @@
         <tbody>
             <tr>
                 <td>{{ babyping['season'] }}</td>
-                <td>{{ babyping['price'] }}</td>
+                <td>{{ babyping['price'] }}€</td>
             </tr>
         </tbody>
     </table>
@@ -55,7 +55,7 @@
             {% for condition, price in remises %}
                 <tr>
                     <td>{{ condition }} enfants{% if loop.last %} ou plus{% endif %}</td>
-                    <td>{{ price }} € sur le total</td>
+                    <td>{{ price }}€ sur le total</td>
                 </tr>
             {% endfor %}
         </tbody>

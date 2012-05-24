@@ -5,5 +5,210 @@
 {% endblock %}
 
 {% block content %}
-    
+    <div class="summaries centered global-wrapper">
+        <ul class="nav nav-tabs">
+            <li class="centered">
+                <a href="#indiv" data-toggle="tab">Compétitions individuelles</a>
+            </li>
+            <li class="centered">
+                <a href="#team" data-toggle="tab">Compétitions par équipe</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade" id="indiv">
+                <ul class="nav nav-tabs">
+                    <li class="centered">
+                        <a href="#criterium" data-toggle="tab">Critérium Fédéral</a>
+                    </li>
+                    <li class="centered">
+                        <a href="#championships" data-toggle="tab">Championnats Individuels</a>
+                    </li>
+                    <li class="centered">
+                        <a href="#finales" data-toggle="tab">Finales par classement</a>
+                    </li>
+                    <li class="centered">
+                        <a href="#tops" data-toggle="tab">Tops</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="criterium">
+                        <h2>Critérium Fédéral</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['I']['Cr'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="championships">
+                        <h2>Championnats Individuels</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['I']['Ch'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="finales">
+                        <h2>Finales par classement</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['I']['Fi'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="tops">
+                        <h2>Tops</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['I']['To'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="team">
+                <ul class="nav nav-tabs">
+                    <li class="centered">
+                        <a href="#bernardjeu" data-toggle="tab">Challenge Bernard Jeu</a>
+                    </li>
+                    <li class="centered">
+                        <a href="#somme_cup" data-toggle="tab">Coupe de la Somme</a>
+                    </li>
+                    <li class="centered">
+                        <a href="#interclubs" data-toggle="tab">Interclubs</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="bernardjeu">
+                        <h2>Challenge Bernard Jeu</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['T']['BJ'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="somme_cup">
+                        <h2>Coupe de la Somme</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['T']['CS'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="interclubs">
+                        <h2>Interclubs</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['T']['In'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

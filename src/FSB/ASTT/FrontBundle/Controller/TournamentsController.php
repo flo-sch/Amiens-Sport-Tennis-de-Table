@@ -17,11 +17,41 @@ class TournamentsController extends FrontController
         
         $em = $this->getDoctrine()->getEntityManager();
         
-        $summaries = $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDate();
+        $summariesArray = array(
+            'I' => array(
+                'Cr' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('I', 'Cr', 'ASC', 'DESC'),
+                'Ch' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('I', 'Ch', 'ASC', 'DESC'),
+                'Fi' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('I', 'Fi', 'ASC', 'DESC'),
+                'To' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('I', 'To', 'ASC', 'DESC'),
+            ),
+            'T' => array(
+                'BJ' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('T', 'BJ', 'ASC', 'DESC'),
+                'CS' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('T', 'CS', 'ASC', 'DESC'),
+                'In' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('T', 'In', 'ASC', 'DESC'),
+            ),
+        );
         
         return $this->render('FSBASTTFrontBundle:Tournaments:index.html.twig', array(
             'page_title' => $pageTitle,
-            'summaries' => $summaries
+            'summariesArray' => $summariesArray
+        ));
+    }
+    
+    public function showAction($id)
+    {
+        $pageTitle = 'Résumé d\'une compétition';
+        
+        $em = $this->getDoctrine()->getEntityManager();
+        
+        $summary = $em->getRepository('FSBASTTCoreBundle:Summary')->findOneById($id);
+        
+        if (!$summary) {
+            throw $this->createNotFoundException('Ce résumé n\'existe pas, ou plus, ou pas encore.');
+        }
+        
+        return $this->render('FSBASTTFrontBundle:Tournaments:show.html.twig', array(
+            'page_title' => $pageTitle,
+            'summary' => $summary
         ));
     }
     
@@ -54,19 +84,19 @@ class TournamentsController extends FrontController
     
     public function getSeriesAction()
     {
-        $season = (date('m') > 08 ? $this->getSportSeason(0) : $this->getSportSeason(1));
+        $season = (date('m') > 8 ? $this->getSportSeason(0) : $this->getSportSeason(1));
         return $this->downloadFile('series.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Series-'.$season.'.pdf');
     }
     
     public function getRulesAction()
     {
-        $season = (date('m') > 08 ? $this->getSportSeason(0) : $this->getSportSeason(1));
+        $season = (date('m') > 8 ? $this->getSportSeason(0) : $this->getSportSeason(1));
         return $this->downloadFile('reglement.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Reglement-'.$season.'.pdf');
     }
     
     public function getResultsAction()
     {
-        $season = (date('m') == 09 ? $this->getSportSeason(-1) : $this->getSportSeason(0));
+        $season = (date('m') == 9 ? $this->getSportSeason(-1) : $this->getSportSeason(0));
         return $this->downloadFile('resultats.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Resultats-'.$season.'.pdf');
     }
     

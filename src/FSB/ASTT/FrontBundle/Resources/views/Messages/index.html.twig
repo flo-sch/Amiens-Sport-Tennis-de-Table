@@ -7,7 +7,7 @@
 {% block content %}
     <!--<a class="btn btn-primary btn-form-messages-toggle" href="#">Poster</a>-->
     <div class="form_messages">
-        <form action="{{ path('FSBASTTFrontBundle_livre_or_checkformpage') }}" method="post" {{ form_enctype(form) }}>
+        <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form) }}>
             {{ form_widget(form) }}
             <button class="btn btn-success" type="submit">Poster</button>
         </form>

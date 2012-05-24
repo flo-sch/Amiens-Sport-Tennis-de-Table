@@ -74,7 +74,7 @@ class FrontController extends Controller {
     public function getSportSeason($season = 0)
     {
         $season = (int) $season;
-        $sport_season = (date('m') > 08 ? (date('Y') + $season).'-'.(date('Y') + $season + 1) : (date('Y') + $season - 1).'-'.(date('Y') + $season));
+        $sport_season = (date('m') > 8 ? (date('Y') + $season).'-'.(date('Y') + $season + 1) : (date('Y') + $season - 1).'-'.(date('Y') + $season));
         return $sport_season;
     }
     
@@ -95,7 +95,7 @@ class FrontController extends Controller {
         $file = $rep.$filename;
         
         if (!file_exists($file)) {
-            throw $this->createNotFoundException('Aie... Le fichier que vous cherchez n\'existe pas, ou plus, ou pas encore...');
+            throw $this->createNotFoundException('Aie... Le fichier que vous cherchez n\'existe pas, ou plus, ou pas encore...'.$file);
         }
         
         $filesize = filesize($file);

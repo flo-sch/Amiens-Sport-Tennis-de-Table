@@ -53,6 +53,10 @@ FSBASTTFrontBundle_tournamentspage:
     pattern: /tournaments
     defaults: { _controller: FSBASTTFrontBundle:Tournaments:index }
 
+FSBASTTFrontBundle_tournaments_showpage:
+    pattern: /tournament/{id}
+    defaults: { _controller: FSBASTTFrontBundle:Tournaments:show }
+
 FSBASTTFrontBundle_calendarpage:
     pattern: /calendar
     defaults: { _controller: FSBASTTFrontBundle:Calendar:index }
@@ -85,8 +89,6 @@ FSBASTTFrontBundle_club_tournament_get_results_page:
     pattern: /national_trophee/results/get
     defaults: { _controller: FSBASTTFrontBundle:Tournaments:getResults }
 
-
-
 # Medias
 FSBASTTFrontBundle_medias_photopage:
     pattern: /photos
@@ -97,12 +99,12 @@ FSBASTTFrontBundle_medias_videopage:
     defaults: { _controller: FSBASTTFrontBundle:Medias:videos }
 
 # Communication
-FSBASTTFrontBundle_livre_or_page:
-    pattern: /livre_or
+FSBASTTFrontBundle_guestbook_page:
+    pattern: /guestbook
     defaults: { _controller: FSBASTTFrontBundle:Messages:index }
 
-FSBASTTFrontBundle_livre_or_checkformpage:
-    pattern: /livre_or/check
+FSBASTTFrontBundle_guestbook_checkformpage:
+    pattern: /guestbook/check
     defaults: { _controller: FSBASTTFrontBundle:Messages:checkForm }
 
 FSBASTTFrontBundle_interviewspage:

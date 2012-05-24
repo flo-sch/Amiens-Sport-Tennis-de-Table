@@ -1,0 +1,14 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="summary display-single centered">
+        <h3>{{ summary.event|capitalize }}</h3>
+        <h5>{{ summary.date|date('d/m/Y') }}</h5>
+        <p>{{ summary.description|e('html')|nl2br }}</p>
+        <a href="{{ path('FSBASTTFrontBundle_tournamentspage') }}" class="btn btn-info">Revenir à la liste des résumés</a>
+    </div>
+{% endblock %}
