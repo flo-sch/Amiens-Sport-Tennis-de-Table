@@ -95,7 +95,7 @@ class FrontController extends Controller {
         $file = $rep.$filename;
         
         if (!file_exists($file)) {
-            throw $this->createNotFoundException('Aie... Le fichier que vous cherchez n\'existe pas, ou plus, ou pas encore...'.$file);
+            throw $this->createNotFoundException('Aie... Le fichier que vous cherchez n\'existe pas, ou plus, ou pas encore...');
         }
         
         $filesize = filesize($file);

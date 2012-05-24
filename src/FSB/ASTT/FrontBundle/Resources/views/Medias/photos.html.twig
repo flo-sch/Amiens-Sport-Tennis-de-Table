@@ -1,5 +1,107 @@
 {% extends('FSBASTTFrontBundle::template.news.html.twig') %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/fsbasttfront/js/galleria/themes/classic/galleria.classic.css') }}" />
+{% endblock %}
+
 {% block page_title %}
     {{ page_title }}
+    <h3 class="text-center">{{ commun_dir|replace({'/': ' / '}) }}</h3>
+{% endblock %}
+
+{% block content %}
+    <div class="medias-nav">
+        <h4>Albums photos</h4>
+        <ul class="level_1">
+            {% for subdir, content in menu %}
+                <li>
+                    {% if content['content']|length > 0 %}<span class="toggle_sublevel">+</span>{% endif %}
+                    {% if content['files']|length %}
+                        <a href="{{ path('FSBASTTFrontBundle_medias_photopage', { 'dir': subdir|replace({'/': '|'}) }) }}">{{ content['label'] }} [{{ content['files']|length }}]</a>
+                    {% else %}
+                        {{ content['label'] }}
+                    {% endif %}
+                    {% if content|length > 0 %}
+                        <ul class="sublevel level_2">
+                            {% for subdir2, content2 in content['content'] %}
+                                <li>
+                                    {% if content2['content']|length > 0 %}<span class="toggle_sublevel">+</span>{% endif %}
+                                    {% if content2['files']|length %}
+                                        <a href="{{ path('FSBASTTFrontBundle_medias_photopage', { 'dir': subdir2|replace({'/': '|'}) }) }}">{{ content2['label'] }} [{{ content2['files']|length }}]</a>
+                                    {% else %}
+                                        {{ content2['label'] }}
+                                    {% endif %}
+                                    {% if content|length > 0 %}
+                                        <ul class="sublevel level_3">
+                                            {% for subdir3, content3 in content2['content'] %}
+                                                <li>
+                                                    {% if content3['files']|length %}
+                                                        <a href="{{ path('FSBASTTFrontBundle_medias_photopage', { 'dir': subdir3|replace({'/': '|'}) }) }}">{{ content3['label'] }} [{{ content3['files']|length }}]</a>
+                                                    {% else %}
+                                                        {{ content3['label'] }}
+                                                    {% endif %}
+                                                    {% if content3['content']|length > 0 %}
+                                                        <ul class="sublevel level_4">
+                                                            {% for subdir4, content4 in content3['content'] %}
+                                                                <li>
+                                                                    <a href="{{ path('FSBASTTFrontBundle_medias_photopage', { 'dir': subdir4|replace({'/': '|'}) }) }}">{{ content4['label'] }}</a>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div id="galleria"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/galleria/galleria-1.2.7.min.js') }}"></script>
+    <script type="text/javascript">
+        $('.sublevel').hide();
+        
+        $('.toggle_sublevel').click(function() {
+            var parent = $(this);
+            $(this).parent().find('.sublevel').eq(0).toggle(
+                0,
+                function() {
+                    parent.html(($(this).is(':visible') ? '-' : '+'));
+                }
+            );
+        });
+        
+        {% if files %}
+            Galleria.loadTheme("{{ asset('bundles/fsbasttfront/js/galleria/themes/classic/galleria.classic.min.js') }}");
+            Galleria.configure({
+                imageCrop: true,
+                transition: 'fade',
+                width: 800,
+                height: 600
+            });
+            var data = [
+                {% for file in files %}
+                    {
+                        image: "{{ asset( file ) }}",
+                    }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ];
+            Galleria.run('#galleria', {
+                dataSource: data
+            });
+        {% else %}
+            $('#galleria').hide();
+        {% endif %}
+    </script>
 {% endblock %}

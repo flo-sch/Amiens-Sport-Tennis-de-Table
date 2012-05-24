@@ -91,8 +91,8 @@ FSBASTTFrontBundle_club_tournament_get_results_page:
 
 # Medias
 FSBASTTFrontBundle_medias_photopage:
-    pattern: /photos
-    defaults: { _controller: FSBASTTFrontBundle:Medias:photos }
+    pattern: /photos/{dir}
+    defaults: { _controller: FSBASTTFrontBundle:Medias:photos, dir: '' }
 
 FSBASTTFrontBundle_medias_videopage:
     pattern: /videos

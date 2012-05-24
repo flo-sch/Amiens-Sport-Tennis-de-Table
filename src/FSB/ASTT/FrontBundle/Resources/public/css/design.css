@@ -80,6 +80,15 @@
     text-align: justify;
 }
 
+/* PHOTOS */
+.medias-nav ul {
+    list-style: none;
+}
+
+.toggle_sublevel {
+    cursor: pointer;
+}
+
 /* FOOTER */
 .footer #footerTabContent .events_list {
     
@@ -111,4 +120,8 @@
 
 td.grey {
     color: grey;
+}
+
+.text-center {
+    text-align: center;
 }
