@@ -34,8 +34,6 @@ class EventsCalendar
         
         $this->_em = $doctrine->getEntityManager();
         
-        $datetime->setTimestamp(1327445999);
-        
         $time = $datetime->getTimestamp();
         
         
