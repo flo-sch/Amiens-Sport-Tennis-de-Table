@@ -3,7 +3,6 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
-use FSB\ASTT\FrontBundle\Resources\Classes\EventsCalendar;
 
 class CalendarController extends FrontController
 {
@@ -21,20 +20,13 @@ class CalendarController extends FrontController
         );
         
         $calendars = array();
-        //echo '<pre>';
-        //$i = 0;
         foreach ($season as $phase => $months) {
             $year = ($phase == 1 ? substr($sport_season, 0, 4) : substr($sport_season, 6, 4));
             foreach ($months as $month) {
-                //var_dump($month) ;
                 $datetime->setTimestamp(mktime(0, 0, 0, $month, 1, $year));
                 $calendars[] = new EventsCalendar($this->getDoctrine(), $datetime);
-                //var_dump($calendars[$i]->getName(), $calendars[$i]->getEvents());
-                //$i++;
             }
         }
-        //echo '</pre>';
-        //exit(var_dump('EXIT'));
         
         return $this->render('FSBASTTFrontBundle:Calendar:index.html.twig', array(
             'page_title' => $pageTitle,
