@@ -6,7 +6,7 @@
         {% block news_flux %}
             <ul class="news-nav-links">
                 {% for key, news in news_flux %}
-                    <li><a class="news_link" href="{{ path('FSBASTTFrontBundle_newspage', { 'id': news.id}) }}" title="Voir l'actualité">{{ news.title|capitalize }}</a></li>
+                    <li><a class="news-link" href="{{ path('FSBASTTFrontBundle_newspage', { 'id': news.id}) }}" title="Voir l'actualité">{{ news.title|capitalize }}</a></li>
                 {% endfor %}
             </ul>
         {% endblock %}

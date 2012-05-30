@@ -142,5 +142,5 @@ FSBASTTFrontBundle_themepage:
 
 # Others
 FSBASTTFrontBundle_sqldump_page:
-    pattern: /dump/{table}/{entityClassName}
+    pattern: /dump/{table}
     defaults: { _controller: FSBASTTFrontBundle:Dump:index }

@@ -130,17 +130,17 @@ class EventsCalendar
     private $events;
     private static $monthsNames = array(
         '01' => 'Janvier',
-        '02' => 'Février',
+        '02' => 'FÃ©vrier',
         '03' => 'Mars',
         '04' => 'Avril',
         '05' => 'Mai',
         '06' => 'Juin',
         '07' => 'Juillet',
-        '08' => 'Août',
+        '08' => 'AoÃ»t',
         '09' => 'Septembre',
         '10' => 'Octobre',
         '11' => 'Novembre',
-        '12' => 'Décembre',
+        '12' => 'DÃ©cembre',
     );
     
     public function __construct($doctrine = NULL, \DateTime $datetime = NULL)

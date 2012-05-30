@@ -19,7 +19,7 @@ use FSB\ASTT\CoreBundle\Entity\Team;
 
 class DumpController extends FrontController {
 
-    public function indexAction($table, $entityClassName) {
+    public function indexAction($table) {
         /**
         * Export to PHP Array plugin for PHPMyAdmin
         * @version 0.2b
@@ -6099,19 +6099,19 @@ class DumpController extends FrontController {
         
         
         switch ($table) {
-            case 'article':
+            case 'articles':
                 $oldEntites = $Articles;
                 break;
-            case 'event':
+            case 'events':
                 $oldEntites = $Evenements;
                 break;
-            case 'interview':
+            case 'interviews':
                 $oldEntites = $Interviews;
                 break;
             case 'links':
                 $oldEntites = $Liens;
                 break;
-            case 'message':
+            case 'messages':
                 $oldEntites = $Commentaires;
                 break;
             case 'news':
@@ -6123,14 +6123,14 @@ class DumpController extends FrontController {
             case 'partners':
                 $oldEntites = $Partenaires;
                 break;
-            case 'result':
+            case 'results':
                 $oldEntites = $Resultats;
                 break;
             case 'summaries':
                 $oldEntites = $Resumes;
                 break;
             case 'teams':
-                $oldEntites = $Teams;
+                $oldEntites = $Equipes;
                 break;
             default:
                 break;
@@ -6140,12 +6140,9 @@ class DumpController extends FrontController {
         $em = $this->getDoctrine()->getEntityManager();
         
         foreach ($oldEntites as $key => $values) {
-            
-            $em->getRepository('FSBASTTCoreBundle:'.$entityClassName);
             //exit(var_dump($values));
             
             $date = new \Datetime('now');
-            
             switch ($table) {
                 case 'articles':
                     $entities[$key]['id'] = $values['id'];
@@ -6157,6 +6154,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setSubject($entities[$key]['subject'] = $values['sujet']);
                     $EntityToAdd->setDate($entities[$key]['date'] = $date->setTimestamp($values['date']));
                     $EntityToAdd->setFile($entities[$key]['file'] = $values['link']);
+                    $em->getRepository('FSBASTTCoreBundle:Team');
                     break;
                 case 'events':
                     $entities[$key]['id'] = $values['id'];
@@ -6169,6 +6167,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setDate($entities[$key]['date'] = $date->setTimestamp($values['date']));
                     $EntityToAdd->setPlace($entities[$key]['place'] = $values['lieu']);
                     $EntityToAdd->setIsTournament($entities[$key]['isTournament'] = ($values['tournoi'] ? true : false));
+                    $em->getRepository('FSBASTTCoreBundle:Event');
                     break;
                 case 'interviews':
                     $entities[$key]['id'] = $values['id'];
@@ -6176,10 +6175,11 @@ class DumpController extends FrontController {
                     $EntityToAdd->setCreatedAt($entities[$key]['created_at'] = new \Datetime());
                     $EntityToAdd->setUpdatedAt($entities[$key]['updated_at'] = new \Datetime());
                     $EntityToAdd->setDeleted($entities[$key]['deleted'] = false);
-                    $player = $em->getRepository('FSBASTTCoreBundle:Player')->findOneById($values['player']);
+                    $player = $em->getRepository('FSBASTTCoreBundle:Player')->findOneByLicence($values['joueur']);
                     $EntityToAdd->setPlayer($entities[$key]['player'] = $player);
-                    $EntityToAdd->setDescription($entities[$key]['description'] = $values['description']);
+                    $EntityToAdd->setDescription($entities[$key]['description'] = $values['texte']);
                     $EntityToAdd->setDate($entities[$key]['title'] = $date->setTimestamp($values['date']));
+                    $em->getRepository('FSBASTTCoreBundle:Interview');
                     break;
                 case 'links':
                     $entities[$key]['id'] = $values['id'];
@@ -6190,8 +6190,9 @@ class DumpController extends FrontController {
                     $EntityToAdd->setTitle($entities[$key]['title'] = $values['libelle']);
                     $EntityToAdd->setCategory($entities[$key]['category'] = $values['categorie']);
                     $EntityToAdd->setUrl($entities[$key]['url'] = $values['lien']);
+                    $em->getRepository('FSBASTTCoreBundle:Link');
                     break;
-                case 'message':
+                case 'messages':
                     $entities[$key]['id'] = $values['id'];
                     $EntityToAdd = new Message();
                     $EntityToAdd->setCreatedAt($entities[$key]['created_at'] = $date->setTimestamp($values['date']));
@@ -6200,6 +6201,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setAuthor($entities[$key]['author'] = $values['auteur']);
                     $EntityToAdd->setClub($entities[$key]['club'] = $values['club']);
                     $EntityToAdd->setDescription($entities[$key]['description'] = $values['message']);
+                    $em->getRepository('FSBASTTCoreBundle:Message');
                     break;
                 case 'news':
                     $entities[$key]['id'] = $values['id'];
@@ -6218,6 +6220,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setPlace($entites[$key]['place'] = $values['lieu']);
                     $EntityToAdd->setPresentation($entites[$key]['presentation'] = $values['miseenpage']);
                     $EntityToAdd->setScreen($entities[$key]['screen'] = $values['screen']);
+                    $em->getRepository('FSBASTTCoreBundle:News');
                     break;
                 case 'players':
                     $EntityToAdd = new Player();
@@ -6236,24 +6239,33 @@ class DumpController extends FrontController {
                     $EntityToAdd->setUpdatedAt($entities[$key]['updated_at'] = new \Datetime());
                     $EntityToAdd->setHidden($entities[$key]['hidden'] = false);
                     $birthday = explode('-', $values['date_naissance']);
+                    $EntityToAdd->setLicence($entities[$key]['licence'] = $values['licence']);
+                    $EntityToAdd->setCivility($entities[$key]['civility'] = $civility);
                     $EntityToAdd->setBirthday($entities[$key]['birthday'] = $date->setDate($birthday[0], $birthday[1], $birthday[2]));
                     $EntityToAdd->setCategory($entities[$key]['category'] = $values['categorie']);
                     $EntityToAdd->setFirstname($entities[$key]['firstname'] = $values['prenom']);
                     $EntityToAdd->setLastname($entities[$key]['lastname'] = $values['nom']);
                     $EntityToAdd->setPoints($entities[$key]['points'] = $values['points']);
                     $EntityToAdd->setClassement($entities[$key]['classement'] = $values['classement']);
-                    $mainTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe']);
-                    if ($mainTeam) {
-                        $EntityToAdd->setMainTeam($entities[$key]['mainTeam'] = $mainTeam);
+                    if ($values['equipe']) {
+                        $mainTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe']);
+                        if ($mainTeam) {
+                            $EntityToAdd->setMainTeam($entities[$key]['mainTeam'] = $mainTeam);
+                        }
                     }
-                    $secondTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe_m']);
-                    if ($mainTeam) {
-                        $EntityToAdd->setMainTeam($entities[$key]['secondTeam'] = $secondTeam);
+                    if ($values['equipe_m']) {
+                        $secondTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe_m']);
+                        if ($mainTeam) {
+                            $EntityToAdd->setMainTeam($entities[$key]['secondTeam'] = $secondTeam);
+                        }
                     }
-                    $thirdTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe_j']);
-                    if ($mainTeam) {
-                        $EntityToAdd->setMainTeam($entities[$key]['thirdTeam'] = $thirdTeam);
+                    if ($values['equipe_j']) {
+                        $thirdTeam = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe_j']);
+                        if ($mainTeam) {
+                            $EntityToAdd->setMainTeam($entities[$key]['thirdTeam'] = $thirdTeam);
+                        }
                     }
+                    $em->getRepository('FSBASTTCoreBundle:Player');
                     break;
                 case 'partners':
                     $entities[$key]['id'] = $values['id'];
@@ -6264,6 +6276,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setTitle($entities[$key]['title'] = $values['nom']);
                     $EntityToAdd->setLink($entities[$key]['link'] = $values['lien']);
                     $EntityToAdd->setPhone($entities[$key]['phone'] = $values['num_tel']);
+                    $em->getRepository('FSBASTTCoreBundle:Partner');
                     break;
                 case 'results':
                     $entities[$key]['id'] = $values['id'];
@@ -6272,7 +6285,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setUpdatedAt($entities[$key]['updated_at'] = new \Datetime());
                     $EntityToAdd->setDeleted($entities[$key]['deleted'] = false);
                     $team = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($values['equipe']);
-                    if ($mainTeam) {
+                    if ($team) {
                         $EntityToAdd->setTeam($entities[$key]['team'] = $team);
                     }
                     $EntityToAdd->setWeek($entities[$key]['week'] = $values['journee']);
@@ -6282,9 +6295,10 @@ class DumpController extends FrontController {
                     $EntityToAdd->setOpponent($entities[$key]['opponent'] = $values['adversaire']);
                     $EntityToAdd->setOpponentScore($entities[$key]['opponentScore'] = $values['score_adv']);
                     $EntityToAdd->setDescription($entities[$key]['description'] = $values['commentaire']);
+                    $em->getRepository('FSBASTTCoreBundle:Result');
                     break;
                 case 'summaries':
-                    $entities[$key]['id'] = $values['id'];
+                    //$entities[$key]['id'] = $values['id'];
                     $EntityToAdd = new Summary();
                     $EntityToAdd->setCreatedAt($entities[$key]['created_at'] = new \Datetime());
                     $EntityToAdd->setUpdatedAt($entities[$key]['updated_at'] = new \Datetime());
@@ -6294,9 +6308,10 @@ class DumpController extends FrontController {
                         $EntityToAdd->setEvent($entities[$key]['event'] = $event);
                     }
                     $EntityToAdd->setType($entities[$key]['type'] = ($values['type'] == 1 ? 'T' : 'I'));
-                    $EntityToAdd->setTournament($entities[$key]['tournament'] = $values['tournament']);
+                    $EntityToAdd->setTournament($entities[$key]['tournament'] = $values['competition']);
                     $EntityToAdd->setDate($entities[$key]['date'] = $date->setTimestamp($values['date']));
                     $EntityToAdd->setDescription($entities[$key]['description'] = $values['texte']);
+                    $em->getRepository('FSBASTTCoreBundle:Summary');
                     break;
                 case 'teams':
                     $entities[$key]['id'] = $values['id'];
@@ -6306,7 +6321,7 @@ class DumpController extends FrontController {
                     $EntityToAdd->setDeleted($entities[$key]['deleted'] = false);
                     $EntityToAdd->setNumber($entities[$key]['number'] = $values['numero']);
                     $civility = 'M';
-                    switch ($values['sexe']) {
+                    switch ($values['genre']) {
                         case 'H':
                             $civility = 'M';
                             break;
@@ -6323,10 +6338,11 @@ class DumpController extends FrontController {
                     $EntityToAdd->setDivision($entities[$key]['division'] = $values['division']);
                     $EntityToAdd->setNbPlayers($entities[$key]['nbPlayers'] = $values['nb_jrs']);
                     $EntityToAdd->setOfficialLink($entities[$key]['officialLink'] = $values['lien']);
-                    $leader = $em->getRepository('FSBASTTCoreBundle:Player')->findOneById($values['capitaine']);
-                    if ($leader) {
-                        $EntityToAdd->setLeader($entities[$key]['leader'] = $leader);
-                    }
+                    //$leader = $em->getRepository('FSBASTTCoreBundle:Player')->findOneById($values['capitaine']);
+                    //if ($leader) {
+                        //$EntityToAdd->setLeader($entities[$key]['leader'] = $leader);
+                    //}
+                    $em->getRepository('FSBASTTCoreBundle:Team');
                     break;
                 default:
                     break;
@@ -6336,8 +6352,8 @@ class DumpController extends FrontController {
             $em->persist($EntityToAdd);
         }
         //echo '<pre>';
-        exit(var_dump($entities));
-        //$em->flush();
+        //exit(var_dump($entities));
+        $em->flush();
 
         return $this->render('FSBASTTFrontBundle:Dump:success.html.twig');
     }

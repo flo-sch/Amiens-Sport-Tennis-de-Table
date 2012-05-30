@@ -52,6 +52,10 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 }
 
 /* HOME */
+.speed-nav-container {
+    padding: 0 0 20px 0;
+}
+
 .news_row {
     float: left;
     clear: left;
@@ -196,9 +200,18 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     text-align: center;
 }
 
+.results-summary {
+    float: left;
+}
+
+.results-summary a {
+    float: right;
+    margin: 0 1px;
+}
+
 /* INTERVIEWS */
 .menu_interviews {
-    float: right;
+    float: left;
     margin: 0 50px 0 0;
 }
 
@@ -355,14 +368,15 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     width: 20%;
     height: 50px;
     margin: 5px 2%;
-    border: 1px dashed black;
     border-radius: 5px;
     display: inline-block;
-    text-align: center;
 }
 
 .footer #footerTabContent .footer_themes .theme a {
     line-height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 /* TOOLS */
