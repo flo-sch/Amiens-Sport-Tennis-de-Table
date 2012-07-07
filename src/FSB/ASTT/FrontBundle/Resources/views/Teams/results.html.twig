@@ -6,6 +6,12 @@
 
 {% block content %}
     <h2>Résultats de l'équipe : {{ team }}</h2>
+    <h4>Sommaire</h4>
+    <p class="results-summary">
+        {% for key, result in results %}
+            <a class="btn btn-small btn-primary" href="#{{ result.week }}">{{ result.week }}</a>
+        {% endfor %}
+    </p>
     {% if results %}
         <table class="table table-stripped table-bordered table-condensed table-content">
             <thead>
@@ -21,7 +27,7 @@
             <tbody>
                 {% for key, result in results %}
                     <tr>
-                        <td>{{ result.week }}</td>
+                        <td><a name="{{ result.week }}">{{ result.week }}</a></td>
                         <td>{{ result.date|date('d-m-Y') }}</td>
                         <td>{{ result.place|capitalize }}</td>
                         <td>{{ result.opponent|capitalize }}</td>

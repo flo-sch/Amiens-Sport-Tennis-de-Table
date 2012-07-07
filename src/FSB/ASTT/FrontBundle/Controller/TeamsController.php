@@ -21,16 +21,6 @@ class TeamsController extends FrontController
             'Y' => $em->getRepository('FSBASTTCoreBundle:Team')->findAllDisplayedByCivility('Y')
         );
         
-        foreach ($teamsArray as $civility => $teamByCivility) {
-            foreach ($teamByCivility as $key => $team) {
-                // Leader is not required
-                $leader = $team->getLeader();
-                if ($leader) {
-                    $teamsArray[$civility][$key]['leader'] = $leader;
-                }
-            }
-        }
-        
         return $this->render('FSBASTTFrontBundle:Teams:index.html.twig', array(
             'page_title' => $pageTitle,
             'teamsArray' => $teamsArray

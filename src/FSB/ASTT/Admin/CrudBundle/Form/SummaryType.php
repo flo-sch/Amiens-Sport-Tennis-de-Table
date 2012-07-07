@@ -19,7 +19,7 @@ class SummaryType extends AbstractType
             ->add('description', 'textarea', array('label' => 'Description', 'required' => true))
             ->add('event', 'entity', array('label' => 'Evénement concerné', 'required' => true, 'empty_value' => 'Choisissez l\'événement concerné', 'class' => 'FSBASTTCoreBundle:Event',
                 'query_builder' => function(\FSB\ASTT\CoreBundle\Repository\EventRepository $er) {
-                    return $er->findAllNDisplayedSorteredByDate(true);
+                    return $er->findAllDisplayedSorteredByDate(true);
                 }
             ))
         ;

@@ -37,20 +37,20 @@ security:
             #http_basic:
             #    realm: "Secured Demo Area"
         
-        admin_login:
+        #admin_login:
             pattern: ^/admin/login$
             anonymous: ~
         
         #admin_area:
-            #provider: in_memory
-            #pattern: ^/admin/
-            #form_login:
-                #check_path: /admin/login_check
-                #login_path: /admin/login
-            #logout:
-                #path: /admin/logout
-                #target: /
+            provider: be_users
+            pattern: ^/admin/
+            form_login:
+                check_path: /admin/login_check
+                login_path: /admin/login
+            logout:
+                path: /admin/logout
+                target: /
             
     access_control:
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
-        #- { path: ^/_internal, roles: IS_AUTHENTICATED_ANONYMOUSLY, ip: 127.0.0.1 }
+        #- { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        #- { path: ^/admin, roles: ROLE_ADMIN }

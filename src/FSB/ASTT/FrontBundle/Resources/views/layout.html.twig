@@ -47,7 +47,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compétitions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ path('FSBASTTFrontBundle_teamspage') }}"><i class="icon-user"></i> Equipes</a></li>
+                            <li><a href="{{ path('FSBASTTFrontBundle_teamspage') }}"><i class="icon-user"></i> Championnat par équipes</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_tournamentspage') }}"><i class="icon-ok-circle"></i> Compétitions</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_calendarpage') }}"><i class="icon-calendar"></i> Calendrier</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_club_tournamentpage') }}"><i class="icon-info-sign"></i> Tournoi d'Amiens</a></li>
@@ -78,85 +78,8 @@
 
 {% block class_main %}well container-fluid{% endblock %}
 
-{% block footer %}
-    <ul id="footerTab" class="nav nav-tabs">
-        <li class="centered active"><a href="#events" data-toggle="tab">A venir</a></li>
-        <li class="centered"><a href="#medias" data-toggle="tab">En images</a></li>
-        <li class="centered"><a href="#themes" data-toggle="tab">Thèmes</a></li>
-    </ul>
-    <div id="footerTabContent" class="tab-content">
-        <div class="tab-pane fade active in" id="events">
-            {% block footer_events %}
-                <div class="events_list well">
-                    <ul class="events_links">
-                        {% for key, event in footer_events %}
-                            {% if event.isTournament %}
-                                <li><a class="footer_event_link" href="{{ path('FSBASTTFrontBundle_club_tournamentpage') }}" title="Voir l'événement">{{ event.title|capitalize }}</a></li>
-                            {% else %}
-                                <li><a class="footer_event_link" href="{{ path('FSBASTTFrontBundle_eventspage', { 'id': event.id }) }}" title="Voir l'événement">{{ event.title|capitalize }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="footer_calendar">
-                    <table class="table table-stripped table-condensed table-bordered">
-                        <caption>{{ footer_calendar.name }}</caption>
-                        <thead>
-                            <tr>
-                                <th>L</th>
-                                <th>M</th>
-                                <th>M</th>
-                                <th>J</th>
-                                <th>V</th>
-                                <th>S</th>
-                                <th>D</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for semaine, jours in footer_calendar.events %}
-                                <tr>
-                                    {% for ind, jour in jours %}
-                                        {% if jour|length > 2 %}
-                                            {% if jour['events']|length > 0 %}
-                                                <td><a title="{% for event in jour['events'] %}{{ event.title }}{% if loop.last != true %}{{ '\n' }}{% endif %}{% endfor %}" href="{{ path('FSBASTTFrontBundle_event_day_page', { 'day':jour['starttime']|date('d') , 'month':jour['starttime']|date('m') , 'year':jour['starttime']|date('y') }) }}">{{ ind }}</a></td>
-                                            {% else %}
-                                                <td>{{ ind }}</td>
-                                            {% endif %}
-                                        {% else %}
-                                            <td class="grey">{{ jour }}</td>
-                                        {% endif %}
-                                    {% endfor %}
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            {% endblock %}
-        </div>
-        <div class="tab-pane fade" id="medias">
-            {% block footer_medias %}
-                <div class="coverflow well centered">
-                    
-                </div>
-            {% endblock %}
-        </div>
-        <div class="tab-pane fade" id="themes">
-            {% block footer_themes %}
-                <div class="footer_themes well centered">
-                    {% for key, theme in footer_themes %}
-                        <div class="theme">
-                            <a href="{{ path('FSBASTTFrontBundle_themepage', { 'name': theme|lower }) }}" title="">{{ theme|upper }}</a>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% endblock %}
-        </div>
-    </div>
-{% endblock %}
-
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/lib/prototype.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/src/scriptaculous.js?load=effects') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/slideflow.js') }}"></script>
@@ -164,4 +87,5 @@
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/scrolling.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/xmlparser/xmlparser.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/coverflow.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
 {% endblock %}
