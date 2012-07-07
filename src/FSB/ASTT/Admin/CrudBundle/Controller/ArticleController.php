@@ -123,7 +123,8 @@ class ArticleController extends Controller
     public function updateAction($id)
     {
         $em = $this->getDoctrine()->getEntityManager();
-
+        
+        $last = $em->getRepository('FSBASTTCoreBundle:Article')->findOneById($id);
         $entity = $em->getRepository('FSBASTTCoreBundle:Article')->find($id);
 
         if (!$entity) {
@@ -138,8 +139,16 @@ class ArticleController extends Controller
         $editForm->bindRequest($request);
 
         if ($editForm->isValid()) {
+            $data = $editForm->getData();
+            
+            if ($data->getFile() == null) {
+                var_dump($last);
+                $data->setFile($last->getFile());
+            }
+            exit(var_dump($data));
+            
             $em->persist($entity);
-            $em->flush();
+            //$em->flush();
 
             return $this->redirect($this->generateUrl('article_edit', array('id' => $id)));
         }
