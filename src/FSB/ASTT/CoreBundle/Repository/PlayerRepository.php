@@ -24,7 +24,7 @@ class PlayerRepository extends EntityRepository {
         return $qb->getQuery()->getResult();
     }
     
-    public function findActivePlayer()
+    public function findActivePlayers()
     {
         $qb = $this->_em->createQueryBuilder();
         
@@ -35,7 +35,7 @@ class PlayerRepository extends EntityRepository {
             ->orderBy('p.lastname', 'ASC')
             ->addOrderBy('p.firstname', 'ASC');
         
-        return $qb;
+        return $qb->getQuery()->getResult();
     }
     
     public function find($id)

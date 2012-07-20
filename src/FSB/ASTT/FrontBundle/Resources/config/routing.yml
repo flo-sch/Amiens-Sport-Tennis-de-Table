@@ -45,9 +45,13 @@ FSBASTTFrontBundle_teams_resultspage:
     pattern: /team/{id}/results
     defaults: { _controller: FSBASTTFrontBundle:Teams:results }
 
-FSBASTTFrontBundle_teams_playerpage:
-    pattern: /team/{id}/player/{licence}
-    defaults: { _controller: FSBASTTFrontBundle:Teams:player }
+FSBASTTFrontBundle_playerspage:
+    pattern: /players
+    defaults: { _controller: FSBASTTFrontBundle:Players:index }
+
+FSBASTTFrontBundle_players_showpage:
+    pattern: /player/{licence}
+    defaults: { _controller: FSBASTTFrontBundle:Players:show }
 
 FSBASTTFrontBundle_tournamentspage:
     pattern: /tournaments

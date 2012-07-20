@@ -115,8 +115,6 @@ class FrontController extends Controller {
         
         $response->setContent(file_get_contents($file));
         
-        $response->send();
-        
         return $response;
     }
 }

@@ -20,7 +20,7 @@
             <tbody>
                 {% for key, player in players %}
                     <tr>
-                        <td><a href="{{ path('FSBASTTFrontBundle_teams_playerpage', { 'id': team.id, 'licence': player.licence } ) }}">{{ player.licence }}</a></td>
+                        <td><a href="{{ path('FSBASTTFrontBundle_players_showpage', { 'licence': player.licence } ) }}">{{ player.licence }}</a></td>
                         <td>{{ player.lastname|upper }}</td>
                         <td>{{ player.firstname|title }}</td>
                         <td>{{ player.category }}</td>

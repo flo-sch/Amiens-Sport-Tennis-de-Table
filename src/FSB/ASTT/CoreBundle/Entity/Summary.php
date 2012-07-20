@@ -5,7 +5,7 @@ namespace FSB\ASTT\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * FSB\ASTT\CoreBundle\Entity\Summary
+ * FSB\ASTT\CoreBundle\Entity\Tournament
  */
 class Summary
 {

@@ -9,8 +9,6 @@ use FSB\ASTT\CoreBundle\Entity\Event;
 
 class TournamentsController extends FrontController
 {
-    
-    
     public function indexAction()
     {
         $pageTitle = 'Compétitions';
@@ -29,6 +27,9 @@ class TournamentsController extends FrontController
                 'CS' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('T', 'CS', 'ASC', 'DESC'),
                 'In' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('T', 'In', 'ASC', 'DESC'),
             ),
+            'O' => array(
+                'To' => $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDateWithTypeAndTournament('O', 'To'),
+            )
         );
         
         return $this->render('FSBASTTFrontBundle:Tournaments:index.html.twig', array(
