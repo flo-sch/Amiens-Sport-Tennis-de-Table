@@ -1,0 +1,24 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/fsbasttfront/css/colorpicker.css') }}" media="screen" />
+{% endblock %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="global-wrapper display-single centered">
+        <h2>Couleur de fond du header</h2>
+        <div id="colorpickerselector">
+            <div style="background: #2E3D9C;"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/colorpicker.js') }}"></script>
+{% endblock %}

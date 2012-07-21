@@ -15,7 +15,24 @@ $(document).ready(function() {
     setInterval(function() {
         $('.footer .coverflow').css('background', 'rgba(' + Math.floor(Math.random() * 255) + ', ' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ', ' + Math.random()+ ')')
     }, 50);
-    init();
+    
+    // ColorPicker config
+    $('#colorpickerselector').bind('click', function() {
+        $(this).ColorPicker({
+            onShow: function (colpkr) {
+                    $(colpkr).fadeIn(500);
+                    return false;
+            },
+            onHide: function (colpkr) {
+                    $(colpkr).fadeOut(500);
+                    return false;
+            },
+            onChange: function (hsb, hex, rgb) {
+                    $('#colorpickerselector div').css('backgroundColor', '#' + hex);
+                    $('.header').css('backgroundColor', '#' + hex);
+            }
+        })
+    });
     
     // On cache le menu de gauche
     $('.news-nav').children().hide();

@@ -1,29 +1,51 @@
-/* HEADER */
+/* FONTS */
+@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+body {
+    font-family: 'Rokkitt', serif;
+    font-weight: 500;
+}
+
+/* HEADER */
 .header {
-    background-color: #2e3d9c;
+    font-weight: 600;
+    background-color: #4C79BD;
     background-image: url('../images/grid-18px-masked.png');
+    color: #FFFFFF;
 }
 
 .header a {
-    color: black;
+    color: #FFFFFF;
 }
 
 .header a:hover {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header h1 {
-    color: #111;
-    text-shadow: 0 1px 100px #FFF;
+    color: #FFFFFF;
+    text-shadow: 0 1px 100px #FFFFFF;
 }
 
 .header .header_links {
-    text-transform: uppercase;
+    
 }
 
 .header .header_links a {
-    color: #FFF;
+    color: #FFFFFF;
+}
+
+.header .header_links a:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* NAV */
+.navbar {
+    font-weight: 600;
 }
 
 /* MAIN CONTAINER */
@@ -142,4 +164,15 @@ td.grey {
 
 .text-center {
     text-align: center;
+}
+
+/* DESIGN PAGE */
+#colorpickerselector {
+    background: black;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+#colorpickerselector div {
+    border-radius: 5px;
 }

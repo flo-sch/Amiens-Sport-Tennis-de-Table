@@ -148,3 +148,7 @@ FSBASTTFrontBundle_themepage:
 FSBASTTFrontBundle_sqldump_page:
     pattern: /dump/{table}
     defaults: { _controller: FSBASTTFrontBundle:Dump:index }
+
+FSBASTTFrontBundle_designpage:
+    pattern: /design
+    defaults: { _controller: FSBASTTFrontBundle:Design:index }

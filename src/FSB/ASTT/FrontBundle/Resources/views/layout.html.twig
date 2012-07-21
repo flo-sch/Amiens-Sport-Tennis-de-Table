@@ -2,16 +2,30 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/bootstrap-responsive.min.css') }}" />
+    <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/bootstrap-datepicker.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/themes/' ~ css_theme ~ '.bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/template.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/design.css') }}" />
 {% endblock %}
 
 {% block header %}
-    {{ parent() }}
+    <h1><a href="{{ path('FSBASTTFrontBundle_homepage') }}" title="Revenir à l'accueil">Amiens Sport Tennis de Table</a></h1>
     <div class="header_links">
-        <span class="pull-left"><a class="btn btn-inverse" href="{{ path('FSBASTTFrontBundle_accesspage') }}">Trouver la salle</a></span>
-        <span class="pull-right"><a class="btn btn-inverse" href="mailto:astt@wanadoo.fr">astt@wanadoo.fr</a></span>
+        <div class="pull-left">
+        
+        </div>
+        <div class="pull-right">
+            <a href="{{ path('FSBASTTFrontBundle_accesspage') }}">
+                <div class="header-address">
+                    <i class="header-address-icon icon-white icon-map-marker"></i>
+                    <div class="header-address-street">304 rue Gauthier de Rumilly</div>
+                    <div class="header-address-city">80000 AMIENS</div>
+                </div>
+            </a>
+            <div class="header-contact">03 22 89 74 30</div>
+            <a class="mailto" href="mailto:astt@wanadoo.fr">astt@wanadoo.fr</a>
+        </div>
     </div>
 {% endblock %}
 
@@ -81,12 +95,9 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/lib/prototype.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/src/scriptaculous.js?load=effects') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/slideflow.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/slider.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/scrolling.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/xmlparser/xmlparser.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/coverflow.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/jquery-1.7.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap-datepicker.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootbox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
 {% endblock %}
