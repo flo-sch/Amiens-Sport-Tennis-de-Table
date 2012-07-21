@@ -1,12 +1,11 @@
 $(document).ready(function() {
     // footerTab
-    $(document).ready(function() {
-        $('#footerTab a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        })
+    /*
+    $('#footerTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
     });
-    
+    */
     // Form date fields
     $('input[type="text"].datepicker').datepicker({
         
@@ -16,6 +15,7 @@ $(document).ready(function() {
     setInterval(function() {
         $('.footer .coverflow').css('background', 'rgba(' + Math.floor(Math.random() * 255) + ', ' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ', ' + Math.random()+ ')')
     }, 50);
+    init();
     
     // On cache le menu de gauche
     $('.news-nav').children().hide();

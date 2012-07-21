@@ -48,6 +48,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compétitions <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ path('FSBASTTFrontBundle_teamspage') }}"><i class="icon-user"></i> Championnat par équipes</a></li>
+                            <li><a href="{{ path('FSBASTTFrontBundle_playerspage') }}"><i class="icon-user"></i> Joueurs</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_tournamentspage') }}"><i class="icon-ok-circle"></i> Compétitions</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_calendarpage') }}"><i class="icon-calendar"></i> Calendrier</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_club_tournamentpage') }}"><i class="icon-info-sign"></i> Tournoi d'Amiens</a></li>
@@ -78,8 +79,14 @@
 
 {% block class_main %}well container-fluid{% endblock %}
 
-
 {% block javascripts %}
     {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/lib/prototype.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/scriptaculous/src/scriptaculous.js?load=effects') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/slideflow.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/slider.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/slideflow/scrolling.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/xmlparser/xmlparser.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/coverflow.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
 {% endblock %}

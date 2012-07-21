@@ -68,39 +68,4 @@ class TeamsController extends FrontController
             'results' => $results
         ));
     }
-    
-    public function playerAction($id, $licence)
-    {
-        $pageTitle = 'Joueur';
-        
-        $em = $this->getDoctrine()->getEntityManager();
-        
-        $team = $em->getRepository('FSBASTTCoreBundle:Team')->findOneById($id);
-        
-        if (!$team) {
-            throw $this->createNotFoundException('Cette équipe n\'existe pas.');
-        }
-        
-        $player = $em->getRepository('FSBASTTCoreBundle:Player')->findOneByLicence($licence);
-        
-        if (!$player) {
-            throw $this->createNotFoundException('Ce joueur n\'existe pas.');
-        }
-        
-        $rep = 'images/joueurs/';
-        $allowed_formats = array('.jpg', '.JPG', '.jpeg', '.JPEG', '.gif', '.png', '.PNG');
-        $format = '';
-        foreach ($allowed_formats as $af) {
-            if (file_exists($rep.$player->getLicence().$af)) {
-                $format = $af;
-            }
-        }
-        
-        return $this->render('FSBASTTFrontBundle:Teams:player.html.twig', array(
-            'page_title' => $pageTitle,
-            'team' => $team,
-            'player' => $player,
-            'photo_format' => $format
-        ));
-    }
 }

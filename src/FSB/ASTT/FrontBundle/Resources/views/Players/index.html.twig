@@ -1,0 +1,40 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <table class="table table-stripped table-bordered table-condensed table-content">
+        <thead>
+            <tr>
+                <th>Licence</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Catégorie</th>
+                <th>Points</th>
+                <th colspan="3">Equipes</th>
+                <th>Performances officielles</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in players %}
+                <tr>
+                    <td>
+                        <a href="{{ path('FSBASTTFrontBundle_players_showpage', { 'licence': player.licence }) }}">{{ player.licence }}</a>
+                    </td>
+                    <td>{{ player.lastname }}</td>
+                    <td>{{ player.firstname }}</td>
+                    <td>{{ player.category }}</td>
+                    <td>{{ player.points }}</td>
+                    <td colspan="3">
+                        {% if player.mainteam %}<a href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': player.mainteam.id }) }}"><span class="team">{{ player.mainteam }}</span></a>{% endif %}
+                        {% if player.secondteam %}<a href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': player.secondteam.id }) }}"><span class="team">{{ player.secondteam }}</span></a>{% endif %}
+                        {% if player.thirdteam %}<a href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': player.thirdteam.id }) }}"><span class="team">{{ player.thirdteam }}</span></a>{% endif %}
+                    </td>
+                    <td><a href="#">fftt.com</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

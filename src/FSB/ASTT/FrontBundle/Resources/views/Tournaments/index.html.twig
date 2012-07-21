@@ -13,6 +13,9 @@
             <li class="centered">
                 <a href="#team" data-toggle="tab">Compétitions par équipe</a>
             </li>
+            <li class="centered">
+                <a href="#other" data-toggle="tab">Autres compétitions</a>
+            </li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade" id="indiv">
@@ -197,6 +200,38 @@
                             </thead>
                             <tbody>
                                 {% for summary in summariesArray['T']['In'] %}
+                                    <tr>
+                                        <td>{{ summary.event|capitalize }}</td>
+                                        <td>{{ summary.date|date('d/m/Y') }}</td>
+                                        <td>{{ summary.description[0:300]|e('html')|nl2br }}</td>
+                                        <td><a href="{{ path('FSBASTTFrontBundle_tournaments_showpage', { 'id': summary.id }) }}" class="btn btn-info">Lire la suite du résumé</a></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="other">
+                <ul class="nav nav-tabs">
+                    <li class="centered">
+                        <a href="#tournaments" data-toggle="tab">Tournois de la région et de l'inter-région</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="tournaments">
+                        <h2>Tournois de la région et de l'inter-région</h2>
+                        <table class="table table-stripped table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Evénement</th>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Lire la suite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for summary in summariesArray['O']['To'] %}
                                     <tr>
                                         <td>{{ summary.event|capitalize }}</td>
                                         <td>{{ summary.date|date('d/m/Y') }}</td>
