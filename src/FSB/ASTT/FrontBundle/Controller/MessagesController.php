@@ -21,7 +21,7 @@ class MessagesController extends FrontController
         
         return $this->render('FSBASTTFrontBundle:Messages:index.html.twig', array(
             'page_title' => $pageTitle,
-            'form' => $form->createView(),
+            'form_anonym' => $form->createView(),
             'messages' => $messages
         ));
     }

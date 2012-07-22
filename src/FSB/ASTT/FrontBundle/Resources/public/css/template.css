@@ -303,17 +303,9 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 }
 
 /* LIVRE OR */
-.btn-form-messages-toggle,
-.form_messages {
-    position: absolute;
-    left: 0;
-    padding: 0 10px;
-    width: 20%;
-    z-index: 100;
-}
-
-.form_messages {
-    clear: left;
+.messages-header {
+    width: 400px;
+    margin: auto;
 }
 
 .form_messages input[type="text"],

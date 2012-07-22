@@ -21,8 +21,8 @@
                     <td>{{ article.title|capitalize }}</td>
                     <td>{{ article.subject|capitalize }}</td>
                     <td>{% if article.date %}{{ article.date|date('d/m/Y') }}{% endif%}</td>
-                    <td><a class="btn btn-primary" href="{{ asset('files/articles/' ~ article.file) }}" target="_blank">ASTT-Article-{{ article.title }}</a></td>
-                    <td><a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_downloadpage', { 'id': article.id }) }}">Télécharger</a></td>
+                    <td><a href="{{ asset('files/articles/' ~ article.file) }}" target="_blank">ASTT-Article-{{ article.title }}</a></td>
+                    <td><a href="{{ path('FSBASTTFrontBundle_downloadpage', { 'id': article.id }) }}">Télécharger</a></td>
                 </tr>
             {% endfor %}
         </tbody>

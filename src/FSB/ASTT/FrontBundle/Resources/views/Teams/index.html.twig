@@ -31,9 +31,9 @@
                         <td>{{ team }}</td>
                         <td>{{ team.division }}</td>
                         <td>{{ team.leader }}</td>
-                        <td><a class="btn btn-info" target="_blank" title="Voir les résultats" href="{{ team.officialLink }}">Lien officiel</a></td>
-                        <td><a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': team.id }) }}">Composition</a></td>
-                        <td><a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_teams_resultspage', { 'id': team.id }) }}">Résultats</a></td>
+                        <td><a target="_blank" title="Voir les résultats" href="{{ team.officialLink }}">Lien officiel</a></td>
+                        <td><a href="{{ path('FSBASTTFrontBundle_teams_showpage', { 'id': team.id }) }}">Composition</a></td>
+                        <td><a href="{{ path('FSBASTTFrontBundle_teams_resultspage', { 'id': team.id }) }}">Résultats</a></td>
                     </tr>
                 {% endfor %}
             {% endfor %}

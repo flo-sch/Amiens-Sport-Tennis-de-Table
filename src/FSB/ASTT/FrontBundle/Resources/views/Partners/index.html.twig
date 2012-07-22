@@ -18,7 +18,7 @@
             <tr>
                 <td>{{ partner.title }}</td>
                 <td>{{ partner.phone }}</td>
-                <td>{% if partner.link %}<a class="btn btn-primary" href="{{ partner.link }}" target="_blank">{{ partner.link }}</a>{% endif %}</td>
+                <td>{% if partner.link %}<a href="{{ partner.link }}" target="_blank">{{ partner.link }}</a>{% endif %}</td>
             </tr>
         {% endfor %}
         </tbody>

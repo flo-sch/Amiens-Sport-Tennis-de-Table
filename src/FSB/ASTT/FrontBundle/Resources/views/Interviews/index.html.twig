@@ -7,7 +7,7 @@
 {% block content %}
     <div class="menu_interviews">
         {% for key, interview in interviews %}
-            <li><a class="btn btn-primary" href="{{ path('FSBASTTFrontBundle_interviewspage', { 'id': interview.id }) }}" title="Voir l'interview de {{ interview.player }}">{{ interview.player }}</a></li>
+            <li><a href="{{ path('FSBASTTFrontBundle_interviewspage', { 'id': interview.id }) }}" title="Voir l'interview de {{ interview.player }}">{{ interview.player }}</a></li>
         {% endfor %}
     </div>
     <div class="interview display-single  centered">

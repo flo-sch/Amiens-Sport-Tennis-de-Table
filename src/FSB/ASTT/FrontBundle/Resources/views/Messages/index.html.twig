@@ -5,12 +5,25 @@
 {% endblock %}
 
 {% block content %}
-    <!--<a class="btn btn-primary btn-form-messages-toggle" href="#">Poster</a>-->
-    <div class="form_messages">
-        <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form) }}>
-            {{ form_widget(form) }}
-            <button class="btn btn-success" type="submit">Poster</button>
-        </form>
+    <div class="messages-header">
+        <ul class="nav nav-tabs">
+            <li class="centered"><a href="#form-anonymous" data-toggle="tab">Poster un message anonyme</a></li>
+            <li class="centered"><a href="#form-logged" data-toggle="tab">Utiliser un profil</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade form_messages" id="form-anonymous">
+                <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form) }}>
+                    {{ form_widget(form_anonym) }}
+                    <button class="btn btn-success" type="submit">Poster</button>
+                </form>
+            </div>
+            <div class="tab-pane fade form_messages" id="form-anonymous">
+                <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form) }}>
+                    {{ form_widget(form_anonym) }}
+                    <button class="btn btn-success" type="submit">Poster</button>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="messages">
         {% for key, message in messages %}

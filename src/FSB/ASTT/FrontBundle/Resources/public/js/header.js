@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const animationDuration = 650;
+    const animationDuration = 1000;
     const globalDuration = animationDuration * ($('.header-photo', '#header').size() * 2);
     launchAnimation();
     var animation = setInterval(launchAnimation, globalDuration);
