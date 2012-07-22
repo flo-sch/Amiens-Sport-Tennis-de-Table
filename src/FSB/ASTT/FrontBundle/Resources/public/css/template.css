@@ -62,6 +62,18 @@
     z-index: 2;
 }
 
+#header #header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+}
+
+#header #header-logo img {
+    width: 110px;
+    height: 110px;
+}
+
 #header h1 {
     text-align: center;
     padding: 10px;
