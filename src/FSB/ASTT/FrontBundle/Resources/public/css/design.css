@@ -9,36 +9,65 @@ body {
 }
 
 /* HEADER */
-.header {
+#header {
+    background: #4C79BD url('../images/grid-18px-masked.png') repeat-x;
     font-weight: 600;
-    background-color: #4C79BD;
-    background-image: url('../images/grid-18px-masked.png');
     color: #FFFFFF;
 }
 
-.header a {
+#header #header-overlay {
+    opacity: 0.8;
+}
+
+#header #header-overlay #photo-1 {
+    background: url('../images/header/alexandre_haignere.png') no-repeat;
+    display: block;
+}
+
+#header #header-overlay #photo-2 {
+    background: url('../images/header/malin_plotuna.png') no-repeat;
+    display: none;
+}
+
+#header #header-overlay #photo-3 {
+    background: url('../images/header/raphael_chatelain.png') no-repeat;
+    display: none;
+}
+
+#header #header-overlay #photo-4 {
+    background: url('../images/header/william_manier.png') no-repeat;
+    display: none;
+}
+
+#header #header-overlay #photo-5 {
+    background: url('../images/header/valentine_hure.png') no-repeat;
+    display: none;
+}
+
+#header a {
     color: #FFFFFF;
 }
 
-.header a:hover {
+#header a:hover {
     text-decoration: none;
     cursor: pointer;
 }
 
-.header h1 {
+#header h1 {
     color: #FFFFFF;
     text-shadow: 0 1px 100px #FFFFFF;
 }
 
-.header .header_links {
-    
+#header #header_links {
+    vertical-align: bottom;
+    line-height: 100%;
 }
 
-.header .header_links a {
+#header #header_links a {
     color: #FFFFFF;
 }
 
-.header .header_links a:hover {
+#header #header_links a:hover {
     font-style: italic;
     cursor: pointer;
 }

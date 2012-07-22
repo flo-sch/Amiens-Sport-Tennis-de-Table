@@ -4,48 +4,94 @@
 }
 
 /* HEADER */
-.header {
-    background-repeat: repeat-x;
+#header {
     position: relative;
     width: 100%;
     height: 120px;
 }
 
-.header h1 {
+#header #header-overlay,
+#header #header-informations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#header #header-overlay {
+    z-index: 1;
+}
+
+#header #header-overlay .header-photo {
+    position: absolute;
+    bottom: 0;
+}
+
+#header #header-overlay #photo-1 {
+    width: 173px;
+    height: 100px;
+    left: 65%;
+}
+
+#header #header-overlay #photo-2 {
+    width: 141px;
+    height: 100px;
+    left: 180px;
+}
+
+#header #header-overlay #photo-3 {
+    left: 20%;
+    width: 119px;
+    height: 100px;
+}
+
+#header #header-overlay #photo-4 {
+    left: 180px;
+    width: 154px;
+    height: 100px;
+}
+
+#header #header-overlay #photo-5 {
+    left: 75%;
+    width: 52px;
+    height: 100px;
+}
+
+#header #header-informations {
+    z-index: 2;
+}
+
+#header h1 {
     text-align: center;
     padding: 10px;
 }
 
-.header_links {
+#header_links {
+    position: absolute;
     width: 100%;
     height: 55px;
-    vertical-align: bottom;
-    line-height: 100%;
-    position: absolute;}
-
-.header .header-address {
-    position: relative;
-    
 }
 
-.header .header-address .header-address-icon {
+
+#header .header-address .header-address-icon {
     float: left;
     
 }
 
-.header .header-address .header-address-street,
-.header .header-address .header-address-city {
+#header .header-address .header-address-street,
+#header .header-address .header-address-city {
     margin: 0 0 0 20px;
     
 }
 
-.header_links .pull-left {
+#eader_links .pull-left {
     bottom: 0;
     padding: 0 0 0 2%;
     position: absolute;
 }
 
-.header_links .pull-right {
+#header_links .pull-right {
     padding: 0 2% 0 0;
 }
 

@@ -2,29 +2,38 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/themes/' ~ css_theme ~ '.bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/bootstrap-responsive.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/bootstrap-datepicker.css') }}" />
-    <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/bootstrap/themes/' ~ css_theme ~ '.bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/template.css') }}" />
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttfront/css/design.css') }}" />
 {% endblock %}
 
 {% block header %}
-    <h1><a href="{{ path('FSBASTTFrontBundle_homepage') }}" title="Revenir à l'accueil">Amiens Sport Tennis de Table</a></h1>
-    <div class="header_links">
-        <div class="pull-left">
-        
-        </div>
-        <div class="pull-right">
-            <a href="{{ path('FSBASTTFrontBundle_accesspage') }}">
-                <div class="header-address">
-                    <i class="header-address-icon icon-white icon-map-marker"></i>
-                    <div class="header-address-street">304 rue Gauthier de Rumilly</div>
-                    <div class="header-address-city">80000 AMIENS</div>
-                </div>
-            </a>
-            <div class="header-contact">03 22 89 74 30</div>
-            <a class="mailto" href="mailto:astt@wanadoo.fr">astt@wanadoo.fr</a>
+    <div id="header-overlay">
+        <div class="header-photo" id="photo-1"></div>
+        <div class="header-photo" id="photo-2"></div>
+        <div class="header-photo" id="photo-3"></div>
+        <div class="header-photo" id="photo-4"></div>
+        <div class="header-photo" id="photo-5"></div>
+    </div>
+    <div id="header-informations">
+        <h1><a href="{{ path('FSBASTTFrontBundle_homepage') }}" title="Revenir à l'accueil">Amiens Sport Tennis de Table</a></h1>
+        <div id="header_links">
+            <div class="pull-left">
+                <img src="{{ asset('bundles/fsbasttfront/images/logo.png') }}" alt="LOGO" />
+            </div>
+            <div class="pull-right">
+                <a href="{{ path('FSBASTTFrontBundle_accesspage') }}">
+                    <div class="header-address">
+                        <i class="header-address-icon icon-white icon-map-marker"></i>
+                        <div class="header-address-street">304 rue Gauthier de Rumilly</div>
+                        <div class="header-address-city">80000 AMIENS</div>
+                    </div>
+                </a>
+                <div class="header-contact"><i class="icon-white icon-bullhorn"></i> 03 22 89 74 30</div>
+                <a class="mailto" href="mailto:astt@wanadoo.fr"><i class="icon-white icon-pencil"></i> astt@wanadoo.fr</a>
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -45,7 +54,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ path('FSBASTTFrontBundle_presentationpage') }}"><i class="icon-pencil"></i> Présentation</a></li>
-                            <li><a href="{{ path('FSBASTTFrontBundle_accesspage') }}"><i class="icon-move"></i> Plan d'accès</a></li>
+                            <li><a href="{{ path('FSBASTTFrontBundle_accesspage') }}"><i class="icon-map-marker"></i> Plan d'accès</a></li>
                             <li><a href="{{ path('FSBASTTFrontBundle_historiquepage') }}"><i class="icon-list"></i> Historique</a></li>
                         </ul>
                     </li>
@@ -99,5 +108,6 @@
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap-datepicker.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootbox.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/header.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
 {% endblock %}
