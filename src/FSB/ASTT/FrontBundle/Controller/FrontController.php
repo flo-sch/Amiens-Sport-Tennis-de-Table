@@ -16,7 +16,8 @@ use FSB\ASTT\CoreBundle\Entity\News;
  * It is a way to render dynamic elements on every pages, like footers elements or news
  * 
  */
-class FrontController extends Controller {
+class FrontController extends Controller
+{
     /**
      * render
      * Surcharge rendering function
@@ -113,9 +114,11 @@ class FrontController extends Controller {
         $response->headers->set('Content-Disposition', 'attachment; filename='.$downloadedName);
         $response->headers->set('Content-length', $filesize);
         
+        $response->sendHeaders();
+	
         $response->setContent(file_get_contents($file));
         
-        return $response;
+        return $response->sendContent();
     }
 }
 

@@ -39,7 +39,7 @@ class MediasController extends FrontController
     private function buildRecursiveDirectoryNavigation($dir = '')
     {
         $subdirs = array();
-        foreach (scandir($dir) as $dir_content) {
+        foreach (scandir($dir, 1) as $dir_content) {
             if (($dir_content != '.') && ($dir_content != '..') && (is_dir($dir.$dir_content))) {
                 $subdirs[substr($dir, strlen(self::$root)).$dir_content] = array(
                     'content' => $this->buildRecursiveDirectoryNavigation($dir.$dir_content.'/'),

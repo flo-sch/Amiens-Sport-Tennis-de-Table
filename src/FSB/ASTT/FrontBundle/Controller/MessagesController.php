@@ -13,7 +13,7 @@ class MessagesController extends FrontController
         $pageTitle = 'Livre d\'or';
         
         $entity = new Message();
-        $form   = $this->createForm(new MessageType(), $entity);
+        $form  = $this->createForm(new MessageType(), $entity);
         
         $em = $this->getDoctrine()->getEntityManager();
         
