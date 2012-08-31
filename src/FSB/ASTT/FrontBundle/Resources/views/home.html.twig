@@ -30,7 +30,7 @@
                         {% if ((key in [0, 2]) or ((key == 4) and (key != (news|length) - 1))) %}
                             <div class="news_row">
                         {% endif %}
-                                <div class="news news_{{ key }}">
+                                <div class="news news_{{ key }} well">
                                     <h4 class="news_title">{{ element.title|capitalize }}</h4>
                                     <h5 class="news_infos">
                                         {% if element.date %}Le {{ element.date|date('d-m-Y') }}
@@ -41,15 +41,15 @@
                                     </h5>
                                     {% if element.presentation == 1 %}
                                         {% if element.screen %}
-                                            <img class="news-img-left" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                            <img class="news-img-center" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
                                         {% endif %}
                                     {% elseif element.presentation == 2 %}
                                         {% if element.screen %}
-                                            <img class="news-img-right" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                            <img class="news-img-left" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
                                         {% endif %}
                                     {% elseif element.presentation == 3 %}
                                         {% if element.screen %}
-                                            <img class="news-img-center" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
+                                            <img class="news-img-right" src="{{ asset('images/news/' ~ element.screen) }}" alt="Visuel de l'actualité" />
                                         {% endif %}
                                     {% endif %}
                                     <p class="news_description">
@@ -86,7 +86,7 @@
 {% block footer %}
     <ul id="footerTab" class="nav nav-tabs">
         <li class="centered active"><a href="#events" data-toggle="tab">A venir</a></li>
-        <li class="centered"><a href="#medias" data-toggle="tab">En images</a></li>
+        <!--<li class="centered"><a href="#medias" data-toggle="tab">En images</a></li>-->
         <li class="centered"><a href="#themes" data-toggle="tab">Thèmes</a></li>
     </ul>
     <div id="footerTabContent" class="tab-content">
@@ -138,6 +138,7 @@
                 </div>
             {% endblock %}
         </div>
+        <!--
         <div class="tab-pane fade" id="medias">
             {% block footer_medias %}
                 <div class="coverflow well centered">
@@ -145,6 +146,7 @@
                 </div>
             {% endblock %}
         </div>
+        -->
         <div class="tab-pane fade" id="themes">
             {% block footer_themes %}
                 <div class="footer_themes well centered">

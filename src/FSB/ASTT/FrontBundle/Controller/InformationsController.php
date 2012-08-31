@@ -88,7 +88,7 @@ class InformationsController extends FrontController
         );
         
         $offres = array(
-            'loisirs' => '60',
+            'loisirs' => '75',
             'extérieurs' => '80',
             'étudiants' => '60'
         );

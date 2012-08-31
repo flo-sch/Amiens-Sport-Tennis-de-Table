@@ -5,8 +5,20 @@
 {% endblock %}
 
 {% block content %}
-    <form action="{{ path('FSBASTTFrontBundle_tournaments_club_inscription_checkformpage') }}" method="post" {{ form_enctype(form) }}>
+    <!--
+    <form action="{{ path('FSBASTTFrontBundle_club_tournament_inscription_checkformpage') }}" method="post" {{ form_enctype(form) }}>
         {{ form_widget(form) }}
         <button class="btn btn-success" type="submit">S'inscrire</button>
     </form>
+    -->
+    <h3 class="centered display-single">
+        Vous pouvez vous inscrire par email : <a href="mailto:astt@wanadoo.fr">astt@wanadoo.fr</a>
+        <br />
+        Ou par téléphone au 03 22 95 37 99.
+        <br />
+        Veuillez indiquer vos coordonnées
+        [Nom, Prénom, Adresse e-mail pour que l'on puisse confirmer votre inscription],
+        votre numéro de licence, votre nombre de points,
+        votre club et les séries auxquelles vous souhaitez participer.
+    </h3>
 {% endblock %}

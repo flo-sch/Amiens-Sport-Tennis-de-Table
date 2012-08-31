@@ -60,7 +60,7 @@ class News
     private $date;
 
     /**
-     * @var boolean $presentation
+     * @var integer $presentation
      */
     private $presentation;
 
@@ -280,7 +280,7 @@ class News
     /**
      * Set presentation
      *
-     * @param boolean $presentation
+     * @param integer $presentation
      */
     public function setPresentation($presentation)
     {
@@ -290,7 +290,7 @@ class News
     /**
      * Get presentation
      *
-     * @return boolean 
+     * @return integer 
      */
     public function getPresentation()
     {

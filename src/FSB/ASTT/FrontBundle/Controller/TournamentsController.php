@@ -4,8 +4,6 @@ namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
 use FSB\ASTT\FrontBundle\Form\InscriptionTropheeType;
-use FSB\ASTT\CoreBundle\Entity\Summary;
-use FSB\ASTT\CoreBundle\Entity\Event;
 
 class TournamentsController extends FrontController
 {

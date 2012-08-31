@@ -21,9 +21,9 @@ class DumpController extends FrontController {
 
     public function indexAction($table) {
         /**
-        * Export to PHP Array plugin for PHPMyAdmin
-        * @version 0.2b
-        */
+         * Export to PHP Array plugin for PHPMyAdmin
+         * @version 0.2b
+         */
 
         //
         // Database `astt`
@@ -31,7 +31,7 @@ class DumpController extends FrontController {
 
         // `astt`.`Actualites`
         $Actualites = array(
-        array('id' => '1','nom' => 'Mot du président','texte' => 'Bienvenue sur notre nouveau site.
+          array('id' => '1','nom' => 'Mot du président','texte' => 'Bienvenue sur notre nouveau site.
 
         La reconstruction totalement révisée est due à Florent SCHILDKNECHT.
 
@@ -50,16 +50,16 @@ class DumpController extends FrontController {
 
         Bien sportivement et amicalement.    
         Dany Bourré.','lieu' => 'Amiens','date' => '1314828000','miseenpage' => '0','screen' => 'dany_bourre.jpg','joueur_du_we' => '0','debut_publication' => '1314828000','fin_publication' => '1323471600'),
-        array('id' => '2','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois (16 – 1643 pts) bat Florent Cahagne (n°692 – 2151 pts) le samedi 24 septembre en N3 Messieurs contre Villers-Bretonneux PPC 1.','lieu' => 'Amiens','date' => '1316815200','miseenpage' => '0','screen' => 'lucas_dubois.jpg','joueur_du_we' => '1','debut_publication' => '1316815200','fin_publication' => '1317420000'),
-        array('id' => '3','nom' => '1er tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
+          array('id' => '2','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois (16 – 1643 pts) bat Florent Cahagne (n°692 – 2151 pts) le samedi 24 septembre en N3 Messieurs contre Villers-Bretonneux PPC 1.','lieu' => 'Amiens','date' => '1316815200','miseenpage' => '0','screen' => 'lucas_dubois.jpg','joueur_du_we' => '1','debut_publication' => '1316815200','fin_publication' => '1317420000'),
+          array('id' => '3','nom' => '1er tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
 
         Pour la 1ère journée de ce championnat disputé le samedi 1er octobre, l’équipe 1 était composée de Eline et Elvire Vanier.
         L’équipe 2 était composée de Pauline Steelandt, Clémence Steelandt et Gustav Defosse.
         L’équipe 1 s’impose 5 à 0 face à Caix-Rosières 1 et contre Moreuil PPC 1.
         L’équipe 2 remporte également ses deux rencontres, 5 à 0 contre Moreuil PPC 3 et 3 à 2 face à Moreuil PPC 2.
         La seconde journée de ce championnat est programmée le samedi 17 décembre.','lieu' => 'Amiens','date' => '1317441600','miseenpage' => '0','screen' => 'criterium_poussins_benjamins.png','joueur_du_we' => '0','debut_publication' => '1317441600','fin_publication' => '1318219200'),
-        array('id' => '4','nom' => 'Antoine Huon','texte' => 'Antoine Huon (12 – 1225 pts) bat Tony Dubeaux (15 – 1571 pts) le samedi 8 octobre en R1 Messieurs contre Villers Saint-Paul.','lieu' => 'Villers Saint-Paul','date' => '1318046400','miseenpage' => '0','screen' => 'Antoine_Huon.jpg','joueur_du_we' => '1','debut_publication' => '1318046400','fin_publication' => '1318651200'),
-        array('id' => '5','nom' => 'Résultats du 1er tour du Critérium Fédéral','texte' => '63 joueurs de l’Amiens STT ont participé les 15 et 16 octobre au 1er tour du critérium fédéral.
+          array('id' => '4','nom' => 'Antoine Huon','texte' => 'Antoine Huon (12 – 1225 pts) bat Tony Dubeaux (15 – 1571 pts) le samedi 8 octobre en R1 Messieurs contre Villers Saint-Paul.','lieu' => 'Villers Saint-Paul','date' => '1318046400','miseenpage' => '0','screen' => 'Antoine_Huon.jpg','joueur_du_we' => '1','debut_publication' => '1318046400','fin_publication' => '1318651200'),
+          array('id' => '5','nom' => 'Résultats du 1er tour du Critérium Fédéral','texte' => '63 joueurs de l’Amiens STT ont participé les 15 et 16 octobre au 1er tour du critérium fédéral.
 
         En N1 moins de 11 ans, Julien Martin finit 5e, Louis Chaerle et Tristan Hersent 9e, Léo Hersent ne sort pas des poules.
         En N1 moins de 12 ans, Louis Chaerle, Léo Hersent et Tristan Hersent terminent 33e, Andréï Deguingand et Julien Martin 17e.
@@ -95,8 +95,8 @@ class DumpController extends FrontController {
         En D2 seniors messieurs : Groupe 1 : Marc Flament 4e, Thibault De Visme 12e, Olivier Cocquet 14e. Groupe 2 : Yoann Cailloin 2e, Ali Combo Combo 3e, Geoffroy Gilot 10e, Alexandre Goupil 18e, Grégory Chhe 20e.
 
         ','lieu' => 'Thorigné-Fouillard - Ham - Chauny - Amiens','date' => '1318651200','miseenpage' => '0','screen' => 'Julien_Martin.jpg','joueur_du_we' => '0','debut_publication' => '1318564800','fin_publication' => '1321333200'),
-        array('id' => '29','nom' => 'Pierre Philippe Nadau','texte' => 'Pierre-Philippe Nadau (5 – 520 pts) bat Michel Glanddier (10 – 1060 pts) le dimanche 27 novembre en D2 Messieurs contre Eppeville.','lieu' => 'Amiens','date' => '1322348400','miseenpage' => '0','screen' => 'piph_nadau.jpg','joueur_du_we' => '1','debut_publication' => '1322348400','fin_publication' => '1322953200'),
-        array('id' => '33','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois remporte le 2e tour du critérium fédéral en Nationale 2 cadets le dimanche 4 décembre 2011 à Argentan. Il accède ainsi à la Nationale 1 où il retrouvera les sept autres Amiénois déjà présents à ce niveau.
+          array('id' => '29','nom' => 'Pierre Philippe Nadau','texte' => 'Pierre-Philippe Nadau (5 – 520 pts) bat Michel Glanddier (10 – 1060 pts) le dimanche 27 novembre en D2 Messieurs contre Eppeville.','lieu' => 'Amiens','date' => '1322348400','miseenpage' => '0','screen' => 'piph_nadau.jpg','joueur_du_we' => '1','debut_publication' => '1322348400','fin_publication' => '1322953200'),
+          array('id' => '33','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois remporte le 2e tour du critérium fédéral en Nationale 2 cadets le dimanche 4 décembre 2011 à Argentan. Il accède ainsi à la Nationale 1 où il retrouvera les sept autres Amiénois déjà présents à ce niveau.
 
         D\'autres Amiénois se sont également imposés lors de ce 2e tour du critérium fédéral :
         - Eline Vanier, 1ère en R1 benjamines qui monte en N2 benjamines
@@ -110,7 +110,7 @@ class DumpController extends FrontController {
         - Richard Tran, 2e en D1 cadets qui monte en R1 cadets
 
         Félicitations à tous !','lieu' => 'Argentan','date' => '1322953200','miseenpage' => '0','screen' => 'Lucas Dubois.jpg','joueur_du_we' => '1','debut_publication' => '1322953200','fin_publication' => '1323644400'),
-        array('id' => '40','nom' => 'Résultats du Critérium Féminin Départemental','texte' => '8 joueuses du club ont participé au critérium féminin départemental le samedi 17 décembre à Albert :
+          array('id' => '40','nom' => 'Résultats du Critérium Féminin Départemental','texte' => '8 joueuses du club ont participé au critérium féminin départemental le samedi 17 décembre à Albert :
 
         Dans le tableau "Open" :
         - Elvire Vanier termine 5e.
@@ -125,7 +125,7 @@ class DumpController extends FrontController {
         - Clémence Steelandt : 2e
         - Lise Vanier : 3e
         - Isabelle Dargaisse : 9e','lieu' => 'Albert','date' => '1324076400','miseenpage' => '0','screen' => 'Elvire Vanier.png','joueur_du_we' => '0','debut_publication' => '1324076400','fin_publication' => '1325286000'),
-        array('id' => '46','nom' => 'Résultats du 3e tour du Critérium Fédéral','texte' => 'Près de 65 joueurs de l\'Amiens Sport TT ont participé au 3e tour du critérium fédéral les 14 et 15 janvier 2012 :
+          array('id' => '46','nom' => 'Résultats du 3e tour du Critérium Fédéral','texte' => 'Près de 65 joueurs de l\'Amiens Sport TT ont participé au 3e tour du critérium fédéral les 14 et 15 janvier 2012 :
 
         Résultats :
 
@@ -164,8 +164,8 @@ class DumpController extends FrontController {
         En D2 seniors messieurs (Groupe 2), Geoffroy Gilot 1er, Thibault De Visme 12e, Grégory Chhe 18e.
 
         En D3 seniors messieurs, Alexandre Goupil 3e.','lieu' => 'Le Creusot - St Pierre les Elbeuf - Compiègne - Amiens','date' => '1326582000','miseenpage' => '0','screen' => 'Raphael Chatelain.jpg','joueur_du_we' => '0','debut_publication' => '1326409200','fin_publication' => '1327964400'),
-        array('id' => '11','nom' => 'Louis Chaerle','texte' => 'Louis Chaerle (10 – 1049 pts) bat Stéphane Gamard (13 – 1377 pts)le dimanche 23 octobre 2011 en R3 Messieurs contre Longueau','lieu' => 'Longueau','date' => '1319320800','miseenpage' => '0','screen' => 'Louis_Chaerle.jpg','joueur_du_we' => '1','debut_publication' => '1319320800','fin_publication' => '1319925600'),
-        array('id' => '13','nom' => 'Résultats de la 3e édition du tournoi Stéphane Baert','texte' => 'Ce vendredi 28 octobre 2011 s’est déroulé le 3ème tournoi Stéphane BAERT.
+          array('id' => '11','nom' => 'Louis Chaerle','texte' => 'Louis Chaerle (10 – 1049 pts) bat Stéphane Gamard (13 – 1377 pts)le dimanche 23 octobre 2011 en R3 Messieurs contre Longueau','lieu' => 'Longueau','date' => '1319320800','miseenpage' => '0','screen' => 'Louis_Chaerle.jpg','joueur_du_we' => '1','debut_publication' => '1319320800','fin_publication' => '1319925600'),
+          array('id' => '13','nom' => 'Résultats de la 3e édition du tournoi Stéphane Baert','texte' => 'Ce vendredi 28 octobre 2011 s’est déroulé le 3ème tournoi Stéphane BAERT.
 
         Le tournoi du souvenir et de l’amitié. Une cinquantaine de fidèles étaient réunis.
 
@@ -210,8 +210,8 @@ class DumpController extends FrontController {
         47e : Stéphane Defossé, Thierry Alduc (4 points)
         49e : Alexandre Goupil (1 point)
         Autres participants : Aurélie Neel, Claudette Vaquette, Catherine Payen, Sonia Sellier, Dorian Sellier, Nathan Sellier, Denis Chatelain, Laurent Cany, …','lieu' => 'Amiens','date' => '1319774400','miseenpage' => '0','screen' => 'Tournoi_Handicap.jpg','joueur_du_we' => '0','debut_publication' => '1319860800','fin_publication' => '1321333200'),
-        array('id' => '17','nom' => 'Pierre-Philippe Nadau','texte' => 'Pierre-Philippe Nadau (5 – 520 pts) bat Jean-François Obry (9 – 940 pts) le 6 novembre 2011 en D2 Messieurs contre Flixecourt.','lieu' => 'Amiens','date' => '1320534000','miseenpage' => '0','screen' => 'PP_Nadau.jpg','joueur_du_we' => '1','debut_publication' => '1320534000','fin_publication' => '1321138800'),
-        array('id' => '22','nom' => 'La joueuse du week-end','texte' => 'Charline Grugeon (12 – 1266 pts) bat Amandine Bauduin (n°188 – 1719 pts) le samedi 19 novembre 2011 en N2 Dames contre Béthune.
+          array('id' => '17','nom' => 'Pierre-Philippe Nadau','texte' => 'Pierre-Philippe Nadau (5 – 520 pts) bat Jean-François Obry (9 – 940 pts) le 6 novembre 2011 en D2 Messieurs contre Flixecourt.','lieu' => 'Amiens','date' => '1320534000','miseenpage' => '0','screen' => 'PP_Nadau.jpg','joueur_du_we' => '1','debut_publication' => '1320534000','fin_publication' => '1321138800'),
+          array('id' => '22','nom' => 'La joueuse du week-end','texte' => 'Charline Grugeon (12 – 1266 pts) bat Amandine Bauduin (n°188 – 1719 pts) le samedi 19 novembre 2011 en N2 Dames contre Béthune.
 
 
 
@@ -220,7 +220,7 @@ class DumpController extends FrontController {
 
 
         ','lieu' => 'Béthune','date' => '1321657200','miseenpage' => '0','screen' => 'Charline Grugeon.jpg','joueur_du_we' => '0','debut_publication' => '1321657200','fin_publication' => '1322262000'),
-        array('id' => '23','nom' => 'Résultats du 2e tour du critérium fédéral','texte' => '64 joueurs de l’Amiens Sport TT ont participé au 2e tour du critérium fédéral les 3 et 4 décembre 2011.
+          array('id' => '23','nom' => 'Résultats du 2e tour du critérium fédéral','texte' => '64 joueurs de l’Amiens Sport TT ont participé au 2e tour du critérium fédéral les 3 et 4 décembre 2011.
 
         En N1 moins de 11 ans, Julien Martin termine 5e, Louis Chaerle et Tristan Hersent 9e, Léo Hersent 17e.
         En N1 moins de 12 ans, Louis Chaerle termine 9e, Julien Martin et Andréï Deguingand 17e, Tristan Hersent et Léo Hersent 33e.
@@ -255,7 +255,7 @@ class DumpController extends FrontController {
         En D2 cadets, Valentin Rose 4e.
         En D2 seniors messieurs (Groupe 1), Marc Flament 1er.
         En D2 seniors messieurs (Groupe 2), Geoffroy Gilot 4e, Thibault De Visme 11e, Grégory Chhe 14e.','lieu' => 'Ceyrat   Argentan   Amiens   Flixecourt   Albert   Vauchelles','date' => '1322953200','miseenpage' => '0','screen' => 'Raphael Chatelain.jpg','joueur_du_we' => '0','debut_publication' => '1322175600','fin_publication' => '1324681200'),
-        array('id' => '15','nom' => 'Résultats des interclubs départementaux','texte' => 'Les Interclubs départementaux se sont déroulés le samedi 29 octobre à l\'Amiens Sport TT.
+          array('id' => '15','nom' => 'Résultats des interclubs départementaux','texte' => 'Les Interclubs départementaux se sont déroulés le samedi 29 octobre à l\'Amiens Sport TT.
 
         Les trois équipes filles (benjamines, minimes filles, cadettes) étaient exemptes de ce tour départemental et qualifiées directement pour l’épreuve régionale.
 
@@ -266,8 +266,8 @@ class DumpController extends FrontController {
         Les trois équipes cadets terminent 1ère, 2e et 4e (qualification des équipes 1 et 2 pour l’épreuve régionale).
 
         Au moins huit équipes disputeront donc les interclubs régionaux le dimanche 5 février 2012 à Soissons.','lieu' => 'Amiens','date' => '1319860800','miseenpage' => '0','screen' => 'ASTTInterclubs.jpg','joueur_du_we' => '0','debut_publication' => '1319860800','fin_publication' => '1321678800'),
-        array('id' => '16','nom' => 'Ala-Edinne Chahir','texte' => 'Ala-Edinne Chahir (6 – 697 points) bat Thomas Stachowicz (9 - 998 points) le 29 octobre 2011 lors des interclubs départementaux cadets contre Villers-Bretonneux.','lieu' => 'Amiens','date' => '1319839200','miseenpage' => '0','screen' => 'AE_Chahir.jpg','joueur_du_we' => '1','debut_publication' => '1319839200','fin_publication' => '1320620400'),
-        array('id' => '20','nom' => 'Résultats du Top Départemental Détection','texte' => '11 jeunes de l\'Amiens Sport TT ont participé le dimanche 13 novembre au top départemental détection organisé dans notre salle.
+          array('id' => '16','nom' => 'Ala-Edinne Chahir','texte' => 'Ala-Edinne Chahir (6 – 697 points) bat Thomas Stachowicz (9 - 998 points) le 29 octobre 2011 lors des interclubs départementaux cadets contre Villers-Bretonneux.','lieu' => 'Amiens','date' => '1319839200','miseenpage' => '0','screen' => 'AE_Chahir.jpg','joueur_du_we' => '1','debut_publication' => '1319839200','fin_publication' => '1320620400'),
+          array('id' => '20','nom' => 'Résultats du Top Départemental Détection','texte' => '11 jeunes de l\'Amiens Sport TT ont participé le dimanche 13 novembre au top départemental détection organisé dans notre salle.
 
         En filles nées en 2003, Pauline Steelandt termine 2e.
         En garçons nés en 2003, Maël Ledoux termine 2e.
@@ -278,14 +278,14 @@ class DumpController extends FrontController {
         En garçons 2001, Ymad Hamdad termine 3e, Benoît Nadau 6e, Kéziah Desjonqueres 9e et Axel Carlier 10e.
 
         Pauline Steelandt, Maël Ledoux, Gustav Defosse, Elvire Vanier, Eline Vanier et Marine Huon devraient être qualifiés pour le top régional détection qui se déroulera le dimanche 8 janvier 2012 à l\'ASTT. Ils rejoignent Léo Hersent (né en 2002), Louis Chaerle, Tristan Hersent et Julien Martin (nés en 2001) qualifiés directement pour cette épreuve régionale.','lieu' => 'Amiens','date' => '1321138800','miseenpage' => '0','screen' => 'Top Dep ASTT 11.JPG','joueur_du_we' => '0','debut_publication' => '1321138800','fin_publication' => '1322262000'),
-        array('id' => '36','nom' => 'Résultats des Internationaux de Lorraine','texte' => 'Quatre joueurs du club étaient sélectionnés par la ligue de Picardie pour participer aux Internationaux de Lorraine qui se sont déroulées les 17 et 18 décembre 2011 à Pont à Mousson :
+          array('id' => '36','nom' => 'Résultats des Internationaux de Lorraine','texte' => 'Quatre joueurs du club étaient sélectionnés par la ligue de Picardie pour participer aux Internationaux de Lorraine qui se sont déroulées les 17 et 18 décembre 2011 à Pont à Mousson :
 
         En moins de 11 ans, Louis Chaerle termine 3e, Julien Martin 7e et Tristan Hersent 8e.
 
         En moins de 13 ans, Andréï Deguingand termine 20e.
 
         Christophe Harlé faisait partie de l\'encadrement de la délégation picarde.','lieu' => 'Pont à Mousson','date' => '1324162800','miseenpage' => '0','screen' => 'Louis Chaerle.jpg','joueur_du_we' => '0','debut_publication' => '1324162800','fin_publication' => '1325286000'),
-        array('id' => '32','nom' => 'Résultats du 1er tour du critérium fédéral handisport','texte' => 'En Nationale 2 à Saint-Laurent Blangy (62) :
+          array('id' => '32','nom' => 'Résultats du 1er tour du critérium fédéral handisport','texte' => 'En Nationale 2 à Saint-Laurent Blangy (62) :
         André DAIRAINE : 2e 
         Didier VINCENT : 4e
         William MANIER : 5e. 
@@ -305,11 +305,11 @@ class DumpController extends FrontController {
         - Christophe CAUDRELIER en Nationale 3 à ANGERS(49).
 
         André DAIRAINE','lieu' => 'Saint-Laurent Blangy   Dijon','date' => '1322866800','miseenpage' => '0','screen' => 'A Dairaine.jpg','joueur_du_we' => '0','debut_publication' => '1322866800','fin_publication' => '1323644400'),
-        array('id' => '37','nom' => 'Montées des équipes 4 et 6 messieurs','texte' => 'L\'équipe 4 messieurs monte en R2.
+          array('id' => '37','nom' => 'Montées des équipes 4 et 6 messieurs','texte' => 'L\'équipe 4 messieurs monte en R2.
         L\'équipe 6 messieurs monte en R3.
 
         Félicitations aux joueurs de l\'équipe 4 (Bertrand Bathelot, François Herly, Leny Berriat, Jean-Paul Poulain, Louis Vandewoestyne, Loïc Lefevre, Andréï Deguingand et Bruno Marysse) qui joueront la 2e phase en R2 et aux joueurs de l\'équipe 6 (Arnaud Feraud, Cyril De Catheu, Florent Schildknecht, Léo Bodinel, Ali Combo Combo, Tristan Hersent et Thibault De Visme) qui joueront en R3 en 2nde phase.','lieu' => 'Amiens','date' => '1323558000','miseenpage' => '0','screen' => 'R3.jpg','joueur_du_we' => '0','debut_publication' => '1323558000','fin_publication' => '1325199600'),
-        array('id' => '45','nom' => 'Résultats du Top Régional Détection','texte' => 'Gustav Defosse, 1er en garçons nés en 2002.
+          array('id' => '45','nom' => 'Résultats du Top Régional Détection','texte' => 'Gustav Defosse, 1er en garçons nés en 2002.
         Elvire Vanier, 1ère en filles nées en 2001.
 
         Les autres résultats :
@@ -322,9 +322,9 @@ class DumpController extends FrontController {
         En garçons nés en 2001, Tristan Hersent termine 2e, Louis Chaerle 3e et Ymad Hamdad 10e.
 
         Julien Martin (blessé), Léo Hersent (malade) et Marine Huon n\'ont pas pu participé.','lieu' => 'Amiens','date' => '1325977200','miseenpage' => '0','screen' => 'TopASTT.JPG','joueur_du_we' => '0','debut_publication' => '1325977200','fin_publication' => '1327964400'),
-        array('id' => '39','nom' => 'Grégory Chhe','texte' => 'Grégory Chhe (7 – 738 pts) bat Jean-Paul Descobert (12 – 1229 pts) le dimanche 11 décembre 2011 en D2 Messieurs contre Fort-Mahon.','lieu' => 'Amiens','date' => '1323558000','miseenpage' => '0','screen' => 'Gregory Chhe.jpg','joueur_du_we' => '1','debut_publication' => '1323558000','fin_publication' => '1324162800'),
-        array('id' => '41','nom' => 'Résultats du Critérium Vétérans Départemental','texte' => 'Félicitations à Jean Taquet qui obtient le titre de champion de la Somme Vétérans 2 le dimanche 18 décembre 2011 à Doullens.','lieu' => 'Doullens','date' => '1324162800','miseenpage' => '0','screen' => 'JTaquet.jpg','joueur_du_we' => '0','debut_publication' => '1324162800','fin_publication' => '1325286000'),
-        array('id' => '57','nom' => '3e tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
+          array('id' => '39','nom' => 'Grégory Chhe','texte' => 'Grégory Chhe (7 – 738 pts) bat Jean-Paul Descobert (12 – 1229 pts) le dimanche 11 décembre 2011 en D2 Messieurs contre Fort-Mahon.','lieu' => 'Amiens','date' => '1323558000','miseenpage' => '0','screen' => 'Gregory Chhe.jpg','joueur_du_we' => '1','debut_publication' => '1323558000','fin_publication' => '1324162800'),
+          array('id' => '41','nom' => 'Résultats du Critérium Vétérans Départemental','texte' => 'Félicitations à Jean Taquet qui obtient le titre de champion de la Somme Vétérans 2 le dimanche 18 décembre 2011 à Doullens.','lieu' => 'Doullens','date' => '1324162800','miseenpage' => '0','screen' => 'JTaquet.jpg','joueur_du_we' => '0','debut_publication' => '1324162800','fin_publication' => '1325286000'),
+          array('id' => '57','nom' => '3e tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
 
         Pour la 3e journée de ce championnat disputé le samedi 4 février à l\'Amiens Sport TT, l’équipe 1 était composée de Eline et Elvire Vanier. L’équipe 2 était composée de Maël Ledoux et Kéziah Desjonquères.
 
@@ -334,12 +334,12 @@ class DumpController extends FrontController {
 
         La journée finale de ce championnat est programmée le samedi 28 avril 2012.
         ','lieu' => 'Amiens','date' => '1328310000','miseenpage' => '0','screen' => 'EE  Vanier.JPG','joueur_du_we' => '0','debut_publication' => '1328310000','fin_publication' => '1329346800'),
-        array('id' => '48','nom' => 'Résultats du 2e tour du Critérium Fédéral Handisport','texte' => 'Le 2e tour du critérium fédéral handisport interrégional s\'est déroulé le samedi 7 janvier 2012 à Lille. Emmanuel Legrand y représentait le club.
+          array('id' => '48','nom' => 'Résultats du 2e tour du Critérium Fédéral Handisport','texte' => 'Le 2e tour du critérium fédéral handisport interrégional s\'est déroulé le samedi 7 janvier 2012 à Lille. Emmanuel Legrand y représentait le club.
 
         Après avoir pris la 6e place lors du 1er tour, il connaît cette fois moins de réussite et termine 11e/12.
 
         ','lieu' => 'Lille','date' => '1325890800','miseenpage' => '0','screen' => 'ELegrand.jpg','joueur_du_we' => '0','debut_publication' => '1325890800','fin_publication' => '1326495600'),
-        array('id' => '43','nom' => '2e tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
+          array('id' => '43','nom' => '2e tour du championnat départemental poussins-benjamins','texte' => '2 équipes de l’ASTT sont engagées dans le championnat départemental poussins-benjamins.
 
         Pour la 2e journée de ce championnat disputé le samedi 17 décembre à Eu, l’équipe 1 était composée de Gustav Defosse et Ymad Hamdad. L’équipe 2 était composée de Maël Ledoux et Timéo Herbin Teneur.
 
@@ -348,13 +348,13 @@ class DumpController extends FrontController {
         L’équipe 2 remporte également ses deux rencontres, 4 à 1 face à TT Mers-Tréport-Eu 1 et 3 à 2 face à Moreuil PPC 2.
 
         La troisième journée de ce championnat est programmée le samedi 4 février 2012.','lieu' => 'Eu','date' => '1324076400','miseenpage' => '0','screen' => '','joueur_du_we' => '0','debut_publication' => '1324076400','fin_publication' => '1324681200'),
-        array('id' => '49','nom' => 'Les montées du 3e tour du critérium fédéral','texte' => 'Félicitations à :
+          array('id' => '49','nom' => 'Les montées du 3e tour du critérium fédéral','texte' => 'Félicitations à :
         - Marine Huon, 1ère en R1 benjamines qui monte en N2 benjamines
         - Julia Flahaut, 1ère en R1 cadettes qui monte en N2 cadettes
         - Ymad Hamdad, 1er en D1 benjamins qui monte en R1 benjamins
         - Cyril De Catheu, 1er en D1 juniors garçons qui monte en R1 juniors garçons
         - Geoffroy Gilot, 1er en D2 seniors messieurs qui monte en D1 seniors messieurs','lieu' => 'Compiègne - Amiens','date' => '1326582000','miseenpage' => '0','screen' => 'Marine Huon.jpg','joueur_du_we' => '0','debut_publication' => '1326582000','fin_publication' => '1327964400'),
-        array('id' => '75','nom' => 'Résultats du Top de Zone','texte' => '4 joueurs de l\'Amiens Sport TT ont participé au top de zone (interrégional) détection les 24 et 25 mars 2012 à Mondeville.
+          array('id' => '75','nom' => 'Résultats du Top de Zone','texte' => '4 joueurs de l\'Amiens Sport TT ont participé au top de zone (interrégional) détection les 24 et 25 mars 2012 à Mondeville.
 
         Félicitations à Léo Hersent, 1er en garçons 2002.
 
@@ -363,9 +363,9 @@ class DumpController extends FrontController {
         Pauline Steelandt termine 7e sur 12 en filles 2003/2004 et 12e sur 12 en filles 2002/2003.
 
         Maël Ledoux termine 16e sur 17 en garçons 2003 et 21e sur 26 en garçons 2003/2004.','lieu' => 'Mondeville','date' => '1332630000','miseenpage' => '0','screen' => 'TopZoneASTT.JPG','joueur_du_we' => '0','debut_publication' => '1332630000','fin_publication' => '1334440800'),
-        array('id' => '51','nom' => 'Julien Martin','texte' => 'Julien Martin (12 – 1227 pts) bat Frédéric Bousignière (15 – 1543 pts) le dimanche 22 janvier 2012 en R3 Messieurs contre Doullens-Bernaville.','lieu' => 'Doullens','date' => '1327186800','miseenpage' => '0','screen' => 'Julien Martin.jpg','joueur_du_we' => '1','debut_publication' => '1327273200','fin_publication' => '1327964400'),
-        array('id' => '53','nom' => 'Julien Martin','texte' => 'Julien Martin (12 – 1227 pts) bat Julian Bouchoir (16 – 1680 pts) le samedi 28 janvier 2012 en R1 Messieurs contre Villers Saint-Paul.','lieu' => 'Villers Saint-Paul','date' => '1327705200','miseenpage' => '0','screen' => 'Julien Martin.jpg','joueur_du_we' => '1','debut_publication' => '1327878000','fin_publication' => '1328828400'),
-        array('id' => '72','nom' => 'Résultats du 4e tour du Critérium Fédéral','texte' => '49 joueurs de l\'Amiens Sport TT ont participé au 4e tour du critérium fédéral les 10 et 11 mars 2012.
+          array('id' => '51','nom' => 'Julien Martin','texte' => 'Julien Martin (12 – 1227 pts) bat Frédéric Bousignière (15 – 1543 pts) le dimanche 22 janvier 2012 en R3 Messieurs contre Doullens-Bernaville.','lieu' => 'Doullens','date' => '1327186800','miseenpage' => '0','screen' => 'Julien Martin.jpg','joueur_du_we' => '1','debut_publication' => '1327273200','fin_publication' => '1327964400'),
+          array('id' => '53','nom' => 'Julien Martin','texte' => 'Julien Martin (12 – 1227 pts) bat Julian Bouchoir (16 – 1680 pts) le samedi 28 janvier 2012 en R1 Messieurs contre Villers Saint-Paul.','lieu' => 'Villers Saint-Paul','date' => '1327705200','miseenpage' => '0','screen' => 'Julien Martin.jpg','joueur_du_we' => '1','debut_publication' => '1327878000','fin_publication' => '1328828400'),
+          array('id' => '72','nom' => 'Résultats du 4e tour du Critérium Fédéral','texte' => '49 joueurs de l\'Amiens Sport TT ont participé au 4e tour du critérium fédéral les 10 et 11 mars 2012.
 
         Résultats :
 
@@ -398,8 +398,8 @@ class DumpController extends FrontController {
         - En D1 seniors messieurs : Jean-Paul Poulain 5e, Yoann Cailloin 6e, Geoffroy Gilot 14e, Arnaud Feraud 20e
 
         - En D2 seniors messieurs : Groupe 1 : Matthieu Lamerant 6e, Olivier Cocquet 14e. Groupe 2 : Alexandre Goupil 15, Grégory Chhe 17e','lieu' => 'Thouars - Béthune - Ham - Amiens','date' => '1331334000','miseenpage' => '0','screen' => 'L. Chaerle.jpg','joueur_du_we' => '0','debut_publication' => '1330902000','fin_publication' => '1332111600'),
-        array('id' => '65','nom' => 'Benoît Bonté','texte' => 'Benoît Bonté (8 – 862 pts) bat Rodolphe Vagner (12 – 1250 pts) le dimanche 19 février 2012 en D2 Messieurs contre Dreuil TT 1.','lieu' => 'Dreuil','date' => '1329606000','miseenpage' => '0','screen' => 'B. Bonte.JPG','joueur_du_we' => '1','debut_publication' => '1329606000','fin_publication' => '1330210800'),
-        array('id' => '56','nom' => 'Résultats du 2e tour du critérium fédéral handisport','texte' => 'Le 2e tour du critérium fédéral handisport s\'est déroulé le 4 février 2012.
+          array('id' => '65','nom' => 'Benoît Bonté','texte' => 'Benoît Bonté (8 – 862 pts) bat Rodolphe Vagner (12 – 1250 pts) le dimanche 19 février 2012 en D2 Messieurs contre Dreuil TT 1.','lieu' => 'Dreuil','date' => '1329606000','miseenpage' => '0','screen' => 'B. Bonte.JPG','joueur_du_we' => '1','debut_publication' => '1329606000','fin_publication' => '1330210800'),
+          array('id' => '56','nom' => 'Résultats du 2e tour du critérium fédéral handisport','texte' => 'Le 2e tour du critérium fédéral handisport s\'est déroulé le 4 février 2012.
 
         En Nationale 1 à Pélussin(Saint -Etienne) :
         - André DAIRAINE termine 13ème et se maintient en Nationale 1.
@@ -410,10 +410,10 @@ class DumpController extends FrontController {
 
         En Nationale 3 à Angers : 
         - Christophe CAUDRELIER termine 5ème et se maintient en Nationale 3.','lieu' => 'Pélussin - Bressuires - Angers','date' => '1328310000','miseenpage' => '0','screen' => 'Handisport ASTT.jpg','joueur_du_we' => '0','debut_publication' => '1328396400','fin_publication' => '1329346800'),
-        array('id' => '68','nom' => 'Résultats du Critérium Régional Féminin','texte' => 'Léa Huré, seule représentante du club, termine 11e.','lieu' => 'Breteuil','date' => '1330124400','miseenpage' => '0','screen' => '','joueur_du_we' => '0','debut_publication' => '1330124400','fin_publication' => '1330470000'),
-        array('id' => '70','nom' => 'Léa Huré','texte' => 'Léa Huré (6 - 613 points) bat Arielle Van-Caemelbeke (8 - 810 points) le samedi 25 février 2012 lors du Critérium Régional Féminin disputé à Breteuil.','lieu' => 'Breteuil','date' => '1330210800','miseenpage' => '0','screen' => 'Lea Hure.jpg','joueur_du_we' => '1','debut_publication' => '1330210800','fin_publication' => '1330815600'),
-        array('id' => '71','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois (17 - 1710 pts) bat David Ramos (n°490 - 2226 pts) le samedi 3 mars en N3 Messieurs contre Joué les Tours TT 1.','lieu' => 'Amiens','date' => '1330729200','miseenpage' => '0','screen' => 'Lucas Dubois.jpg','joueur_du_we' => '1','debut_publication' => '1330729200','fin_publication' => '1331506800'),
-        array('id' => '95','nom' => 'Résultats des championnats de la Somme','texte' => 'Les championnats de la Somme se sont déroulés le dimanche 6 mai à l\'Amiens Sport TT.
+          array('id' => '68','nom' => 'Résultats du Critérium Régional Féminin','texte' => 'Léa Huré, seule représentante du club, termine 11e.','lieu' => 'Breteuil','date' => '1330124400','miseenpage' => '0','screen' => '','joueur_du_we' => '0','debut_publication' => '1330124400','fin_publication' => '1330470000'),
+          array('id' => '70','nom' => 'Léa Huré','texte' => 'Léa Huré (6 - 613 points) bat Arielle Van-Caemelbeke (8 - 810 points) le samedi 25 février 2012 lors du Critérium Régional Féminin disputé à Breteuil.','lieu' => 'Breteuil','date' => '1330210800','miseenpage' => '0','screen' => 'Lea Hure.jpg','joueur_du_we' => '1','debut_publication' => '1330210800','fin_publication' => '1330815600'),
+          array('id' => '71','nom' => 'Lucas Dubois','texte' => 'Lucas Dubois (17 - 1710 pts) bat David Ramos (n°490 - 2226 pts) le samedi 3 mars en N3 Messieurs contre Joué les Tours TT 1.','lieu' => 'Amiens','date' => '1330729200','miseenpage' => '0','screen' => 'Lucas Dubois.jpg','joueur_du_we' => '1','debut_publication' => '1330729200','fin_publication' => '1331506800'),
+          array('id' => '95','nom' => 'Résultats des championnats de la Somme','texte' => 'Les championnats de la Somme se sont déroulés le dimanche 6 mai à l\'Amiens Sport TT.
 
         Félicitations à :
         - Gustav Defosse, champion de la Somme benjamins
@@ -423,7 +423,7 @@ class DumpController extends FrontController {
         Autres résultats :
         - Pierre-Philippe Nadau, 3e en minimes garçons
         - Cyril De Catheu, 2e en juniors garçons','lieu' => 'Amiens','date' => '1336255200','miseenpage' => '0','screen' => '1477168.jpg','joueur_du_we' => '0','debut_publication' => '1336255200','fin_publication' => '1337032800'),
-        array('id' => '84','nom' => 'Résultats du Challenge Bernard Jeu régional','texte' => 'Le challenge Bernard Jeu régional s\'est déroulé le dimanche 22 avril à Saint-Quentin.
+          array('id' => '84','nom' => 'Résultats du Challenge Bernard Jeu régional','texte' => 'Le challenge Bernard Jeu régional s\'est déroulé le dimanche 22 avril à Saint-Quentin.
 
         Quatre équipes de l\'Amiens Sport TT étaient engagées.
 
@@ -447,9 +447,9 @@ class DumpController extends FrontController {
         Juniors garçons : Raphaël Chatelain 2e, Benoît Vaquier 5e, Louis Vandewoestyne 9e, Cyril DE Catheu 9e
         Seniors dames : Hélène Carlié 3e, Marion Berthelot 5e, Delphine Guichard 5e, Aurélie Neel 9e
         Seniors messieurs : Malin Plotuna 1er, Arnaud Sellier 5e, Alexandre Haigneré 5e, Vincent Rasselet 5e','lieu' => 'Saint-Quentin','date' => '1335045600','miseenpage' => '0','screen' => 'DSC02774.JPG','joueur_du_we' => '0','debut_publication' => '1335045600','fin_publication' => '1336341600'),
-        array('id' => '85','nom' => 'Andréï Deguingand','texte' => 'Andréï Deguingand (11 – 1166 pts) bat Sébastien Baudry (16 – 1627 pts) et Charles-Henri Grimaux (15 – 1585 pts) le samedi 14 avril 2012 en R2 Messieurs contre Roye.','lieu' => 'Amiens','date' => '1334354400','miseenpage' => '0','screen' => 'A. Deguingand.jpg','joueur_du_we' => '1','debut_publication' => '1334354400','fin_publication' => '1335045600'),
-        array('id' => '60','nom' => 'Antoine Huon','texte' => 'Antoine Huon (13 – 1349 pts) bat Pascal Perrin (17 – 1750 pts) et Valentin Carme (16 – 1625 pts) le samedi 11 février 2012 en R1 Messieurs contre Saint-Quentin.','lieu' => 'Amiens','date' => '1328914800','miseenpage' => '0','screen' => 'Antoine Huon.jpg','joueur_du_we' => '1','debut_publication' => '1329001200','fin_publication' => '1329778800'),
-        array('id' => '76','nom' => 'Résultats des Interclubs Régionaux','texte' => 'Les interclubs régionaux se sont déroulés le dimanche 25 mars 2012 à Soissons. 
+          array('id' => '85','nom' => 'Andréï Deguingand','texte' => 'Andréï Deguingand (11 – 1166 pts) bat Sébastien Baudry (16 – 1627 pts) et Charles-Henri Grimaux (15 – 1585 pts) le samedi 14 avril 2012 en R2 Messieurs contre Roye.','lieu' => 'Amiens','date' => '1334354400','miseenpage' => '0','screen' => 'A. Deguingand.jpg','joueur_du_we' => '1','debut_publication' => '1334354400','fin_publication' => '1335045600'),
+          array('id' => '60','nom' => 'Antoine Huon','texte' => 'Antoine Huon (13 – 1349 pts) bat Pascal Perrin (17 – 1750 pts) et Valentin Carme (16 – 1625 pts) le samedi 11 février 2012 en R1 Messieurs contre Saint-Quentin.','lieu' => 'Amiens','date' => '1328914800','miseenpage' => '0','screen' => 'Antoine Huon.jpg','joueur_du_we' => '1','debut_publication' => '1329001200','fin_publication' => '1329778800'),
+          array('id' => '76','nom' => 'Résultats des Interclubs Régionaux','texte' => 'Les interclubs régionaux se sont déroulés le dimanche 25 mars 2012 à Soissons. 
 
         Félicitations aux équipes benjamins garçons et minimes garçons qui s\'imposent et qui obtiennent leur qualification pour les interclubs nationaux les 12 et 13 mai 2012 à Joué les Tours.
 
@@ -470,10 +470,10 @@ class DumpController extends FrontController {
         L\'ensemble de ces bons résultats permettent au club de remporter le challenge régional interclubs (classement combiné des différentes équipes).
 
         Félicitations à tous les participants et un grand merci aux coachs présents qui ont contribué à ce succès.','lieu' => 'Soissons','date' => '1332630000','miseenpage' => '0','screen' => 'InterclubsMG ASTT.jpg','joueur_du_we' => '0','debut_publication' => '1332630000','fin_publication' => '1334872800'),
-        array('id' => '69','nom' => 'Résultats du Critérium Régional Vétérans','texte' => 'Félicitations à Jean Taquet qui remporte le titre de Champion de Picardie Vétérans 2 (50 ans à 60 ans) le dimanche 26 février 2012 à Breteuil.
+          array('id' => '69','nom' => 'Résultats du Critérium Régional Vétérans','texte' => 'Félicitations à Jean Taquet qui remporte le titre de Champion de Picardie Vétérans 2 (50 ans à 60 ans) le dimanche 26 février 2012 à Breteuil.
 
         Les championnats de France Vétérans se dérouleront du 23 au 26 mars à Ceyrat (63).','lieu' => 'Breteuil','date' => '1330210800','miseenpage' => '0','screen' => 'V2M.jpg','joueur_du_we' => '0','debut_publication' => '1330210800','fin_publication' => '1330988400'),
-        array('id' => '64','nom' => 'Résultats des championnats de France des régions par équipes','texte' => 'Trois joueurs du club (Julia Flahaut en cadettes, Louis Chaerle et Julien Martin en minimes garçons) ont participé aux championnats de France des régions du 21 au 24 février 2012 à Villeneuve sur Lot.
+          array('id' => '64','nom' => 'Résultats des championnats de France des régions par équipes','texte' => 'Trois joueurs du club (Julia Flahaut en cadettes, Louis Chaerle et Julien Martin en minimes garçons) ont participé aux championnats de France des régions du 21 au 24 février 2012 à Villeneuve sur Lot.
 
         Les minimes garçons terminent 11e. Les cadettes terminent 13e.
 
@@ -489,7 +489,7 @@ class DumpController extends FrontController {
         - En place 9 à 13, défaite 3-1 contre la Champagne-Ardennes (défaite de Julia contre une 12). L\'équipe termine 13e.
 
         Alexandre Goupil était l\'arbitre de la délégation picarde.','lieu' => 'Villeneuve sur Lot','date' => '1329778800','miseenpage' => '0','screen' => 'Louis Chaerle.jpg','joueur_du_we' => '0','debut_publication' => '1329778800','fin_publication' => '1331334000'),
-        array('id' => '67','nom' => 'Résultats du Trophée Vétérans interrégional Handisport','texte' => 'Le trophée vétérans interrégional handisport s\'est déroulé le samedi 25 février 2012 à Chevilly-Larue.
+          array('id' => '67','nom' => 'Résultats du Trophée Vétérans interrégional Handisport','texte' => 'Le trophée vétérans interrégional handisport s\'est déroulé le samedi 25 février 2012 à Chevilly-Larue.
 
         André Dairaine termine 1er et se qualifie pour la finale nationale qui se déroulera le 2 juin 2012 à Tours. 16 joueurs seulement participeront à cette épreuve nationale.
 
@@ -498,7 +498,7 @@ class DumpController extends FrontController {
         En double: 
         - André DAIRAINE et William MANIER : 1ers
         - Christophe CAUDRELIER et Didier VINCENT : 4e','lieu' => 'Chevilly-Larue','date' => '1330124400','miseenpage' => '0','screen' => 'Handisport ASTT.JPG','joueur_du_we' => '0','debut_publication' => '1330124400','fin_publication' => '1330902000'),
-        array('id' => '73','nom' => 'Les montées du 4e tour du Critérium Fédéral','texte' => 'Félicitations à :
+          array('id' => '73','nom' => 'Les montées du 4e tour du Critérium Fédéral','texte' => 'Félicitations à :
         - Elvire Vanier, 1ère en N2 benjamines
         - Caroline Petitrez, 1ère en N2 juniors filles
         - Léa Huré, 1ère en R1 minimes filles
@@ -509,8 +509,8 @@ class DumpController extends FrontController {
         - Yohan Lecomte, 2e en R1 seniors messieurs
         - Louis Vandewoestyne, 2e en D1 juniors garçons
         ','lieu' => 'Béthune - Ham - Amiens','date' => '1331420400','miseenpage' => '0','screen' => 'Elvire Vanier.JPG','joueur_du_we' => '0','debut_publication' => '1331420400','fin_publication' => '1332111600'),
-        array('id' => '74','nom' => 'Charline Grugeon','texte' => 'Charline Grugeon (12 – 1253 pts) bat Marion Godefroy (n°270 – 1582 pts) le samedi 17 mars 2012 en N3 Dames contre Roubaix.','lieu' => 'Amiens','date' => '1331938800','miseenpage' => '0','screen' => 'Charline Grugeon.jpg','joueur_du_we' => '1','debut_publication' => '1332025200','fin_publication' => '1332712800'),
-        array('id' => '77','nom' => 'Résultats du 3e tour du critérium fédéral handisport','texte' => 'Le 3e tour du critérium fédéral handisport s\'est déroulé le samedi 24 mars 2012 à Mèze (34), Romans sur Isère (26) et Chailles (41).
+          array('id' => '74','nom' => 'Charline Grugeon','texte' => 'Charline Grugeon (12 – 1253 pts) bat Marion Godefroy (n°270 – 1582 pts) le samedi 17 mars 2012 en N3 Dames contre Roubaix.','lieu' => 'Amiens','date' => '1331938800','miseenpage' => '0','screen' => 'Charline Grugeon.jpg','joueur_du_we' => '1','debut_publication' => '1332025200','fin_publication' => '1332712800'),
+          array('id' => '77','nom' => 'Résultats du 3e tour du critérium fédéral handisport','texte' => 'Le 3e tour du critérium fédéral handisport s\'est déroulé le samedi 24 mars 2012 à Mèze (34), Romans sur Isère (26) et Chailles (41).
 
         En Nationale 3, Christophe CAUDRELIER finit 5e et se maintient en Nationale 3.
 
@@ -519,7 +519,7 @@ class DumpController extends FrontController {
         - William MANIER était forfait et descend en Nationale 3.
 
         En Nationale 1, André DAIRAINE était forfait et descend en Nationale 2.','lieu' => 'Mèze - Romans sur Isère - Chailles','date' => '1332543600','miseenpage' => '0','screen' => 'C Caudrelier.JPG','joueur_du_we' => '0','debut_publication' => '1332543600','fin_publication' => '1333576800'),
-        array('id' => '78','nom' => 'Résultats du 5e tour du critérium fédéral','texte' => '9 joueurs de l\'Amiens Sport ont participé au 5e tour du critérium fédéral Nationale 1 du 7 au 9 avril 2012. Elvire Vanier et Caroline Petitprez étaient en N1 Filles à Mayenne. Léo Hersent, Tristan Hersent, Louis Chaerle, Andréï Deguingand, Lucas Dubois, Raphaël Chatelain et Malin Plotuna jouaient à Bourges en N1 Garçons.
+          array('id' => '78','nom' => 'Résultats du 5e tour du critérium fédéral','texte' => '9 joueurs de l\'Amiens Sport ont participé au 5e tour du critérium fédéral Nationale 1 du 7 au 9 avril 2012. Elvire Vanier et Caroline Petitprez étaient en N1 Filles à Mayenne. Léo Hersent, Tristan Hersent, Louis Chaerle, Andréï Deguingand, Lucas Dubois, Raphaël Chatelain et Malin Plotuna jouaient à Bourges en N1 Garçons.
 
         Résultats N1 Filles :
         - En moins de 11 ans, Elvire Vanier termine 3e de poule.
@@ -539,8 +539,8 @@ class DumpController extends FrontController {
         - En moins de 18 ans : Raphaël Chatelain s\'incline en 32e de finale. Lucas Dubois termine 4e de poule.
         - En moins de 21 ans, Raphaël Chatelain s\'incline en 32e de finale.
         - En Elite, Malin Plotuna termine 1er de poule puis s\'incline en 16e de finale.','lieu' => 'Mayenne - Bourges','date' => '1333836000','miseenpage' => '0','screen' => 'Andrei Deguingand.jpg','joueur_du_we' => '0','debut_publication' => '1333836000','fin_publication' => '1335304800'),
-        array('id' => '79','nom' => 'Antoine Huon','texte' => 'Antoine Huon (13 – 1349 pts) bat Aurélien Hermant (18 – 1895 pts) le samedi 31 mars 2012 en R1 Messieurs contre Villers-Bretonneux.','lieu' => 'Amiens','date' => '1333144800','miseenpage' => '0','screen' => 'A. Huon.JPG','joueur_du_we' => '1','debut_publication' => '1333231200','fin_publication' => '1333836000'),
-        array('id' => '80','nom' => 'Championnats de France Handisport','texte' => 'Les championnats de France Handisport se dérouleront du 26 au 28 mai 2012 à Ceyrat (63) près de Clermont-Ferrand.
+          array('id' => '79','nom' => 'Antoine Huon','texte' => 'Antoine Huon (13 – 1349 pts) bat Aurélien Hermant (18 – 1895 pts) le samedi 31 mars 2012 en R1 Messieurs contre Villers-Bretonneux.','lieu' => 'Amiens','date' => '1333144800','miseenpage' => '0','screen' => 'A. Huon.JPG','joueur_du_we' => '1','debut_publication' => '1333231200','fin_publication' => '1333836000'),
+          array('id' => '80','nom' => 'Championnats de France Handisport','texte' => 'Les championnats de France Handisport se dérouleront du 26 au 28 mai 2012 à Ceyrat (63) près de Clermont-Ferrand.
 
         Quatre joueurs du club sont qualifiés pour cette épreuve :
         - Emmanuel Legrand (Classe 6 et 7)
@@ -548,12 +548,12 @@ class DumpController extends FrontController {
         - William Manier et André Dairaine (Classe 4)
 
         Bonne chance à eux !','lieu' => 'Ceyrat','date' => '1337983200','miseenpage' => '0','screen' => 'E. Legrand.JPG','joueur_du_we' => '0','debut_publication' => '1337032800','fin_publication' => '1338156000'),
-        array('id' => '81','nom' => 'Championnat interrégional handisport par équipes','texte' => 'L\'équipe handisport de l\'Amiens Sport TT (André Dairaine, William Manier, Didier Vincent et Christophe Caudrelier) remporte le tour interrégional des championnats de France par équipes et se qualifie pour la finale nationale qui se déroulera le 5 mai à Argentan (61).
+          array('id' => '81','nom' => 'Championnat interrégional handisport par équipes','texte' => 'L\'équipe handisport de l\'Amiens Sport TT (André Dairaine, William Manier, Didier Vincent et Christophe Caudrelier) remporte le tour interrégional des championnats de France par équipes et se qualifie pour la finale nationale qui se déroulera le 5 mai à Argentan (61).
 
         Les Amiénois se sont imposés 3-0 en finale contre l\'équipe d\'Evry.
 
         Félicitations à tous !','lieu' => 'Douai','date' => '1333749600','miseenpage' => '0','screen' => 'Handisport ASTT.jpg','joueur_du_we' => '0','debut_publication' => '1333749600','fin_publication' => '1334872800'),
-        array('id' => '82','nom' => 'Résultats des championnats du Monde scolaire','texte' => 'Raphaël Chatelain a participé aux championnats du Monde scolaire du 31 mars au 6 avril à Cagliari en Italie.
+          array('id' => '82','nom' => 'Résultats des championnats du Monde scolaire','texte' => 'Raphaël Chatelain a participé aux championnats du Monde scolaire du 31 mars au 6 avril à Cagliari en Italie.
 
         Il a participé à une compétition par équipes avec l\'équipe de France scolaire et à une compétition individuelle.
 
@@ -570,14 +570,14 @@ class DumpController extends FrontController {
 
         Résultats tournoi individuel :
         Raphaël bat un joueur turc en 1/64 de finale (3/0) et perd en 1/32 de finale contre un joueur belge (3/1).','lieu' => 'Cagliari (Italie)','date' => '1333663200','miseenpage' => '0','screen' => 'Nouvelle image.png','joueur_du_we' => '0','debut_publication' => '1333663200','fin_publication' => '1334440800'),
-        array('id' => '100','nom' => 'Résultats des finales par classement régionales','texte' => 'Les finales par classement régionales se sont déroulées le dimanche 13 mai 2012 à Breteuil. Quatre joueurs de l\'Amiens Sport TT ont participé à cette épreuve.
+          array('id' => '100','nom' => 'Résultats des finales par classement régionales','texte' => 'Les finales par classement régionales se sont déroulées le dimanche 13 mai 2012 à Breteuil. Quatre joueurs de l\'Amiens Sport TT ont participé à cette épreuve.
 
         Félicitations à Loïc Lefevre, 2e du tableau moins de 1500 points qui se qualifie pour les finales nationales par classement qui se dérouleront les 23 et 24 juin aux Ponts de Cé à côté d\'Angers.
 
         Marion Berthelot termine 4e du tableau moins de 1200 points.
         Louis Vandewoestyne termine 9e du tableau moins de 1500 points.
         Grégory Chhé termine 17e du tableau moins de 800 points.','lieu' => 'Breteuil','date' => '1336860000','miseenpage' => '0','screen' => 'L Lefevre.JPG','joueur_du_we' => '0','debut_publication' => '1336860000','fin_publication' => '1337896800'),
-        array('id' => '98','nom' => 'Résultats du challenge PBM départemental','texte' => 'Le challenge poussins-benjamins-minimes départemental s\'est déroulé le samedi 12 mai 2012 à l\'Amiens Sport TT.
+          array('id' => '98','nom' => 'Résultats du challenge PBM départemental','texte' => 'Le challenge poussins-benjamins-minimes départemental s\'est déroulé le samedi 12 mai 2012 à l\'Amiens Sport TT.
 
         10 joueurs du club ont participé à cette épreuve.
 
@@ -589,7 +589,7 @@ class DumpController extends FrontController {
         - Benjamines : Clémence Steelandt, 1ère
         - Benjamins : Ymad Hamdad 1er, Kéziah Desjonquères 3e, Timéo Herbin Teneur 17e
         - Minimes garçons : Pierre-Philippe Nadau 1er','lieu' => 'Amiens','date' => '1336773600','miseenpage' => '0','screen' => 'PBM.JPG','joueur_du_we' => '0','debut_publication' => '1336773600','fin_publication' => '1337637600'),
-        array('id' => '88','nom' => 'Finale du championnat départemental poussins-benjamins','texte' => 'Deux équipes de l’Amiens Sport TT étaient engagées dans le championnat départemental poussins-benjamins.
+          array('id' => '88','nom' => 'Finale du championnat départemental poussins-benjamins','texte' => 'Deux équipes de l’Amiens Sport TT étaient engagées dans le championnat départemental poussins-benjamins.
 
         Après trois tours préliminaires, la finale de ce championnat qui réunissait 16 équipes s\'est déroulée le samedi 28 avril à l\'ASTT.
 
@@ -603,7 +603,7 @@ class DumpController extends FrontController {
         - Finale : ASTT 1 bat ASTT 2 3 à 2.
 
         Félicitations aux jeunes amiénois !','lieu' => 'Amiens','date' => '1335564000','miseenpage' => '0','screen' => 'Vanier.JPG','joueur_du_we' => '0','debut_publication' => '1335564000','fin_publication' => '1336600800'),
-        array('id' => '89','nom' => 'Résultats des finales départementales par classement','texte' => 'Les finales départementales par classement se sont déroulées le dimanche 29 avril à l\'Amiens Sport TT.
+          array('id' => '89','nom' => 'Résultats des finales départementales par classement','texte' => 'Les finales départementales par classement se sont déroulées le dimanche 29 avril à l\'Amiens Sport TT.
 
         7 joueurs de l\'ASTT ont participé à cette épreuve.
 
@@ -611,14 +611,14 @@ class DumpController extends FrontController {
         Dans le tableau 1100 à 1299 points : Matthieu Lamérant 6e.
         Dans le tableau moins de 900 points : Grégory Chhe 5e, Alexandre Goupil 11e.
         ','lieu' => 'Amiens','date' => '1335650400','miseenpage' => '0','screen' => 'Lefevre.jpg','joueur_du_we' => '0','debut_publication' => '1335650400','fin_publication' => '1336687200'),
-        array('id' => '90','nom' => 'Résultats des championnats de France minimes-juniors','texte' => 'Trois joueurs de l\'Amiens Sport TT ont participé aux championnats de France minimes-juniors du 3 au 5 mai 2012 à Agen :
+          array('id' => '90','nom' => 'Résultats des championnats de France minimes-juniors','texte' => 'Trois joueurs de l\'Amiens Sport TT ont participé aux championnats de France minimes-juniors du 3 au 5 mai 2012 à Agen :
 
         - En minimes garçons, Andréï Deguingand termine 3e de poule puis s\'incline en 1/32e de finale. Louis Chaerle termine 4e de poule et n\'intègre pas le tableau final.
         - En juniors garçons, Raphaël Chatelain termine 3e de poule et n\'intègre pas le tableau final.','lieu' => 'Agen','date' => '1336168800','miseenpage' => '0','screen' => 'Deguingand.jpg','joueur_du_we' => '0','debut_publication' => '1336168800','fin_publication' => '1337032800'),
-        array('id' => '91','nom' => 'Titres par équipes Nationale 3','texte' => 'Suite à sa première place dans sa poule de championnat par équipes, l\'équipe 1 messieurs a participé le 12 mai à Tours aux titres par équipes Nationale 3.
+          array('id' => '91','nom' => 'Titres par équipes Nationale 3','texte' => 'Suite à sa première place dans sa poule de championnat par équipes, l\'équipe 1 messieurs a participé le 12 mai à Tours aux titres par équipes Nationale 3.
 
         L\'\'équipe s\'incline en 1/8e de finale 11-09 contre Déols.','lieu' => 'Tours','date' => '1336773600','miseenpage' => '0','screen' => 'PlotunaM6.JPG','joueur_du_we' => '0','debut_publication' => '1336255200','fin_publication' => '1337464800'),
-        array('id' => '99','nom' => 'Résultats des interclubs nationaux','texte' => 'Trois équipes de l\'Amiens Sport TT ont participé aux interclubs nationaux les 12 et 13 mai 2012 à Joué les Tours.
+          array('id' => '99','nom' => 'Résultats des interclubs nationaux','texte' => 'Trois équipes de l\'Amiens Sport TT ont participé aux interclubs nationaux les 12 et 13 mai 2012 à Joué les Tours.
 
         Félicitations à l\'équipe benjamins garçons qui termine 4e et remporte la médaille de bronze.
         Les benjamines terminent 5e.
@@ -646,7 +646,7 @@ class DumpController extends FrontController {
         - défaite 3-1 en places 9 à 10 contre Paris XIII
 
         L\'équipe minimes filles était également qualifiée mais n\'a pas été engagée.','lieu' => 'Joué les Tours','date' => '1336860000','miseenpage' => '0','screen' => 'Medaille ASTT Interclubs.jpg','joueur_du_we' => '0','debut_publication' => '1336860000','fin_publication' => '1338415200'),
-        array('id' => '97','nom' => 'Résultats des Interdépartementaux','texte' => 'Les interdépartementaux 2012 se sont déroulés le mardi 8 mai 2012 à Laon.
+          array('id' => '97','nom' => 'Résultats des Interdépartementaux','texte' => 'Les interdépartementaux 2012 se sont déroulés le mardi 8 mai 2012 à Laon.
 
         La délégation de la Somme, composée de 16 joueurs de l\'Amiens Sport TT, s\'impose devant l\'Oise et l\'Aisne.
 
@@ -657,7 +657,7 @@ class DumpController extends FrontController {
         Minimes filles : Léa Huré, Clémence Steelandt (BF), Sophie Tran
         Minimes garçons : Andréï Deguingand, Paul Boinet, Paul Vandewoestyne
         Cadets 1 : Loïc Lefevre, Antoine Huon, Léo Bodinel, Floris Chartier','lieu' => 'Laon','date' => '1336428000','miseenpage' => '0','screen' => 'photo.JPG','joueur_du_we' => '0','debut_publication' => '1336428000','fin_publication' => '1337032800'),
-        array('id' => '101','nom' => 'Résultats des championnats de Picardie','texte' => 'Julien Martin, champion de Picardie benjamins.
+          array('id' => '101','nom' => 'Résultats des championnats de Picardie','texte' => 'Julien Martin, champion de Picardie benjamins.
         Louis Chaerle, champion de Picardie minimes garçons.
         Antoine Huon, champion de Picardie cadets.
         Caroline Petitprez, championne de Picardie juniors filles et seniors dames.
@@ -711,54 +711,152 @@ class DumpController extends FrontController {
 
         - Seniors messieurs (8) : Malin Plotuna 1er, Raphaël Chatelain 4e, Yohan Lecomte 5e, Loïc Lefevre 9e, Alexandre Haigneré éliminé en poules,, Lucas Dubois éliminé en poules, Antoine Huon éliminé en poules, Vincent Rasselet (WO)
         Doubles : Plotuna-Chatelain 1er, Lecomte-Haigneré 5e','lieu' => 'Ham','date' => '1337464800','miseenpage' => '0','screen' => 'Picardie ASTT.JPG','joueur_du_we' => '0','debut_publication' => '1336946400','fin_publication' => '1338847200'),
-        array('id' => '102','nom' => 'Championnats de France benjamin(e)s','texte' => 'Six joueurs de l\'Amiens Sport TT participeront du 1er au 3 juin aux championnats de France benjamin(e)s à Montceau les Mines : Léo Hersent, Tristan Hersent, Julien Martin et Louis Chaerle en benjamins, Eline Vanier et Elvire Vanier en benjamines.
+          array('id' => '102','nom' => 'Résultats des championnats de France benjamin(e)s','texte' => 'Six joueurs de l\'Amiens Sport TT ont participé du 1er au 3 juin aux championnats de France benjamin(e)s à Montceau les Mines.
 
-        Bonne chance à tous !
-        ','lieu' => 'Montceau les Mines','date' => '1338501600','miseenpage' => '0','screen' => 'Leo Hersent.JPG','joueur_du_we' => '0','debut_publication' => '1338069600','fin_publication' => '1340143200')
+        Résultats benjamins :
+        - Louis Chaerle termine 1er de poule (3 victoires), remporte son 1/16e de finale puis s\'incline en 1/8e de finale.
+        - Julien Martin termine 1er de poule (3 victoires), remporte son 1/16e de finale puis s\'incline en 1/8e de finale.
+        - Léo Hersent termine 3e de poule (1 victoire - 2 défaites), remporte son 1/32e de finale, puis s\'incline en 1/16e de finale.
+        - Tristan Hersent termine 4e de poule (1 victoire - 2 défaites) et ne se qualifie pas pour le tableau final.
+
+        Double benjamins :
+        - La paire Chaerle-Martin remporte son 1/16e de finale puis s\'incline en 1/8e de finale.
+        - La paire Hersent-Hersent remporte son 1/16e de finale puis s\'incline en 1/8e de finale.
+
+        Résultats benjamines :
+        - Eline Vanier termine 3e de poule (1 victoire - 2 défaites), puis s\'incline en 1/32e de finale.
+        - Elvire Vanier termine 4e de poule (1 victoire - 2 défaites) et ne se qualifie pas pour le tableau final.
+
+        Double benjamines :
+        - La paire Vanier-Vanier s\'incline en 1/16e de finale.','lieu' => 'Montceau les Mines','date' => '1338501600','miseenpage' => '0','screen' => 'Leo Hersent.JPG','joueur_du_we' => '0','debut_publication' => '1338069600','fin_publication' => '1340143200'),
+          array('id' => '103','nom' => 'Résultats des championnats de France handisport','texte' => 'Les championnats de France handisport se sont déroulés les 27 et 28 mai 2012 à Ceyrat (63). Quatre joueurs de l\'Amiens Sport TT étaient qualifiées pour cette épreuve.
+
+        En classe 4, André Dairaine termine 6e et William Manier 10e.
+        En classe 5, Christophe Caudrelier termine également 10e.
+        Emmanuel Legrand finit quant à lui 12e dans sa catégorie.
+
+        A noter que l\'équipe de l\'Amiens Sport TT a terminé trois semaines plus tôt 8e de la Coupe de France par équipes.
+
+        Le 2 juin se déroulera la dernière compétition handisport de l\'année avec les championnats de France Vétérans qui se feront à Tours. Trois de nos joueurs sont qualifiés : André DAIRAINE, William MANIER et Christophe CAUDRELIER avec l\'ambition de revenir avec au moins une médaille, soit en individuel soit en en double. ','lieu' => 'Ceyrat','date' => '1338156000','miseenpage' => '0','screen' => 'DSC_0266.JPG','joueur_du_we' => '0','debut_publication' => '1338156000','fin_publication' => '1339279200'),
+          array('id' => '104','nom' => 'Résultats du Challenge Poussins-Benjamins-Minimes Régional','texte' => 'Huit joueurs de l\'Amiens Sport TT ont participé le dimanche 10 juin à Chauny au challenge poussins-benjamins-minimes régional.
+        Félicitations à Adem Hadmad (1er en poussins nés en 2005 et après), Ymad Hamdad (1er en benjamins) et Pierre-Philippe Nadau (1er en minimes garçons). 
+
+        Résultats détaillés :
+        - Poussins (nés en 2005 et après) : Adem Hamdad 1er
+        - Poussines (nées en 2003 et 2004) : Pauline Steelandt 2e, Jeanne André 9e
+        - Poussins (nés en 2003 et 2004) : Maël Ledoux 10e
+        - Benjamines : Clémence Steelandt 2e
+        - Benjamins : Ymad Hamdad 1er, Kéziah Desjonqueres 11e
+        - Minimes garçons : Pierre-Philippe Nadau','lieu' => 'Chauny','date' => '1339279200','miseenpage' => '0','screen' => 'PBM ASTT.JPG','joueur_du_we' => '0','debut_publication' => '1338760800','fin_publication' => '1340143200'),
+          array('id' => '105','nom' => 'Résultats du Challenge Bernard Jeu National','texte' => 'Le club a participé les 9 et 10 juin à Thionville à la finale nationale du challenge Bernard Jeu et obtient la 15e place.
+        Andréï Deguingand est l\'Amiénois qui s\'est le plus mis en évidence en atteignant la finale du tableau minimes garçons.
+
+        Résultats individuels :
+        - BF : Elvire Vanier : 1ère de poule, victoire en 1/8e de finale, puis défaite en 1/4 de finale.
+        - BG : Julien Martin : 1er de poule, victoire en 1/8e de finale, puis défaite en 1/4 de finale.
+        - MF : Léa Huré : éliminée en  poules.
+        - MG : Andréï Deguingand : 1er de poule, victoire en 1/8e de finale, victoire en 1/4 de finale, victoire en 1/2 finale. Andréï s"incline en finale.
+        - CF : Julia Flahaut : 2e de poule, puis défaite en 1/8e de finale.
+        - CG : Lucas Dubois : éliminé en poules.
+        - JF : Caroline Petitprez : 2e de poule, puis défaite en 1/8e de finale.
+        - JG : Benoît Vaquier : éliminé en poules.
+        - SD : Marion Berthelot : éliminée en poules.
+        - SM : Denis Chatelain : éliminé en poules.','lieu' => 'Thionville','date' => '1339279200','miseenpage' => '0','screen' => 'ADeguingand BJeu.jpg','joueur_du_we' => '0','debut_publication' => '1338760800','fin_publication' => '1340143200'),
+          array('id' => '106','nom' => 'Championnats de France Vétérans Handisport','texte' => 'Trois joueurs de l\'Amiens Sport TT ont participé le samedi 2 juin 2012 aux championnats de France vétérans handisport.
+
+        Félicitations à André Dairaine et William Manier qui obtiennent le titre de champions de France en double.
+
+        En simple, André Dairaine termine 4e, William Manier 8e et Christophe Caudrelier 12e.','lieu' => 'Tours','date' => '1338588000','miseenpage' => '0','screen' => 'DoubleVeteransHandisport.JPG','joueur_du_we' => '0','debut_publication' => '1338588000','fin_publication' => '1341871200'),
+          array('id' => '107','nom' => 'Résultats du Tournoi Open','texte' => 'Quatorze joueurs de l\'Amiens Sport TT ont participé les 16 et 17 juin à Paris au Tournoi Open.
+        Félicitations à Elvire Vanier qui obtient l\'une des six places qualificatives pour le critérium fédéral N1 2012-2013.
+
+        Résultats détaillés :
+        - Moins de 12 ans filles : Elvire Vanier  atteint les 1/2 finale, Eline Vanier défaite en 1/8e de finale, Marine Huon éliminée en poules (3e de poule)
+        - Moins de 13 ans filles : Léa Huré, éliminée en poules (4e de poule).
+        - Moins de 13 ans garçons : Andréï Deguingand, 1er de poule puis défaite en 1/4 de finale puis défaite en places 5 à 8.
+        - Moins de 15 ans garçons : Loïc Lefevre 1er de poule puis défaite en 1/8e de finale, Antoine Huon 2e de poule puis défaite en 1/8e de finale.
+        - Moins de 16 ans filles : Julia Flahaut éliminée en poules (4e de poule)
+        - Moins de 16 ans garçons : Lucas Dubois 1er de poule puis défaite en 1/8e de finale
+        - Moins de 18 ans filles : Caroline Petitprez, éliminée en poules (3e de poule)
+        - Moins de 18 ans garçons : Raphaël Chatelain 1er de poule puis défaite en 1/4 de finale puis défaite en places 5 à 8, Benoît Vaquier éliminé en poules, Louis Vandewoestyne éliminé en poules (3e de poule)
+        - Moins de 21 ans garçons : Vincent Rasselet, éliminé en poules
+
+        Léo Hersent (moins de 11 ans), Tristan Hersent (moins de 12 ans), Julien Martin (moins de 12 ans) et Malin Plotuna (Elite) sont déjà qualifiés pour le critérium fédéral N1 2012/2013.','lieu' => 'Paris','date' => '1339884000','miseenpage' => '0','screen' => 'Elvire (12).JPG','joueur_du_we' => '0','debut_publication' => '1339365600','fin_publication' => '1341093600'),
+          array('id' => '108','nom' => 'Résultats des finales nationales par classement','texte' => 'Loïc Lefevre a participé les 23 et 24 juin 2012 à Angers aux finales nationales par classement dans le tableau moins de 1599 points.
+
+        Il termine 2e de poule puis s\'incline en 1/16e de finale.','lieu' => 'Angers','date' => '1340488800','miseenpage' => '0','screen' => 'L. Lefevre (5).JPG','joueur_du_we' => '0','debut_publication' => '1340056800','fin_publication' => '1341093600'),
+          array('id' => '111','nom' => 'Tournoi de reprise','texte' => 'TOURNOI DE REPRISE DU GOUPIL
+        Samedi 1er septembre, salle Labaume.
+
+        -15H : Inscriptions 
+        -16H : Début du tournoi : Tournoi handicap: un set de 31 points, 2 points par classement, Handicap maximum 25 points. 
+        -Restauration sur place : Crêpes 1€, Boissons 0.5€.
+        -Le soir, la Formule du Chef, 5€ : pâtes+boisson+crêpe.
+        ','lieu' => 'Amiens Sport TT','date' => '1346450400','miseenpage' => '0','screen' => 'A Goupil.png','joueur_du_we' => '0','debut_publication' => '1346018400','fin_publication' => '1346536800'),
+          array('id' => '112','nom' => 'Résultats des Eurominichamp\'s','texte' => 'Léo Hersent et Tristan Hersent ont participé du 24 au 26 août à Schiltigheim aux Eurominichamp\'s, compétition internationale réservée aux moins de 12 ans.
+
+        Tristan Hersent termine 27e du tableau garçons nés en 2001.
+        Léo Hersent (2002) termine 25e du tableau consolante garçons nés en 2001, soit 57e.','lieu' => 'Schiltigheim','date' => '1345932000','miseenpage' => '0','screen' => 'THersent.jpg','joueur_du_we' => '0','debut_publication' => '1346104800','fin_publication' => '1346796000'),
+          array('id' => '114','nom' => 'Reprise des entraînements','texte' => 'Les entraînements dirigés jeunes et adultes reprendront dès le lundi 3 septembre 2012.','lieu' => 'Amiens Sport TT','date' => '1346623200','miseenpage' => '0','screen' => 'CHarle.jpg','joueur_du_we' => '0','debut_publication' => '1346104800','fin_publication' => '1346968800'),
+          array('id' => '110','nom' => 'Stages estivaux d\'entraînement','texte' => 'Plusieurs stages d\'entraînement seront organisés à l\'Amiens Sport TT pendant les vacances d\'été 2012 :
+        - du lundi 9 juillet au vendredi 13 juillet 2012
+        - du lundi 20 août au vendredi 24 août 2012
+        - du lundi 27 août au vendredi 31 août 2012
+
+        13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs  
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens Sport TT','date' => '1341784800','miseenpage' => '0','screen' => 'Stage Jeunes.JPG','joueur_du_we' => '0','debut_publication' => '1340575200','fin_publication' => '1346364000')
         );
 
         // `astt`.`Articles`
         $Articles = array(
-        array('id' => '1','titre' => 'En souvenir de Stéphane Baert','sujet' => 'Tournoi Stéphane Baert 2011','date' => '1319752800','saison' => '2011-2012','link' => 's_baert.pdf'),
-        array('id' => '2','titre' => 'Les pongistes à table','sujet' => 'Arbre de Noël de l\'Amiens Sport TT','date' => '1323820800','saison' => '2011-2012','link' => 'CP 22-12-11.pdf'),
-        array('id' => '3','titre' => 'Le président retrouve le club','sujet' => 'Galette des rois','date' => '1326150000','saison' => '2011-2012','link' => 'president_is_back.pdf'),
-        array('id' => '4','titre' => 'Un plateau de pongistes relevé','sujet' => 'Top Régional Détection 2012','date' => '1326240000','saison' => '2011-2012','link' => 'CP 11-01-12.pdf'),
-        array('id' => '5','titre' => 'Premiers pas pongistes','sujet' => 'Premier Pas Pongiste 2012','date' => '1328050800','saison' => '2011-2012','link' => 'CP 01-02-12.pdf'),
-        array('id' => '6','titre' => 'Les pongistes picards sport adapté en championnat','sujet' => 'Championnats de Picardie Sport Adapté','date' => '1330642800','saison' => '2011-2012','link' => 'CP 02-03-12.pdf'),
-        array('id' => '7','titre' => 'Raphaël Chatelain franchit les frontières','sujet' => 'Présentation de Raphaël Chatelain','date' => '1332460800','saison' => '2011-2012','link' => 'CP 23-03-12.pdf'),
-        array('id' => '8','titre' => 'L\'équipe de tennis de table du lycée Louis Thuilli','sujet' => 'Championnats de France UNSS','date' => '1333148400','saison' => '2011-2012','link' => 'Nouveau Document Microsoft Word.pdf')
+          array('id' => '1','titre' => 'En souvenir de Stéphane Baert','sujet' => 'Tournoi Stéphane Baert 2011','date' => '1319752800','saison' => '2011-2012','link' => 's_baert.pdf'),
+          array('id' => '2','titre' => 'Les pongistes à table','sujet' => 'Arbre de Noël de l\'Amiens Sport TT','date' => '1323820800','saison' => '2011-2012','link' => 'CP 22-12-11.pdf'),
+          array('id' => '3','titre' => 'Le président retrouve le club','sujet' => 'Galette des rois','date' => '1326150000','saison' => '2011-2012','link' => 'president_is_back.pdf'),
+          array('id' => '4','titre' => 'Un plateau de pongistes relevé','sujet' => 'Top Régional Détection 2012','date' => '1326240000','saison' => '2011-2012','link' => 'CP 11-01-12.pdf'),
+          array('id' => '5','titre' => 'Premiers pas pongistes','sujet' => 'Premier Pas Pongiste 2012','date' => '1328050800','saison' => '2011-2012','link' => 'CP 01-02-12.pdf'),
+          array('id' => '6','titre' => 'Les pongistes picards sport adapté en championnat','sujet' => 'Championnats de Picardie Sport Adapté','date' => '1330642800','saison' => '2011-2012','link' => 'CP 02-03-12.pdf'),
+          array('id' => '7','titre' => 'Raphaël Chatelain franchit les frontières','sujet' => 'Présentation de Raphaël Chatelain','date' => '1332460800','saison' => '2011-2012','link' => 'CP 23-03-12.pdf'),
+          array('id' => '8','titre' => 'L\'équipe de tennis de table du lycée Louis Thuilli','sujet' => 'Championnats de France UNSS','date' => '1333148400','saison' => '2011-2012','link' => 'Nouveau Document Microsoft Word.pdf')
         );
 
         // `astt`.`Commentaires`
         $Commentaires = array(
-        array('id' => '1','auteur' => 'Bobby','club' => 'ASTT','date' => '1314831600','message' => 'Inauguration du livre d\'or de ce nouveau site.
+          array('id' => '1','auteur' => 'Bobby','club' => 'ASTT','date' => '1314831600','message' => 'Inauguration du livre d\'or de ce nouveau site.
 
         Ecrivez toutes vos impressions et remarques concernant le club ou le site !
 
         Bonne visite à tous.'),
-        array('id' => '2','auteur' => 'Ch\'Bobby','club' => 'ASTT','date' => '1316462125','message' => 'Et bah alors, c\'est quoi le problème ?
+          array('id' => '2','auteur' => 'Ch\'Bobby','club' => 'ASTT','date' => '1316462125','message' => 'Et bah alors, c\'est quoi le problème ?
 
         Ca marche bien ce livre d\'or, non ?'),
-        array('id' => '3','auteur' => 'Ch\'Goup','club' => 'FRERE CACHER DE ZEMOUR','date' => '1316516285','message' => 'Oui maintenant ça  marche ,  Mais pas hier soir. LOL
+          array('id' => '3','auteur' => 'Ch\'Goup','club' => 'FRERE CACHER DE ZEMOUR','date' => '1316516285','message' => 'Oui maintenant ça  marche ,  Mais pas hier soir. LOL
         Vraiment super site , par contre petit problème de date dans l\'onglet "Derniers evenements" , c\'est inscrit en 2012 mais je pense que c\'était les evenements de 2011. Et si tu veux je peux te donner un résumé du tournoi de reprise de cette année. 
         Petite remarque perso , je n\'est pas de photo de moi qui apparaise dans la barre du haut ... quelle deception! mdr
         Vraiment bon travail Flo\' ! Bravo !!'),
-        array('id' => '4','auteur' => 'Denis','club' => 'a les yeux qui saignent','date' => '1316634848','message' => 'C\'est beau, comme un top mi-distance canyen, le Shield. Tu as juste oublié d\'installer un correcteur automatique sur le livre d\'or.'),
-        array('id' => '5','auteur' => 'Jojo','club' => 'astt','date' => '1316967040','message' => 'Joli ce site ! La grande classe meme :D'),
-        array('id' => '6','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1316969179','message' => 'C\'est quand le premier tour du criterium federal pour les cadets en departemental'),
-        array('id' => '7','auteur' => 'Goup','club' => 'L\'informateur','date' => '1316970858','message' => 'Le Premier tour du criterium est dans 3 semaines ! '),
-        array('id' => '8','auteur' => 'Bobby','club' => 'ASTT','date' => '1316987006','message' => 'Denis, je n\'ai pas 4 ans devant moi pour le livre d\'or... :o
+          array('id' => '4','auteur' => 'Denis','club' => 'a les yeux qui saignent','date' => '1316634848','message' => 'C\'est beau, comme un top mi-distance canyen, le Shield. Tu as juste oublié d\'installer un correcteur automatique sur le livre d\'or.'),
+          array('id' => '5','auteur' => 'Jojo','club' => 'astt','date' => '1316967040','message' => 'Joli ce site ! La grande classe meme :D'),
+          array('id' => '6','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1316969179','message' => 'C\'est quand le premier tour du criterium federal pour les cadets en departemental'),
+          array('id' => '7','auteur' => 'Goup','club' => 'L\'informateur','date' => '1316970858','message' => 'Le Premier tour du criterium est dans 3 semaines ! '),
+          array('id' => '8','auteur' => 'Bobby','club' => 'ASTT','date' => '1316987006','message' => 'Denis, je n\'ai pas 4 ans devant moi pour le livre d\'or... :o
 
         Je regarde pour les accents là, ensuite les actualités.
 
         Pour infos, \'derniers évènements\', il n\'y a pas d\'erreur de date, ils sont juste triés par ordre décroissant. Je vais changer ça également ;)'),
-        array('id' => '9','auteur' => 'Portos','club' => 'Menard STT','date' => '1316988636','message' => 'Tu gères Bobby tkt.
+          array('id' => '9','auteur' => 'Portos','club' => 'Menard STT','date' => '1316988636','message' => 'Tu gères Bobby tkt.
         Faut mettre les classements à jour aussi!'),
-        array('id' => '10','auteur' => 'Bobby','club' => '','date' => '1317075629','message' => 'Dès que j\'aurai le tableau ;)'),
-        array('id' => '11','auteur' => 'Bobby','club' => 'ASTT','date' => '1317157450','message' => 'C\'est bon pour les caractères maintenant, ils devraient tous s\'afficher quel que soit votre navigateur et votre SE.
+          array('id' => '10','auteur' => 'Bobby','club' => '','date' => '1317075629','message' => 'Dès que j\'aurai le tableau ;)'),
+          array('id' => '11','auteur' => 'Bobby','club' => 'ASTT','date' => '1317157450','message' => 'C\'est bon pour les caractères maintenant, ils devraient tous s\'afficher quel que soit votre navigateur et votre SE.
 
         J\'ai mis les résultats de ce WE en ligne, page équipe !'),
-        array('id' => '12','auteur' => 'Bobby','club' => 'webmaster trop lent','date' => '1317244769','message' => 'Les classements et les équipes ont été mis à jour.
+          array('id' => '12','auteur' => 'Bobby','club' => 'webmaster trop lent','date' => '1317244769','message' => 'Les classements et les équipes ont été mis à jour.
 
         Il se peut qu\'il manque certains joueurs ou certaines joueuses, cela sera corrigé dès que j\'aurai reçu les données correspondantes.
 
@@ -769,7 +867,7 @@ class DumpController extends FrontController {
         aussi c\'est une faute grave d\'avoir tellement tardé...
 
         Merci pour vos encouragements et votre patience.'),
-        array('id' => '13','auteur' => 'Arnaud','club' => '','date' => '1317369577','message' => 'Retour sur les plus belles performances du week-end du 24 et 25 septembre 2011 :
+          array('id' => '13','auteur' => 'Arnaud','club' => '','date' => '1317369577','message' => 'Retour sur les plus belles performances du week-end du 24 et 25 septembre 2011 :
         - En N3 Messieurs, Lucas Dubois (16 – 1643 pts) bat Florent Cahagne (n°692 – 2151 pts) soit 508 points d’écart
         - En D3 Messieurs, Paul Boinet (5 – 591 pts) bat Morgane Demaie (9 – 938 pts) soit 347 points d’écart
         - En D2 Messieurs, Jeoffrey Stephan (8 – 898 pts) bat Guy Dournel (12 – 1239 pts) soit 341 points d’écart
@@ -779,10 +877,10 @@ class DumpController extends FrontController {
         - En D3 Messieurs, Joffrey Hauw (6 – 691 pts) bat Philippe Hennelin (9 – 901 pts) soit 210 points d’écart
         - En D3 Messieurs, Ala-Edinne Chahir (6 – 697 pts) bat Philippe Hennelin (9 – 901 pts) soit 204 points d’écart
         - En R4 Messieurs, Tristan Hersent (10 – 1020 pts) bat Philippe Dourlens (12 – 1222 pts) soit 202 points d’écart'),
-        array('id' => '14','auteur' => 'Dud','club' => '','date' => '1317382503','message' => 'C\'est bon ça....de la perf et encore de la perf'),
-        array('id' => '15','auteur' => 'Jojo','club' => '','date' => '1317399063','message' => 'Lol un bon we tout ca !'),
-        array('id' => '16','auteur' => 'Le Goup','club' => 'LES YEUX SAIGNANT','date' => '1317503733','message' => 'Mais qui vois-je dans la barre défilante des joueurs d\'Amiens , Mr Ludovic Delmarre apparait encore ?? Je ne me trompe pas de site  , ce n\'est pas le prototype du site d\'Abbeville de l\'an prochain ??? '),
-        array('id' => '17','auteur' => 'Vince (Mr Fight)','club' => 'ASTT','date' => '1317575828','message' => '3 Aménois en terre inconnue ça donne ça !
+          array('id' => '14','auteur' => 'Dud','club' => '','date' => '1317382503','message' => 'C\'est bon ça....de la perf et encore de la perf'),
+          array('id' => '15','auteur' => 'Jojo','club' => '','date' => '1317399063','message' => 'Lol un bon we tout ca !'),
+          array('id' => '16','auteur' => 'Le Goup','club' => 'LES YEUX SAIGNANT','date' => '1317503733','message' => 'Mais qui vois-je dans la barre défilante des joueurs d\'Amiens , Mr Ludovic Delmarre apparait encore ?? Je ne me trompe pas de site  , ce n\'est pas le prototype du site d\'Abbeville de l\'an prochain ??? '),
+          array('id' => '17','auteur' => 'Vince (Mr Fight)','club' => 'ASTT','date' => '1317575828','message' => '3 Aménois en terre inconnue ça donne ça !
 
         Mr Rass\' (moi) Mr Vandevoste et Lucas lover nous étions engagés pour le tournoi de Pacy. Gentillement accompagnés par Mr et Mme Dubois.
 
@@ -824,11 +922,11 @@ class DumpController extends FrontController {
         Au niveau du jeu on est plutôt satisfait, on a pris un peu d\'expérience et on a pas été loin de faire de la grosse perf.
         On est juste un peu déçu pour Lucas Lover qui aura pas réussi à chopper le numéro de la n°
         Mais surtout une bonne ambiance dans la voiture avec Papa/Maman Dub et les coupains :)'),
-        array('id' => '18','auteur' => 'Le Vande','club' => 'ASTT','date' => '1317586586','message' => 'Bonne ambiance c\'était un bon tournoi le Rass\' resume tout, j\'ai un petit chagrin c\'est pour Lucas Lover mais il manque juste d\'experience. RDV pour le prochain tournoi les copains ;)'),
-        array('id' => '20','auteur' => 'Ch\'Goup','club' => 'Frou-Frou','date' => '1317927348','message' => 'BRAVO VINCENT , VINCENT BRAVO !!!!! ;) mdr'),
-        array('id' => '21','auteur' => 'La Mouche','club' => 'ASTT For ever','date' => '1318270860','message' => 'Après l\'homme qui a vu l\'homme qui a vu l\'homme qui a vu l\'ours, Flo Cahagne (n°692)qui a perdu Ch\'Dub (16) qui a perdu Chaplet (14) qui a perdu un 8 ... Question : Quel est le niveau actuel des numérotés ? Vous avez 4 heures ... 
+          array('id' => '18','auteur' => 'Le Vande','club' => 'ASTT','date' => '1317586586','message' => 'Bonne ambiance c\'était un bon tournoi le Rass\' resume tout, j\'ai un petit chagrin c\'est pour Lucas Lover mais il manque juste d\'experience. RDV pour le prochain tournoi les copains ;)'),
+          array('id' => '20','auteur' => 'Ch\'Goup','club' => 'Frou-Frou','date' => '1317927348','message' => 'BRAVO VINCENT , VINCENT BRAVO !!!!! ;) mdr'),
+          array('id' => '21','auteur' => 'La Mouche','club' => 'ASTT For ever','date' => '1318270860','message' => 'Après l\'homme qui a vu l\'homme qui a vu l\'homme qui a vu l\'ours, Flo Cahagne (n°692)qui a perdu Ch\'Dub (16) qui a perdu Chaplet (14) qui a perdu un 8 ... Question : Quel est le niveau actuel des numérotés ? Vous avez 4 heures ... 
         PLus sérieusement j\'ai apprécié la rebellion du Cahagne dimanche au score acquis, question d\'honneur !'),
-        array('id' => '22','auteur' => 'Arnaud','club' => '','date' => '1318402123','message' => 'Retour sur les plus belles performances du week-end du 8 et 9 octobre 2011 :
+          array('id' => '22','auteur' => 'Arnaud','club' => '','date' => '1318402123','message' => 'Retour sur les plus belles performances du week-end du 8 et 9 octobre 2011 :
         - En R1 Messieurs, Antoine Huon (12 – 1225 pts) bat Tony Dubeaux (15 – 1571 pts) soit 346 points d’écart
         - En D2 Messieurs, Benoît Bonté (7 - 791 pts) bat Benjamin Motte-Lacaze (10 – 1093 pts) soit 302 points d’écart
         - En D3 Messieurs, Ala-Edinne Chahir (6 – 697 pts) bat Jérôme Frère (9 – 977 pts) soit 280 points d’écart
@@ -837,20 +935,20 @@ class DumpController extends FrontController {
         - En D1 Messieurs, Léo Hersent (9 – 906 pts) bat Bruno Scozzesi (11 – 1143 pts) soit 237 points d’écart
         - En R3 Messieurs, Julien Martin (11 – 1112 pts) bat Julien Maucourant (13 – 1325 pts) soit 213 points d’écart
         - En D1 Messieurs, Louis Vandewoestyne (13 – 1332 pts) bat Benjamin Piction (15 – 1543 pts) soit 211 points d’écart'),
-        array('id' => '23','auteur' => 'Alexandre','club' => '','date' => '1318855253','message' => 'Il y a même des résumés d\'indiv...mais où va-t-on??? Non, plus sérieusement c\'est simpa.
+          array('id' => '23','auteur' => 'Alexandre','club' => '','date' => '1318855253','message' => 'Il y a même des résumés d\'indiv...mais où va-t-on??? Non, plus sérieusement c\'est simpa.
         '),
-        array('id' => '24','auteur' => 'Ch\'Goup','club' => 'Le correcteur','date' => '1318868100','message' => 'Sympa avec un y comme Butterfly!
+          array('id' => '24','auteur' => 'Ch\'Goup','club' => 'Le correcteur','date' => '1318868100','message' => 'Sympa avec un y comme Butterfly!
         Merci. '),
-        array('id' => '25','auteur' => 'benitos vaqueros','club' => '','date' => '1318872970','message' => 'j\'aurais plutot dit sympas ch\'goup !!'),
-        array('id' => '26','auteur' => 'Ch\'Goup','club' => '','date' => '1318878418','message' => 'Ouais , ou PathétYque !!! '),
-        array('id' => '27','auteur' => 'Alexandre','club' => '','date' => '1318963305','message' => 'Mon doigt a dérapé.
+          array('id' => '25','auteur' => 'benitos vaqueros','club' => '','date' => '1318872970','message' => 'j\'aurais plutot dit sympas ch\'goup !!'),
+          array('id' => '26','auteur' => 'Ch\'Goup','club' => '','date' => '1318878418','message' => 'Ouais , ou PathétYque !!! '),
+          array('id' => '27','auteur' => 'Alexandre','club' => '','date' => '1318963305','message' => 'Mon doigt a dérapé.
         '),
-        array('id' => '28','auteur' => 'Ch\'Goup','club' => '','date' => '1318972912','message' => 'J\'aime quand tu te justifie de la sorte !! :D
+          array('id' => '28','auteur' => 'Ch\'Goup','club' => '','date' => '1318972912','message' => 'J\'aime quand tu te justifie de la sorte !! :D
         SYMPA quand même de préciser. ;)'),
-        array('id' => '29','auteur' => 'Bobby','club' => '','date' => '1318974750','message' => 'Moi j\'aime bien quand tu corriges l\'orthographe des autres, goup...'),
-        array('id' => '30','auteur' => 'Ch\'Goup','club' => '','date' => '1319053717','message' => 'Moi j\'aime bien quand tu mets le site à jours ... Bobby ! ;) :P'),
-        array('id' => '32','auteur' => 'Auteur incorrect','club' => '','date' => '1319581991','message' => 'Dans la vie, il y a des gens qui ont autre chose à penser que le ping tu sais ...'),
-        array('id' => '33','auteur' => 'Arnaud','club' => '','date' => '1319615101','message' => 'Retour sur les plus belles performances du week-end du 22 et 23 octobre 2011 :
+          array('id' => '29','auteur' => 'Bobby','club' => '','date' => '1318974750','message' => 'Moi j\'aime bien quand tu corriges l\'orthographe des autres, goup...'),
+          array('id' => '30','auteur' => 'Ch\'Goup','club' => '','date' => '1319053717','message' => 'Moi j\'aime bien quand tu mets le site à jours ... Bobby ! ;) :P'),
+          array('id' => '32','auteur' => 'Auteur incorrect','club' => '','date' => '1319581991','message' => 'Dans la vie, il y a des gens qui ont autre chose à penser que le ping tu sais ...'),
+          array('id' => '33','auteur' => 'Arnaud','club' => '','date' => '1319615101','message' => 'Retour sur les plus belles performances du week-end du 22 et 23 octobre 2011 :
         - En R3 Messieurs, Louis Chaerle (10 – 1049 pts) bat Stéphane Gamard (13 – 1377 pts) soit 328 points d’écart
         - En D2 Messieurs, Benoît Bonté (7 – 791 pts) bat Sébastien Gueriel (10 – 1090 pts) soit 299 points d’écart
         - En R1 Messieurs, Antoine Huon (12 – 1225 pts) bat Laurent Duroyon (15 – 1518 pts) et Aymeric Sagnier (14 – 1491 pts) soit 293 points d’écart et 266 points d’écart
@@ -858,37 +956,37 @@ class DumpController extends FrontController {
         - En D1 Jeunes, Pierre-Philippe Nadau (5 – 520 pts) bat Lucas Hurel (7 – 780 pts) soit 260 points d’écart
         - En D2 Messieurs, Paul Vandewoestyne (8 – 843 pts) bat Sébastien Gueriel (10 – 1090 pts) soit 247 points d’écart
         - En R3 Messieurs, Julien Martin (11 – 1112 pts) bat Vincent Buignet (13 – 1331 pts) soit 219 points d’écart'),
-        array('id' => '34','auteur' => 'Dud','club' => '','date' => '1319714453','message' => 'La moyenne d\'age est interéssante (attention les anciens:ca pousse derrière)'),
-        array('id' => '35','auteur' => 'ppn','club' => 'astt','date' => '1319742645','message' => 'Je me suis fais deux 7.'),
-        array('id' => '36','auteur' => 'Jojo','club' => 'astt','date' => '1319837092','message' => 'Bravo !'),
-        array('id' => '37','auteur' => 'Mr Fight ','club' => '','date' => '1319838380','message' => 'la FFTT a créé un espace "licencié"
+          array('id' => '34','auteur' => 'Dud','club' => '','date' => '1319714453','message' => 'La moyenne d\'age est interéssante (attention les anciens:ca pousse derrière)'),
+          array('id' => '35','auteur' => 'ppn','club' => 'astt','date' => '1319742645','message' => 'Je me suis fais deux 7.'),
+          array('id' => '36','auteur' => 'Jojo','club' => 'astt','date' => '1319837092','message' => 'Bravo !'),
+          array('id' => '37','auteur' => 'Mr Fight ','club' => '','date' => '1319838380','message' => 'la FFTT a créé un espace "licencié"
         pour accéder à vos données (résultats, historique de votre classement),
         ainsi que les résultats de nos équipes...
         C\'est plutôt sympa =)
 
         vous pouvez vous y inscrire ici : http://www.fftt.com/espacelicencie/
         '),
-        array('id' => '38','auteur' => 'Alexandre Goupil','club' => '','date' => '1319880252','message' => 'Merci à tous pour votre participation. Plus de 50 participants pour rendre hommage à Stéphane. Tout les résultats et un petit résumé de Denis Chatelain (frère de la star Nicolas Chatelain :P )seront disponible dans les heures qui viennent ou demain. 
+          array('id' => '38','auteur' => 'Alexandre Goupil','club' => '','date' => '1319880252','message' => 'Merci à tous pour votre participation. Plus de 50 participants pour rendre hommage à Stéphane. Tout les résultats et un petit résumé de Denis Chatelain (frère de la star Nicolas Chatelain :P )seront disponible dans les heures qui viennent ou demain. 
         Bonne journée à tous'),
-        array('id' => '39','auteur' => 'Mr Fight ','club' => '','date' => '1319905667','message' => 'Merci à Ch\'goup, lolo, denis, aurélie, arnaud... et tous les autres organisateurs.
+          array('id' => '39','auteur' => 'Mr Fight ','club' => '','date' => '1319905667','message' => 'Merci à Ch\'goup, lolo, denis, aurélie, arnaud... et tous les autres organisateurs.
         La soirée était très bien organisée :) '),
-        array('id' => '40','auteur' => 'Ch\'Goup','club' => 'PASSE-PARTOUT','date' => '1320060332','message' => 'Le club est ouvert aujourd\'hui , de 17H à 20h30. '),
-        array('id' => '41','auteur' => 'Ch\'Goup','club' => 'L\'EQUIPE','date' => '1320095046','message' => 'Le club est fermé ce mardi 1er Novembre. Denis et Dud fête la toussain en famille et moi je digère ma crise de foie des bonbons d\'Halloween récupéré la veille ! '),
-        array('id' => '42','auteur' => 'Ch\'Goup','club' => '','date' => '1320228406','message' => 'Le club est ouvert aujourd\'hui de 17h00 à 20h30.'),
-        array('id' => '43','auteur' => 'Ch\'Goup','club' => 'RETARDATAIRE','date' => '1320238853','message' => 'Comptons plutôt sur 17h30 pour moi ! 
+          array('id' => '40','auteur' => 'Ch\'Goup','club' => 'PASSE-PARTOUT','date' => '1320060332','message' => 'Le club est ouvert aujourd\'hui , de 17H à 20h30. '),
+          array('id' => '41','auteur' => 'Ch\'Goup','club' => 'L\'EQUIPE','date' => '1320095046','message' => 'Le club est fermé ce mardi 1er Novembre. Denis et Dud fête la toussain en famille et moi je digère ma crise de foie des bonbons d\'Halloween récupéré la veille ! '),
+          array('id' => '42','auteur' => 'Ch\'Goup','club' => '','date' => '1320228406','message' => 'Le club est ouvert aujourd\'hui de 17h00 à 20h30.'),
+          array('id' => '43','auteur' => 'Ch\'Goup','club' => 'RETARDATAIRE','date' => '1320238853','message' => 'Comptons plutôt sur 17h30 pour moi ! 
         En espèrant que Denis arrive avant. ;)'),
-        array('id' => '44','auteur' => 'JCD LEOTT','club' => 'LEO LA GRANGE','date' => '1320241515','message' => 'OK pour mes plus beaux points.
+          array('id' => '44','auteur' => 'JCD LEOTT','club' => 'LEO LA GRANGE','date' => '1320241515','message' => 'OK pour mes plus beaux points.
         A projeter sur le mur l\'année prochaine
         Accrochez vous bien, va y avoir du sport....
         Salut les Tchiots Pd de l\'Astt!'),
-        array('id' => '46','auteur' => 'Dud','club' => '','date' => '1320420203','message' => 'Coupe du monde:
+          array('id' => '46','auteur' => 'Dud','club' => '','date' => '1320420203','message' => 'Coupe du monde:
         L\'horaire est officiel RDV: le samedi 12 novembre à 9h45 devant le lycée louis thuillier (soyez à l\'heure!!!!!!!!!!)'),
-        array('id' => '47','auteur' => 'Bobby','club' => 'ASTT','date' => '1320447620','message' => 'Je ne sais toujours pas si je prends le bus samedi prochain...
+          array('id' => '47','auteur' => 'Bobby','club' => 'ASTT','date' => '1320447620','message' => 'Je ne sais toujours pas si je prends le bus samedi prochain...
         Ou si le métro suffira.'),
-        array('id' => '48','auteur' => 'PPN','club' => 'ASTT','date' => '1320688888','message' => 'J\\\'ai gagner contre un 9,un 7et un6 mais je perds un 10 à la bel,Tôôôôôôôôôôôôô!J\\\'espère être le joueur du week-end.'),
-        array('id' => '49','auteur' => 'Jojo','club' => 'ASTT','date' => '1320775438','message' => 'Ils sont cool tes exploits, mais note-les dans ton livre intime plutôt...'),
-        array('id' => '50','auteur' => 'Le Goup','club' => 'Soutient les jeunes','date' => '1320790496','message' => 'Non PP , fait les partager a tout le monde. C\\\\\\\'est bien , tu progresses ... continu ! :)'),
-        array('id' => '51','auteur' => 'Bobby','club' => 'Places Coupe du Monde','date' => '1320794571','message' => 'Coucou !
+          array('id' => '48','auteur' => 'PPN','club' => 'ASTT','date' => '1320688888','message' => 'J\\\'ai gagner contre un 9,un 7et un6 mais je perds un 10 à la bel,Tôôôôôôôôôôôôô!J\\\'espère être le joueur du week-end.'),
+          array('id' => '49','auteur' => 'Jojo','club' => 'ASTT','date' => '1320775438','message' => 'Ils sont cool tes exploits, mais note-les dans ton livre intime plutôt...'),
+          array('id' => '50','auteur' => 'Le Goup','club' => 'Soutient les jeunes','date' => '1320790496','message' => 'Non PP , fait les partager a tout le monde. C\\\\\\\'est bien , tu progresses ... continu ! :)'),
+          array('id' => '51','auteur' => 'Bobby','club' => 'Places Coupe du Monde','date' => '1320794571','message' => 'Coucou !
 
         J\\\'ai peut-être un petit sauvetage pour ceux qui cherchent encore une place pour la coupe du monde, avec le club de Paris XIII où je m\\\'entraîne...
 
@@ -902,26 +1000,26 @@ class DumpController extends FrontController {
 
         A samedi,
         Florent.'),
-        array('id' => '52','auteur' => 'Arnaud','club' => '','date' => '1320823885','message' => 'Retour sur les plus belles performances du week-end du 5 et 6 novembre 2011 :
+          array('id' => '52','auteur' => 'Arnaud','club' => '','date' => '1320823885','message' => 'Retour sur les plus belles performances du week-end du 5 et 6 novembre 2011 :
         - En D2 Messieurs, Pierre-Philippe Nadau (5 – 520 pts) bat Jean-François Obry (9 – 940 pts) soit 420 points d’écart
         - En N3 Messieurs, Lucas Dubois (16 – 1643 pts) bat Kokou Agbomson (20 – 2003 pts) soit 360 points d’écart
         - En R3 Messieurs, Valentin Fendorf (14 – 1410 pts) bat Gaudéric Lapo (17 – 1711 pts) soit 301 points d’écart
         - En D2 Messieurs, Benoît Bonté (7 – 791 pts) bat Julien Wiart (10 – 1092 pts) soit 301 points d’écart
         - En R3 Messieurs, Andréï Deguingand (10 – 1070 pts) bat Mathieu Dubourdeaux (13 – 1331 pts) soit 261 points d’écart
         - En D2 Messieurs, Olivier Cocquet (7 – 729 pts) bat Jean-François Obry (9 – 940 pts) soit 211 points d’écart'),
-        array('id' => '53','auteur' => 'Alexandre Goupil','club' => 'DO RE MI FA SOL LA SI DO','date' => '1320957973','message' => 'J\\\\\\\'ai les clefs du club pour une ouverture le 11 Novembre 2011 à partir de 17H30. 
+          array('id' => '53','auteur' => 'Alexandre Goupil','club' => 'DO RE MI FA SOL LA SI DO','date' => '1320957973','message' => 'J\\\\\\\'ai les clefs du club pour une ouverture le 11 Novembre 2011 à partir de 17H30. 
         A demain.'),
-        array('id' => '54','auteur' => 'Alexandre Goupil','club' => '','date' => '1321003701','message' => 'Souhaite un très Bon anniversaire à Christophe Harlé !!!!!!!!!! :D'),
-        array('id' => '55','auteur' => 'Denis C','club' => 'Hannibal lecteur','date' => '1321005424','message' => 'Très bon résumés de Jeoffrey STEPHAN et Hugo BOUTEILLER. Oui messieurs, ça c\\\'est du tennis de table! 
+          array('id' => '54','auteur' => 'Alexandre Goupil','club' => '','date' => '1321003701','message' => 'Souhaite un très Bon anniversaire à Christophe Harlé !!!!!!!!!! :D'),
+          array('id' => '55','auteur' => 'Denis C','club' => 'Hannibal lecteur','date' => '1321005424','message' => 'Très bon résumés de Jeoffrey STEPHAN et Hugo BOUTEILLER. Oui messieurs, ça c\\\'est du tennis de table! 
         J\\\'attends toujours le résumé de Bertrand B. capitaine de R3. Peut-être surmené par le boulot: c\\\'est vrai qu\\\'en ce moment il y a le master de tennis à Bercy.
         Et sinon, Happy birthday Dudu.'),
-        array('id' => '56','auteur' => 'JoJo','club' => 'ASTT','date' => '1321047774','message' => 'Bon anniv\\\' Dudu alors !'),
-        array('id' => '57','auteur' => 'Dud','club' => '','date' => '1321214382','message' => 'Belle réussite cette coupe du monde à Paris ( a part l\'interruption pour le projecteur......)
+          array('id' => '56','auteur' => 'JoJo','club' => 'ASTT','date' => '1321047774','message' => 'Bon anniv\\\' Dudu alors !'),
+          array('id' => '57','auteur' => 'Dud','club' => '','date' => '1321214382','message' => 'Belle réussite cette coupe du monde à Paris ( a part l\'interruption pour le projecteur......)
         Merci au club pour le déplacement en bus (Denis tu sais à l\'entrée ils vendaient des places au marché noir.....dommage!!!!)'),
-        array('id' => '59','auteur' => 'Tibo moll','club' => '','date' => '1321385790','message' => '+1 dudu :)'),
-        array('id' => '61','auteur' => 'Denis C','club' => 'Merci Bernard','date' => '1321874176','message' => 'Merci Bertrand B pour cet excellent résumé. Probablement rédigé durant ton match contre Grégoire Lambert, ce qui doit expliquer la dérouillée que tu as prise.'),
-        array('id' => '62','auteur' => 'Benjamin B','club' => '','date' => '1322073861','message' => 'Il n\'y a pas la contre de la semaine ? je pense que c\'est à instaurer! Cette semaine il y a peut être un duel entre M.Henon et M.Bathelot Sr.'),
-        array('id' => '63','auteur' => 'Arnaud','club' => '','date' => '1322141147','message' => 'Retour sur les plus belles performances du week-end du 19 et 20 novembre 2011 :
+          array('id' => '59','auteur' => 'Tibo moll','club' => '','date' => '1321385790','message' => '+1 dudu :)'),
+          array('id' => '61','auteur' => 'Denis C','club' => 'Merci Bernard','date' => '1321874176','message' => 'Merci Bertrand B pour cet excellent résumé. Probablement rédigé durant ton match contre Grégoire Lambert, ce qui doit expliquer la dérouillée que tu as prise.'),
+          array('id' => '62','auteur' => 'Benjamin B','club' => '','date' => '1322073861','message' => 'Il n\'y a pas la contre de la semaine ? je pense que c\'est à instaurer! Cette semaine il y a peut être un duel entre M.Henon et M.Bathelot Sr.'),
+          array('id' => '63','auteur' => 'Arnaud','club' => '','date' => '1322141147','message' => 'Retour sur les plus belles performances du week-end du 19 et 20 novembre 2011 :
         - En N2 Dames, Charline Grugeon (12 – 1266 pts) bat Amandine Bauduin (n°188 – 1719 pts) soit 453 points d’écart
         - En N3 Messieurs, Lucas Dubois (16 – 1643 pts) bat Yaacov Haik (n°899 – 2092 pts) soit 449 points d’écart
         - En N3 Messieurs, Maxime Blatrix (18 – 1862 pts) bat Axel Servais-Laval (n°422 – 2263 pts) soit 401 points d’écart
@@ -932,15 +1030,15 @@ class DumpController extends FrontController {
         - En N2 Dames, Caroline Petitprez (14 – 1477 pts) bat Amandine Bauduin (n°188 – 1719 pts) soit 242 points d’écart
         - En D2 Messieurs, Benjamin Bathelot (7 – 789 pts) bat Bertrand Tricottet (10 – 1025 pts) soit 236 points d’écart
         - En R3 Messieurs, Loïc Lefevre (12 – 1285 pts) bat Patrice Vanicat (14 – 1486 pts) soit 201 points d’écart'),
-        array('id' => '64','auteur' => 'Bertrand','club' => 'Astt','date' => '1322389165','message' => 'Il est 11H20 Dimanche, le compte rendu de la R1 n\'est pas encore en ligne.
+          array('id' => '64','auteur' => 'Bertrand','club' => 'Astt','date' => '1322389165','message' => 'Il est 11H20 Dimanche, le compte rendu de la R1 n\'est pas encore en ligne.
         Mais que fait M. Chatelain ?'),
-        array('id' => '65','auteur' => 'Catherine','club' => '','date' => '1322417865','message' => 'Bravo Hélène pour les commentaires ! C\'est très agréable à lire.'),
-        array('id' => '66','auteur' => 'Denis C','club' => 'Triathlète','date' => '1322481351','message' => '11h20, c\'est l\'heure à laquelle je suis rentré de mon footing de 35 km avec Philippe L\'HOTE; puis j\'ai enchainé sur 180 km à vélo et 15 km de natation. C\'est pour ça que le résumé n\'a été posté et mis en ligne qu\'à 16 heures ce dimanche.'),
-        array('id' => '67','auteur' => 'Dud','club' => '','date' => '1322507844','message' => 'YES...on se maintient en N3 (bravo à toute l\'équipe)
+          array('id' => '65','auteur' => 'Catherine','club' => '','date' => '1322417865','message' => 'Bravo Hélène pour les commentaires ! C\'est très agréable à lire.'),
+          array('id' => '66','auteur' => 'Denis C','club' => 'Triathlète','date' => '1322481351','message' => '11h20, c\'est l\'heure à laquelle je suis rentré de mon footing de 35 km avec Philippe L\'HOTE; puis j\'ai enchainé sur 180 km à vélo et 15 km de natation. C\'est pour ça que le résumé n\'a été posté et mis en ligne qu\'à 16 heures ce dimanche.'),
+          array('id' => '67','auteur' => 'Dud','club' => '','date' => '1322507844','message' => 'YES...on se maintient en N3 (bravo à toute l\'équipe)
         Allez la R1 encore une petite marche et c\'est bon...(la R3,la R4 aussi....)
         Du suspense lors de la dernière journée....'),
-        array('id' => '68','auteur' => 'Tin','club' => '','date' => '1322680842','message' => '+1 Dudu !'),
-        array('id' => '69','auteur' => 'Arnaud','club' => '','date' => '1322729549','message' => 'Retour sur les plus belles performances du week-end du 26 et 27 novembre 2011 :
+          array('id' => '68','auteur' => 'Tin','club' => '','date' => '1322680842','message' => '+1 Dudu !'),
+          array('id' => '69','auteur' => 'Arnaud','club' => '','date' => '1322729549','message' => 'Retour sur les plus belles performances du week-end du 26 et 27 novembre 2011 :
         - En D2 Messieurs, Pierre-Philippe Nadau (5 – 520 pts) bat Michel Glanddier (10 – 1060 pts) soit 540 points d’écart
         - En D1 Messieurs, Kévin Couturier (10 – 1026 pts) bat Loïc Sauve (14 – 1428 pts) soit 402 points d’écart
         - En N2 Messieurs, Raphaël Chatelain (20 – 2011 pts) bat Cornel Stoica (n°354 – 2308 pts) soit 297 points d’écart
@@ -948,25 +1046,25 @@ class DumpController extends FrontController {
         - En R3 Messieurs, François Herly (15 – 1573 pts) bat Jean-Michel Leroy (18 – 1852 pts) soit 279 points d’écart
         - En R3 Messieurs, Julien Martin (11 – 1112 pts) bat Hoc Tan Kim (13 – 1341 pts) soit 229 points d’écart
         - En R3 Messieurs, Louis Chaerle (10 – 1049 pts) bat David Jean-Louis (12 – 1255 pts) soit 206 points d’écart'),
-        array('id' => '70','auteur' => 'Bobby','club' => '','date' => '1322730137','message' => 'Si même Flipper et Franky se mettent à faire des perfs\' maintenant... On va remonter en Pro B !'),
-        array('id' => '71','auteur' => 'POLO,B','club' => '','date' => '1322985583','message' => 'beaucoup de perf au critériums 823,789,706,782,789 dont une défaite 830 a la belle je mene 2a0 tooot'),
-        array('id' => '72','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323009529','message' => 'Je gagne cedric neel qui est 11 et care clément qui est 10 et je perd léo bodinel 3-2 a la belle :('),
-        array('id' => '73','auteur' => 'Alexandre Goupil','club' => 'Forges-hôtel','date' => '1323022717','message' => 'Bien joué Ala-Edine , par contre perde 3-2 a la belle c\'est logique ?! ;)'),
-        array('id' => '74','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323024077','message' => 'merci et toi ta fais quoi ch\'goup?'),
-        array('id' => '75','auteur' => 'Ch\'goup','club' => 'J\'ai un métier moi monsieur','date' => '1323027320','message' => 'Je suis en stage cher ami en se moment ... Je n\'ai donc point pu faire ce tour d\'indiv ;).... Dommage ! '),
-        array('id' => '76','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323027723','message' => 'de toute façon tu serais monté en régionale et ta pas voulu les ridiculiser :)'),
-        array('id' => '77','auteur' => 'Ch\'Goup','club' => 'Il t\'en reste un peu','date' => '1323030752','message' => 'Merci Ala-Eddine , tu as tout à fait raison pour le coup !! ;)'),
-        array('id' => '78','auteur' => 'Benjamin B','club' => '','date' => '1323100403','message' => 'Souhaite souligner la fin d\'une ère chez la famille Chatelain,le fils a dépassé le père  sur le classement mensuel(n°843 contre 870 écart de 8,75 pts)Tout va se jouer sur le critérium et la dernière journée de championnat pour la place sur la licence. ;) '),
-        array('id' => '79','auteur' => 'Ch\'Goup','club' => 'Des sacrés numéro','date' => '1323114588','message' => 'Houlala , cela sent le gros fight familial .... C\'est bon ça !!!!! '),
-        array('id' => '80','auteur' => 'Dud','club' => 'quelle belle surprise','date' => '1323117332','message' => 'Quelle joie de revenir d\'un tour de critérium, et de s\'apercevoir que la salle n\'a pas été débarassée des marqueurs,chaises,tables de marqueurs et des bancs.
+          array('id' => '70','auteur' => 'Bobby','club' => '','date' => '1322730137','message' => 'Si même Flipper et Franky se mettent à faire des perfs\' maintenant... On va remonter en Pro B !'),
+          array('id' => '71','auteur' => 'POLO,B','club' => '','date' => '1322985583','message' => 'beaucoup de perf au critériums 823,789,706,782,789 dont une défaite 830 a la belle je mene 2a0 tooot'),
+          array('id' => '72','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323009529','message' => 'Je gagne cedric neel qui est 11 et care clément qui est 10 et je perd léo bodinel 3-2 a la belle :('),
+          array('id' => '73','auteur' => 'Alexandre Goupil','club' => 'Forges-hôtel','date' => '1323022717','message' => 'Bien joué Ala-Edine , par contre perde 3-2 a la belle c\'est logique ?! ;)'),
+          array('id' => '74','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323024077','message' => 'merci et toi ta fais quoi ch\'goup?'),
+          array('id' => '75','auteur' => 'Ch\'goup','club' => 'J\'ai un métier moi monsieur','date' => '1323027320','message' => 'Je suis en stage cher ami en se moment ... Je n\'ai donc point pu faire ce tour d\'indiv ;).... Dommage ! '),
+          array('id' => '76','auteur' => 'Ala-Eddine','club' => 'astt','date' => '1323027723','message' => 'de toute façon tu serais monté en régionale et ta pas voulu les ridiculiser :)'),
+          array('id' => '77','auteur' => 'Ch\'Goup','club' => 'Il t\'en reste un peu','date' => '1323030752','message' => 'Merci Ala-Eddine , tu as tout à fait raison pour le coup !! ;)'),
+          array('id' => '78','auteur' => 'Benjamin B','club' => '','date' => '1323100403','message' => 'Souhaite souligner la fin d\'une ère chez la famille Chatelain,le fils a dépassé le père  sur le classement mensuel(n°843 contre 870 écart de 8,75 pts)Tout va se jouer sur le critérium et la dernière journée de championnat pour la place sur la licence. ;) '),
+          array('id' => '79','auteur' => 'Ch\'Goup','club' => 'Des sacrés numéro','date' => '1323114588','message' => 'Houlala , cela sent le gros fight familial .... C\'est bon ça !!!!! '),
+          array('id' => '80','auteur' => 'Dud','club' => 'quelle belle surprise','date' => '1323117332','message' => 'Quelle joie de revenir d\'un tour de critérium, et de s\'apercevoir que la salle n\'a pas été débarassée des marqueurs,chaises,tables de marqueurs et des bancs.
         Merci à tous les auteurs du dimanche après-midi pour ce moment de pure bonheur!!!!!!!!!!!!!!!'),
-        array('id' => '81','auteur' => 'Denis C','club' => 'Numéro vert','date' => '1323161362','message' => 'Souhaite souligner au père de Benjamin B que ce dernier semble plus consulter le classement FFTT que ses bouquins de comptabilité.
+          array('id' => '81','auteur' => 'Denis C','club' => 'Numéro vert','date' => '1323161362','message' => 'Souhaite souligner au père de Benjamin B que ce dernier semble plus consulter le classement FFTT que ses bouquins de comptabilité.
         Félicite également Bertrand B pour sa belle 7ème place aux individuels.'),
-        array('id' => '84','auteur' => 'Bobby','club' => 'Les Cénobites Tranquilles','date' => '1323523488','message' => 'Bonne chance à toutes les équipes pour cette dernière journée !
+          array('id' => '84','auteur' => 'Bobby','club' => 'Les Cénobites Tranquilles','date' => '1323523488','message' => 'Bonne chance à toutes les équipes pour cette dernière journée !
 
         Et Tchouga particulier pour les équipes M3, M4, M6 pour la montée éventuelle, et pour les équipes M1 et F2 pour le maintien !!'),
-        array('id' => '83','auteur' => 'Ch\'Goup','club' => 'La tristesse','date' => '1323513106','message' => 'Je souhaite bonne chance à toutes les équipes de l\'Amiens Sport TT pour cette dernière journée de championnat pour la 1ere phase. Mais , c\'est avec tristesse que je suivrais les résultats à distance car je ne pourrai être présent. '),
-        array('id' => '85','auteur' => 'Arnaud','club' => '','date' => '1323849455','message' => 'Retour sur les plus belles performances du week-end du 10 et 11 décembre 2011 :
+          array('id' => '83','auteur' => 'Ch\'Goup','club' => 'La tristesse','date' => '1323513106','message' => 'Je souhaite bonne chance à toutes les équipes de l\'Amiens Sport TT pour cette dernière journée de championnat pour la 1ere phase. Mais , c\'est avec tristesse que je suivrais les résultats à distance car je ne pourrai être présent. '),
+          array('id' => '85','auteur' => 'Arnaud','club' => '','date' => '1323849455','message' => 'Retour sur les plus belles performances du week-end du 10 et 11 décembre 2011 :
         - En D2 Messieurs, Grégory Chhe (7 – 738 pts) bat Jean-Paul Descobert (12 – 1229 pts) soit 491 points d’écart
         - En R3 Messieurs, Julien Martin (11 – 1112 pts) bat Mickaël Bacq (15 – 1523 pts), Davy Gilleron (14 – 1447 pts) et Dominique Houant (13 -1358 pts) soit 411 points, 335 points et 246 points d’écart
         - En D2 Messieurs, Paul Boinet (5 – 591 pts) bat Charles Ways (9 – 936 pts) soit 345 points d’écart
@@ -974,40 +1072,40 @@ class DumpController extends FrontController {
         - En R3 Messieurs, Loïc Lefevre (12 – 1285 pts) bat Romuald Monteiro (15 – 1545 pts) soit 260 points d’écart
         - En D1 Messieurs, Benjamin Bathelot (7 – 789 pts) bat Hugues Croutelle (10 – 1023 pts) et Olivier Demolder (10 – 1005 pts) soit 234 points et 216 points d’écart
         - En D2 Messieurs, Olivier Cocquet (7 – 729 pts) bat Charles Ways (9 – 936 pts) soit 207 points d’écart'),
-        array('id' => '86','auteur' => 'Le Goup','club' => 'IS BACK','date' => '1324047329','message' => 'Voilà , les vacances débutent. Le Goup est de retour à l\'ASTT !!! :D'),
-        array('id' => '87','auteur' => 'Dud','club' => '','date' => '1324049244','message' => 'Pour nous fini les vacances!!!!!!!!!!
+          array('id' => '86','auteur' => 'Le Goup','club' => 'IS BACK','date' => '1324047329','message' => 'Voilà , les vacances débutent. Le Goup est de retour à l\'ASTT !!! :D'),
+          array('id' => '87','auteur' => 'Dud','club' => '','date' => '1324049244','message' => 'Pour nous fini les vacances!!!!!!!!!!
         Non je déconne, tu nous manquais le goup........'),
-        array('id' => '88','auteur' => 'Ch Goup','club' => '','date' => '1324077021','message' => 'HAHA ! :P
+          array('id' => '88','auteur' => 'Ch Goup','club' => '','date' => '1324077021','message' => 'HAHA ! :P
         Ca fait plaisir , vous m\'avez énormément manqué aussi ........ :)'),
-        array('id' => '96','auteur' => 'Alexandre Goupil','club' => '','date' => '1324887240','message' => 'Ouverture du club ce Lundi 26 décembre à partir de 17H.'),
-        array('id' => '97','auteur' => 'Dud','club' => '','date' => '1324944570','message' => 'Mardi 27,tous à vos raquettes de 15h à 17h à la salle,entrainement intensif pour les motivés..................'),
-        array('id' => '98','auteur' => 'Ppn','club' => '','date' => '1325065066','message' => 'Le club est-il ouvert aujourd\'hui?'),
-        array('id' => '105','auteur' => 'Alexandre Goupil','club' => 'Repos','date' => '1325195177','message' => 'Vendredi 30 décembre 2011 , salle fermé à priori ... je n\'ouvre pas ... si une autre personne ayant les clefs peut ouvrir qui fasse un signe sur le Livre d\'Or ! =)'),
-        array('id' => '100','auteur' => 'Alexandre Goupil','club' => 'Aucuns repis','date' => '1325068651','message' => 'Le club ouvrira ses portes à partir de 17H , ce mercredi 28 décembre.'),
-        array('id' => '101','auteur' => 'Ppn','club' => '','date' => '1325075864','message' => 'Je te remercie Ch\'Goup.'),
-        array('id' => '102','auteur' => 'remplaçant','club' => '','date' => '1325095928','message' => 'la salle est elle ouverte le 29/12 merci à l\'avance'),
-        array('id' => '110','auteur' => 'Dud','club' => '','date' => '1325596856','message' => 'On a reçu les engagements pour la coupe de la Somme.
+          array('id' => '96','auteur' => 'Alexandre Goupil','club' => '','date' => '1324887240','message' => 'Ouverture du club ce Lundi 26 décembre à partir de 17H.'),
+          array('id' => '97','auteur' => 'Dud','club' => '','date' => '1324944570','message' => 'Mardi 27,tous à vos raquettes de 15h à 17h à la salle,entrainement intensif pour les motivés..................'),
+          array('id' => '98','auteur' => 'Ppn','club' => '','date' => '1325065066','message' => 'Le club est-il ouvert aujourd\'hui?'),
+          array('id' => '105','auteur' => 'Alexandre Goupil','club' => 'Repos','date' => '1325195177','message' => 'Vendredi 30 décembre 2011 , salle fermé à priori ... je n\'ouvre pas ... si une autre personne ayant les clefs peut ouvrir qui fasse un signe sur le Livre d\'Or ! =)'),
+          array('id' => '100','auteur' => 'Alexandre Goupil','club' => 'Aucuns repis','date' => '1325068651','message' => 'Le club ouvrira ses portes à partir de 17H , ce mercredi 28 décembre.'),
+          array('id' => '101','auteur' => 'Ppn','club' => '','date' => '1325075864','message' => 'Je te remercie Ch\'Goup.'),
+          array('id' => '102','auteur' => 'remplaçant','club' => '','date' => '1325095928','message' => 'la salle est elle ouverte le 29/12 merci à l\'avance'),
+          array('id' => '110','auteur' => 'Dud','club' => '','date' => '1325596856','message' => 'On a reçu les engagements pour la coupe de la Somme.
         Meme principe que les années prédédentes.
         Inscriptions au club + 10€ par équipes à l\'ordre du CD.Somme.
         Limite des inscriptions le 28 janvier: 1er tour le 24 février.
         Bonne chance à tous.'),
-        array('id' => '127','auteur' => 'Denis C','club' => 'Impressed','date' => '1327488080','message' => 'Bravo à Hélène CARLIE: 3 Victoires et 2 résumés (N3 & pré-Nat) dans le week-end. C\'est pas beautiful ça?'),
-        array('id' => '128','auteur' => 'Arnaud','club' => '','date' => '1327502304','message' => 'Retour sur les plus belles performances du week-end du 21 et 22 janvier 2012 :
+          array('id' => '127','auteur' => 'Denis C','club' => 'Impressed','date' => '1327488080','message' => 'Bravo à Hélène CARLIE: 3 Victoires et 2 résumés (N3 & pré-Nat) dans le week-end. C\'est pas beautiful ça?'),
+          array('id' => '128','auteur' => 'Arnaud','club' => '','date' => '1327502304','message' => 'Retour sur les plus belles performances du week-end du 21 et 22 janvier 2012 :
         - En R3 Messieurs, Julien Martin (12 – 1227 pts) bat Frédéric Bousignière (15 – 1543 pts) soit 316 points d’écart
         - En D3 Messieurs, Florian Beaufrère (6 – 693 pts) bat Jérôme Frere (9 – 991 pts) soit 298 points d’écart
         - En N3 Dames, Julia Flahaut (9 – 957 pts) bat Célia Chauvris (11 – 1195 pts) soit 238 points d’écart
         - En D1 Messieurs, Xavier Vaucheret (9 – 950 pts) bat Cédric Bloquet (11 – 1183 pts) soit 233 points d’écart
         - En N3 Messieurs, Maxime Blatrix (18 – 1896 pts) bat Philippe Thieuleux (n°821 – 2105 pts) soit 209 points d’écart'),
-        array('id' => '160','auteur' => 'B MARYSSE','club' => '','date' => '1329757980','message' => 'OK Pour samedi aprés midi moi et claire à bientot bruno'),
-        array('id' => '173','auteur' => 'DIDIER HUON','club' => '','date' => '1330262444','message' => 'ET POUR  N OUBLIER PERSONNE UN GRAND MERCI AUSSI A DENIS'),
-        array('id' => '92','auteur' => 'remplaçant ','club' => '','date' => '1324733930','message' => 'bon noel à tous et bonne année 2012'),
-        array('id' => '93','auteur' => 'Le Goup','club' => 'L\'original ','date' => '1324759919','message' => 'Je souhaite un excellent réveillon et un merveilleux Noel à tous les pongistes Amiénois et Picards , bien sur aux autres également! :D'),
-        array('id' => '94','auteur' => 'Tibo Moll','club' => '','date' => '1324777850','message' => 'MERRY X-MAS !'),
-        array('id' => '133','auteur' => 'La mouche','club' => 'ASTT','date' => '1327926442','message' => 'Pis la santé parce que la santé c\'est important quand la santé est là le reste suit hein !!!'),
-        array('id' => '134','auteur' => 'Denis C','club' => 'I\'m bad','date' => '1327928029','message' => 'Un petit Badminton la semaine prochaine monsieur Mouche?
+          array('id' => '160','auteur' => 'B MARYSSE','club' => '','date' => '1329757980','message' => 'OK Pour samedi aprés midi moi et claire à bientot bruno'),
+          array('id' => '173','auteur' => 'DIDIER HUON','club' => '','date' => '1330262444','message' => 'ET POUR  N OUBLIER PERSONNE UN GRAND MERCI AUSSI A DENIS'),
+          array('id' => '92','auteur' => 'remplaçant ','club' => '','date' => '1324733930','message' => 'bon noel à tous et bonne année 2012'),
+          array('id' => '93','auteur' => 'Le Goup','club' => 'L\'original ','date' => '1324759919','message' => 'Je souhaite un excellent réveillon et un merveilleux Noel à tous les pongistes Amiénois et Picards , bien sur aux autres également! :D'),
+          array('id' => '94','auteur' => 'Tibo Moll','club' => '','date' => '1324777850','message' => 'MERRY X-MAS !'),
+          array('id' => '133','auteur' => 'La mouche','club' => 'ASTT','date' => '1327926442','message' => 'Pis la santé parce que la santé c\'est important quand la santé est là le reste suit hein !!!'),
+          array('id' => '134','auteur' => 'Denis C','club' => 'I\'m bad','date' => '1327928029','message' => 'Un petit Badminton la semaine prochaine monsieur Mouche?
         Mais comme tu pourras le constater ce joli sport a également été contaminé par le Benoitvaquiérisme: http://www.youtube.com/watch?v=pV5MveuRaB8&feature=related
         '),
-        array('id' => '135','auteur' => 'Arnaud','club' => '','date' => '1328081593','message' => 'Retour sur les plus belles performances du week-end du 28 et 29 janvier 2012 :
+          array('id' => '135','auteur' => 'Arnaud','club' => '','date' => '1328081593','message' => 'Retour sur les plus belles performances du week-end du 28 et 29 janvier 2012 :
         - En R1 Messieurs, Julien Martin (12 – 1227 pts) bat Julian Bouchoir (16 – 1680 pts) soit 453 points d’écart
         - En N3 Messieurs, Benoît Vaquier (15 – 1583 pts) bat Christopher Frichet (20 – 2007 pts)  et Guillaume Maucourant (18 – 1829 pts) soit 424 points d’écart et 246 points d’écart
         - En R1 Messieurs, Antoine Huon (13 – 1349 pts) bat Alexis Roseiller (17 – 1709 pts) et Julian Bouchoir (16 – 1680 pts) soit 360 points d’écart et 331 points d’écart
@@ -1017,49 +1115,49 @@ class DumpController extends FrontController {
         - En D2 Messieurs, Paul Vandewoestyne (9 – 900 pts) bat Axel Cherville (11 – 1147 pts) Aurélien Gerin (11 – 1138 pts) soit 247 points d’écart et 238 points d’écart
         - En D2 Messieurs, Ala-Edinne Chahir (9 – 914 pts) bat Benjamin Motte-Lacaze (11 – 1133 pts) soit 219 points d’écart
         - En D2 Messieurs, Floris Chartier (9 – 930 pts) bat Aurélien Gerin (11 – 1138 pts) soit 208 points d’écart'),
-        array('id' => '104','auteur' => 'Alexandre Goupil','club' => '','date' => '1325101499','message' => 'Oui , la salle sera ouverte ce Jeudi 29 Décembre. A partir de 15H pour les motivés de l\'entrainement dirigé Dudien et 17H pour les autres. '),
-        array('id' => '107','auteur' => 'Dud','club' => '','date' => '1325424622','message' => 'Bonne année 2012 à tous.
+          array('id' => '104','auteur' => 'Alexandre Goupil','club' => '','date' => '1325101499','message' => 'Oui , la salle sera ouverte ce Jeudi 29 Décembre. A partir de 15H pour les motivés de l\'entrainement dirigé Dudien et 17H pour les autres. '),
+          array('id' => '107','auteur' => 'Dud','club' => '','date' => '1325424622','message' => 'Bonne année 2012 à tous.
         Fini les chocolats et autres gourmandises!!!!!!
         Retour au ping dès lundi avec un entrainement club dirigé de 17h à19h.
         A vos raquettes'),
-        array('id' => '126','auteur' => 'Alexandre Goupil','club' => 'Arbitre national','date' => '1327004963','message' => 'Je souhaite bonne chance aux joueurs d\'Amiens Sport Tennis de Table pour ce week-end de championnat par équipe. Attention aux collages des plaques ... surtout aux filles , ne pas s\'enlever le verni a ongle avec le Dit Solvant qui n\'est pas très apprécié en ce moment ... surtout dans la zone entre Amiens et le Creuso.'),
-        array('id' => '138','auteur' => 'remplaçant ','club' => '','date' => '1328554801','message' => 'pour samedi, je serai à la salle à 13h45 j\'aimerai ne pas prendre ma voiture. A bientot bonne semaine '),
-        array('id' => '140','auteur' => 'Corinne','club' => '','date' => '1328797953','message' => 'Bonjour,
+          array('id' => '126','auteur' => 'Alexandre Goupil','club' => 'Arbitre national','date' => '1327004963','message' => 'Je souhaite bonne chance aux joueurs d\'Amiens Sport Tennis de Table pour ce week-end de championnat par équipe. Attention aux collages des plaques ... surtout aux filles , ne pas s\'enlever le verni a ongle avec le Dit Solvant qui n\'est pas très apprécié en ce moment ... surtout dans la zone entre Amiens et le Creuso.'),
+          array('id' => '138','auteur' => 'remplaçant ','club' => '','date' => '1328554801','message' => 'pour samedi, je serai à la salle à 13h45 j\'aimerai ne pas prendre ma voiture. A bientot bonne semaine '),
+          array('id' => '140','auteur' => 'Corinne','club' => '','date' => '1328797953','message' => 'Bonjour,
 
         Vous n\'avez pas renseigné la rubrique Entraînement - horaires.
 
         Merci'),
-        array('id' => '145','auteur' => 'Bobby','club' => 'ASTT','date' => '1328981765','message' => 'Bonjour,
+          array('id' => '145','auteur' => 'Bobby','club' => 'ASTT','date' => '1328981765','message' => 'Bonjour,
 
         En effet, c\'est résolu.
 
         Merci de l\'avoir signalé.'),
-        array('id' => '146','auteur' => 'criticman','club' => '','date' => '1329044885','message' => 'mauvais point pour le staff astt
+          array('id' => '146','auteur' => 'criticman','club' => '','date' => '1329044885','message' => 'mauvais point pour le staff astt
         jaja n\'a pas suffit pour faire gagner l\'eq 2M
         par contre par son abscence en eq 1 il a fait perdre celle ci'),
-        array('id' => '147','auteur' => 'criticman','club' => '','date' => '1329046116','message' => 'désolé pour la faute
+          array('id' => '147','auteur' => 'criticman','club' => '','date' => '1329046116','message' => 'désolé pour la faute
         absence et non abscence'),
-        array('id' => '148','auteur' => 'Denis C','club' => '','date' => '1329126700','message' => 'Non Criticman, ça valait la peine de tenter le coup. La défaite de l\'équipe 1 ne portera pas à conséquences.
+          array('id' => '148','auteur' => 'Denis C','club' => '','date' => '1329126700','message' => 'Non Criticman, ça valait la peine de tenter le coup. La défaite de l\'équipe 1 ne portera pas à conséquences.
         Sinon: "n\'a pas suffi", c\'est mieux.
         Tu peux retirer le "t" et ton masque Goupil. On t\'a reconnu...'),
-        array('id' => '149','auteur' => 'Alexandre Goupil','club' => 'Réfléchir','date' => '1329129835','message' => 'Heu Denis , merci de ne pas m\'accuser de ces conneries mi sur le livre d\'or .... ce fameux Criticman , ce n\'est pas moi , aucuns interets à écrire ça.'),
-        array('id' => '150','auteur' => 'Bertrand','club' => '','date' => '1329133718','message' => 'Je pense également que c\'était le bon choix pour essayer d\'assurer le maintient de l\'équipe 2.
+          array('id' => '149','auteur' => 'Alexandre Goupil','club' => 'Réfléchir','date' => '1329129835','message' => 'Heu Denis , merci de ne pas m\'accuser de ces conneries mi sur le livre d\'or .... ce fameux Criticman , ce n\'est pas moi , aucuns interets à écrire ça.'),
+          array('id' => '150','auteur' => 'Bertrand','club' => '','date' => '1329133718','message' => 'Je pense également que c\'était le bon choix pour essayer d\'assurer le maintient de l\'équipe 2.
 
         Cela n\'est pas passé loin et l\'équipe 1 a toujours son destin entre les mains.'),
-        array('id' => '151','auteur' => 'Denis C','club' => 'Sorryman','date' => '1329142313','message' => 'Un anonymous se faisant passer pour Goupil alors. Un imposteur vraiment diabolique...
+          array('id' => '151','auteur' => 'Denis C','club' => 'Sorryman','date' => '1329142313','message' => 'Un anonymous se faisant passer pour Goupil alors. Un imposteur vraiment diabolique...
         Peut-être son voisin en classe de Littérature comparée?'),
-        array('id' => '152','auteur' => 'Ch\'Goup','club' => 'It\'s nothingMan','date' => '1329214595','message' => 'Merci Denis , en effet ... un imposteur! De nos jours , c\'est dommage de voir ça ... Je mènne l\'enquéte ! ;)'),
-        array('id' => '162','auteur' => 'Dud','club' => '','date' => '1329852904','message' => 'samedi 25 février
+          array('id' => '152','auteur' => 'Ch\'Goup','club' => 'It\'s nothingMan','date' => '1329214595','message' => 'Merci Denis , en effet ... un imposteur! De nos jours , c\'est dommage de voir ça ... Je mènne l\'enquéte ! ;)'),
+          array('id' => '162','auteur' => 'Dud','club' => '','date' => '1329852904','message' => 'samedi 25 février
         Championnat de Picardie de sport adapté.
         Le club recherche des volontaires pour arbitrer les parties,petits ou grands sont les bienvenus....
         Merci d\'avance'),
-        array('id' => '155','auteur' => 'Bobby','club' => 'ASTT','date' => '1329256699','message' => 'J\'ai son adresse IP si tu veux jouer le détective, alexandre.
+          array('id' => '155','auteur' => 'Bobby','club' => 'ASTT','date' => '1329256699','message' => 'J\'ai son adresse IP si tu veux jouer le détective, alexandre.
 
         3e journée dommage-presque pour moi...
         Ou comment passer à côté d\'une perf\' à 500pts en perdant 11-09 à la belle après avoir mené 2-0, puis d\'une à 400pts en perdant 11-08 à la belle après avoir mené 2-1...
 
         Fail.'),
-        array('id' => '156','auteur' => 'Arnaud','club' => '','date' => '1329295436','message' => 'Retour sur les plus belles performances du week-end du 11 et 12 février 2012 :
+          array('id' => '156','auteur' => 'Arnaud','club' => '','date' => '1329295436','message' => 'Retour sur les plus belles performances du week-end du 11 et 12 février 2012 :
         - En R1 Messieurs, Antoine Huon (13 – 1349 pts) bat Pascal Perrin (17 – 1750 pts) et Valentin Carme (16 – 1625 pts) soit 401 pts d’écart et 276 points d’écart
         - En R3 Messieurs, Julien Martin (12 – 1227 pts) bat Frédéric Bédier (15 – 1561 pts) et Gérard Dacheux (14 – 1435 pts) soit 334 points d’écart et 208 points d’écart
         - En R3 Messieurs, Cyril De Catheu (12 – 1231 pts) bat Gérald Patte (15 – 1535 pts) soit 304 points d’écart
@@ -1067,12 +1165,12 @@ class DumpController extends FrontController {
         - En R3 Messieurs, Louis Chaerle (11 – 1187 pts) bat Alain Caumartin (14 – 1468 pts) et Sylvain Coffinier (14 – 1427 pts) soit 281 points d’écart et 240 points d’écart
         - En R3 Messieurs, Léo Bodinel (11 – 1160 pts) bat Frédéric Martin (14 – 1412 pts) soit 252 points d’écart
         - En D2 Messieurs, Richard Tran (7 – 731 pts) bat Pierre Minard (9 – 953 pts) soit 222 points d’écart'),
-        array('id' => '157','auteur' => 'La Mouche','club' => 'Labaume au coeur','date' => '1329302517','message' => 'Salut les pongeux !!! Merci à l\'équipe 6 d\'avoir remporté sa rencontre pour sauver l\'honneur du club, week-end noir question résultats mais du bon fight apparemment, alors courage pour la suite de la phase, battez-vous ! See U soon !'),
-        array('id' => '158','auteur' => 'Criticman','club' => 'Marié à ma prof de français','date' => '1329429072','message' => 'Mauvais pour le staff revers ... 
+          array('id' => '157','auteur' => 'La Mouche','club' => 'Labaume au coeur','date' => '1329302517','message' => 'Salut les pongeux !!! Merci à l\'équipe 6 d\'avoir remporté sa rencontre pour sauver l\'honneur du club, week-end noir question résultats mais du bon fight apparemment, alors courage pour la suite de la phase, battez-vous ! See U soon !'),
+          array('id' => '158','auteur' => 'Criticman','club' => 'Marié à ma prof de français','date' => '1329429072','message' => 'Mauvais pour le staff revers ... 
         Aujourd\'hui Denis , ne m\'a pas impressionné par la plaque qu\'il a en revers. Je lui est plutôt mi des tatanes , d\'ailleurs ce n\'est pas lui qui as gagné la montante de Dud ... 
         Et puis au final , il ne gagne pas les matchs , mais ses adversaires les perdent! 
         A bon entendeur... ;-)'),
-        array('id' => '163','auteur' => 'Arnaud','club' => '','date' => '1329900780','message' => 'Retour sur les plus belles performances du week-end du 18 et 19 février 2012 :
+          array('id' => '163','auteur' => 'Arnaud','club' => '','date' => '1329900780','message' => 'Retour sur les plus belles performances du week-end du 18 et 19 février 2012 :
         - En D2 Messieurs, Benoît Bonté (8 – 862 pts) bat Rodolphe Vagner (12 – 1250 pts) soit 388 points
         - En D2 Messieurs, Pierre-Philippe Nadau (6 – 695 pts) bat Laurent Poix (10 – 1020 pts) soit 325 points d’écart
         - En R3 Messieurs, Ali-Combo-Combo (13 – 1353 pts) bat Christophe Caffin (16 – 1631 pts) soit 278 points d’écart
@@ -1080,25 +1178,25 @@ class DumpController extends FrontController {
         - En R3 Messieurs, Cyril De Catheu (12 – 1231 pts) bat Jérôme Dupuis (14 – 1456 pts) soit 225 points d’écart
         - En R1 Messieurs, Antoine Huon (13 – 1349 pts) bat Bérenger Ambeza (15 – 1569 pts) soit 220 points d’écart
         - En R3 Messieurs, Louis Chaerle (11 – 1187 pts) bat Romuald Peschke (13 – 1390 pts) soit 203 points d’écart'),
-        array('id' => '170','auteur' => 'Goupss','club' => 'Coupe de la Somme','date' => '1330195942','message' => 'Victoire de l\'équipe Vaquero/Goup -->4-1 contre St Fuscien.
+          array('id' => '170','auteur' => 'Goupss','club' => 'Coupe de la Somme','date' => '1330195942','message' => 'Victoire de l\'équipe Vaquero/Goup -->4-1 contre St Fuscien.
         Victoire de l\'équipe Boinet/Feraud --> 4-1 contre St Fuscien.'),
-        array('id' => '171','auteur' => 'ppn','club' => 'amienssport tt','date' => '1330244571','message' => 'Bien jouer Amiens'),
-        array('id' => '172','auteur' => 'Denis C','club' => 'Muchos gratias','date' => '1330257381','message' => 'Remercie: Lucas Dubois, Andréï Deguingand, Benjamin Bathelot, Richard Tran, Sophie Tran, Laurent Vandewoestyne, Paul Bodinel, Léo Bodinel, Didier Huon, Antoine Huon, Marine Huon, Bertrand Bathelot, Bruno Marysse, Claire Marysse, Loïc Lefevre, Paul Boinet, Philippe Riquart, Aurélie Neel, Christophe Harlé, Clémence Steelandt, Pierre-Philippe Nadeau, Yohan Leconte, Marie-Jeanne Volkamer, Xavier Vaucheret et Dany Bourré, pour leur participation à l\'organisation du championnat de picardie sport adapté ce week-end. ça fait plaisir.'),
-        array('id' => '175','auteur' => 'Benjamin B','club' => '','date' => '1330288395','message' => 'Un grand merci à Denis qui à dirigé ça d\'une main de maître. Journée et compétition très agréable.'),
-        array('id' => '179','auteur' => 'Dud','club' => '','date' => '1330348200','message' => 'Bien joué Dedeuche pour samedi dernier....
+          array('id' => '171','auteur' => 'ppn','club' => 'amienssport tt','date' => '1330244571','message' => 'Bien jouer Amiens'),
+          array('id' => '172','auteur' => 'Denis C','club' => 'Muchos gratias','date' => '1330257381','message' => 'Remercie: Lucas Dubois, Andréï Deguingand, Benjamin Bathelot, Richard Tran, Sophie Tran, Laurent Vandewoestyne, Paul Bodinel, Léo Bodinel, Didier Huon, Antoine Huon, Marine Huon, Bertrand Bathelot, Bruno Marysse, Claire Marysse, Loïc Lefevre, Paul Boinet, Philippe Riquart, Aurélie Neel, Christophe Harlé, Clémence Steelandt, Pierre-Philippe Nadeau, Yohan Leconte, Marie-Jeanne Volkamer, Xavier Vaucheret et Dany Bourré, pour leur participation à l\'organisation du championnat de picardie sport adapté ce week-end. ça fait plaisir.'),
+          array('id' => '175','auteur' => 'Benjamin B','club' => '','date' => '1330288395','message' => 'Un grand merci à Denis qui à dirigé ça d\'une main de maître. Journée et compétition très agréable.'),
+          array('id' => '179','auteur' => 'Dud','club' => '','date' => '1330348200','message' => 'Bien joué Dedeuche pour samedi dernier....
         N\'oublie pas mardi 27 février 7h30 à la salle...ça pique...'),
-        array('id' => '1773','auteur' => 'Arnaud','club' => '','date' => '1330854062','message' => 'Retour sur la plus belle performance du samedi 3 mars 2012 : 
+          array('id' => '1773','auteur' => 'Arnaud','club' => '','date' => '1330854062','message' => 'Retour sur la plus belle performance du samedi 3 mars 2012 : 
         - En N3 Messieurs, Lucas Dubois (17 – 1710 pts) bat David Ramos (n°490 – 2226 pts) soit 516 points d’écart
         '),
-        array('id' => '2488','auteur' => 'Bobby','club' => 'ASTT','date' => '1330990367','message' => 'Bonsoir,
+          array('id' => '2488','auteur' => 'Bobby','club' => 'ASTT','date' => '1330990367','message' => 'Bonsoir,
 
         je suspend momentanément le livre d\'or le temps de mettre en place un blocage aux robots qui le polluent si désagréablement.
 
         Merci de votre compréhension,
 
         Florent.'),
-        array('id' => '2491','auteur' => 'Alexandre Goupil','club' => 'A dream','date' => '1335298073','message' => 'Tout Amiens Sport en rêvait , Flo Schild l\'a refait ... le Livre d\'Or enfin de retour. hallelujah !!!!'),
-        array('id' => '2490','auteur' => 'Bobby','club' => 'ASTT','date' => '1335210725','message' => 'Hello.
+          array('id' => '2491','auteur' => 'Alexandre Goupil','club' => 'A dream','date' => '1335298073','message' => 'Tout Amiens Sport en rêvait , Flo Schild l\'a refait ... le Livre d\'Or enfin de retour. hallelujah !!!!'),
+          array('id' => '2490','auteur' => 'Bobby','club' => 'ASTT','date' => '1335210725','message' => 'Hello.
 
         Désolé du retard, j\'ai pas vraiment eu une période vacancière ces derniers mois !
 
@@ -1109,14 +1207,14 @@ class DumpController extends FrontController {
         Bon chat...
 
         Flo.'),
-        array('id' => '2492','auteur' => 'Arnaud','club' => '','date' => '1335335895','message' => 'Retour sur les plus belles performances du week-end du 17 et 18 mars 2012 :
+          array('id' => '2492','auteur' => 'Arnaud','club' => '','date' => '1335335895','message' => 'Retour sur les plus belles performances du week-end du 17 et 18 mars 2012 :
         - En N3 Dames, Charline Grugeon (12 – 1253 pts) bat Marion Godefroy (n°270 – 1582 pts) soit 329 points d’écart
         - En R1 Messieurs, Loïc Lefevre (14 – 1429 pts) bat Julien Lision (17 – 1755 pts) soit 326 points d’écart
         - En N3 Dames, Julia Flahaut (9 – 957 pts) bat Claire Baritaux (12 – 1270 pts) soit 313 points d’écart
         - En R3 Messieurs, Ali Combo Combo (13 – 1353 pts) bat Sébastien Savreux (16 – 1643 pts) soit 290 points d’écart
         - En D2 Messieurs, Pierre-Philippe Nadau (6 – 695 pts) bat Lény Rose (9 – 909 pts) soit 214 points d’écart
         - En R1 Messieurs, Antoine Huon (13 – 1349 pts) bat Grégoire Lambert (15 – 1560 pts) soit 211 points d’écart'),
-        array('id' => '2493','auteur' => 'Arnaud','club' => '','date' => '1335335963','message' => 'Retour sur les plus belles performances du week-end du 31 mars et 1er avril 2012 :
+          array('id' => '2493','auteur' => 'Arnaud','club' => '','date' => '1335335963','message' => 'Retour sur les plus belles performances du week-end du 31 mars et 1er avril 2012 :
         - En R1 Messieurs, Antoine Huon (13 – 1349 pts) bat Aurélien Hermant (18 – 1895 pts) soit 546 points d’écart
         - En N3 Messieurs, Benoît Vaquier (15 – 1583 pts) bat Jérôme Vieillart (20 – 2017 pts) soit 434 points d’écart
         - En N3 Dames, Julia Flahaut (9 – 957 pts) bat Sophie Cave (13 – 1315 pts) soit 358 points d’écart
@@ -1129,8 +1227,8 @@ class DumpController extends FrontController {
         - En D1 Messieurs, Paul Boinet (8 – 825 pts) bat Sébastien Dacheux (10 – 1070 pts), Hugues Lebrun (10 – 1060 pts) et Clément Delépine (10 – 1039 pts) soit 245 points d’écart, 235 points d’écart et 214 points d’écart
         - En R2 Messieurs, Leny Berriat (14 – 1480 pts) bat Romuald Belgueul (17 – 1712 pts) soit 232 points d’écart
         - En D3 Messieurs, Alexandre Goupil (5 – 587 pts) bat Didier Cotrelle (8 – 800 pts) soit 213 points d’écart'),
-        array('id' => '2267','auteur' => 'Alexandre Goupil','club' => '','date' => '1330947042','message' => 'Ouverture de la salle ce lundi 5 février à partir de 17H. A vos raquettes.... Indiv\' ce week-end. '),
-        array('id' => '2494','auteur' => 'Arnaud','club' => '','date' => '1335336028','message' => 'Retour sur les plus belles performances du week-end du 14 et 15 avril 2012 :
+          array('id' => '2267','auteur' => 'Alexandre Goupil','club' => '','date' => '1330947042','message' => 'Ouverture de la salle ce lundi 5 février à partir de 17H. A vos raquettes.... Indiv\' ce week-end. '),
+          array('id' => '2494','auteur' => 'Arnaud','club' => '','date' => '1335336028','message' => 'Retour sur les plus belles performances du week-end du 14 et 15 avril 2012 :
         - En R1 Messieurs, Andréï Deguingand (11 – 1166 pts) bat Sébastien Baudry (16 – 1627 pts) et Charles-Henri Grimaux (15 – 1585 pts) soit 461 points d’écart et 419 points d’écart
         - En D1 Messieurs, Paul Boinet (8 – 825 pts) bat Daniel Foulon (12 – 1221 pts) et Mickaël Le Pors (10 – 1067 pts) soit 396 points d’écart et 242 points d’écart
         - En D2 Messieurs, Pierre-Philippe Nadau (6 – 695 pts) bat Patrick Morival (10 – 1061 pts) soit 366 points d’écart
@@ -1143,217 +1241,263 @@ class DumpController extends FrontController {
         - En D3 Messieurs, Joffrey Hauw (7 – 709 pts) bat Pascal Pruvot (9 – 927 pts) soit 218 points d’écart
         - En R2 Messieurs, Leny Berriat (14 – 1480 pts) bat Eddy Gontarczyk (16 – 1691 pts) soit 211 points d’écart
         - En D1 Jeunes, Ymad Hamdad (5 – 500 pts) bat Aymeric Jur (7 – 708 pts) soit 208 points d’écart'),
-        array('id' => '2495','auteur' => 'Bobby','club' => 'ASTT','date' => '1335539521','message' => 'Une "petite" surprise à venir...
+          array('id' => '2495','auteur' => 'Bobby','club' => 'ASTT','date' => '1335539521','message' => 'Une "petite" surprise à venir...
 
         Qui, j\'espère pour vous, vous plaira.'),
-        array('id' => '2496','auteur' => 'Goup','club' => 'Surprise surprise','date' => '1335605739','message' => 'à venir ??
+          array('id' => '2496','auteur' => 'Goup','club' => 'Surprise surprise','date' => '1335605739','message' => 'à venir ??
         Nous sommes le 27 Avril 2012 , c\'est Flo qui fait la surprise (Flo+surprise²/temps de mise en marche X livre d\'or = ...) Ok , je reviens sur le site en Octobre pour la surprise! J\'ai hâte.'),
-        array('id' => '2497','auteur' => 'Bobby','club' => 'ASTT','date' => '1335621569','message' => 'Bien avant ça quand même, mais je préfère ne pas m\'avancer sur les dates, avec les projets que j\'ai et que je vais avoir très bientôt...
+          array('id' => '2497','auteur' => 'Bobby','club' => 'ASTT','date' => '1335621569','message' => 'Bien avant ça quand même, mais je préfère ne pas m\'avancer sur les dates, avec les projets que j\'ai et que je vais avoir très bientôt...
 
         Refonte technique (dev) + graphique + back-office complète...'),
-        array('id' => '2498','auteur' => 'Goup','club' => 'Le Schlid Fort','date' => '1335645762','message' => 'Allez Bobby , on croit en toi. Ne nous déçoit pas... fait ça en un temps record !!!!
+          array('id' => '2498','auteur' => 'Goup','club' => 'Le Schlid Fort','date' => '1335645762','message' => 'Allez Bobby , on croit en toi. Ne nous déçoit pas... fait ça en un temps record !!!!
         Oui , le Schild , le changement  , c\'est maintenant.'),
-        array('id' => '2499','auteur' => 'Dud','club' => '','date' => '1335776885','message' => 'finale critérium poussins/benjamins:samedi 28 avril à l\'ASTT:16 équipes de la Somme engagées.
+          array('id' => '2499','auteur' => 'Dud','club' => '','date' => '1335776885','message' => 'finale critérium poussins/benjamins:samedi 28 avril à l\'ASTT:16 équipes de la Somme engagées.
         2 équipes d\'Amiens terminent 1er et 2e, bravo à Eline, Elvire ainsi qu\'Ymad,Kéziah et Adem (1ere compétition)'),
-        array('id' => '2500','auteur' => 'Goup','club' => 'Championship of the Somme','date' => '1336318474','message' => 'Félicitation à 
+          array('id' => '2500','auteur' => 'Goup','club' => 'Championship of the Somme','date' => '1336318474','message' => 'Félicitation à 
         -Andrei Deguingand champion de la Somme 2012 en Minime Garçon.
         -Gustave Defosse champion de la Somme 2012 en Benjamin Garçon.
         -Cyril de Catheu champion de la Somme 2012 en Junior Garçon. Et Louis Vandewoestyne Vice-Champion de la Somme 2012 en Junior Garçon.'),
-        array('id' => '2501','auteur' => 'Goup','club' => 'une réctification doit se faire','date' => '1336331046','message' => '-Louis Vandewoestyne Champion de la Somme 2012 en Junior Garçon et Cyril de Catheu Vice-Champion de la Somme 2012 en Junior Garçon.'),
-        array('id' => '2502','auteur' => 'Goup','club' => 'Les Bons Samaritains ','date' => '1336500406','message' => 'Félicitation à la délégation Samarienne pour sa belle prestation au Challenge Interdépartementaux 2012. Une victoire "large" avec 78 points devant l\'Oise deuxième et l\'Aisne deuxième. 
+          array('id' => '2501','auteur' => 'Goup','club' => 'une réctification doit se faire','date' => '1336331046','message' => '-Louis Vandewoestyne Champion de la Somme 2012 en Junior Garçon et Cyril de Catheu Vice-Champion de la Somme 2012 en Junior Garçon.'),
+          array('id' => '2502','auteur' => 'Goup','club' => 'Les Bons Samaritains ','date' => '1336500406','message' => 'Félicitation à la délégation Samarienne pour sa belle prestation au Challenge Interdépartementaux 2012. Une victoire "large" avec 78 points devant l\'Oise deuxième et l\'Aisne deuxième. 
         Un grand merci aux Coachs de la Somme et au 17 joueurs de l\'Amiens Sport Tennis de Table pour leur participation en force. =)'),
-        array('id' => '2503','auteur' => 'Alexandre Goupil','club' => 'Challenge PBM','date' => '1336844577','message' => 'Résultats du Challenge P.B.M du 12 Mai 2012: 
+          array('id' => '2503','auteur' => 'Alexandre Goupil','club' => 'Challenge PBM','date' => '1336844577','message' => 'Résultats du Challenge P.B.M du 12 Mai 2012: 
         - En Benjamins Garçon ,Hamdad Ymad termine 1er , Desjonquère Keziah termine 3ème et Herbin Teneur Timeo termine 17ème.
         - En Minimes Fille , Steeland Clémence termine 2ème.
         - En Minimes Garçon , Nadeau Pierre-Philippe termine 1er.
         - En Poussines , Steeland Pauline termine 2ème et Andre Jeanne termine 6ème.
         - En Poussins , Ledoux Mael termine 2ème , Hamdad Adem termine 9ème et Brasseur Gauthier termine également à la 9ème place.
         Bravo à tous les joueurs pour leur très belle prestation du jour. Merci aux parents d\'avoir assuré l\'ambiance. Et un grand merci aux coachs présent ( Marion , Cyril et Vincent) pour leur implication et leur envi de réussite pour les joueurs.'),
-        array('id' => '2504','auteur' => 'Alexandre Goupil','club' => 'Finale by regional classification','date' => '1336923610','message' => 'Aujourd\'hui , 4 joueurs de l\'Amiens Sport TT étaient qualifié pour participer aux Finales par Classement Régional qui se sont déroulé à Breteuil.
+          array('id' => '2504','auteur' => 'Alexandre Goupil','club' => 'Finale by regional classification','date' => '1336923610','message' => 'Aujourd\'hui , 4 joueurs de l\'Amiens Sport TT étaient qualifié pour participer aux Finales par Classement Régional qui se sont déroulé à Breteuil.
         Après des matchs à la hauteur des attentes , seul Loic Lefevre à réussi à se qualifier pour la grande finale National qui se déroulera près de Angers (Poncey) les 23 et 24 Juin 2012.
         Bravo à Marion Bertelot , Loic Lefevre , Louis Vandewoestyne et Gregory Chhe pour votre participation. Merci à Héléne Carlie d\'avoir fait le deplacement pour le coaching.'),
-        array('id' => '2507','auteur' => 'Denis C','club' => '','date' => '1337344406','message' => 'Louis VANDE a effectivement tout déchiré: son slip et sa race. Il gagne le tableau (poussin-benjamin) 900-1499 points du tournoi de Reims 2012. Le gain du Magnum de Champagne l\'aura survolté. Son capitaine d\'équipe l\'an prochain sait ce qui lui reste à faire.'),
-        array('id' => '2506','auteur' => 'le vande','club' => 'ASTT','date' => '1337115693','message' => 'Départ pour Reims demain a 18h30, avec la team emmener par les Bathelot ! on va tout déchirer.. '),
-        array('id' => '2508','auteur' => 'Inconnu du club','club' => 'Amiens stt','date' => '1337889154','message' => 'Vive le tennis de table!!!!!!!!!!!!!!!'),
-        array('id' => '2509','auteur' => 'Goup','club' => 'Obstiné','date' => '1337891332','message' => 'En ce jour du Jeudi 24 Avril 2012, une très grande chose c\'est produite salle Labaume d\'Amiens. Car oui même à Amiens Sport Tennis de Table "Le changement, c\'est maintenant", Denis Chatelain, n\'est plus invaincu à hauteur de 3/0 sur Alexandre Goupil. J\'ai réussi à lui mettre un set dans sa face... ;-)Merci Denis pour avoir eu un "Coup de faiblesse", je terminerai sur une citation d\'un ami (que je déforme pour l\'adapter à la situation) , Le Tennis de Table Fort.')
+          array('id' => '2507','auteur' => 'Denis C','club' => '','date' => '1337344406','message' => 'Louis VANDE a effectivement tout déchiré: son slip et sa race. Il gagne le tableau (poussin-benjamin) 900-1499 points du tournoi de Reims 2012. Le gain du Magnum de Champagne l\'aura survolté. Son capitaine d\'équipe l\'an prochain sait ce qui lui reste à faire.'),
+          array('id' => '2506','auteur' => 'le vande','club' => 'ASTT','date' => '1337115693','message' => 'Départ pour Reims demain a 18h30, avec la team emmener par les Bathelot ! on va tout déchirer.. '),
+          array('id' => '2508','auteur' => 'Inconnu du club','club' => 'Amiens stt','date' => '1337889154','message' => 'Vive le tennis de table!!!!!!!!!!!!!!!'),
+          array('id' => '2509','auteur' => 'Goup','club' => 'Obstiné','date' => '1337891332','message' => 'En ce jour du Jeudi 24 Avril 2012, une très grande chose c\'est produite salle Labaume d\'Amiens. Car oui même à Amiens Sport Tennis de Table "Le changement, c\'est maintenant", Denis Chatelain, n\'est plus invaincu à hauteur de 3/0 sur Alexandre Goupil. J\'ai réussi à lui mettre un set dans sa face... ;-)Merci Denis pour avoir eu un "Coup de faiblesse", je terminerai sur une citation d\'un ami (que je déforme pour l\'adapter à la situation) , Le Tennis de Table Fort.'),
+          array('id' => '2510','auteur' => 'Iconnu du club','club' => 'super heureux','date' => '1339223317','message' => 'Je taire(mélange de aimer et adorer)le table tennis.Le défi est de trouver qui je suis. '),
+          array('id' => '2511','auteur' => 'Ma vie','club' => '','date' => '1339232599','message' => 'Et sinon moi hier soir j\'ai mangé des Spaghetti. '),
+          array('id' => '2512','auteur' => 'Inconnu du club','club' => '','date' => '1339246235','message' => 'T\'es qui toi "Ma vie"?'),
+          array('id' => '2513','auteur' => 'Ma vie','club' => '','date' => '1339256545','message' => 'Et toi, t\'es qui "Inconnu" ?'),
+          array('id' => '2514','auteur' => 'Alexandre Goupil','club' => 'Résultats Challenge PBM','date' => '1339345233','message' => 'Résultats Challenge Poussins-Benjamins-Minimes Régional.
+
+        -Nadeau Pierre-Philippe termine 1er e Minimes.
+        -Hamdad Ymad termine 1er en Benjamins et Kéziah Desjonqueres 11éme.
+        -Hamdad Adem termine 1er en Poussins ( année 2005 et après).
+        -Mael Ledoux termine 10éme en Poussins (année 2003/2004).
+        -Pauline Steeland termine 2éme en Poussines et Jeanne André termine 9éme, (année 2003/2004).
+        -Clémence Steeland termine 2éme en Benjamines.
+
+        Un très grand bravo à tous pour votre participation et vos résultats excellent!! 
+        Merci au Papa de Jeanne, Ymad et Pierre-Philippe pour l\'accompagnement'),
+          array('id' => '2515','auteur' => 'Inconnu du club','club' => '','date' => '1339675571','message' => 'Je vous donne un indice ,celui qui trouve qui je suis aura une surprise. Voici l\'indice,je suis ne le 27 ......... ........... ! Bonne chance!'),
+          array('id' => '2516','auteur' => 'PPN','club' => 'Amiens STT','date' => '1340096960','message' => 'Je croyais que le truc d-en dessous server à ne pas mettre des choses comme l\'Inconnu!'),
+          array('id' => '2517','auteur' => 'PPN','club' => 'Amiens STT','date' => '1340097022','message' => 'En-dessus pardon'),
+          array('id' => '2518','auteur' => 'Alexandre Goupil','club' => '','date' => '1340107147','message' => 'Je croyais aussi que sur le livre d\'or, nous ne serions plus embêté par ce genre de truc aussi... '),
+          array('id' => '2519','auteur' => 'Dud','club' => '','date' => '1340281223','message' => 'petite bouffe entre amis:
+        mardi 26 juin à partir de 19h30-20h00
+        Pour cloturer la saison tous les joueurs et joueuses ayant participer aux entrainements sont conviés à ce petit repas de fin d\'année ( je ramène saucisse,merguez et le pain....)
+        Chacun ramène un petit truc.....'),
+          array('id' => '2520','auteur' => 'Alexandre Goupil','club' => '"Petite bouffe entre ami"','date' => '1340787674','message' => 'Un grand merci à toi Christophe pour avoir organisé la soirée. Un très bon moment de rigolade et de très bons souvenirs!!! Merci à Lolo Cany pour les photos... =)'),
+          array('id' => '2521','auteur' => 'Alexandre Goupil','club' => 'AG','date' => '1341039419','message' => 'Un grand bravo à tous pour votre participation à l\'AG d\'hier soir et un grand merci d\'avoir jouer le jeu pour le repas. Une soirée fort réussite où la bonne humeur et la plaisanterie etaient au rendez-vous. Une soirée à renouveler les années prochaines. '),
+          array('id' => '2522','auteur' => 'PPN','club' => 'Amiens STT','date' => '1341301470','message' => 'Le club est ouvert aujourd\'hui?'),
+          array('id' => '2523','auteur' => 'Alexandre Goupil','club' => 'Ouverture du club','date' => '1341313007','message' => 'Bonjour, 
+
+        Ouverture du club ce Mardi 03 Juillet, à partir de 15H. Je partirais vers 17H ou 18H, si un adulte est présent le club restera ouvert bien sûr, en revanche, si aucuns adultes est présent, le club fermera ses portes à mon départ.
+
+        Sportivement'),
+          array('id' => '2524','auteur' => 'Paul','club' => '','date' => '1341492927','message' => 'Le club est ouvert cet après-midi ?'),
+          array('id' => '2525','auteur' => 'Amiens Sport Tennis de Table','club' => '','date' => '1342033679','message' => 'L\'équipe d\'Amiens Sport Tennis de Table souhaite de très bonne vacances estival à tous les pongistes. N\'oubliez pas de suivre les Championnats d\'Europe qui se déroule du 13 et jusqu\'au 22 juillet et les Jeux Olympique qui débute dans 16 jours. :-)'),
+          array('id' => '2526','auteur' => 'Amiens Sport Tennis de Table','club' => '','date' => '1342038970','message' => 'L\'équipe d\'Amiens Sport Tennis de Table souhaite de très bonnes vacances estivales à tous les pongistes. N\'oubliez pas de suivre les Championnats d\'Europe qui se déroulent du 13 juillet au 22 juillet et les Jeux Olympiques qui débutent dans 16 jours. :-)'),
+          array('id' => '2527','auteur' => 'Alexandre Goupil','club' => 'Sous les verrous','date' => '1342437679','message' => 'Ouverture du club, ce Lundi 16 Juillet 2012, à partir de 17H45.
+        A vos raquettes...'),
+          array('id' => '2528','auteur' => 'Miiike','club' => '','date' => '1342623288','message' => 'le club est ouvert aujourd\'hui ?'),
+          array('id' => '2529','auteur' => 'Alexandre Goupil','club' => '','date' => '1345028703','message' => 'Ouverture du club ce jour, à partir de 15H.'),
+          array('id' => '2534','auteur' => 'Alexandre Goupil','club' => 'Tournoi National d','date' => '1345756126','message' => 'Bonjour à tous,
+        Inscription ce jour d\'Alexandre Cassin, N337 Français, Cadet 2, dans la série Open lors du Tournoi National de l\'Amiens Sport Tennis de Table organisé les 08 et 09 septembre.'),
+          array('id' => '2535','auteur' => 'Denis C','club' => '','date' => '1345822778','message' => 'TOURNOI DE REPRISE DU GOUPIL : Samedi 1er septembre, salle Labaume.
+        -15H : Inscriptions. 
+        -16H : Début du tournoi : Tournoi handicap: un set de 31 points, 2 points par classement, Handicap maximum 25 points. 
+        -Restauration sur place : Crêpes 1€, Boissons 0.5€.
+        -Le soir, la Formule du Chef, 5€ : pâtes+boisson+crêpe.
+        ')
         );
 
         // `astt`.`Equipes`
         $Equipes = array(
-        array('id' => '1','numero' => '1','genre' => 'M','division' => 'N3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100001&cx_poule=39747&D1=6597&virtuel=0','capitaine' => '8011054'),
-        array('id' => '2','numero' => '2','genre' => 'M','division' => 'N3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100001&cx_poule=39746&D1=6597&virtuel=0','capitaine' => '805540'),
-        array('id' => '3','numero' => '3','genre' => 'M','division' => 'R1','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804825&D1=6096&virtuel=0','capitaine' => '8011223'),
-        array('id' => '4','numero' => '4','genre' => 'M','division' => 'R2','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804827&D1=6100&virtuel=0','capitaine' => '804888'),
-        array('id' => '5','numero' => '5','genre' => 'M','division' => 'R3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804831&D1=6101&virtuel=0','capitaine' => '8011876'),
-        array('id' => '6','numero' => '6','genre' => 'M','division' => 'R3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804830&D1=6101&virtuel=0','capitaine' => '8014047'),
-        array('id' => '7','numero' => '7','genre' => 'M','division' => 'D1','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805525&D1=6426&virtuel=0','capitaine' => '8011159'),
-        array('id' => '8','numero' => '8','genre' => 'M','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805527&D1=6427&virtuel=0','capitaine' => '8016191'),
-        array('id' => '9','numero' => '9','genre' => 'M','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805528&D1=6427&virtuel=0','capitaine' => '8013188'),
-        array('id' => '10','numero' => '10','genre' => 'M','division' => 'D3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805533&D1=6428&virtuel=0','capitaine' => '8016137'),
-        array('id' => '11','numero' => '11','genre' => 'M','division' => 'D3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805536&D1=6428&virtuel=0','capitaine' => '8015741'),
-        array('id' => '12','numero' => '12','genre' => 'M','division' => 'D4','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805540&D1=6429&virtuel=0','capitaine' => '8014985'),
-        array('id' => '13','numero' => '1','genre' => 'F','division' => 'N3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100006&cx_poule=727003&D1=32262&virtuel=0','capitaine' => '8013575'),
-        array('id' => '14','numero' => '2','genre' => 'F','division' => 'PreNat','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=10006&cx_poule=54044&D1=7966&virtuel=0','capitaine' => '807050'),
-        array('id' => '15','numero' => '1','genre' => 'J','division' => 'D1','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805542&D1=23328&virtuel=0','capitaine' => ''),
-        array('id' => '16','numero' => '2','genre' => 'J','division' => 'D1','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805543&D1=23328&virtuel=0','capitaine' => ''),
-        array('id' => '17','numero' => '3','genre' => 'J','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805546&D1=23329&virtuel=0','capitaine' => '')
+          array('id' => '1','numero' => '1','genre' => 'M','division' => 'N3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100001&cx_poule=39747&D1=6597&virtuel=0','capitaine' => '8011054'),
+          array('id' => '2','numero' => '2','genre' => 'M','division' => 'N3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100001&cx_poule=39746&D1=6597&virtuel=0','capitaine' => '805540'),
+          array('id' => '3','numero' => '3','genre' => 'M','division' => 'R1','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804825&D1=6096&virtuel=0','capitaine' => '8011223'),
+          array('id' => '4','numero' => '4','genre' => 'M','division' => 'R2','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804827&D1=6100&virtuel=0','capitaine' => '804888'),
+          array('id' => '5','numero' => '5','genre' => 'M','division' => 'R3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804831&D1=6101&virtuel=0','capitaine' => '8011876'),
+          array('id' => '6','numero' => '6','genre' => 'M','division' => 'R3','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=1019&cx_poule=804830&D1=6101&virtuel=0','capitaine' => '8014047'),
+          array('id' => '7','numero' => '7','genre' => 'M','division' => 'D1','nb_jrs' => '6','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805525&D1=6426&virtuel=0','capitaine' => '8011159'),
+          array('id' => '8','numero' => '8','genre' => 'M','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805527&D1=6427&virtuel=0','capitaine' => '8016191'),
+          array('id' => '9','numero' => '9','genre' => 'M','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805528&D1=6427&virtuel=0','capitaine' => '8013188'),
+          array('id' => '10','numero' => '10','genre' => 'M','division' => 'D3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805533&D1=6428&virtuel=0','capitaine' => '8016137'),
+          array('id' => '11','numero' => '11','genre' => 'M','division' => 'D3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805536&D1=6428&virtuel=0','capitaine' => '8015741'),
+          array('id' => '12','numero' => '12','genre' => 'M','division' => 'D4','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805540&D1=6429&virtuel=0','capitaine' => '8014985'),
+          array('id' => '13','numero' => '1','genre' => 'F','division' => 'N3','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=100006&cx_poule=727003&D1=32262&virtuel=0','capitaine' => '8013575'),
+          array('id' => '14','numero' => '2','genre' => 'F','division' => 'PreNat','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=10006&cx_poule=54044&D1=7966&virtuel=0','capitaine' => '807050'),
+          array('id' => '15','numero' => '1','genre' => 'J','division' => 'D1','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805542&D1=23328&virtuel=0','capitaine' => ''),
+          array('id' => '16','numero' => '2','genre' => 'J','division' => 'D1','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805543&D1=23328&virtuel=0','capitaine' => ''),
+          array('id' => '17','numero' => '3','genre' => 'J','division' => 'D2','nb_jrs' => '4','lien' => 'http://www.fftt.com/sportif/chpt_equipe/chp_div.php?organisme_pere=80&cx_poule=805546&D1=23329&virtuel=0','capitaine' => '')
         );
 
         // `astt`.`Evenements`
         $Evenements = array(
-        array('id' => '1','nom' => 'Journée nationale du ping','description' => '','lieu' => 'Amiens','date' => '1315609200','tournoi' => '0'),
-        array('id' => '2','nom' => 'Tournoi d\'Amiens','description' => '','lieu' => 'Amiens','date' => '1315609200','tournoi' => '1'),
-        array('id' => '3','nom' => 'Tournoi d\'Amiens','description' => '','lieu' => 'Amiens','date' => '1315695600','tournoi' => '1'),
-        array('id' => '4','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316732400','tournoi' => '0'),
-        array('id' => '5','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316818800','tournoi' => '0'),
-        array('id' => '6','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316905200','tournoi' => '0'),
-        array('id' => '7','nom' => 'Critérium Poussins-Benjamins [1]','description' => '','lieu' => '','date' => '1317423600','tournoi' => '0'),
-        array('id' => '8','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1317870000','tournoi' => '0'),
-        array('id' => '9','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1317956400','tournoi' => '0'),
-        array('id' => '10','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1318042800','tournoi' => '0'),
-        array('id' => '11','nom' => 'Critérium Fédéral [1]','description' => '1er tour du critérium fédéral','lieu' => '','date' => '1318633200','tournoi' => '0'),
-        array('id' => '12','nom' => 'Critérium Fédéral [1]','description' => '1er tour du critérium fédéral','lieu' => '','date' => '1318719600','tournoi' => '0'),
-        array('id' => '13','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319079600','tournoi' => '0'),
-        array('id' => '14','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319238000','tournoi' => '0'),
-        array('id' => '15','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319324400','tournoi' => '0'),
-        array('id' => '16','nom' => 'Interclubs départementaux','description' => '','lieu' => '','date' => '1319842800','tournoi' => '0'),
-        array('id' => '17','nom' => 'Tournoi Stéphane Baert','description' => '','lieu' => 'Amiens','date' => '1319684400','tournoi' => '0'),
-        array('id' => '18','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320289200','tournoi' => '0'),
-        array('id' => '19','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320447600','tournoi' => '0'),
-        array('id' => '20','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320534000','tournoi' => '0'),
-        array('id' => '21','nom' => 'Top Départemental Détection','description' => '','lieu' => '','date' => '1321074000','tournoi' => '0'),
-        array('id' => '22','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321570800','tournoi' => '0'),
-        array('id' => '23','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1322521200','tournoi' => '0'),
-        array('id' => '24','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321743600','tournoi' => '0'),
-        array('id' => '25','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322175600','tournoi' => '0'),
-        array('id' => '26','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322262000','tournoi' => '0'),
-        array('id' => '27','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322348400','tournoi' => '0'),
-        array('id' => '28','nom' => 'Critérium Fédéral [2]','description' => '2e tour du critérium fédéral','lieu' => '','date' => '1322866800','tournoi' => '0'),
-        array('id' => '29','nom' => 'Critérium Fédéral [2]','description' => '2e tour du critérium fédéral','lieu' => '','date' => '1322953200','tournoi' => '0'),
-        array('id' => '30','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323385200','tournoi' => '0'),
-        array('id' => '31','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323471600','tournoi' => '0'),
-        array('id' => '32','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323558000','tournoi' => '0'),
-        array('id' => '33','nom' => 'Critérium Poussins-Benjamins [2]','description' => '','lieu' => '','date' => '1324076400','tournoi' => '0'),
-        array('id' => '34','nom' => 'Critérium féminin départemental','description' => '','lieu' => 'Albert','date' => '1324076400','tournoi' => '0'),
-        array('id' => '35','nom' => 'Critérium vétérans départemental','description' => '','lieu' => '','date' => '1324162800','tournoi' => '0'),
-        array('id' => '36','nom' => 'Critérium Fédéral [3]','description' => '3e tour du critérium fédéral','lieu' => '','date' => '1326495600','tournoi' => '0'),
-        array('id' => '37','nom' => 'Critérium Fédéral [3]','description' => '3e tour du critérium fédéral','lieu' => '','date' => '1326582000','tournoi' => '0'),
-        array('id' => '38','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327014000','tournoi' => '0'),
-        array('id' => '39','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327100400','tournoi' => '0'),
-        array('id' => '40','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327186800','tournoi' => '0'),
-        array('id' => '41','nom' => 'Top Régional Détection','description' => '','lieu' => 'Amiens','date' => '1325977200','tournoi' => '0'),
-        array('id' => '42','nom' => 'Critérium Poussins-Benjamins [3]','description' => '','lieu' => '','date' => '1328310000','tournoi' => '0'),
-        array('id' => '43','nom' => 'Interclubs régionaux','description' => '','lieu' => '','date' => '1328396400','tournoi' => '0'),
-        array('id' => '44','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327618800','tournoi' => '0'),
-        array('id' => '45','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327705200','tournoi' => '0'),
-        array('id' => '46','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327791600','tournoi' => '0'),
-        array('id' => '47','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1328828400','tournoi' => '0'),
-        array('id' => '48','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1328914800','tournoi' => '0'),
-        array('id' => '49','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1329001200','tournoi' => '0'),
-        array('id' => '50','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329433200','tournoi' => '0'),
-        array('id' => '51','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329519600','tournoi' => '0'),
-        array('id' => '52','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329606000','tournoi' => '0'),
-        array('id' => '53','nom' => 'Championnat de France des régions Cadets','description' => '','lieu' => '','date' => '1329778800','tournoi' => '0'),
-        array('id' => '54','nom' => 'Championnat de France des régions Cadets','description' => '','lieu' => '','date' => '1329865200','tournoi' => '0'),
-        array('id' => '55','nom' => 'Championnat de France des régions Minimes','description' => '','lieu' => '','date' => '1329951600','tournoi' => '0'),
-        array('id' => '56','nom' => 'Championnat de France des régions Minimes','description' => '','lieu' => '','date' => '1330038000','tournoi' => '0'),
-        array('id' => '57','nom' => 'Critérium féminin régional','description' => '','lieu' => 'Breteuil','date' => '1330124400','tournoi' => '0'),
-        array('id' => '58','nom' => 'Critérium vétérans régional','description' => '','lieu' => '','date' => '1330210800','tournoi' => '0'),
-        array('id' => '59','nom' => 'Critérium Fédéral [4]','description' => '4e tour du critérium fédéral','lieu' => '','date' => '1331334000','tournoi' => '0'),
-        array('id' => '60','nom' => 'Critérium Fédéral [4]','description' => '4e tour du critérium fédéral','lieu' => '','date' => '1331420400','tournoi' => '0'),
-        array('id' => '61','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1331852400','tournoi' => '0'),
-        array('id' => '62','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1331938800','tournoi' => '0'),
-        array('id' => '63','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1332025200','tournoi' => '0'),
-        array('id' => '64','nom' => 'Top de Zone Détection','description' => '','lieu' => '','date' => '1332543600','tournoi' => '0'),
-        array('id' => '65','nom' => 'Top de Zone Détection','description' => '','lieu' => '','date' => '1332630000','tournoi' => '0'),
-        array('id' => '66','nom' => 'Championnat de la Somme','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
-        array('id' => '67','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333062000','tournoi' => '0'),
-        array('id' => '68','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333148400','tournoi' => '0'),
-        array('id' => '69','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333234800','tournoi' => '0'),
-        array('id' => '70','nom' => 'Critérium Fédéral [5]','description' => '5e tour du critérium fédéral','lieu' => '','date' => '1333753200','tournoi' => '0'),
-        array('id' => '71','nom' => 'Critérium Fédéral [5]','description' => '5e tour du critérium fédéral','lieu' => '','date' => '1334703600','tournoi' => '0'),
-        array('id' => '72','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334271600','tournoi' => '0'),
-        array('id' => '73','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334358000','tournoi' => '0'),
-        array('id' => '74','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334444400','tournoi' => '0'),
-        array('id' => '75','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1334876400','tournoi' => '0'),
-        array('id' => '76','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1334962800','tournoi' => '0'),
-        array('id' => '77','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1335049200','tournoi' => '0'),
-        array('id' => '78','nom' => 'Challenge Bernard Jeu régional','description' => '','lieu' => '','date' => '1335049200','tournoi' => '0'),
-        array('id' => '79','nom' => 'Finale Critérium Poussins-Benjamins','description' => '','lieu' => '','date' => '1335567600','tournoi' => '0'),
-        array('id' => '80','nom' => 'Finales par classement départementales','description' => '','lieu' => '','date' => '1335654000','tournoi' => '0'),
-        array('id' => '81','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336086000','tournoi' => '0'),
-        array('id' => '82','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336086000','tournoi' => '0'),
-        array('id' => '83','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
-        array('id' => '84','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
-        array('id' => '85','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336258800','tournoi' => '0'),
-        array('id' => '86','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336258800','tournoi' => '0'),
-        array('id' => '87','nom' => 'Interdépartementaux','description' => '','lieu' => '','date' => '1336431600','tournoi' => '0'),
-        array('id' => '88','nom' => 'Challenge PBM départemental','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
-        array('id' => '89','nom' => 'Interclubs nationaux benjamins et minimes','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
-        array('id' => '90','nom' => 'Journée des titres','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
-        array('id' => '91','nom' => 'Interclubs nationaux benjamins et minimes','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
-        array('id' => '92','nom' => 'Journée des titres','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
-        array('id' => '93','nom' => 'Finales par classement régionales','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
-        array('id' => '94','nom' => 'Championnat de Picardie','description' => '','lieu' => '','date' => '1337382000','tournoi' => '0'),
-        array('id' => '95','nom' => 'Championnat de Picardie','description' => '','lieu' => '','date' => '1337468400','tournoi' => '0'),
-        array('id' => '96','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338505200','tournoi' => '0'),
-        array('id' => '97','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338505200','tournoi' => '0'),
-        array('id' => '98','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338591600','tournoi' => '0'),
-        array('id' => '99','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338591600','tournoi' => '0'),
-        array('id' => '100','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338678000','tournoi' => '0'),
-        array('id' => '101','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338678000','tournoi' => '0'),
-        array('id' => '102','nom' => 'Challenge Bernard Jeu national','description' => '','lieu' => '','date' => '1339196400','tournoi' => '0'),
-        array('id' => '103','nom' => 'Challenge Bernard Jeu national','description' => '','lieu' => '','date' => '1339282800','tournoi' => '0'),
-        array('id' => '104','nom' => 'Challenge PBM régional','description' => '','lieu' => '','date' => '1339282800','tournoi' => '0'),
-        array('id' => '105','nom' => 'Tournoi national Open','description' => '','lieu' => '','date' => '1339801200','tournoi' => '0'),
-        array('id' => '106','nom' => 'Tournoi national Open','description' => '','lieu' => '','date' => '1339887600','tournoi' => '0'),
-        array('id' => '107','nom' => 'Finales par classement nationales','description' => '','lieu' => '','date' => '1340406000','tournoi' => '0'),
-        array('id' => '108','nom' => 'Finales par classement nationales','description' => '','lieu' => '','date' => '1340492400','tournoi' => '0'),
-        array('id' => '109','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.
+          array('id' => '1','nom' => 'Journée nationale du ping','description' => '','lieu' => 'Amiens','date' => '1315609200','tournoi' => '0'),
+          array('id' => '2','nom' => 'Tournoi d\'Amiens','description' => '','lieu' => 'Amiens','date' => '1315609200','tournoi' => '1'),
+          array('id' => '3','nom' => 'Tournoi d\'Amiens','description' => '','lieu' => 'Amiens','date' => '1315695600','tournoi' => '1'),
+          array('id' => '4','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316732400','tournoi' => '0'),
+          array('id' => '5','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316818800','tournoi' => '0'),
+          array('id' => '6','nom' => 'Championnat par équipes [1]','description' => '','lieu' => '','date' => '1316905200','tournoi' => '0'),
+          array('id' => '7','nom' => 'Critérium Poussins-Benjamins [1]','description' => '','lieu' => '','date' => '1317423600','tournoi' => '0'),
+          array('id' => '8','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1317870000','tournoi' => '0'),
+          array('id' => '9','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1317956400','tournoi' => '0'),
+          array('id' => '10','nom' => 'Championnat par équipes [2]','description' => '','lieu' => '','date' => '1318042800','tournoi' => '0'),
+          array('id' => '11','nom' => 'Critérium Fédéral [1]','description' => '1er tour du critérium fédéral','lieu' => '','date' => '1318633200','tournoi' => '0'),
+          array('id' => '12','nom' => 'Critérium Fédéral [1]','description' => '1er tour du critérium fédéral','lieu' => '','date' => '1318719600','tournoi' => '0'),
+          array('id' => '13','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319079600','tournoi' => '0'),
+          array('id' => '14','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319238000','tournoi' => '0'),
+          array('id' => '15','nom' => 'Championnat par équipes [3]','description' => '','lieu' => '','date' => '1319324400','tournoi' => '0'),
+          array('id' => '16','nom' => 'Interclubs départementaux','description' => '','lieu' => '','date' => '1319842800','tournoi' => '0'),
+          array('id' => '17','nom' => 'Tournoi Stéphane Baert','description' => '','lieu' => 'Amiens','date' => '1319684400','tournoi' => '0'),
+          array('id' => '18','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320289200','tournoi' => '0'),
+          array('id' => '19','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320447600','tournoi' => '0'),
+          array('id' => '20','nom' => 'Championnat par équipes [4]','description' => '','lieu' => '','date' => '1320534000','tournoi' => '0'),
+          array('id' => '21','nom' => 'Top Départemental Détection','description' => '','lieu' => '','date' => '1321074000','tournoi' => '0'),
+          array('id' => '22','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321570800','tournoi' => '0'),
+          array('id' => '23','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1322521200','tournoi' => '0'),
+          array('id' => '24','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321743600','tournoi' => '0'),
+          array('id' => '25','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322175600','tournoi' => '0'),
+          array('id' => '26','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322262000','tournoi' => '0'),
+          array('id' => '27','nom' => 'Championnat par équipes [6]','description' => '','lieu' => '','date' => '1322348400','tournoi' => '0'),
+          array('id' => '28','nom' => 'Critérium Fédéral [2]','description' => '2e tour du critérium fédéral','lieu' => '','date' => '1322866800','tournoi' => '0'),
+          array('id' => '29','nom' => 'Critérium Fédéral [2]','description' => '2e tour du critérium fédéral','lieu' => '','date' => '1322953200','tournoi' => '0'),
+          array('id' => '30','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323385200','tournoi' => '0'),
+          array('id' => '31','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323471600','tournoi' => '0'),
+          array('id' => '32','nom' => 'Championnat par équipes [7]','description' => '','lieu' => '','date' => '1323558000','tournoi' => '0'),
+          array('id' => '33','nom' => 'Critérium Poussins-Benjamins [2]','description' => '','lieu' => '','date' => '1324076400','tournoi' => '0'),
+          array('id' => '34','nom' => 'Critérium féminin départemental','description' => '','lieu' => 'Albert','date' => '1324076400','tournoi' => '0'),
+          array('id' => '35','nom' => 'Critérium vétérans départemental','description' => '','lieu' => '','date' => '1324162800','tournoi' => '0'),
+          array('id' => '36','nom' => 'Critérium Fédéral [3]','description' => '3e tour du critérium fédéral','lieu' => '','date' => '1326495600','tournoi' => '0'),
+          array('id' => '37','nom' => 'Critérium Fédéral [3]','description' => '3e tour du critérium fédéral','lieu' => '','date' => '1326582000','tournoi' => '0'),
+          array('id' => '38','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327014000','tournoi' => '0'),
+          array('id' => '39','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327100400','tournoi' => '0'),
+          array('id' => '40','nom' => 'Championnat par équipes [8]','description' => '','lieu' => '','date' => '1327186800','tournoi' => '0'),
+          array('id' => '41','nom' => 'Top Régional Détection','description' => '','lieu' => 'Amiens','date' => '1325977200','tournoi' => '0'),
+          array('id' => '42','nom' => 'Critérium Poussins-Benjamins [3]','description' => '','lieu' => '','date' => '1328310000','tournoi' => '0'),
+          array('id' => '43','nom' => 'Interclubs régionaux','description' => '','lieu' => '','date' => '1328396400','tournoi' => '0'),
+          array('id' => '44','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327618800','tournoi' => '0'),
+          array('id' => '45','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327705200','tournoi' => '0'),
+          array('id' => '46','nom' => 'Championnat par équipes [9]','description' => '','lieu' => '','date' => '1327791600','tournoi' => '0'),
+          array('id' => '47','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1328828400','tournoi' => '0'),
+          array('id' => '48','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1328914800','tournoi' => '0'),
+          array('id' => '49','nom' => 'Championnat par équipes [10]','description' => '','lieu' => '','date' => '1329001200','tournoi' => '0'),
+          array('id' => '50','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329433200','tournoi' => '0'),
+          array('id' => '51','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329519600','tournoi' => '0'),
+          array('id' => '52','nom' => 'Championnat par équipes [11]','description' => '','lieu' => '','date' => '1329606000','tournoi' => '0'),
+          array('id' => '53','nom' => 'Championnat de France des régions Cadets','description' => '','lieu' => '','date' => '1329778800','tournoi' => '0'),
+          array('id' => '54','nom' => 'Championnat de France des régions Cadets','description' => '','lieu' => '','date' => '1329865200','tournoi' => '0'),
+          array('id' => '55','nom' => 'Championnat de France des régions Minimes','description' => '','lieu' => '','date' => '1329951600','tournoi' => '0'),
+          array('id' => '56','nom' => 'Championnat de France des régions Minimes','description' => '','lieu' => '','date' => '1330038000','tournoi' => '0'),
+          array('id' => '57','nom' => 'Critérium féminin régional','description' => '','lieu' => 'Breteuil','date' => '1330124400','tournoi' => '0'),
+          array('id' => '58','nom' => 'Critérium vétérans régional','description' => '','lieu' => '','date' => '1330210800','tournoi' => '0'),
+          array('id' => '59','nom' => 'Critérium Fédéral [4]','description' => '4e tour du critérium fédéral','lieu' => '','date' => '1331334000','tournoi' => '0'),
+          array('id' => '60','nom' => 'Critérium Fédéral [4]','description' => '4e tour du critérium fédéral','lieu' => '','date' => '1331420400','tournoi' => '0'),
+          array('id' => '61','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1331852400','tournoi' => '0'),
+          array('id' => '62','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1331938800','tournoi' => '0'),
+          array('id' => '63','nom' => 'Championnat par équipes [12]','description' => '','lieu' => '','date' => '1332025200','tournoi' => '0'),
+          array('id' => '64','nom' => 'Top de Zone Détection','description' => '','lieu' => '','date' => '1332543600','tournoi' => '0'),
+          array('id' => '65','nom' => 'Top de Zone Détection','description' => '','lieu' => '','date' => '1332630000','tournoi' => '0'),
+          array('id' => '66','nom' => 'Championnat de la Somme','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
+          array('id' => '67','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333062000','tournoi' => '0'),
+          array('id' => '68','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333148400','tournoi' => '0'),
+          array('id' => '69','nom' => 'Championnat par équipes [13]','description' => '','lieu' => '','date' => '1333234800','tournoi' => '0'),
+          array('id' => '70','nom' => 'Critérium Fédéral [5]','description' => '5e tour du critérium fédéral','lieu' => '','date' => '1333753200','tournoi' => '0'),
+          array('id' => '71','nom' => 'Critérium Fédéral [5]','description' => '5e tour du critérium fédéral','lieu' => '','date' => '1334703600','tournoi' => '0'),
+          array('id' => '72','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334271600','tournoi' => '0'),
+          array('id' => '73','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334358000','tournoi' => '0'),
+          array('id' => '74','nom' => 'Championnat par équipes [14]','description' => '','lieu' => '','date' => '1334444400','tournoi' => '0'),
+          array('id' => '75','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1334876400','tournoi' => '0'),
+          array('id' => '76','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1334962800','tournoi' => '0'),
+          array('id' => '77','nom' => 'Critérium vétérans national','description' => '','lieu' => '','date' => '1335049200','tournoi' => '0'),
+          array('id' => '78','nom' => 'Challenge Bernard Jeu régional','description' => '','lieu' => '','date' => '1335049200','tournoi' => '0'),
+          array('id' => '79','nom' => 'Finale Critérium Poussins-Benjamins','description' => '','lieu' => '','date' => '1335567600','tournoi' => '0'),
+          array('id' => '80','nom' => 'Finales par classement départementales','description' => '','lieu' => '','date' => '1335654000','tournoi' => '0'),
+          array('id' => '81','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336086000','tournoi' => '0'),
+          array('id' => '82','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336086000','tournoi' => '0'),
+          array('id' => '83','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
+          array('id' => '84','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336172400','tournoi' => '0'),
+          array('id' => '85','nom' => 'Championnat de France Minimes','description' => '','lieu' => '','date' => '1336258800','tournoi' => '0'),
+          array('id' => '86','nom' => 'Championnat de France Juniors','description' => '','lieu' => '','date' => '1336258800','tournoi' => '0'),
+          array('id' => '87','nom' => 'Interdépartementaux','description' => '','lieu' => '','date' => '1336431600','tournoi' => '0'),
+          array('id' => '88','nom' => 'Challenge PBM départemental','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
+          array('id' => '89','nom' => 'Interclubs nationaux benjamins et minimes','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
+          array('id' => '90','nom' => 'Journée des titres','description' => '','lieu' => '','date' => '1336777200','tournoi' => '0'),
+          array('id' => '91','nom' => 'Interclubs nationaux benjamins et minimes','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
+          array('id' => '92','nom' => 'Journée des titres','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
+          array('id' => '93','nom' => 'Finales par classement régionales','description' => '','lieu' => '','date' => '1336863600','tournoi' => '0'),
+          array('id' => '94','nom' => 'Championnat de Picardie','description' => '','lieu' => '','date' => '1337382000','tournoi' => '0'),
+          array('id' => '95','nom' => 'Championnat de Picardie','description' => '','lieu' => '','date' => '1337468400','tournoi' => '0'),
+          array('id' => '96','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338505200','tournoi' => '0'),
+          array('id' => '97','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338505200','tournoi' => '0'),
+          array('id' => '98','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338591600','tournoi' => '0'),
+          array('id' => '99','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338591600','tournoi' => '0'),
+          array('id' => '100','nom' => 'Championnat de France Benjamins','description' => '','lieu' => '','date' => '1338678000','tournoi' => '0'),
+          array('id' => '101','nom' => 'Championnat de France Cadets','description' => '','lieu' => '','date' => '1338678000','tournoi' => '0'),
+          array('id' => '102','nom' => 'Challenge Bernard Jeu national','description' => '','lieu' => '','date' => '1339196400','tournoi' => '0'),
+          array('id' => '103','nom' => 'Challenge Bernard Jeu national','description' => '','lieu' => '','date' => '1339282800','tournoi' => '0'),
+          array('id' => '104','nom' => 'Challenge PBM régional','description' => '','lieu' => '','date' => '1339282800','tournoi' => '0'),
+          array('id' => '105','nom' => 'Tournoi national Open','description' => '','lieu' => '','date' => '1339801200','tournoi' => '0'),
+          array('id' => '106','nom' => 'Tournoi national Open','description' => '','lieu' => '','date' => '1339887600','tournoi' => '0'),
+          array('id' => '107','nom' => 'Finales par classement nationales','description' => '','lieu' => '','date' => '1340406000','tournoi' => '0'),
+          array('id' => '108','nom' => 'Finales par classement nationales','description' => '','lieu' => '','date' => '1340492400','tournoi' => '0'),
+          array('id' => '109','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.
         Les séances d\'entraînements auront lieu de 10h00 à 12h30 et/ou de 13h30 à 17h30.
         Le club offre le goûter pour les joueurs.
         Coût du stage : 25€ les 5 jours, 6€ par jour ou 5€ la demi-journée.  
         Pour tout renseignement : s’adresser à Christophe Harlé : astt@wanadoo.fr / 03 22 95 37 99 / 06 59 15 56 52
         ','lieu' => 'Amiens Sport Tennis de Table','date' => '1319338800','tournoi' => '0'),
-        array('id' => '110','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
+          array('id' => '110','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
         Les séances d\'entraînements auront lieu de 10h00 à 12h30 et/ou de 13h30 à 17h30.<br />
         Le club offre le goûter pour les joueurs.<br />
         Coût du stage : 25€ les 5 jours, 6€ par jour ou 5€ la demi-journée.  <br />
         Pour tout renseignement : s’adresser à Christophe Harlé : astt@wanadoo.fr / 03 22 95 37 99 / 06 59 15 56 52<br />
         ','lieu' => 'Amiens Sport Tennis de Table','date' => '1319425200','tournoi' => '0'),
-        array('id' => '111','nom' => 'Stage d\'entraînement','description' => '','lieu' => 'Amiens Sport Tennis de Table','date' => '1316919600','tournoi' => '0'),
-        array('id' => '112','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
+          array('id' => '111','nom' => 'Stage d\'entraînement','description' => '','lieu' => 'Amiens Sport Tennis de Table','date' => '1316919600','tournoi' => '0'),
+          array('id' => '112','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
         Les séances d\'entraînements auront lieu de 10h00 à 12h30 et/ou de 13h30 à 17h30.<br />
         Le club offre le goûter pour les joueurs.<br />
         Coût du stage : 25€ les 5 jours, 6€ par jour ou 5€ la demi-journée.  <br />
         Pour tout renseignement : s’adresser à Christophe Harlé : astt@wanadoo.fr / 03 22 95 37 99 / 06 59 15 56 52<br />
         ','lieu' => 'Amiens Sport Tennis de Table','date' => '1319598000','tournoi' => '0'),
-        array('id' => '113','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
+          array('id' => '113','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
         Les séances d\'entraînements auront lieu de 10h00 à 12h30 et/ou de 13h30 à 17h30.<br />
         Le club offre le goûter pour les joueurs.<br />
         Coût du stage : 25€ les 5 jours, 6€ par jour ou 5€ la demi-journée.  <br />
         Pour tout renseignement : s’adresser à Christophe Harlé : astt@wanadoo.fr / 03 22 95 37 99 / 06 59 15 56 52<br />
         ','lieu' => 'Amiens Sport Tennis de Table','date' => '1319684400','tournoi' => '0'),
-        array('id' => '114','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
+          array('id' => '114','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement pour les jeunes du club du lundi 24 octobre au vendredi 28 octobre.<br />
         Les séances d\'entraînements auront lieu de 10h00 à 12h30 et/ou de 13h30 à 17h30.<br />
         Le club offre le goûter pour les joueurs.<br />
         Coût du stage : 25€ les 5 jours, 6€ par jour ou 5€ la demi-journée.  <br />
         Pour tout renseignement : s’adresser à Christophe Harlé : astt@wanadoo.fr / 03 22 95 37 99 / 06 59 15 56 52<br />
         ','lieu' => 'Amiens Sport Tennis de Table','date' => '1319511600','tournoi' => '0'),
-        array('id' => '115','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1337914800','tournoi' => '0'),
-        array('id' => '116','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338001200','tournoi' => '0'),
-        array('id' => '117','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338087600','tournoi' => '0'),
-        array('id' => '118','nom' => 'Championnat de France par équipes Handisport','description' => '','lieu' => 'Argentan','date' => '1336100400','tournoi' => '0'),
-        array('id' => '119','nom' => 'Championnat de zones par équipes Handisport','description' => '','lieu' => '','date' => '1333681200','tournoi' => '0'),
-        array('id' => '120','nom' => 'Trophée Vétérans national handisport','description' => '','lieu' => 'Tours','date' => '1338519600','tournoi' => '0'),
-        array('id' => '121','nom' => 'Trophée Vétérans de zone handisport','description' => 'Participants amiénois : André Dairaine, Didier Vincent, William Manier, Christophe Caudrelier','lieu' => 'Chevilly Larue','date' => '1330124400','tournoi' => '0'),
-        array('id' => '122','nom' => '1er tour du Critérium Fédéral Handisport','description' => '','lieu' => '','date' => '1322866800','tournoi' => '0'),
-        array('id' => '123','nom' => '2e tour du critérium fédéral handisport','description' => '','lieu' => '','date' => '1328310000','tournoi' => '0'),
-        array('id' => '124','nom' => '3e tour du critérium fédéral handisport','description' => '','lieu' => '','date' => '1332471600','tournoi' => '0'),
-        array('id' => '125','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321592400','tournoi' => '0'),
-        array('id' => '126','nom' => 'Arbre de Noël','description' => '','lieu' => 'Amiens Sport TT','date' => '1323820800','tournoi' => '0'),
-        array('id' => '127','nom' => 'Galette des rois','description' => '','lieu' => 'Amiens Sport TT','date' => '1325804400','tournoi' => '0'),
-        array('id' => '128','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
+          array('id' => '115','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1337914800','tournoi' => '0'),
+          array('id' => '116','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338001200','tournoi' => '0'),
+          array('id' => '117','nom' => 'Championnat de France Open Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338087600','tournoi' => '0'),
+          array('id' => '118','nom' => 'Championnat de France par équipes Handisport','description' => '','lieu' => 'Argentan','date' => '1336100400','tournoi' => '0'),
+          array('id' => '119','nom' => 'Championnat de zones par équipes Handisport','description' => '','lieu' => '','date' => '1333681200','tournoi' => '0'),
+          array('id' => '120','nom' => 'Trophée Vétérans national handisport','description' => '','lieu' => 'Tours','date' => '1338519600','tournoi' => '0'),
+          array('id' => '121','nom' => 'Trophée Vétérans de zone handisport','description' => 'Participants amiénois : André Dairaine, Didier Vincent, William Manier, Christophe Caudrelier','lieu' => 'Chevilly Larue','date' => '1330124400','tournoi' => '0'),
+          array('id' => '122','nom' => '1er tour du Critérium Fédéral Handisport','description' => '','lieu' => '','date' => '1322866800','tournoi' => '0'),
+          array('id' => '123','nom' => '2e tour du critérium fédéral handisport','description' => '','lieu' => '','date' => '1328310000','tournoi' => '0'),
+          array('id' => '124','nom' => '3e tour du critérium fédéral handisport','description' => '','lieu' => '','date' => '1332471600','tournoi' => '0'),
+          array('id' => '125','nom' => 'Championnat par équipes [5]','description' => '','lieu' => '','date' => '1321592400','tournoi' => '0'),
+          array('id' => '126','nom' => 'Arbre de Noël','description' => '','lieu' => 'Amiens Sport TT','date' => '1323820800','tournoi' => '0'),
+          array('id' => '127','nom' => 'Galette des rois','description' => '','lieu' => 'Amiens Sport TT','date' => '1325804400','tournoi' => '0'),
+          array('id' => '128','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
 
         Les entraînements auront lieu de 9h45 à 12h30 et(ou) de 13h30 à 17h30.
 
@@ -1364,7 +1508,7 @@ class DumpController extends FrontController {
         Coût du stage : 25 euros les 5 jours, 6 euros par jour ou 5 euros la demi journée.
 
         Pour plus de renseignements, contacter Christophe au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens','date' => '1324249200','tournoi' => '0'),
-        array('id' => '129','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
+          array('id' => '129','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
 
         Les entraînements auront lieu de 9h45 à 12h30 et(ou) de 13h30 à 17h30.
 
@@ -1375,7 +1519,7 @@ class DumpController extends FrontController {
         Coût du stage : 25 euros les 5 jours, 6 euros par jour ou 5 euros la demi journée.
 
         Pour plus de renseignements, contacter Christophe au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens','date' => '1324335600','tournoi' => '0'),
-        array('id' => '130','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
+          array('id' => '130','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
 
         Les entraînements auront lieu de 9h45 à 12h30 et(ou) de 13h30 à 17h30.
 
@@ -1386,7 +1530,7 @@ class DumpController extends FrontController {
         Coût du stage : 25 euros les 5 jours, 6 euros par jour ou 5 euros la demi journée.
 
         Pour plus de renseignements, contacter Christophe au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens','date' => '1324422000','tournoi' => '0'),
-        array('id' => '131','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
+          array('id' => '131','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
 
         Les entraînements auront lieu de 9h45 à 12h30 et(ou) de 13h30 à 17h30.
 
@@ -1397,7 +1541,7 @@ class DumpController extends FrontController {
         Coût du stage : 25 euros les 5 jours, 6 euros par jour ou 5 euros la demi journée.
 
         Pour plus de renseignements, contacter Christophe au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens','date' => '1324508400','tournoi' => '0'),
-        array('id' => '132','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
+          array('id' => '132','nom' => 'Stage Jeunes du 19 au 23 décembre 2011','description' => 'Le club organise un stage du lundi 19 décembre au vendredi 23 décembre 2011.
 
         Les entraînements auront lieu de 9h45 à 12h30 et(ou) de 13h30 à 17h30.
 
@@ -1408,9 +1552,9 @@ class DumpController extends FrontController {
         Coût du stage : 25 euros les 5 jours, 6 euros par jour ou 5 euros la demi journée.
 
         Pour plus de renseignements, contacter Christophe au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens','date' => '1324594800','tournoi' => '0'),
-        array('id' => '133','nom' => '2e tour du critérium fédéral handisport','description' => 'Emmanuel Legrand participera au deuxième Tour du Critérium Fédéral Handisport Interrégional "A2-A3" le samedi 7 janvier 2012 à Lille.','lieu' => 'Lille','date' => '1325890800','tournoi' => '0'),
-        array('id' => '134','nom' => 'Réunion bilan de la 1ère phase du championnat par équipes','description' => 'La réunion débutera à 18h00.','lieu' => 'Amiens Sport TT','date' => '1324335600','tournoi' => '0'),
-        array('id' => '135','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
+          array('id' => '133','nom' => '2e tour du critérium fédéral handisport','description' => 'Emmanuel Legrand participera au deuxième Tour du Critérium Fédéral Handisport Interrégional "A2-A3" le samedi 7 janvier 2012 à Lille.','lieu' => 'Lille','date' => '1325890800','tournoi' => '0'),
+          array('id' => '134','nom' => 'Réunion bilan de la 1ère phase du championnat par équipes','description' => 'La réunion débutera à 18h00.','lieu' => 'Amiens Sport TT','date' => '1324335600','tournoi' => '0'),
+          array('id' => '135','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
 
         Les séances d\'entraînement auront lieu de 9h45 à 12h30 et/ou de 13h30 à 17h30 (possibilité de déjeuner au club).
 
@@ -1419,7 +1563,7 @@ class DumpController extends FrontController {
         Coût du stage : 15€ les 3 jours, 6€ par jour ou 5€ la demi-journée
 
         Pour plus de renseignements, s\'adresser à Christophe Harlé au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens Sport TT','date' => '1330383600','tournoi' => '0'),
-        array('id' => '136','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
+          array('id' => '136','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
 
         Les séances d\'entraînement auront lieu de 9h45 à 12h30 et/ou de 13h30 à 17h30 (possibilité de déjeuner au club).
 
@@ -1428,7 +1572,7 @@ class DumpController extends FrontController {
         Coût du stage : 15€ les 3 jours, 6€ par jour ou 5€ la demi-journée
 
         Pour plus de renseignements, s\'adresser à Christophe Harlé au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens Sport TT','date' => '1330470000','tournoi' => '0'),
-        array('id' => '137','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
+          array('id' => '137','nom' => 'Stage d\'entraînement','description' => 'Le club organise un stage d\'entraînement du mardi 28 février au jeudi 1er mars.
 
         Les séances d\'entraînement auront lieu de 9h45 à 12h30 et/ou de 13h30 à 17h30 (possibilité de déjeuner au club).
 
@@ -1437,15 +1581,178 @@ class DumpController extends FrontController {
         Coût du stage : 15€ les 3 jours, 6€ par jour ou 5€ la demi-journée
 
         Pour plus de renseignements, s\'adresser à Christophe Harlé au 03 22 95 37 99 ou astt@wanadoo.fr.','lieu' => 'Amiens Sport TT','date' => '1330556400','tournoi' => '0'),
-        array('id' => '138','nom' => 'Interclubs Régionaux','description' => '','lieu' => 'Soissons','date' => '1332630000','tournoi' => '0'),
-        array('id' => '139','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1337983200','tournoi' => '0'),
-        array('id' => '140','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338069600','tournoi' => '0'),
-        array('id' => '141','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338156000','tournoi' => '0')
+          array('id' => '138','nom' => 'Interclubs Régionaux','description' => '','lieu' => 'Soissons','date' => '1332630000','tournoi' => '0'),
+          array('id' => '139','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1337983200','tournoi' => '0'),
+          array('id' => '140','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338069600','tournoi' => '0'),
+          array('id' => '141','nom' => 'Championnats de France Handisport','description' => '','lieu' => 'Ceyrat','date' => '1338156000','tournoi' => '0'),
+          array('id' => '142','nom' => 'Assemblée Générale','description' => '','lieu' => 'Amiens Sport TT','date' => '1340920800','tournoi' => '0'),
+          array('id' => '143','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens STT','date' => '1341784800','tournoi' => '0'),
+          array('id' => '144','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens STT','date' => '1341871200','tournoi' => '0'),
+          array('id' => '145','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens STT','date' => '1341957600','tournoi' => '0'),
+          array('id' => '146','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens STT','date' => '1342044000','tournoi' => '0'),
+          array('id' => '147','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr','lieu' => 'Amiens STT','date' => '1342130400','tournoi' => '0'),
+          array('id' => '148','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1345413600','tournoi' => '0'),
+          array('id' => '149','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1345500000','tournoi' => '0'),
+          array('id' => '150','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1345586400','tournoi' => '0'),
+          array('id' => '151','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1345672800','tournoi' => '0'),
+          array('id' => '152','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1345759200','tournoi' => '0'),
+          array('id' => '153','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1346018400','tournoi' => '0'),
+          array('id' => '154','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1346104800','tournoi' => '0'),
+          array('id' => '155','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1346191200','tournoi' => '0'),
+          array('id' => '156','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1346277600','tournoi' => '0'),
+          array('id' => '157','nom' => 'Stage d\'entraînement','description' => '13h30-13h45 : Accueil
+        13h45-16h00 : Entraînement
+        16h00-16h20 : Goûter
+        16h20-17h30 = Matchs ou/et jeux collectifs
+
+        Le club offre le goûter pour les joueurs 
+
+        Coût du stage : 20€ la semaine, 5€ par jour 
+
+        Inscriptions et renseignements auprès de Christophe au 03 22 95 37 99 ou astt@wanadoo.fr
+        ','lieu' => 'Amiens STT','date' => '1346364000','tournoi' => '0'),
+          array('id' => '158','nom' => 'Tournoi d\'Amiens','description' => 'Tournoi d\'Amiens Edition 2012','lieu' => 'Amiens Sport Tennis de Table','date' => '1347055200','tournoi' => '1'),
+          array('id' => '159','nom' => 'Tournoi d\'Amiens','description' => 'Tournoi d\'Amiens Edition 2012','lieu' => 'Amiens Sport Tennis de Table','date' => '1347141600','tournoi' => '1')
         );
 
         // `astt`.`Interviews`
         $Interviews = array(
-        array('id' => '1','joueur' => '8015152','date' => '1293058800','texte' => 'Surnom : Vaquero.
+          array('id' => '1','joueur' => '8015152','date' => '1293058800','texte' => 'Surnom : Vaquero.
         1ère licence : avril 2008.
         Style de jeu : gaucher, joueur de toucher, déplacement économe.
         Bois : "attends j\'vais voir", Butterfly Maze Off.
@@ -1461,7 +1768,7 @@ class DumpController extends FrontController {
         Temps qu\'il se donne pour battre son relanceur Denis Chatelain : "2 mois même pas !"
         Cadeau de noël réclamé au président : une raquette à chaque perf\'.
         Futur : entraîneur.'),
-        array('id' => '2','joueur' => '8014092','date' => '1286834400','texte' => 'Surnom : Biloute.
+          array('id' => '2','joueur' => '8014092','date' => '1286834400','texte' => 'Surnom : Biloute.
         1ère licence : 2008.
         Bois : Matsushita Power Defense.
         Plaques : Pilot Style 1.9mm, Feint Long III 0.9mm
@@ -1474,7 +1781,7 @@ class DumpController extends FrontController {
         Point faible : Mon agacement parfois.
         Objectif : classé 12.
         Message : Dédicace à tous !'),
-        array('id' => '3','joueur' => '807050','date' => '1287612000','texte' => 'Surnom : Coachette !
+          array('id' => '3','joueur' => '807050','date' => '1287612000','texte' => 'Surnom : Coachette !
         Bois : Tibhar IV S.
         Plaques : Nimbus.
         Cri : "Tchô !!"
@@ -1487,7 +1794,7 @@ class DumpController extends FrontController {
         Point faible : Services.
         Objectif : classé 10 en fin de saison.
         Message : "Ah bon faut faire dans le social ?"'),
-        array('id' => '4','joueur' => '8013188','date' => '1293058800','texte' => 'Surnom : Ben J.
+          array('id' => '4','joueur' => '8013188','date' => '1293058800','texte' => 'Surnom : Ben J.
         Bois : Andro Core Cell off.
         Revêtements : Ouragan 37 en CD, Skyline TG3 en Revers.
         Meilleur souvenir : Victoire de Simon Gauzy (Levallois) sur Andrej Gacina (Charleroi) en ECL.
@@ -1504,214 +1811,214 @@ class DumpController extends FrontController {
 
         // `astt`.`Joueurs`
         $Joueurs = array(
-        array('licence' => '8016191','nom' => 'ALBERT','prenom' => ' Clotilde ','date_naissance' => '1999-08-11','sexe' => 'F','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013188','nom' => 'BATHELOT','prenom' => ' Benjamin ','date_naissance' => '1991-03-21','sexe' => 'M','categorie' => 'S','points' => '789','classement' => '7','equipe' => '9','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011223','nom' => 'BATHELOT','prenom' => ' bertrand ','date_naissance' => '1966-10-04','sexe' => 'M','categorie' => 'V1','points' => '1778','classement' => '17','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015740','nom' => 'BEAUFRERE','prenom' => ' Florian ','date_naissance' => '1995-03-02','sexe' => 'M','categorie' => 'J2','points' => '684','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015571','nom' => 'BELOT','prenom' => ' Maxime ','date_naissance' => '1993-11-05','sexe' => 'M','categorie' => 'S','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '1414595','nom' => 'BERRIAT','prenom' => ' Leny ','date_naissance' => '1989-08-08','sexe' => 'M','categorie' => 'S','points' => '1459','classement' => '14','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '508698','nom' => 'BERTHELOT','prenom' => ' marion ','date_naissance' => '1990-01-31','sexe' => 'F','categorie' => 'S','points' => '1001','classement' => '10','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011182','nom' => 'BLATRIX','prenom' => ' Maxime ','date_naissance' => '1992-09-03','sexe' => 'M','categorie' => 'S','points' => '1862','classement' => '18','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '808987','nom' => 'BLOQUET','prenom' => ' Jacques ','date_naissance' => '1943-10-04','sexe' => 'M','categorie' => 'V3','points' => '884','classement' => '8','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013900','nom' => 'BODINEL','prenom' => ' Léo ','date_naissance' => '1998-03-04','sexe' => 'M','categorie' => 'C1','points' => '1082','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013061','nom' => 'BODINEL','prenom' => ' Paul ','date_naissance' => '1995-12-12','sexe' => 'M','categorie' => 'J2','points' => '1100','classement' => '11','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016279','nom' => 'BOINET','prenom' => ' paul ','date_naissance' => '2000-01-15','sexe' => 'M','categorie' => 'M1','points' => '591','classement' => '5','equipe' => '7','equipe_m' => NULL,'equipe_j' => '15'),
-        array('licence' => '8013176','nom' => 'BONTE','prenom' => ' Benoit ','date_naissance' => '1995-12-18','sexe' => 'M','categorie' => 'J2','points' => '791','classement' => '7','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8018','nom' => 'BOURRE','prenom' => ' Dany ','date_naissance' => '1949-01-24','sexe' => 'M','categorie' => 'V3','points' => '580','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015741','nom' => 'BOUTEILLER','prenom' => ' Hugo ','date_naissance' => '1995-10-29','sexe' => 'M','categorie' => 'J2','points' => '816','classement' => '8','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013916','nom' => 'CAHAGNE','prenom' => ' Brigitte ','date_naissance' => '1958-09-08','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011378','nom' => 'CAILLOIN','prenom' => ' Yoann ','date_naissance' => '1978-08-06','sexe' => 'M','categorie' => 'S','points' => '1336','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '804688','nom' => 'CANY','prenom' => ' laurent ','date_naissance' => '1976-05-20','sexe' => 'M','categorie' => 'S','points' => '1961','classement' => '19','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '806027','nom' => 'CARLIE','prenom' => ' hélène ','date_naissance' => '1984-02-29','sexe' => 'F','categorie' => 'S','points' => '1424','classement' => '14','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016695','nom' => 'CARLIER','prenom' => ' Axel ','date_naissance' => '2001-05-20','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014985','nom' => 'CATTEAU','prenom' => ' Didier ','date_naissance' => '1967-06-01','sexe' => 'M','categorie' => 'V1','points' => '921','classement' => '9','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '5942528','nom' => 'CAUDRELIER','prenom' => ' Olivier ','date_naissance' => '1978-07-16','sexe' => 'M','categorie' => 'S','points' => '1319','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014536','nom' => 'CHAERLE','prenom' => ' louis ','date_naissance' => '2001-02-11','sexe' => 'M','categorie' => 'B2','points' => '1049','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011105','nom' => 'CHAERLE','prenom' => ' Patrice ','date_naissance' => '1961-10-01','sexe' => 'M','categorie' => 'V2','points' => '839','classement' => '8','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016475','nom' => 'CHAHIR','prenom' => 'Ala-eddine ','date_naissance' => '1997-03-09','sexe' => 'M','categorie' => 'C2','points' => '697','classement' => '6','equipe' => '9','equipe_m' => NULL,'equipe_j' => '15'),
-        array('licence' => '8014532','nom' => 'CHARTIER','prenom' => ' Floris ','date_naissance' => '1998-07-13','sexe' => 'M','categorie' => 'C1','points' => '921','classement' => '9','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011978','nom' => 'CHATELAIN','prenom' => ' denis ','date_naissance' => '1967-06-15','sexe' => 'M','categorie' => 'V1','points' => '2070','classement' => 'N1000','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014053','nom' => 'CHATELAIN','prenom' => ' raphaël ','date_naissance' => '1996-04-22','sexe' => 'M','categorie' => 'J1','points' => '2011','classement' => '20','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016216','nom' => 'CHHE','prenom' => ' Gregory ','date_naissance' => '1977-11-09','sexe' => 'M','categorie' => 'S','points' => '738','classement' => '7','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014369','nom' => 'COCQUET','prenom' => ' Olivier ','date_naissance' => '1990-05-02','sexe' => 'M','categorie' => 'S','points' => '729','classement' => '7','equipe' => '9','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '9G671','nom' => 'COMBO','prenom' => ' Combo ali ','date_naissance' => '1986-11-05','sexe' => 'M','categorie' => 'S','points' => '1276','classement' => '12','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '9414158','nom' => 'CORRE','prenom' => ' Cédric ','date_naissance' => '1977-04-10','sexe' => 'M','categorie' => 'S','points' => '2392','classement' => 'N277','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '619249','nom' => 'CREMET','prenom' => ' Jessica ','date_naissance' => '1984-07-07','sexe' => 'F','categorie' => 'S','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8010745','nom' => 'CREUNET','prenom' => ' Alexandre ','date_naissance' => '1989-08-19','sexe' => 'M','categorie' => 'S','points' => '1663','classement' => '16','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016669','nom' => 'DA COSTA','prenom' => 'Fabien ','date_naissance' => '1997-10-09','sexe' => 'M','categorie' => 'C2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '3411267','nom' => 'DAVID','prenom' => ' ludovic ','date_naissance' => '1979-08-14','sexe' => 'M','categorie' => 'S','points' => '962','classement' => '9','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013573','nom' => 'DE CATHEU','prenom' => 'Christophe ','date_naissance' => '1999-09-10','sexe' => 'M','categorie' => 'M2','points' => '520','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011160','nom' => 'DE CATHEU','prenom' => 'Cyril ','date_naissance' => '1995-05-31','sexe' => 'M','categorie' => 'J2','points' => '1235','classement' => '12','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011161','nom' => 'DE CATHEU','prenom' => 'Henry ','date_naissance' => '1993-09-04','sexe' => 'M','categorie' => 'S','points' => '704','classement' => '7','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014420','nom' => 'DE VISME','prenom' => 'Thibault ','date_naissance' => '1991-11-02','sexe' => 'M','categorie' => 'S','points' => '1049','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016766','nom' => 'DEFOSSE','prenom' => ' Gustav ','date_naissance' => '2002-03-07','sexe' => 'M','categorie' => 'B1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014484','nom' => 'DEGUINGAND','prenom' => ' Andrei ','date_naissance' => '2000-01-30','sexe' => 'M','categorie' => 'M1','points' => '1070','classement' => '10','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016693','nom' => 'DEMOL','prenom' => ' Adrien ','date_naissance' => '1999-12-05','sexe' => 'M','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016288','nom' => 'DESJONQUERES','prenom' => ' Keziah ','date_naissance' => '2001-04-24','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014432','nom' => 'DUBOIS','prenom' => ' Lucas ','date_naissance' => '1997-01-26','sexe' => 'M','categorie' => 'C2','points' => '1643','classement' => '16','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016697','nom' => 'DUC','prenom' => ' Pierre antoine ','date_naissance' => '2000-04-03','sexe' => 'M','categorie' => 'M1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012651','nom' => 'FENDORF','prenom' => ' Valentin ','date_naissance' => '1992-02-06','sexe' => 'M','categorie' => 'S','points' => '1410','classement' => '14','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013652','nom' => 'FERAUD','prenom' => ' Arnaud ','date_naissance' => '1993-12-07','sexe' => 'M','categorie' => 'S','points' => '1277','classement' => '12','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013575','nom' => 'FLAHAUT','prenom' => ' Julia ','date_naissance' => '1997-07-29','sexe' => 'F','categorie' => 'C2','points' => '969','classement' => '9','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '804295','nom' => 'FLAMENT','prenom' => ' Marc ','date_naissance' => '1963-05-20','sexe' => 'M','categorie' => 'V1','points' => '1335','classement' => '13','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015204','nom' => 'FOURNIER','prenom' => ' quentin ','date_naissance' => '1992-04-01','sexe' => 'M','categorie' => 'S','points' => '738','classement' => '7','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '7627502','nom' => 'GILOT','prenom' => ' Geoffroy ','date_naissance' => '1992-12-27','sexe' => 'M','categorie' => 'S','points' => '1122','classement' => '11','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016137','nom' => 'GOUPIL','prenom' => ' Alexandre ','date_naissance' => '1993-03-27','sexe' => 'M','categorie' => 'S','points' => '608','classement' => '6','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '6015008','nom' => 'GRUGEON','prenom' => ' Charline ','date_naissance' => '1996-02-28','sexe' => 'F','categorie' => 'J1','points' => '1266','classement' => '12','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '809648','nom' => 'GUICHARD','prenom' => ' Delphine ','date_naissance' => '1968-08-24','sexe' => 'F','categorie' => 'V1','points' => '898','classement' => '8','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012827','nom' => 'HAIGNERE','prenom' => ' Alexandre ','date_naissance' => '1993-01-07','sexe' => 'M','categorie' => 'S','points' => '1883','classement' => '18','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016694','nom' => 'HAMDAD','prenom' => ' Adem ','date_naissance' => '2005-09-02','sexe' => 'M','categorie' => 'P','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016585','nom' => 'HAMDAD','prenom' => ' Ymad ','date_naissance' => '2001-08-17','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '805540','nom' => 'HARLE','prenom' => ' Christophe ','date_naissance' => '1973-11-11','sexe' => 'M','categorie' => 'S','points' => '2174','classement' => 'N621','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013574','nom' => 'HAUW','prenom' => ' Joffrey ','date_naissance' => '1997-06-02','sexe' => 'M','categorie' => 'C2','points' => '691','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012855','nom' => 'HELAINE','prenom' => ' Béatrice ','date_naissance' => '1955-02-27','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8096','nom' => 'HELAINE','prenom' => ' Jacques ','date_naissance' => '1941-05-25','sexe' => 'M','categorie' => 'V4','points' => '979','classement' => '9','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8010806','nom' => 'HENON','prenom' => ' Christian ','date_naissance' => '1967-05-23','sexe' => 'M','categorie' => 'V1','points' => '1876','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016219','nom' => 'HERBIN','prenom' => ' TENEUR Timeo ','date_naissance' => '2002-02-18','sexe' => 'M','categorie' => 'B1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '804888','nom' => 'HERLY','prenom' => ' François ','date_naissance' => '1984-04-19','sexe' => 'M','categorie' => 'S','points' => '1573','classement' => '15','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '804914','nom' => 'HERMANT','prenom' => ' Cédric ','date_naissance' => '1980-06-28','sexe' => 'M','categorie' => 'S','points' => '1998','classement' => '19','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015277','nom' => 'HERSENT','prenom' => ' Léo ','date_naissance' => '2002-05-16','sexe' => 'M','categorie' => 'B1','points' => '906','classement' => '9','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015387','nom' => 'HERSENT','prenom' => ' Tristan ','date_naissance' => '2001-01-05','sexe' => 'M','categorie' => 'B2','points' => '1020','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014092','nom' => 'HUON','prenom' => ' Antoine ','date_naissance' => '1998-10-05','sexe' => 'M','categorie' => 'C1','points' => '1225','classement' => '12','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015295','nom' => 'HUON','prenom' => ' Marine ','date_naissance' => '2001-08-30','sexe' => 'F','categorie' => 'B2','points' => '594','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
-        array('licence' => '8015875','nom' => 'HURE','prenom' => ' Léa ','date_naissance' => '2000-02-18','sexe' => 'F','categorie' => 'M1','points' => '609','classement' => '6','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014768','nom' => 'HURE','prenom' => ' Valentine ','date_naissance' => '1997-12-01','sexe' => 'F','categorie' => 'C2','points' => '597','classement' => '5','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015466','nom' => 'KLOPP','prenom' => ' Thibaut ','date_naissance' => '1999-01-10','sexe' => 'M','categorie' => 'M2','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011159','nom' => 'LAMERANT','prenom' => ' Matthieu ','date_naissance' => '1991-09-25','sexe' => 'M','categorie' => 'S','points' => '1233','classement' => '12','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012296','nom' => 'LAMOUR','prenom' => ' Maximilien ','date_naissance' => '1989-10-04','sexe' => 'M','categorie' => 'S','points' => '1516','classement' => '15','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '4916071','nom' => 'LE GALLOUDEC','prenom' => 'Pierre ','date_naissance' => '1984-06-09','sexe' => 'M','categorie' => 'S','points' => '1814','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012235','nom' => 'LECOMTE','prenom' => ' Patrice ','date_naissance' => '1957-02-10','sexe' => 'M','categorie' => 'V2','points' => '1085','classement' => '10','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8010540','nom' => 'LECOMTE','prenom' => ' Yohan ','date_naissance' => '1986-06-12','sexe' => 'M','categorie' => 'S','points' => '1941','classement' => '19','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013561','nom' => 'LEFEVRE','prenom' => ' Loïc ','date_naissance' => '1998-10-09','sexe' => 'M','categorie' => 'C1','points' => '1285','classement' => '12','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014935','nom' => 'LEGRIS','prenom' => ' Thomas ','date_naissance' => '2001-08-31','sexe' => 'M','categorie' => 'B2','points' => '621','classement' => '6','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '15'),
-        array('licence' => '80499','nom' => 'L\'HOTE','prenom' => ' Philippe ','date_naissance' => '1967-02-25','sexe' => 'M','categorie' => 'V1','points' => '1808','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011054','nom' => 'MARAIS','prenom' => ' Yannick ','date_naissance' => '1979-09-13','sexe' => 'M','categorie' => 'S','points' => '2495','classement' => 'N186','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8515270','nom' => 'MARIE','prenom' => ' Eddy ','date_naissance' => '1991-01-06','sexe' => 'M','categorie' => 'S','points' => '1454','classement' => '14','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '625731','nom' => 'MARTEL','prenom' => ' Christian ','date_naissance' => '1952-04-30','sexe' => 'M','categorie' => 'V2','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015484','nom' => 'MARTIN','prenom' => ' Julien ','date_naissance' => '2001-05-28','sexe' => 'M','categorie' => 'B2','points' => '1112','classement' => '11','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '80133','nom' => 'MARYSSE','prenom' => ' Bruno ','date_naissance' => '1958-09-28','sexe' => 'M','categorie' => 'V2','points' => '1752','classement' => '17','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011876','nom' => 'MENARD','prenom' => ' Alexandre ','date_naissance' => '1980-02-15','sexe' => 'M','categorie' => 'S','points' => '1316','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016214','nom' => 'NADAU','prenom' => ' Benoit ','date_naissance' => '2001-12-26','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015847','nom' => 'NADAU','prenom' => 'Pierre-philippe ','date_naissance' => '2000-01-27','sexe' => 'M','categorie' => 'M1','points' => '520','classement' => '5','equipe' => '9','equipe_m' => NULL,'equipe_j' => '15'),
-        array('licence' => '807050','nom' => 'NEEL','prenom' => ' Aurélie ','date_naissance' => '1983-06-14','sexe' => 'F','categorie' => 'S','points' => '914','classement' => '9','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8012824','nom' => 'PETITPREZ','prenom' => ' Caroline ','date_naissance' => '1995-09-05','sexe' => 'F','categorie' => 'J2','points' => '1477','classement' => '14','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '7624666','nom' => 'PLOTUNA','prenom' => ' Malin ','date_naissance' => '1978-05-07','sexe' => 'M','categorie' => 'S','points' => '2487','classement' => 'N195','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016171','nom' => 'POULAIN','prenom' => ' Jean-paul ','date_naissance' => '1959-03-03','sexe' => 'M','categorie' => 'V2','points' => '1391','classement' => '13','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015210','nom' => 'PRUVOT','prenom' => ' Sylvain ','date_naissance' => '1995-08-08','sexe' => 'M','categorie' => 'J2','points' => '585','classement' => '5','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '6013925','nom' => 'RASSELET','prenom' => ' Vincent ','date_naissance' => '1993-02-05','sexe' => 'M','categorie' => 'S','points' => '1766','classement' => '17','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013548','nom' => 'RIQUART','prenom' => ' Philippe ','date_naissance' => '1967-11-08','sexe' => 'M','categorie' => 'V1','points' => '1473','classement' => '14','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016698','nom' => 'ROSE','prenom' => ' Valentin ','date_naissance' => '1998-03-24','sexe' => 'M','categorie' => 'C1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016696','nom' => 'ROUGIER','prenom' => ' Armand ','date_naissance' => '2001-08-06','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014047','nom' => 'SCHILDKNECHT','prenom' => ' Florent ','date_naissance' => '1991-10-27','sexe' => 'M','categorie' => 'S','points' => '1173','classement' => '11','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '804423','nom' => 'SELLIER','prenom' => ' Arnaud ','date_naissance' => '1979-11-09','sexe' => 'M','categorie' => 'S','points' => '2279','classement' => 'N395','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '805450','nom' => 'SELLIER','prenom' => ' Jean-robert ','date_naissance' => '1951-05-03','sexe' => 'M','categorie' => 'V3','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016192','nom' => 'STEELANDT','prenom' => ' Clemence ','date_naissance' => '2001-02-05','sexe' => 'F','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
-        array('licence' => '8016193','nom' => 'STEELANDT','prenom' => ' Pauline ','date_naissance' => '2003-07-16','sexe' => 'F','categorie' => 'P','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016668','nom' => 'STEELANDT','prenom' => ' Stephane ','date_naissance' => '1970-10-15','sexe' => 'M','categorie' => 'V1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014847','nom' => 'STEPHAN','prenom' => ' Jeoffrey ','date_naissance' => '1995-01-03','sexe' => 'M','categorie' => 'J2','points' => '898','classement' => '8','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '80167','nom' => 'TAQUET','prenom' => ' Jean ','date_naissance' => '1953-12-11','sexe' => 'M','categorie' => 'V2','points' => '2026','classement' => '20','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015291','nom' => 'TRAN','prenom' => ' Richard ','date_naissance' => '1997-06-13','sexe' => 'M','categorie' => 'C2','points' => '744','classement' => '7','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015385','nom' => 'TRAN','prenom' => ' Sophie ','date_naissance' => '2000-04-08','sexe' => 'F','categorie' => 'M1','points' => '502','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
-        array('licence' => '8012315','nom' => 'VANDEWOESTYNE','prenom' => ' Louis ','date_naissance' => '1996-02-29','sexe' => 'M','categorie' => 'J1','points' => '1332','classement' => '13','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8014240','nom' => 'VANDEWOESTYNE','prenom' => ' Paul ','date_naissance' => '1999-02-12','sexe' => 'M','categorie' => 'M2','points' => '843','classement' => '8','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015708','nom' => 'VANIER','prenom' => ' Eline ','date_naissance' => '2001-08-03','sexe' => 'F','categorie' => 'B2','points' => '569','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
-        array('licence' => '8015709','nom' => 'VANIER','prenom' => ' Elvire ','date_naissance' => '2001-08-03','sexe' => 'F','categorie' => 'B2','points' => '605','classement' => '6','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
-        array('licence' => '8016670','nom' => 'VANIER','prenom' => ' Lise ','date_naissance' => '1999-07-31','sexe' => 'F','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8011366','nom' => 'VAQUETTE','prenom' => ' Claudette ','date_naissance' => '1941-08-18','sexe' => 'F','categorie' => 'V3','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015152','nom' => 'VAQUIER','prenom' => ' Benoit ','date_naissance' => '1996-05-19','sexe' => 'M','categorie' => 'J1','points' => '1570','classement' => '15','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013932','nom' => 'VAUCHERET','prenom' => ' Xavier ','date_naissance' => '1945-07-08','sexe' => 'M','categorie' => 'V3','points' => '992','classement' => '9','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '808254','nom' => 'VOLKAMER','prenom' => ' Marie-jeanne ','date_naissance' => '1957-04-23','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013577','nom' => 'WALLON','prenom' => ' enguerrand ','date_naissance' => '1999-11-29','sexe' => 'M','categorie' => 'M2','points' => '665','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8016180','nom' => 'WILHEM','prenom' => ' Benjamin ','date_naissance' => '2000-03-20','sexe' => 'M','categorie' => 'M1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '15'),
-        array('licence' => '089309','nom' => 'COUTURIER','prenom' => 'Kévin','date_naissance' => '1993-11-30','sexe' => 'M','categorie' => 'S','points' => '1032','classement' => '10','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8015292','nom' => 'HENAO','prenom' => 'Victor','date_naissance' => '1998-07-06','sexe' => 'M','categorie' => 'C1','points' => '659','classement' => '6','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '721967','nom' => 'BLED','prenom' => 'Erwan','date_naissance' => '1993-04-11','sexe' => 'M','categorie' => 'S','points' => '595','classement' => '5','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
-        array('licence' => '8013114','nom' => 'COUILLET','prenom' => 'Rémi','date_naissance' => '1995-11-17','sexe' => 'M','categorie' => 'J2','points' => '714','classement' => '7','equipe' => '12','equipe_m' => '0','equipe_j' => '0')
+          array('licence' => '8016191','nom' => 'ALBERT','prenom' => ' Clotilde ','date_naissance' => '1999-08-11','sexe' => 'F','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013188','nom' => 'BATHELOT','prenom' => ' Benjamin ','date_naissance' => '1991-03-21','sexe' => 'M','categorie' => 'S','points' => '789','classement' => '7','equipe' => '9','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011223','nom' => 'BATHELOT','prenom' => ' bertrand ','date_naissance' => '1966-10-04','sexe' => 'M','categorie' => 'V1','points' => '1778','classement' => '17','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015740','nom' => 'BEAUFRERE','prenom' => ' Florian ','date_naissance' => '1995-03-02','sexe' => 'M','categorie' => 'J2','points' => '684','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015571','nom' => 'BELOT','prenom' => ' Maxime ','date_naissance' => '1993-11-05','sexe' => 'M','categorie' => 'S','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '1414595','nom' => 'BERRIAT','prenom' => ' Leny ','date_naissance' => '1989-08-08','sexe' => 'M','categorie' => 'S','points' => '1459','classement' => '14','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '508698','nom' => 'BERTHELOT','prenom' => ' marion ','date_naissance' => '1990-01-31','sexe' => 'F','categorie' => 'S','points' => '1001','classement' => '10','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011182','nom' => 'BLATRIX','prenom' => ' Maxime ','date_naissance' => '1992-09-03','sexe' => 'M','categorie' => 'S','points' => '1862','classement' => '18','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '808987','nom' => 'BLOQUET','prenom' => ' Jacques ','date_naissance' => '1943-10-04','sexe' => 'M','categorie' => 'V3','points' => '884','classement' => '8','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013900','nom' => 'BODINEL','prenom' => ' Léo ','date_naissance' => '1998-03-04','sexe' => 'M','categorie' => 'C1','points' => '1082','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013061','nom' => 'BODINEL','prenom' => ' Paul ','date_naissance' => '1995-12-12','sexe' => 'M','categorie' => 'J2','points' => '1100','classement' => '11','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016279','nom' => 'BOINET','prenom' => ' paul ','date_naissance' => '2000-01-15','sexe' => 'M','categorie' => 'M1','points' => '591','classement' => '5','equipe' => '7','equipe_m' => NULL,'equipe_j' => '15'),
+          array('licence' => '8013176','nom' => 'BONTE','prenom' => ' Benoit ','date_naissance' => '1995-12-18','sexe' => 'M','categorie' => 'J2','points' => '791','classement' => '7','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8018','nom' => 'BOURRE','prenom' => ' Dany ','date_naissance' => '1949-01-24','sexe' => 'M','categorie' => 'V3','points' => '580','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015741','nom' => 'BOUTEILLER','prenom' => ' Hugo ','date_naissance' => '1995-10-29','sexe' => 'M','categorie' => 'J2','points' => '816','classement' => '8','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013916','nom' => 'CAHAGNE','prenom' => ' Brigitte ','date_naissance' => '1958-09-08','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011378','nom' => 'CAILLOIN','prenom' => ' Yoann ','date_naissance' => '1978-08-06','sexe' => 'M','categorie' => 'S','points' => '1336','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '804688','nom' => 'CANY','prenom' => ' laurent ','date_naissance' => '1976-05-20','sexe' => 'M','categorie' => 'S','points' => '1961','classement' => '19','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '806027','nom' => 'CARLIE','prenom' => ' hélène ','date_naissance' => '1984-02-29','sexe' => 'F','categorie' => 'S','points' => '1424','classement' => '14','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016695','nom' => 'CARLIER','prenom' => ' Axel ','date_naissance' => '2001-05-20','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014985','nom' => 'CATTEAU','prenom' => ' Didier ','date_naissance' => '1967-06-01','sexe' => 'M','categorie' => 'V1','points' => '921','classement' => '9','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '5942528','nom' => 'CAUDRELIER','prenom' => ' Olivier ','date_naissance' => '1978-07-16','sexe' => 'M','categorie' => 'S','points' => '1319','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014536','nom' => 'CHAERLE','prenom' => ' louis ','date_naissance' => '2001-02-11','sexe' => 'M','categorie' => 'B2','points' => '1049','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011105','nom' => 'CHAERLE','prenom' => ' Patrice ','date_naissance' => '1961-10-01','sexe' => 'M','categorie' => 'V2','points' => '839','classement' => '8','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016475','nom' => 'CHAHIR','prenom' => 'Ala-eddine ','date_naissance' => '1997-03-09','sexe' => 'M','categorie' => 'C2','points' => '697','classement' => '6','equipe' => '9','equipe_m' => NULL,'equipe_j' => '15'),
+          array('licence' => '8014532','nom' => 'CHARTIER','prenom' => ' Floris ','date_naissance' => '1998-07-13','sexe' => 'M','categorie' => 'C1','points' => '921','classement' => '9','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011978','nom' => 'CHATELAIN','prenom' => ' denis ','date_naissance' => '1967-06-15','sexe' => 'M','categorie' => 'V1','points' => '2070','classement' => 'N1000','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014053','nom' => 'CHATELAIN','prenom' => ' raphaël ','date_naissance' => '1996-04-22','sexe' => 'M','categorie' => 'J1','points' => '2011','classement' => '20','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016216','nom' => 'CHHE','prenom' => ' Gregory ','date_naissance' => '1977-11-09','sexe' => 'M','categorie' => 'S','points' => '738','classement' => '7','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014369','nom' => 'COCQUET','prenom' => ' Olivier ','date_naissance' => '1990-05-02','sexe' => 'M','categorie' => 'S','points' => '729','classement' => '7','equipe' => '9','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '9G671','nom' => 'COMBO','prenom' => ' Combo ali ','date_naissance' => '1986-11-05','sexe' => 'M','categorie' => 'S','points' => '1276','classement' => '12','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '9414158','nom' => 'CORRE','prenom' => ' Cédric ','date_naissance' => '1977-04-10','sexe' => 'M','categorie' => 'S','points' => '2392','classement' => 'N277','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '619249','nom' => 'CREMET','prenom' => ' Jessica ','date_naissance' => '1984-07-07','sexe' => 'F','categorie' => 'S','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8010745','nom' => 'CREUNET','prenom' => ' Alexandre ','date_naissance' => '1989-08-19','sexe' => 'M','categorie' => 'S','points' => '1663','classement' => '16','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016669','nom' => 'DA COSTA','prenom' => 'Fabien ','date_naissance' => '1997-10-09','sexe' => 'M','categorie' => 'C2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '3411267','nom' => 'DAVID','prenom' => ' ludovic ','date_naissance' => '1979-08-14','sexe' => 'M','categorie' => 'S','points' => '962','classement' => '9','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013573','nom' => 'DE CATHEU','prenom' => 'Christophe ','date_naissance' => '1999-09-10','sexe' => 'M','categorie' => 'M2','points' => '520','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011160','nom' => 'DE CATHEU','prenom' => 'Cyril ','date_naissance' => '1995-05-31','sexe' => 'M','categorie' => 'J2','points' => '1235','classement' => '12','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011161','nom' => 'DE CATHEU','prenom' => 'Henry ','date_naissance' => '1993-09-04','sexe' => 'M','categorie' => 'S','points' => '704','classement' => '7','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014420','nom' => 'DE VISME','prenom' => 'Thibault ','date_naissance' => '1991-11-02','sexe' => 'M','categorie' => 'S','points' => '1049','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016766','nom' => 'DEFOSSE','prenom' => ' Gustav ','date_naissance' => '2002-03-07','sexe' => 'M','categorie' => 'B1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014484','nom' => 'DEGUINGAND','prenom' => ' Andrei ','date_naissance' => '2000-01-30','sexe' => 'M','categorie' => 'M1','points' => '1070','classement' => '10','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016693','nom' => 'DEMOL','prenom' => ' Adrien ','date_naissance' => '1999-12-05','sexe' => 'M','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016288','nom' => 'DESJONQUERES','prenom' => ' Keziah ','date_naissance' => '2001-04-24','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014432','nom' => 'DUBOIS','prenom' => ' Lucas ','date_naissance' => '1997-01-26','sexe' => 'M','categorie' => 'C2','points' => '1643','classement' => '16','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016697','nom' => 'DUC','prenom' => ' Pierre antoine ','date_naissance' => '2000-04-03','sexe' => 'M','categorie' => 'M1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012651','nom' => 'FENDORF','prenom' => ' Valentin ','date_naissance' => '1992-02-06','sexe' => 'M','categorie' => 'S','points' => '1410','classement' => '14','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013652','nom' => 'FERAUD','prenom' => ' Arnaud ','date_naissance' => '1993-12-07','sexe' => 'M','categorie' => 'S','points' => '1277','classement' => '12','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013575','nom' => 'FLAHAUT','prenom' => ' Julia ','date_naissance' => '1997-07-29','sexe' => 'F','categorie' => 'C2','points' => '969','classement' => '9','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '804295','nom' => 'FLAMENT','prenom' => ' Marc ','date_naissance' => '1963-05-20','sexe' => 'M','categorie' => 'V1','points' => '1335','classement' => '13','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015204','nom' => 'FOURNIER','prenom' => ' quentin ','date_naissance' => '1992-04-01','sexe' => 'M','categorie' => 'S','points' => '738','classement' => '7','equipe' => '0','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '7627502','nom' => 'GILOT','prenom' => ' Geoffroy ','date_naissance' => '1992-12-27','sexe' => 'M','categorie' => 'S','points' => '1122','classement' => '11','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016137','nom' => 'GOUPIL','prenom' => ' Alexandre ','date_naissance' => '1993-03-27','sexe' => 'M','categorie' => 'S','points' => '608','classement' => '6','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '6015008','nom' => 'GRUGEON','prenom' => ' Charline ','date_naissance' => '1996-02-28','sexe' => 'F','categorie' => 'J1','points' => '1266','classement' => '12','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '809648','nom' => 'GUICHARD','prenom' => ' Delphine ','date_naissance' => '1968-08-24','sexe' => 'F','categorie' => 'V1','points' => '898','classement' => '8','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012827','nom' => 'HAIGNERE','prenom' => ' Alexandre ','date_naissance' => '1993-01-07','sexe' => 'M','categorie' => 'S','points' => '1883','classement' => '18','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016694','nom' => 'HAMDAD','prenom' => ' Adem ','date_naissance' => '2005-09-02','sexe' => 'M','categorie' => 'P','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016585','nom' => 'HAMDAD','prenom' => ' Ymad ','date_naissance' => '2001-08-17','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '805540','nom' => 'HARLE','prenom' => ' Christophe ','date_naissance' => '1973-11-11','sexe' => 'M','categorie' => 'S','points' => '2174','classement' => 'N621','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013574','nom' => 'HAUW','prenom' => ' Joffrey ','date_naissance' => '1997-06-02','sexe' => 'M','categorie' => 'C2','points' => '691','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012855','nom' => 'HELAINE','prenom' => ' Béatrice ','date_naissance' => '1955-02-27','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8096','nom' => 'HELAINE','prenom' => ' Jacques ','date_naissance' => '1941-05-25','sexe' => 'M','categorie' => 'V4','points' => '979','classement' => '9','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8010806','nom' => 'HENON','prenom' => ' Christian ','date_naissance' => '1967-05-23','sexe' => 'M','categorie' => 'V1','points' => '1876','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016219','nom' => 'HERBIN','prenom' => ' TENEUR Timeo ','date_naissance' => '2002-02-18','sexe' => 'M','categorie' => 'B1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '804888','nom' => 'HERLY','prenom' => ' François ','date_naissance' => '1984-04-19','sexe' => 'M','categorie' => 'S','points' => '1573','classement' => '15','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '804914','nom' => 'HERMANT','prenom' => ' Cédric ','date_naissance' => '1980-06-28','sexe' => 'M','categorie' => 'S','points' => '1998','classement' => '19','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015277','nom' => 'HERSENT','prenom' => ' Léo ','date_naissance' => '2002-05-16','sexe' => 'M','categorie' => 'B1','points' => '906','classement' => '9','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015387','nom' => 'HERSENT','prenom' => ' Tristan ','date_naissance' => '2001-01-05','sexe' => 'M','categorie' => 'B2','points' => '1020','classement' => '10','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014092','nom' => 'HUON','prenom' => ' Antoine ','date_naissance' => '1998-10-05','sexe' => 'M','categorie' => 'C1','points' => '1225','classement' => '12','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015295','nom' => 'HUON','prenom' => ' Marine ','date_naissance' => '2001-08-30','sexe' => 'F','categorie' => 'B2','points' => '594','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
+          array('licence' => '8015875','nom' => 'HURE','prenom' => ' Léa ','date_naissance' => '2000-02-18','sexe' => 'F','categorie' => 'M1','points' => '609','classement' => '6','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014768','nom' => 'HURE','prenom' => ' Valentine ','date_naissance' => '1997-12-01','sexe' => 'F','categorie' => 'C2','points' => '597','classement' => '5','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015466','nom' => 'KLOPP','prenom' => ' Thibaut ','date_naissance' => '1999-01-10','sexe' => 'M','categorie' => 'M2','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011159','nom' => 'LAMERANT','prenom' => ' Matthieu ','date_naissance' => '1991-09-25','sexe' => 'M','categorie' => 'S','points' => '1233','classement' => '12','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012296','nom' => 'LAMOUR','prenom' => ' Maximilien ','date_naissance' => '1989-10-04','sexe' => 'M','categorie' => 'S','points' => '1516','classement' => '15','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '4916071','nom' => 'LE GALLOUDEC','prenom' => 'Pierre ','date_naissance' => '1984-06-09','sexe' => 'M','categorie' => 'S','points' => '1814','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012235','nom' => 'LECOMTE','prenom' => ' Patrice ','date_naissance' => '1957-02-10','sexe' => 'M','categorie' => 'V2','points' => '1085','classement' => '10','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8010540','nom' => 'LECOMTE','prenom' => ' Yohan ','date_naissance' => '1986-06-12','sexe' => 'M','categorie' => 'S','points' => '1941','classement' => '19','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013561','nom' => 'LEFEVRE','prenom' => ' Loïc ','date_naissance' => '1998-10-09','sexe' => 'M','categorie' => 'C1','points' => '1285','classement' => '12','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014935','nom' => 'LEGRIS','prenom' => ' Thomas ','date_naissance' => '2001-08-31','sexe' => 'M','categorie' => 'B2','points' => '621','classement' => '6','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '15'),
+          array('licence' => '80499','nom' => 'L\'HOTE','prenom' => ' Philippe ','date_naissance' => '1967-02-25','sexe' => 'M','categorie' => 'V1','points' => '1808','classement' => '18','equipe' => '3','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011054','nom' => 'MARAIS','prenom' => ' Yannick ','date_naissance' => '1979-09-13','sexe' => 'M','categorie' => 'S','points' => '2495','classement' => 'N186','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8515270','nom' => 'MARIE','prenom' => ' Eddy ','date_naissance' => '1991-01-06','sexe' => 'M','categorie' => 'S','points' => '1454','classement' => '14','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '625731','nom' => 'MARTEL','prenom' => ' Christian ','date_naissance' => '1952-04-30','sexe' => 'M','categorie' => 'V2','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015484','nom' => 'MARTIN','prenom' => ' Julien ','date_naissance' => '2001-05-28','sexe' => 'M','categorie' => 'B2','points' => '1112','classement' => '11','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '80133','nom' => 'MARYSSE','prenom' => ' Bruno ','date_naissance' => '1958-09-28','sexe' => 'M','categorie' => 'V2','points' => '1752','classement' => '17','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011876','nom' => 'MENARD','prenom' => ' Alexandre ','date_naissance' => '1980-02-15','sexe' => 'M','categorie' => 'S','points' => '1316','classement' => '13','equipe' => '5','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016214','nom' => 'NADAU','prenom' => ' Benoit ','date_naissance' => '2001-12-26','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015847','nom' => 'NADAU','prenom' => 'Pierre-philippe ','date_naissance' => '2000-01-27','sexe' => 'M','categorie' => 'M1','points' => '520','classement' => '5','equipe' => '9','equipe_m' => NULL,'equipe_j' => '15'),
+          array('licence' => '807050','nom' => 'NEEL','prenom' => ' Aurélie ','date_naissance' => '1983-06-14','sexe' => 'F','categorie' => 'S','points' => '914','classement' => '9','equipe' => '14','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8012824','nom' => 'PETITPREZ','prenom' => ' Caroline ','date_naissance' => '1995-09-05','sexe' => 'F','categorie' => 'J2','points' => '1477','classement' => '14','equipe' => '13','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '7624666','nom' => 'PLOTUNA','prenom' => ' Malin ','date_naissance' => '1978-05-07','sexe' => 'M','categorie' => 'S','points' => '2487','classement' => 'N195','equipe' => '1','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016171','nom' => 'POULAIN','prenom' => ' Jean-paul ','date_naissance' => '1959-03-03','sexe' => 'M','categorie' => 'V2','points' => '1391','classement' => '13','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015210','nom' => 'PRUVOT','prenom' => ' Sylvain ','date_naissance' => '1995-08-08','sexe' => 'M','categorie' => 'J2','points' => '585','classement' => '5','equipe' => '12','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '6013925','nom' => 'RASSELET','prenom' => ' Vincent ','date_naissance' => '1993-02-05','sexe' => 'M','categorie' => 'S','points' => '1766','classement' => '17','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013548','nom' => 'RIQUART','prenom' => ' Philippe ','date_naissance' => '1967-11-08','sexe' => 'M','categorie' => 'V1','points' => '1473','classement' => '14','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016698','nom' => 'ROSE','prenom' => ' Valentin ','date_naissance' => '1998-03-24','sexe' => 'M','categorie' => 'C1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016696','nom' => 'ROUGIER','prenom' => ' Armand ','date_naissance' => '2001-08-06','sexe' => 'M','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014047','nom' => 'SCHILDKNECHT','prenom' => ' Florent ','date_naissance' => '1991-10-27','sexe' => 'M','categorie' => 'S','points' => '1173','classement' => '11','equipe' => '6','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '804423','nom' => 'SELLIER','prenom' => ' Arnaud ','date_naissance' => '1979-11-09','sexe' => 'M','categorie' => 'S','points' => '2279','classement' => 'N395','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '805450','nom' => 'SELLIER','prenom' => ' Jean-robert ','date_naissance' => '1951-05-03','sexe' => 'M','categorie' => 'V3','points' => '526','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016192','nom' => 'STEELANDT','prenom' => ' Clemence ','date_naissance' => '2001-02-05','sexe' => 'F','categorie' => 'B2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
+          array('licence' => '8016193','nom' => 'STEELANDT','prenom' => ' Pauline ','date_naissance' => '2003-07-16','sexe' => 'F','categorie' => 'P','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016668','nom' => 'STEELANDT','prenom' => ' Stephane ','date_naissance' => '1970-10-15','sexe' => 'M','categorie' => 'V1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014847','nom' => 'STEPHAN','prenom' => ' Jeoffrey ','date_naissance' => '1995-01-03','sexe' => 'M','categorie' => 'J2','points' => '898','classement' => '8','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '80167','nom' => 'TAQUET','prenom' => ' Jean ','date_naissance' => '1953-12-11','sexe' => 'M','categorie' => 'V2','points' => '2026','classement' => '20','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015291','nom' => 'TRAN','prenom' => ' Richard ','date_naissance' => '1997-06-13','sexe' => 'M','categorie' => 'C2','points' => '744','classement' => '7','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015385','nom' => 'TRAN','prenom' => ' Sophie ','date_naissance' => '2000-04-08','sexe' => 'F','categorie' => 'M1','points' => '502','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
+          array('licence' => '8012315','nom' => 'VANDEWOESTYNE','prenom' => ' Louis ','date_naissance' => '1996-02-29','sexe' => 'M','categorie' => 'J1','points' => '1332','classement' => '13','equipe' => '4','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8014240','nom' => 'VANDEWOESTYNE','prenom' => ' Paul ','date_naissance' => '1999-02-12','sexe' => 'M','categorie' => 'M2','points' => '843','classement' => '8','equipe' => '8','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015708','nom' => 'VANIER','prenom' => ' Eline ','date_naissance' => '2001-08-03','sexe' => 'F','categorie' => 'B2','points' => '569','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
+          array('licence' => '8015709','nom' => 'VANIER','prenom' => ' Elvire ','date_naissance' => '2001-08-03','sexe' => 'F','categorie' => 'B2','points' => '605','classement' => '6','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '16'),
+          array('licence' => '8016670','nom' => 'VANIER','prenom' => ' Lise ','date_naissance' => '1999-07-31','sexe' => 'F','categorie' => 'M2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8011366','nom' => 'VAQUETTE','prenom' => ' Claudette ','date_naissance' => '1941-08-18','sexe' => 'F','categorie' => 'V3','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015152','nom' => 'VAQUIER','prenom' => ' Benoit ','date_naissance' => '1996-05-19','sexe' => 'M','categorie' => 'J1','points' => '1570','classement' => '15','equipe' => '2','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013932','nom' => 'VAUCHERET','prenom' => ' Xavier ','date_naissance' => '1945-07-08','sexe' => 'M','categorie' => 'V3','points' => '992','classement' => '9','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '808254','nom' => 'VOLKAMER','prenom' => ' Marie-jeanne ','date_naissance' => '1957-04-23','sexe' => 'F','categorie' => 'V2','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013577','nom' => 'WALLON','prenom' => ' enguerrand ','date_naissance' => '1999-11-29','sexe' => 'M','categorie' => 'M2','points' => '665','classement' => '6','equipe' => '11','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8016180','nom' => 'WILHEM','prenom' => ' Benjamin ','date_naissance' => '2000-03-20','sexe' => 'M','categorie' => 'M1','points' => '500','classement' => '5','equipe' => NULL,'equipe_m' => NULL,'equipe_j' => '15'),
+          array('licence' => '089309','nom' => 'COUTURIER','prenom' => 'Kévin','date_naissance' => '1993-11-30','sexe' => 'M','categorie' => 'S','points' => '1032','classement' => '10','equipe' => '7','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8015292','nom' => 'HENAO','prenom' => 'Victor','date_naissance' => '1998-07-06','sexe' => 'M','categorie' => 'C1','points' => '659','classement' => '6','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '721967','nom' => 'BLED','prenom' => 'Erwan','date_naissance' => '1993-04-11','sexe' => 'M','categorie' => 'S','points' => '595','classement' => '5','equipe' => '10','equipe_m' => NULL,'equipe_j' => NULL),
+          array('licence' => '8013114','nom' => 'COUILLET','prenom' => 'Rémi','date_naissance' => '1995-11-17','sexe' => 'M','categorie' => 'J2','points' => '714','classement' => '7','equipe' => '12','equipe_m' => '0','equipe_j' => '0')
         );
 
         // `astt`.`Liens`
         $Liens = array(
-        array('id' => '1','categorie' => '1','libelle' => 'CD Somme','lien' => 'http://www.cdtt80.com'),
-        array('id' => '2','categorie' => '1','libelle' => 'CD Aisne','lien' => 'http://www.cd02tt.net/'),
-        array('id' => '3','categorie' => '1','libelle' => 'CD Oise','lien' => 'http://www.comiteoisett.fr/'),
-        array('id' => '5','categorie' => '1','libelle' => 'CR Arbitrage','lien' => 'http://www.cra19.fr/'),
-        array('id' => '6','categorie' => '1','libelle' => 'FFTT','lien' => 'http://www.fftt.com/'),
-        array('id' => '7','categorie' => '1','libelle' => 'ETTU','lien' => 'http://www.ettu.org/'),
-        array('id' => '8','categorie' => '1','libelle' => 'ITTF','lien' => 'http://www.ittf.com/'),
-        array('id' => '4','categorie' => '1','libelle' => 'Ligue de Picardie','lien' => 'http://www.lptt.net/index2.htm'),
-        array('id' => '9','categorie' => '1','libelle' => 'Zone','lien' => 'http://www.z6tt.net/'),
-        array('id' => '10','categorie' => '2','libelle' => 'Abbeville','lien' => 'http://www.acabbevillett.com/'),
-        array('id' => '11','categorie' => '2','libelle' => 'Amiens LL','lien' => 'http://amiensleolagrange.free.fr/index.php'),
-        array('id' => '12','categorie' => '2','libelle' => 'Villers-Bretonneux','lien' => 'http://pingpongcvillersbtx.free.fr/'),
-        array('id' => '13','categorie' => '2','libelle' => 'Péronne','lien' => 'http://ttperonne.free.fr/'),
-        array('id' => '14','categorie' => '2','libelle' => 'Mers','lien' => 'http://www.ttmte.fr/pages/0.html'),
-        array('id' => '15','categorie' => '2','libelle' => 'Berck','lien' => 'http://www.berck-tt.fr.gd/'),
-        array('id' => '16','categorie' => '2','libelle' => 'Doullens','lien' => 'http://www.db-tennis-de-table.com/'),
-        array('id' => '17','categorie' => '2','libelle' => 'Saint Fuscien','lien' => 'http://stfuscientt.free.fr/'),
-        array('id' => '18','categorie' => '2','libelle' => 'Flixecourt','lien' => 'http://ville-le-marclet-flixecourt-tt.org/plan.html'),
-        array('id' => '19','categorie' => '2','libelle' => 'Poix de picardie','lien' => 'http://us-poix-tennis-de-table.kif.fr/accueil-c103549'),
-        array('id' => '20','categorie' => '2','libelle' => 'Eppeville','lien' => 'http://tennisdetableeppevillois.jimdo.com/'),
-        array('id' => '21','categorie' => '2','libelle' => 'Longueau','lien' => 'http://escltt.free.fr'),
-        array('id' => '22','categorie' => '2','libelle' => 'Proyart','lien' => 'http://asttproyart.free.fr/topic/index.html'),
-        array('id' => '23','categorie' => '2','libelle' => 'Muillois','lien' => 'http://ppcmuillois.e-monsite.com/'),
-        array('id' => '24','categorie' => '3','libelle' => 'Villers Saint Paul','lien' => 'http://www.ttvillersstpaul.fr/'),
-        array('id' => '25','categorie' => '3','libelle' => 'Vignemont','lien' => 'http://membres.multimania.fr/chevignemont/'),
-        array('id' => '26','categorie' => '3','libelle' => 'Coudun','lien' => 'http://membres.multimania.fr/ttcoudun/'),
-        array('id' => '27','categorie' => '3','libelle' => 'Beauvais','lien' => 'http://beauvaisoisett.free.fr/'),
-        array('id' => '28','categorie' => '3','libelle' => 'Clermont EP','lien' => 'http://www.epclermont.free.fr/'),
-        array('id' => '29','categorie' => '3','libelle' => 'Compiègne','lien' => 'http://tt.compiegne.free.fr/'),
-        array('id' => '30','categorie' => '3','libelle' => 'Feuquieres AP','lien' => 'http://feuquieresap.forumactif.net/forum'),
-        array('id' => '31','categorie' => '3','libelle' => 'Gouvieux','lien' => 'http://gouvieuxsott.unblog.fr/'),
-        array('id' => '32','categorie' => '3','libelle' => 'Lamorlaye','lien' => 'http://www.pplamorlaye.fr/'),
-        array('id' => '33','categorie' => '3','libelle' => 'Villers Saint Leu','lien' => 'http://uniek.pagesperso-orange.fr/'),
-        array('id' => '34','categorie' => '3','libelle' => 'Choisy au bac','lien' => 'http://www.cttcb.fr/'),
-        array('id' => '35','categorie' => '3','libelle' => 'Saint Leu d\'Esserent','lien' => 'http://membres.multimania.fr/esmsl/'),
-        array('id' => '36','categorie' => '3','libelle' => 'ASPC','lien' => 'http://aspc.oise.pagesperso-orange.fr/'),
-        array('id' => '37','categorie' => '3','libelle' => 'EPEV LTLJ','lien' => 'http://dusport.free.fr/assotj/'),
-        array('id' => '38','categorie' => '4','libelle' => 'Laon','lien' => 'http://aspttlaontt.free.fr/'),
-        array('id' => '39','categorie' => '4','libelle' => 'Chateau-Thierry','lien' => 'http://ctt-chateau-thierry.clubeo.com/'),
-        array('id' => '40','categorie' => '4','libelle' => 'ASPTT St Quentin','lien' => 'http://www.asptt.com/club-de-sport/asptt-saint-quentin_c171/'),
-        array('id' => '41','categorie' => '4','libelle' => 'Guise','lien' => 'http://ttguise.octetclub.com/spip/'),
-        array('id' => '42','categorie' => '4','libelle' => 'Hirson','lien' => 'http://tt-hirson-coingt.asso.st/spip/'),
-        array('id' => '43','categorie' => '4','libelle' => 'Chauny','lien' => 'http://tt-hirson-coingt.asso.st/spip/'),
-        array('id' => '44','categorie' => '4','libelle' => 'Beautor Charmes','lien' => 'http://club.sportsregions.fr/tennisdetablebeautor/'),
-        array('id' => '45','categorie' => '4','libelle' => 'Cuffies','lien' => 'http://llcuffies02.pagesperso-orange.fr/default.htm'),
-        array('id' => '46','categorie' => '4','libelle' => 'Crouy','lien' => 'http://astt.crouy.pagesperso-orange.fr/'),
-        array('id' => '47','categorie' => '4','libelle' => 'Saint Quentin','lien' => 'http://www.ttsq.new.fr/'),
-        array('id' => '48','categorie' => '4','libelle' => 'Soisson','lien' => 'http://www.asptt-soissons.fr/index3.htm'),
-        array('id' => '49','categorie' => '4','libelle' => 'Tergnier','lien' => 'http://www.esc-tergnier-tt.com/'),
-        array('id' => '50','categorie' => '4','libelle' => 'Villers-Cotterêts','lien' => 'http://ttfc.wlc.pagesperso-orange.fr/'),
-        array('id' => '51','categorie' => '4','libelle' => 'Venizel','lien' => 'http://ttvenizel.pagesperso-orange.fr/'),
-        array('id' => '52','categorie' => '4','libelle' => 'Chezy','lien' => 'http://pingconcept.canalblog.com/'),
-        array('id' => '53','categorie' => '4','libelle' => 'Conde en Brie','lien' => 'http://uttcb.euskadi-web.com/'),
-        array('id' => '54','categorie' => '4','libelle' => 'Holnon','lien' => 'http://tthf.asso.fr/'),
-        array('id' => '55','categorie' => '4','libelle' => 'Portes de Thierache','lien' => 'http://club.sportsregions.fr/ttcpt'),
-        array('id' => '56','categorie' => '3','libelle' => 'Monchy St Eloi','lien' => 'http://tt.epml.free.fr/'),
-        array('id' => '57','categorie' => '5','libelle' => 'CROS Picardie','lien' => 'http://picardie.franceolympique.com/accueil.php')
+          array('id' => '1','categorie' => '1','libelle' => 'CD Somme','lien' => 'http://www.cdtt80.com'),
+          array('id' => '2','categorie' => '1','libelle' => 'CD Aisne','lien' => 'http://www.cd02tt.net/'),
+          array('id' => '3','categorie' => '1','libelle' => 'CD Oise','lien' => 'http://www.comiteoisett.fr/'),
+          array('id' => '5','categorie' => '1','libelle' => 'CR Arbitrage','lien' => 'http://www.cra19.fr/'),
+          array('id' => '6','categorie' => '1','libelle' => 'FFTT','lien' => 'http://www.fftt.com/'),
+          array('id' => '7','categorie' => '1','libelle' => 'ETTU','lien' => 'http://www.ettu.org/'),
+          array('id' => '8','categorie' => '1','libelle' => 'ITTF','lien' => 'http://www.ittf.com/'),
+          array('id' => '4','categorie' => '1','libelle' => 'Ligue de Picardie','lien' => 'http://www.lptt.net/index2.htm'),
+          array('id' => '9','categorie' => '1','libelle' => 'Zone','lien' => 'http://www.z6tt.net/'),
+          array('id' => '10','categorie' => '2','libelle' => 'Abbeville','lien' => 'http://www.acabbevillett.com/'),
+          array('id' => '11','categorie' => '2','libelle' => 'Amiens LL','lien' => 'http://amiensleolagrange.free.fr/index.php'),
+          array('id' => '12','categorie' => '2','libelle' => 'Villers-Bretonneux','lien' => 'http://pingpongcvillersbtx.free.fr/'),
+          array('id' => '13','categorie' => '2','libelle' => 'Péronne','lien' => 'http://ttperonne.free.fr/'),
+          array('id' => '14','categorie' => '2','libelle' => 'Mers','lien' => 'http://www.ttmte.fr/pages/0.html'),
+          array('id' => '15','categorie' => '2','libelle' => 'Berck','lien' => 'http://www.berck-tt.fr.gd/'),
+          array('id' => '16','categorie' => '2','libelle' => 'Doullens','lien' => 'http://www.db-tennis-de-table.com/'),
+          array('id' => '17','categorie' => '2','libelle' => 'Saint Fuscien','lien' => 'http://stfuscientt.free.fr/'),
+          array('id' => '18','categorie' => '2','libelle' => 'Flixecourt','lien' => 'http://ville-le-marclet-flixecourt-tt.org/plan.html'),
+          array('id' => '19','categorie' => '2','libelle' => 'Poix de picardie','lien' => 'http://us-poix-tennis-de-table.kif.fr/accueil-c103549'),
+          array('id' => '20','categorie' => '2','libelle' => 'Eppeville','lien' => 'http://tennisdetableeppevillois.jimdo.com/'),
+          array('id' => '21','categorie' => '2','libelle' => 'Longueau','lien' => 'http://escltt.free.fr'),
+          array('id' => '22','categorie' => '2','libelle' => 'Proyart','lien' => 'http://asttproyart.free.fr/topic/index.html'),
+          array('id' => '23','categorie' => '2','libelle' => 'Muillois','lien' => 'http://ppcmuillois.e-monsite.com/'),
+          array('id' => '24','categorie' => '3','libelle' => 'Villers Saint Paul','lien' => 'http://www.ttvillersstpaul.fr/'),
+          array('id' => '25','categorie' => '3','libelle' => 'Vignemont','lien' => 'http://membres.multimania.fr/chevignemont/'),
+          array('id' => '26','categorie' => '3','libelle' => 'Coudun','lien' => 'http://membres.multimania.fr/ttcoudun/'),
+          array('id' => '27','categorie' => '3','libelle' => 'Beauvais','lien' => 'http://beauvaisoisett.free.fr/'),
+          array('id' => '28','categorie' => '3','libelle' => 'Clermont EP','lien' => 'http://www.epclermont.free.fr/'),
+          array('id' => '29','categorie' => '3','libelle' => 'Compiègne','lien' => 'http://tt.compiegne.free.fr/'),
+          array('id' => '30','categorie' => '3','libelle' => 'Feuquieres AP','lien' => 'http://feuquieresap.forumactif.net/forum'),
+          array('id' => '31','categorie' => '3','libelle' => 'Gouvieux','lien' => 'http://gouvieuxsott.unblog.fr/'),
+          array('id' => '32','categorie' => '3','libelle' => 'Lamorlaye','lien' => 'http://www.pplamorlaye.fr/'),
+          array('id' => '33','categorie' => '3','libelle' => 'Villers Saint Leu','lien' => 'http://uniek.pagesperso-orange.fr/'),
+          array('id' => '34','categorie' => '3','libelle' => 'Choisy au bac','lien' => 'http://www.cttcb.fr/'),
+          array('id' => '35','categorie' => '3','libelle' => 'Saint Leu d\'Esserent','lien' => 'http://membres.multimania.fr/esmsl/'),
+          array('id' => '36','categorie' => '3','libelle' => 'ASPC','lien' => 'http://aspc.oise.pagesperso-orange.fr/'),
+          array('id' => '37','categorie' => '3','libelle' => 'EPEV LTLJ','lien' => 'http://dusport.free.fr/assotj/'),
+          array('id' => '38','categorie' => '4','libelle' => 'Laon','lien' => 'http://aspttlaontt.free.fr/'),
+          array('id' => '39','categorie' => '4','libelle' => 'Chateau-Thierry','lien' => 'http://ctt-chateau-thierry.clubeo.com/'),
+          array('id' => '40','categorie' => '4','libelle' => 'ASPTT St Quentin','lien' => 'http://www.asptt.com/club-de-sport/asptt-saint-quentin_c171/'),
+          array('id' => '41','categorie' => '4','libelle' => 'Guise','lien' => 'http://ttguise.octetclub.com/spip/'),
+          array('id' => '42','categorie' => '4','libelle' => 'Hirson','lien' => 'http://tt-hirson-coingt.asso.st/spip/'),
+          array('id' => '43','categorie' => '4','libelle' => 'Chauny','lien' => 'http://tt-hirson-coingt.asso.st/spip/'),
+          array('id' => '44','categorie' => '4','libelle' => 'Beautor Charmes','lien' => 'http://club.sportsregions.fr/tennisdetablebeautor/'),
+          array('id' => '45','categorie' => '4','libelle' => 'Cuffies','lien' => 'http://llcuffies02.pagesperso-orange.fr/default.htm'),
+          array('id' => '46','categorie' => '4','libelle' => 'Crouy','lien' => 'http://astt.crouy.pagesperso-orange.fr/'),
+          array('id' => '47','categorie' => '4','libelle' => 'Saint Quentin','lien' => 'http://www.ttsq.new.fr/'),
+          array('id' => '48','categorie' => '4','libelle' => 'Soisson','lien' => 'http://www.asptt-soissons.fr/index3.htm'),
+          array('id' => '49','categorie' => '4','libelle' => 'Tergnier','lien' => 'http://www.esc-tergnier-tt.com/'),
+          array('id' => '50','categorie' => '4','libelle' => 'Villers-Cotterêts','lien' => 'http://ttfc.wlc.pagesperso-orange.fr/'),
+          array('id' => '51','categorie' => '4','libelle' => 'Venizel','lien' => 'http://ttvenizel.pagesperso-orange.fr/'),
+          array('id' => '52','categorie' => '4','libelle' => 'Chezy','lien' => 'http://pingconcept.canalblog.com/'),
+          array('id' => '53','categorie' => '4','libelle' => 'Conde en Brie','lien' => 'http://uttcb.euskadi-web.com/'),
+          array('id' => '54','categorie' => '4','libelle' => 'Holnon','lien' => 'http://tthf.asso.fr/'),
+          array('id' => '55','categorie' => '4','libelle' => 'Portes de Thierache','lien' => 'http://club.sportsregions.fr/ttcpt'),
+          array('id' => '56','categorie' => '3','libelle' => 'Monchy St Eloi','lien' => 'http://tt.epml.free.fr/'),
+          array('id' => '57','categorie' => '5','libelle' => 'CROS Picardie','lien' => 'http://picardie.franceolympique.com/accueil.php')
         );
 
         // `astt`.`Partenaires`
         $Partenaires = array(
-        array('id' => '1','nom' => 'Amiens Métropole','lien' => 'www.amiens.fr','num_tel' => NULL),
-        array('id' => '2','nom' => 'Conseil Régional de Picardie','lien' => 'www.cr-picardie.fr','num_tel' => NULL),
-        array('id' => '3','nom' => 'Conseil Général de la Somme','lien' => 'www.cg80.fr','num_tel' => NULL),
-        array('id' => '4','nom' => 'DRDJS','lien' => 'http://www.drdjs-picardie.jeunesse-sports.gouv.fr/','num_tel' => NULL),
-        array('id' => '7','nom' => 'Pizza Paï','lien' => 'http://www.pizzapai.com/restaurant_italien/PIZZA_PAI_AMIENS.asp','num_tel' => '0322958989'),
-        array('id' => '5','nom' => 'Cornilleau','lien' => 'www.cornilleau.com','num_tel' => NULL),
-        array('id' => '6','nom' => 'Dauphin','lien' => 'http://tennis-de-table-dauphin.com/','num_tel' => NULL),
-        array('id' => '8','nom' => 'Assurance Fréville','lien' => NULL,'num_tel' => '0322716800'),
-        array('id' => '9','nom' => 'Stores Clôtures Fermetures Menuiseries de Picardie Dupont','lien' => NULL,'num_tel' => '0322915320'),
-        array('id' => '10','nom' => 'Electr\'Ohm','lien' => 'http://www.electr-ohm.fr/','num_tel' => NULL),
-        array('id' => '11','nom' => 'Coiffure Enzo','lien' => 'http://www.enzolecoiffeur.com/','num_tel' => NULL),
-        array('id' => '12','nom' => 'Le Quai','lien' => 'http://www.restaurant-le-quai.com/','num_tel' => NULL),
-        array('id' => '13','nom' => 'Boucherie La Côte de Boeuf','lien' => NULL,'num_tel' => '0322955270'),
-        array('id' => '14','nom' => 'Colas Nord Picardie','lien' => 'http://www.colasnordpicardie.com/','num_tel' => NULL),
-        array('id' => '15','nom' => 'Géodis Calberson','lien' => 'http://www.calberson.com/','num_tel' => NULL)
+          array('id' => '1','nom' => 'Amiens Métropole','lien' => 'www.amiens.fr','num_tel' => NULL),
+          array('id' => '2','nom' => 'Conseil Régional de Picardie','lien' => 'www.cr-picardie.fr','num_tel' => NULL),
+          array('id' => '3','nom' => 'Conseil Général de la Somme','lien' => 'www.cg80.fr','num_tel' => NULL),
+          array('id' => '4','nom' => 'DRDJS','lien' => 'http://www.drdjs-picardie.jeunesse-sports.gouv.fr/','num_tel' => NULL),
+          array('id' => '7','nom' => 'Pizza Paï','lien' => 'http://www.pizzapai.com/restaurant_italien/PIZZA_PAI_AMIENS.asp','num_tel' => '0322958989'),
+          array('id' => '5','nom' => 'Cornilleau','lien' => 'www.cornilleau.com','num_tel' => NULL),
+          array('id' => '6','nom' => 'Dauphin','lien' => 'http://tennis-de-table-dauphin.com/','num_tel' => NULL),
+          array('id' => '8','nom' => 'Assurance Fréville','lien' => NULL,'num_tel' => '0322716800'),
+          array('id' => '9','nom' => 'Stores Clôtures Fermetures Menuiseries de Picardie Dupont','lien' => NULL,'num_tel' => '0322915320'),
+          array('id' => '10','nom' => 'Electr\'Ohm','lien' => 'http://www.electr-ohm.fr/','num_tel' => NULL),
+          array('id' => '11','nom' => 'Coiffure Enzo','lien' => 'http://www.enzolecoiffeur.com/','num_tel' => NULL),
+          array('id' => '12','nom' => 'Le Quai','lien' => 'http://www.restaurant-le-quai.com/','num_tel' => NULL),
+          array('id' => '13','nom' => 'Boucherie La Côte de Boeuf','lien' => NULL,'num_tel' => '0322955270'),
+          array('id' => '14','nom' => 'Colas Nord Picardie','lien' => 'http://www.colasnordpicardie.com/','num_tel' => NULL),
+          array('id' => '15','nom' => 'Géodis Calberson','lien' => 'http://www.calberson.com/','num_tel' => NULL)
         );
 
         // `astt`.`Resultats`
         $Resultats = array(
-        array('id' => '50','equipe' => '3','journee' => '2','date' => '1318050000','lieu' => 'Villers Saint-Paul','adversaire' => 'VILLERS ST PAUL 1','score' => '14','score_adv' => '6','commentaire' => 'VILLERS SAINT PAUL 6 / AMIENS STT III 14
+          array('id' => '50','equipe' => '3','journee' => '2','date' => '1318050000','lieu' => 'Villers Saint-Paul','adversaire' => 'VILLERS ST PAUL 1','score' => '14','score_adv' => '6','commentaire' => 'VILLERS SAINT PAUL 6 / AMIENS STT III 14
 
         Renfort Saganne
 
@@ -1773,7 +2080,7 @@ class DumpController extends FrontController {
         Christian et Philippe perdent Julian et Clément (-8,10-6,-7)
 
         Denis CHATELAIN'),
-        array('id' => '2','equipe' => '2','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Villers-Bretonneux PPC 1','score' => '11','score_adv' => '8','commentaire' => 'Millésime Amiénois : A : Dubois 16 Cany 19 Harlé n°621 B : Blatrix 18 Rasselet 17 Vaquier 15
+          array('id' => '2','equipe' => '2','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Villers-Bretonneux PPC 1','score' => '11','score_adv' => '8','commentaire' => 'Millésime Amiénois : A : Dubois 16 Cany 19 Harlé n°621 B : Blatrix 18 Rasselet 17 Vaquier 15
 
         Grands crus Bretonvillois : A : Cahagne n°692 Malrain 17 Perpette n°375 B : Hermant 19 Dacheux 16 Patte 20
 
@@ -1788,7 +2095,7 @@ class DumpController extends FrontController {
         A côté, en R1, il y avait de la bouteille \' notre troisième mi-temps nous a rapprochés d\'eux ! Merci Denis ! (Tiens ça me rappelle un beau soir de 2001 \')
 
         Le carton des 6 : Dubois 2/3 [692, 17] Cany 1/3 [17] Harlé 2/3 [692,17] Blatrix 2/2 [19,20] Rasselet 3/3 [16,19,20] Vaquier 1/3 [16] Dicton du jour : A la Saint Thècle, Ch\'Dub fait la perf du siècle !'),
-        array('id' => '3','equipe' => '14','journee' => '1','date' => '1316840400','lieu' => 'Argentan','adversaire' => 'Argentan Bayard 1','score' => '8','score_adv' => '10','commentaire' => 'Pour cette première journée de cette année 2011/2012, nous sommes allées à Argentan. Notre équipe était composée de Valentine et Léa HURE, 5 et 6, Marion BERTHELOT, 10 et de Hélène CARLIE, 14.
+          array('id' => '3','equipe' => '14','journee' => '1','date' => '1316840400','lieu' => 'Argentan','adversaire' => 'Argentan Bayard 1','score' => '8','score_adv' => '10','commentaire' => 'Pour cette première journée de cette année 2011/2012, nous sommes allées à Argentan. Notre équipe était composée de Valentine et Léa HURE, 5 et 6, Marion BERTHELOT, 10 et de Hélène CARLIE, 14.
         L\'équipe d\'Argentan comprenait DELEUSE Laëticia, 10, SECRETAIN Betty, 10, BERTIN Caroline, 8 et COMTE Agathe 7.
 
         Marion perd d\'entrée de jeu sur SECRETAIN puis ensuite fait une belle performance sur DELEUSE. Je bas ces deux mêmes adversaires sans grande complication.
@@ -1808,13 +2115,13 @@ class DumpController extends FrontController {
         Félicitations à Marion pour sa perf sur DELEUSE et à Valentine et Léa qui ont fait une très belle prestation pour cette première en pré nationale.
 
         Hélène CARLIE.'),
-        array('id' => '42','equipe' => '12','journee' => '2','date' => '1317963600','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '16','equipe' => '8','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'POIX USTT 2','score' => '3','score_adv' => '15','commentaire' => ''),
-        array('id' => '17','equipe' => '9','journee' => '1','date' => '1316926800','lieu' => 'Moreuil','adversaire' => 'MOREUIL PPC 4','score' => '2','score_adv' => '16','commentaire' => ''),
-        array('id' => '18','equipe' => '10','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 6','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '19','equipe' => '11','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 3','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '20','equipe' => '12','journee' => '1','date' => '1316754000','lieu' => 'Canaples','adversaire' => 'CANAPLES CTT 1','score' => '2','score_adv' => '16','commentaire' => ''),
-        array('id' => '66','equipe' => '14','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'ENTENTE CABOURG - HOULGATE 1','score' => '7','score_adv' => '10','commentaire' => 'Samedi 8 octobre : l\'équipe de Cabourg était attendue salle Labaume. Notre équipe était composée de Valentine et Léa HURE, 5 et 6, Aurélie NEEL, 9 et de Hélène CARLIE, 14. L\'équipe de Cabourg comprenait METIVIER Lucie, 12, QUAGLIA Marina, 10, ANQUETIL Estelle, 9 et CARBON Karine, 9.
+          array('id' => '42','equipe' => '12','journee' => '2','date' => '1317963600','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '16','equipe' => '8','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'POIX USTT 2','score' => '3','score_adv' => '15','commentaire' => ''),
+          array('id' => '17','equipe' => '9','journee' => '1','date' => '1316926800','lieu' => 'Moreuil','adversaire' => 'MOREUIL PPC 4','score' => '2','score_adv' => '16','commentaire' => ''),
+          array('id' => '18','equipe' => '10','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 6','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '19','equipe' => '11','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 3','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '20','equipe' => '12','journee' => '1','date' => '1316754000','lieu' => 'Canaples','adversaire' => 'CANAPLES CTT 1','score' => '2','score_adv' => '16','commentaire' => ''),
+          array('id' => '66','equipe' => '14','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'ENTENTE CABOURG - HOULGATE 1','score' => '7','score_adv' => '10','commentaire' => 'Samedi 8 octobre : l\'équipe de Cabourg était attendue salle Labaume. Notre équipe était composée de Valentine et Léa HURE, 5 et 6, Aurélie NEEL, 9 et de Hélène CARLIE, 14. L\'équipe de Cabourg comprenait METIVIER Lucie, 12, QUAGLIA Marina, 10, ANQUETIL Estelle, 9 et CARBON Karine, 9.
 
         Le début de rencontre fût très difficile, nous étions vite menées 5-1 avant de revenir à 6-6. Ensuite nous sommes "restées sur place" en perdant le match 10-7.
 
@@ -1833,8 +2140,8 @@ class DumpController extends FrontController {
         Rendez-vous pour le prochain match contre l\'équipe de Doullens !
 
         Hélène CARLIE '),
-        array('id' => '24','equipe' => '7','journee' => '1','date' => '1316926800','lieu' => 'Doullens','adversaire' => 'DOULLENS - BERNAVILLE 3','score' => '15','score_adv' => '5','commentaire' => ''),
-        array('id' => '59','equipe' => '6','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 1','score' => '15','score_adv' => '5','commentaire' => 'En cette période trouble et difficile, l\'équipe 6, qui revient d\'un match \'dommage\', doit se bouger pour espérer le maintien.
+          array('id' => '24','equipe' => '7','journee' => '1','date' => '1316926800','lieu' => 'Doullens','adversaire' => 'DOULLENS - BERNAVILLE 3','score' => '15','score_adv' => '5','commentaire' => ''),
+          array('id' => '59','equipe' => '6','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 1','score' => '15','score_adv' => '5','commentaire' => 'En cette période trouble et difficile, l\'équipe 6, qui revient d\'un match \'dommage\', doit se bouger pour espérer le maintien.
 
         Des changements, il doit y  en avoir.
         Marc Liévremont l\'a dit, nous ne valons pas mieux que des footballeurs.
@@ -1918,9 +2225,9 @@ class DumpController extends FrontController {
 
         Score final : ASTT 6   15 - 5   Eppeville TT 1
         Une victoire innatendue à domicile, pour un très grand pas vers le maintien, et une remise en course pour un haut de tableau difficile mais pas hors d\'atteinte.'),
-        array('id' => '25','equipe' => '16','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '53','equipe' => '9','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 4','score' => '11','score_adv' => '7','commentaire' => ''),
-        array('id' => '49','equipe' => '3','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Clermont EP 1','score' => '12','score_adv' => '8','commentaire' => 'REPRISE
+          array('id' => '25','equipe' => '16','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '53','equipe' => '9','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 4','score' => '11','score_adv' => '7','commentaire' => ''),
+          array('id' => '49','equipe' => '3','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Clermont EP 1','score' => '12','score_adv' => '8','commentaire' => 'REPRISE
         Silence s\'il vous plaît (Jacques DORFMANN, Roland Garros, 1984).
         Les joueurs sont prêts (Lolo CANY, Laurent Garros, 2011). 
 
@@ -1961,8 +2268,8 @@ class DumpController extends FrontController {
         Phlippe L\'HOTE (1808 points) bat Francis SAINTE CROIX (1757 points) (5,6,4) et Yves LETELLIER (1609 points) (7,8,7) et perd Guillaume OUDAILLE (1653 points) (11,-8,8,-10,-10)
         Bruno MARYSSE (1752 points) bat Guillaume OUDAILLE (1653 points) (9,8,-7,7) et Yves LETELLIER (1609 points) (7,6,9) et perd Francis SAINTE CROIX (1757 points) (7,10,-8,-8,-11).
         Christian et Philippe perdent Guillaume et Francis (7,-13,-7,-6)'),
-        array('id' => '62','equipe' => '4','journee' => '2','date' => '1318050000','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET - FLIXECOURT 2','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '60','equipe' => '1','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'NANTES TTCNA 1','score' => '2','score_adv' => '11','commentaire' => 'Rencontre expéditive pour un résumé expéditif...
+          array('id' => '62','equipe' => '4','journee' => '2','date' => '1318050000','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET - FLIXECOURT 2','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '60','equipe' => '1','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'NANTES TTCNA 1','score' => '2','score_adv' => '11','commentaire' => 'Rencontre expéditive pour un résumé expéditif...
 
         Ce samedi 8 octobre, l\'ASTT 1 avait rendez-vous à 15H à la salle pour y monter le dé « corre » puis pour rencontrer une redoutable équipe Nantaise. Cependant, les joueurs arrivèrent à la salle avec une certaine envie de bien faire. Malheureusement, après avoir vu les compositions des deux équipes, ils se rendirent compte qu\'il n\'y avait pas besoin d\'avoir fait des études dans les sciences du sport pour savoir que ça allait être difficile ou plus simplement que ça allait être « chaud de night » (Petite dédicasse à Yoh et nos amis abbevillois).
 
@@ -1998,7 +2305,7 @@ class DumpController extends FrontController {
         Alex et Yo, les seuls « REPUSSEAU » au niveau des victoires !!!
 
         Alexandre HAIGNERE et Yohan LECOMTE'),
-        array('id' => '65','equipe' => '2','journee' => '2','date' => '1318050000','lieu' => 'Argentan','adversaire' => 'ARGENTAN BAYARD 3','score' => '11','score_adv' => '3','commentaire' => 'Samedi 8 octobre 2011
+          array('id' => '65','equipe' => '2','journee' => '2','date' => '1318050000','lieu' => 'Argentan','adversaire' => 'ARGENTAN BAYARD 3','score' => '11','score_adv' => '3','commentaire' => 'Samedi 8 octobre 2011
 
         Argentan 3 / Amiens STT 2 : 3/11
 
@@ -2043,7 +2350,7 @@ class DumpController extends FrontController {
         God save Argentan !
 
         Laurent CANY'),
-        array('id' => '56','equipe' => '8','journee' => '2','date' => '1318136400','lieu' => 'Boves','adversaire' => 'BOVES ASTT 1','score' => '9','score_adv' => '9','commentaire' => 'Composition des équipes de BOVES STT 1 contre AMIENS STT 8 :
+          array('id' => '56','equipe' => '8','journee' => '2','date' => '1318136400','lieu' => 'Boves','adversaire' => 'BOVES ASTT 1','score' => '9','score_adv' => '9','commentaire' => 'Composition des équipes de BOVES STT 1 contre AMIENS STT 8 :
         LECOINTE Yannick (926)
         MOTTE-LACAZE Benjamin (1093)
         DUBOIS Jimmy (950)
@@ -2083,9 +2390,9 @@ class DumpController extends FrontController {
 
         BILAN : 9 à 9 !! 
         On s\'attendait à perdre sur papier et on finit à égalité ! L\'équipe peut être satisfaite... A noter les 2 perfs de Benoît à 302 et 135 points et 1 plus modeste de Jeoffrey à 28 points (lol) !'),
-        array('id' => '54','equipe' => '11','journee' => '2','date' => '1318136400','lieu' => 'Combles','adversaire' => 'COMBLES FR 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '55','equipe' => '7','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'SALEUX LL 1','score' => '8','score_adv' => '12','commentaire' => ''),
-        array('id' => '61','equipe' => '5','journee' => '2','date' => '1318136400','lieu' => 'Vénizel','adversaire' => 'VENIZEL TT 4','score' => '6','score_adv' => '14','commentaire' => 'Pour ce second match de la phase, nous nous sommes déplacés à Venizel avec l\'espoir de faire un résultat même si nous nous savions moins forts sur le papier. Pour ce match, les deux jeunes recrues de l\'équipe étaient présentes, notamment Julien Martin qui effectuait là son baptême du feu avec l\'Amiens STT. Malgré de bons échanges, et surtout un nombre conséquent de matchs perdus à la belle (en menant sur 4 matchs, 2 sets à rien), nous repartions avec une défaite 13-07 qui cependant peut nous donner beaucoup d\'espoir pour la suite. 
+          array('id' => '54','equipe' => '11','journee' => '2','date' => '1318136400','lieu' => 'Combles','adversaire' => 'COMBLES FR 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '55','equipe' => '7','journee' => '2','date' => '1318136400','lieu' => 'Amiens','adversaire' => 'SALEUX LL 1','score' => '8','score_adv' => '12','commentaire' => ''),
+          array('id' => '61','equipe' => '5','journee' => '2','date' => '1318136400','lieu' => 'Vénizel','adversaire' => 'VENIZEL TT 4','score' => '6','score_adv' => '14','commentaire' => 'Pour ce second match de la phase, nous nous sommes déplacés à Venizel avec l\'espoir de faire un résultat même si nous nous savions moins forts sur le papier. Pour ce match, les deux jeunes recrues de l\'équipe étaient présentes, notamment Julien Martin qui effectuait là son baptême du feu avec l\'Amiens STT. Malgré de bons échanges, et surtout un nombre conséquent de matchs perdus à la belle (en menant sur 4 matchs, 2 sets à rien), nous repartions avec une défaite 13-07 qui cependant peut nous donner beaucoup d\'espoir pour la suite. 
 
         En A, 
         LAMOUR Maximilien (1516 pts) bat MAUCOURANT Julien (1325 pts) (7,9,4) et MAERTENS Justine (1626 pts) (4,12,8), et perd GUERIN Mickael (1487pts) (11,8,-7,-9,-8).
@@ -2100,7 +2407,7 @@ class DumpController extends FrontController {
         Le double, composé de Yoann et Louis, s’incline en 5 sets (9,5,-5,-6,-5).
 
         Alexandre MENARD'),
-        array('id' => '40','equipe' => '5','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'LES AGEUX FR 1','score' => '12','score_adv' => '8','commentaire' => 'Pour cette nouvelle saison en R3, nous remportons le match 12-08 face une équipe amoindrie (deux joueurs classés 7 en B). Bonne intégration de Louis en attendant de le voir jouer contre des adversaires mieux classés.
+          array('id' => '40','equipe' => '5','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'LES AGEUX FR 1','score' => '12','score_adv' => '8','commentaire' => 'Pour cette nouvelle saison en R3, nous remportons le match 12-08 face une équipe amoindrie (deux joueurs classés 7 en B). Bonne intégration de Louis en attendant de le voir jouer contre des adversaires mieux classés.
 
         En A : 
         Maximilien, notre leader, gagne ses deux premiers matchs facilement en 3 sets contre le 13 et le 14. Pour son dernier match, il perd en 3 sets contre le 15.
@@ -2116,8 +2423,8 @@ class DumpController extends FrontController {
         Le double, composé de Yoann et Louis, s’impose en 3 sets.
 
         Alexandre Ménard'),
-        array('id' => '46','equipe' => '13','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'VANNES AJK 1','score' => '1','score_adv' => '10','commentaire' => ''),
-        array('id' => '67','equipe' => '6','journee' => '1','date' => '1316926800','lieu' => 'Saint-Just en Chaussée','adversaire' => 'ACLES ST JUST 1','score' => '7','score_adv' => '13','commentaire' => 'Dimanche 25 septembre, 13h25.
+          array('id' => '46','equipe' => '13','journee' => '2','date' => '1318050000','lieu' => 'Amiens','adversaire' => 'VANNES AJK 1','score' => '1','score_adv' => '10','commentaire' => ''),
+          array('id' => '67','equipe' => '6','journee' => '1','date' => '1316926800','lieu' => 'Saint-Just en Chaussée','adversaire' => 'ACLES ST JUST 1','score' => '7','score_adv' => '13','commentaire' => 'Dimanche 25 septembre, 13h25.
 
         Après de nombreux, mais habituels, calculs, débats et changements au niveau des compositions des équipes amiénoises avant un début de phase, la composition de l\'équipe 6 se fixe avec les départs de Boum Deguingand et de Bryan Vande, tous deux envoyés au niveau supérieur, en R3, en équipe 4, et les arrivées de Belin De Catheu, et de Bleu Hersent, nouveau joueur du club et de l\'équipe.
 
@@ -2176,7 +2483,7 @@ class DumpController extends FrontController {
 
         Petite déception pour l\'équipe 6 qui pouvait espérer mieux de ce match... Mais à 4 contre 6, c\'est très, très compliqué.
         Bravo à Combo-Ali, Thibault, Léo et Tristan pour leur bon début, à confirmer par la suite.'),
-        array('id' => '5','equipe' => '4','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'Noyonnais 1','score' => '18','score_adv' => '2','commentaire' => 'Une saison bien entamée avec une victoire 18/2 et de bonnes performances des jeunes.
+          array('id' => '5','equipe' => '4','journee' => '1','date' => '1316926800','lieu' => 'Amiens','adversaire' => 'Noyonnais 1','score' => '18','score_adv' => '2','commentaire' => 'Une saison bien entamée avec une victoire 18/2 et de bonnes performances des jeunes.
 
         En A
 
@@ -2204,11 +2511,11 @@ class DumpController extends FrontController {
         Brisacq (12) 3/0
 
         Louis et Leny gagnent le double 3/0.'),
-        array('id' => '9','equipe' => '15','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '8','equipe' => '13','journee' => '1','date' => '1316840400','lieu' => 'Seclin','adversaire' => 'SECLIN PPP 1','score' => '3','score_adv' => '10','commentaire' => ''),
-        array('id' => '52','equipe' => '15','journee' => '2','date' => '1318050000','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 1','score' => '16','score_adv' => '2','commentaire' => ''),
-        array('id' => '11','equipe' => '16','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'LL AMIENS 1','score' => '11','score_adv' => '7','commentaire' => ''),
-        array('id' => '12','equipe' => '1','journee' => '1','date' => '1316840400','lieu' => 'Saint Pierre les Elbeuf','adversaire' => 'Saint Pierraise Entente 1','score' => '5','score_adv' => '11','commentaire' => 'Le 1er déplacement de l\'année 2011-2012 se fit en banlieue rouennaise, dans la ville de Saint Pierre Les Elbeuf avec une équipe rajeunie.
+          array('id' => '9','equipe' => '15','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '8','equipe' => '13','journee' => '1','date' => '1316840400','lieu' => 'Seclin','adversaire' => 'SECLIN PPP 1','score' => '3','score_adv' => '10','commentaire' => ''),
+          array('id' => '52','equipe' => '15','journee' => '2','date' => '1318050000','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 1','score' => '16','score_adv' => '2','commentaire' => ''),
+          array('id' => '11','equipe' => '16','journee' => '1','date' => '1316840400','lieu' => 'Amiens','adversaire' => 'LL AMIENS 1','score' => '11','score_adv' => '7','commentaire' => ''),
+          array('id' => '12','equipe' => '1','journee' => '1','date' => '1316840400','lieu' => 'Saint Pierre les Elbeuf','adversaire' => 'Saint Pierraise Entente 1','score' => '5','score_adv' => '11','commentaire' => 'Le 1er déplacement de l\'année 2011-2012 se fit en banlieue rouennaise, dans la ville de Saint Pierre Les Elbeuf avec une équipe rajeunie.
         Rendez-vous était pris à 13H15 devant la salle Albéric LABAUME. Yannick MARAIS alias \'jaja\' ainsi que la CHATELAIN\'S family arrivèrent à leur tour. Seule personne encore absente, le \'beegees\' HAIGNERE. 4 appels en absence et 3 messages plus tard, la star arriva vêtue d\'une paire de lunettes de soleil et d\'une coiffure digne du leader du groupe de punk rock \'Offspring\' mais avec un maillot tout aussi rock\'n\'roll où était écrit « j\'aime le ping » la classe à Dallas Douglas, j\'ai envie de dire.
         Une fois la team réunie, ainsi que les sacs rangés, c\'est- à-dire 10 bonnes minutes plus tard. De la faute à qui et bien à bibi ! J\'eus une idée lumineuse en proposant de mettre les sacs dans ma titine (309) ! Un gros blanc s\'installa ! Finalement, nous fûmes repartis plus vite que prévu (à part pour Raphi qui est mineur !!)
         117km/h de moyenne et 1H45 plus tard (15H), ainsi que quelques directions données à Jaja par Alex nous arrivâmes devant ????.. Bricorama !?! (toi aussi, si tu n\'as pas de GPS, demande à Alex, lui seul t\'emmènera dans des endroits où il a le secret)
@@ -2241,7 +2548,7 @@ class DumpController extends FrontController {
         Rendez-vous dans 15 jours à domicile contre Nantes.
 
         Les \'Bee gees\' Yoh and Alex.'),
-        array('id' => '64','equipe' => '10','journee' => '2','date' => '1318136400','lieu' => 'Beauval','adversaire' => 'BEAUVALOIS TT 2','score' => '6','score_adv' => '12','commentaire' => 'Un résumé qui va être Beau pour des joueurs qui Val le coup … hé oui moi aussi je copie sur Denis Chatelain et je glisse des réponses dans mes phrases. Dans cette première phrase le nom de l’équipe adverse s’y cache.
+          array('id' => '64','equipe' => '10','journee' => '2','date' => '1318136400','lieu' => 'Beauval','adversaire' => 'BEAUVALOIS TT 2','score' => '6','score_adv' => '12','commentaire' => 'Un résumé qui va être Beau pour des joueurs qui Val le coup … hé oui moi aussi je copie sur Denis Chatelain et je glisse des réponses dans mes phrases. Dans cette première phrase le nom de l’équipe adverse s’y cache.
 
         Pour cette deuxième journée le capitaine exemplaire que je suis s’est décidé à faire un résumé, oui la première journée une Flemme-atique Vaquerius aigu s’est attaqué a moi … j’en suis sorti indemne … ouf.
 
@@ -2258,8 +2565,8 @@ class DumpController extends FrontController {
         Au final , tout le monde l’a compris , Beauval s’impose 12-06 face à Amiens. Une bonne ambiance malgré tout et un grand merci au célèbre Mr Tran pour nous avoir accompagné sur ce déplacement. Dans 15 jours … rendez-vous à Flixecourt, pour un match plein de sang et de fight. Haaaa Flixecourt le club de notre Président de ligue …. J’ai hâte.
 
         Alexandre Goupil'),
-        array('id' => '68','equipe' => '13','journee' => '3','date' => '1319259600','lieu' => 'Marmande','adversaire' => 'MARMANDE RAQUETTE 1','score' => '1','score_adv' => '10','commentaire' => ''),
-        array('id' => '69','equipe' => '14','journee' => '3','date' => '1319259600','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '9','score_adv' => '9','commentaire' => 'Samedi 22 octobre : départ 15h pour un déplacement à Doullens. C\'était un match très important car pour l\'instant nous comptabilisons deux défaites. Notre équipe comprenait GUICHARD Delphine, 8, NEEL Aurélie, 9, BERTHELOT Marion, 10 et CARLIE Hélène, 14.
+          array('id' => '68','equipe' => '13','journee' => '3','date' => '1319259600','lieu' => 'Marmande','adversaire' => 'MARMANDE RAQUETTE 1','score' => '1','score_adv' => '10','commentaire' => ''),
+          array('id' => '69','equipe' => '14','journee' => '3','date' => '1319259600','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '9','score_adv' => '9','commentaire' => 'Samedi 22 octobre : départ 15h pour un déplacement à Doullens. C\'était un match très important car pour l\'instant nous comptabilisons deux défaites. Notre équipe comprenait GUICHARD Delphine, 8, NEEL Aurélie, 9, BERTHELOT Marion, 10 et CARLIE Hélène, 14.
         L\'équipe de Doullens était composée de MICHEL Carole, 11, FRANCOIS Anne, 10, DUBREUCQ Mechthil, 10 et FALSARELLA Maud, 7.
 
         Le juge arbitre pour cette rencontre était Monsieur Gérard FERAUD, juge arbitre très pointilleux !
@@ -2282,9 +2589,9 @@ class DumpController extends FrontController {
         Prochaine rencontre à domicile face à St Nicolas.
 
         Hélène Carlié'),
-        array('id' => '70','equipe' => '15','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'TT MERS TREPORT EU 1','score' => '16','score_adv' => '2','commentaire' => ''),
-        array('id' => '71','equipe' => '16','journee' => '3','date' => '1319259600','lieu' => 'Fourdrinoy','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '17','score_adv' => '1','commentaire' => ''),
-        array('id' => '72','equipe' => '1','journee' => '3','date' => '1319259600','lieu' => 'Reims','adversaire' => 'REIMS OLYMPIQUE 1','score' => '11','score_adv' => '9','commentaire' => 'Sur la route du SACRE…
+          array('id' => '70','equipe' => '15','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'TT MERS TREPORT EU 1','score' => '16','score_adv' => '2','commentaire' => ''),
+          array('id' => '71','equipe' => '16','journee' => '3','date' => '1319259600','lieu' => 'Fourdrinoy','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '17','score_adv' => '1','commentaire' => ''),
+          array('id' => '72','equipe' => '1','journee' => '3','date' => '1319259600','lieu' => 'Reims','adversaire' => 'REIMS OLYMPIQUE 1','score' => '11','score_adv' => '9','commentaire' => 'Sur la route du SACRE…
 
         Apres Saint Pierre Les Elbeuf, puis Nantes, direction était prise à Reims pour cette 3éme journée de championnat, déjà capital dans l’optique du maintien.
 
@@ -2340,7 +2647,7 @@ class DumpController extends FrontController {
         Alex et Yo, le baptisé et la pucelle.
 
         Alexandre HAIGNERE ET YOHAN LECOMTE'),
-        array('id' => '73','equipe' => '2','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'MONDEVILLE USO TTO 1','score' => '2','score_adv' => '11','commentaire' => 'Samedi 22 octobre 2011 Amiens II / Mondeville I
+          array('id' => '73','equipe' => '2','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'MONDEVILLE USO TTO 1','score' => '2','score_adv' => '11','commentaire' => 'Samedi 22 octobre 2011 Amiens II / Mondeville I
 
         Co-leaders fabuleux (à l’image du destin de Jean-Paul Poulain) après deux journées, nous aurions bien bu à nouveau l’eau de cette Fontaine de jouvence. Jean, ce fidèle Castro … théodoricien, qui avait plus d’une morale dans le cigare, nous l’aurait certainement déconseillé. En effet, son Héron (J’ai bien dit Héron, petit, pas Tapon !) le précise si bien ; « il ne faut être si difficile :
         Les plus accommodants, ce sont les plus habiles :
@@ -2394,7 +2701,7 @@ class DumpController extends FrontController {
         Il y a une moralité.
 
         Laurent CANY'),
-        array('id' => '74','equipe' => '3','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'WAVIGNIES / BRETEUIL 2','score' => '17','score_adv' => '3','commentaire' => 'A la poursuite d’Octobre rouge
+          array('id' => '74','equipe' => '3','journee' => '3','date' => '1319259600','lieu' => 'Amiens','adversaire' => 'WAVIGNIES / BRETEUIL 2','score' => '17','score_adv' => '3','commentaire' => 'A la poursuite d’Octobre rouge
 
         Samedi 22 octobre, Match contre Breteuil 2.
 
@@ -2459,7 +2766,7 @@ class DumpController extends FrontController {
         Christian et Pierre perdent Aymeric et Fabien (12,-4,-8,-9).
 
         Denis CHATELAIN'),
-        array('id' => '75','equipe' => '4','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'VAUCHELLES ASV 1','score' => '15','score_adv' => '5','commentaire' => 'Ayant beaucoup plus de travail et beaucoup moins de temps libre que le capitaine de la R1, mon compte rendu sera succinct (Non Benoit ce n’est pas un gros mot).
+          array('id' => '75','equipe' => '4','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'VAUCHELLES ASV 1','score' => '15','score_adv' => '5','commentaire' => 'Ayant beaucoup plus de travail et beaucoup moins de temps libre que le capitaine de la R1, mon compte rendu sera succinct (Non Benoit ce n’est pas un gros mot).
 
         En ce dimanche nous avons donc affronté Vauchelles, équipe jusque là invaincue (1 victoire et 1 nul).
 
@@ -2478,10 +2785,10 @@ class DumpController extends FrontController {
         Victoire 15/05
 
         Bertrand BATHELOT'),
-        array('id' => '76','equipe' => '5','journee' => '3','date' => '1319346000','lieu' => 'Longueau','adversaire' => 'LONGUEAU ESC 1','score' => '8','score_adv' => '12','commentaire' => ''),
-        array('id' => '77','equipe' => '6','journee' => '3','date' => '1319346000','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 1','score' => '14','score_adv' => '6','commentaire' => 'Resume will come soon.'),
-        array('id' => '78','equipe' => '7','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '17','score_adv' => '3','commentaire' => ''),
-        array('id' => '79','equipe' => '8','journee' => '3','date' => '1319346000','lieu' => 'Béthencourt','adversaire' => 'BETHENCOURT US 1','score' => '12','score_adv' => '6','commentaire' => 'Dimanche 23 octobre
+          array('id' => '76','equipe' => '5','journee' => '3','date' => '1319346000','lieu' => 'Longueau','adversaire' => 'LONGUEAU ESC 1','score' => '8','score_adv' => '12','commentaire' => ''),
+          array('id' => '77','equipe' => '6','journee' => '3','date' => '1319346000','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 1','score' => '14','score_adv' => '6','commentaire' => 'Resume will come soon.'),
+          array('id' => '78','equipe' => '7','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '17','score_adv' => '3','commentaire' => ''),
+          array('id' => '79','equipe' => '8','journee' => '3','date' => '1319346000','lieu' => 'Béthencourt','adversaire' => 'BETHENCOURT US 1','score' => '12','score_adv' => '6','commentaire' => 'Dimanche 23 octobre
 
         AMIENS STT 8 composée de Benoît BONTE, Paul VANDEWOESTYNE, Floris CHARTIER et de Jeoffrey STEPHAN avait rendez-vous a 7H00 au club pour disputer la 3ème journée de championnat...
         Il est 7H03, on décolle, le père de Floris était le pilote.
@@ -2555,9 +2862,9 @@ class DumpController extends FrontController {
 
         Jeoffrey Stephan
         '),
-        array('id' => '80','equipe' => '9','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'BETHENCOURT US 2','score' => '4','score_adv' => '14','commentaire' => ''),
-        array('id' => '81','equipe' => '10','journee' => '3','date' => '1319346000','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 7','score' => '16','score_adv' => '2','commentaire' => ''),
-        array('id' => '82','equipe' => '11','journee' => '3','date' => '1319346000','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 2','score' => '7','score_adv' => '11','commentaire' => 'Christophe nous avait avertis que le match ne se déroulait pas à pierrepont exactement mais à Contoire-Hamel, un petit village situé juste à coté, car la salle de Pierrepont (salle des fêtes) n\'était pas libre. On a pas eu trop de mal à la trouver mais on s\'est vite aperçus que la salle était très petite : elle ne pouvait accueillir que 2 tables et il n\'y avait pas beaucoup de place derrière pour pouvoir défendre. Après quelques rapides échanges de balles pour se chauffer en attendant l\'arrivée complète de tous les joueurs adverses, nous découvrons le classement de l\'équipe adverse:
+          array('id' => '80','equipe' => '9','journee' => '3','date' => '1319346000','lieu' => 'Amiens','adversaire' => 'BETHENCOURT US 2','score' => '4','score_adv' => '14','commentaire' => ''),
+          array('id' => '81','equipe' => '10','journee' => '3','date' => '1319346000','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 7','score' => '16','score_adv' => '2','commentaire' => ''),
+          array('id' => '82','equipe' => '11','journee' => '3','date' => '1319346000','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 2','score' => '7','score_adv' => '11','commentaire' => 'Christophe nous avait avertis que le match ne se déroulait pas à pierrepont exactement mais à Contoire-Hamel, un petit village situé juste à coté, car la salle de Pierrepont (salle des fêtes) n\'était pas libre. On a pas eu trop de mal à la trouver mais on s\'est vite aperçus que la salle était très petite : elle ne pouvait accueillir que 2 tables et il n\'y avait pas beaucoup de place derrière pour pouvoir défendre. Après quelques rapides échanges de balles pour se chauffer en attendant l\'arrivée complète de tous les joueurs adverses, nous découvrons le classement de l\'équipe adverse:
 
         USL PIERREPONT 2
         COQUERET Florian 1032 pts
@@ -2615,8 +2922,8 @@ class DumpController extends FrontController {
         SOMMER Bastien bat BEAUFRERE Florian
         COQUERET Florian bat CHAHIR Ala-eddine
         DELANAUD Stéphane bat HAUW Joffrey'),
-        array('id' => '83','equipe' => '12','journee' => '3','date' => '1319173200','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 3','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '84','equipe' => '1','journee' => '4','date' => '1320472800','lieu' => 'Amiens','adversaire' => 'BOULOGNE BILLANCOURT AC 1','score' => '7','score_adv' => '11','commentaire' => 'Ce samedi 5 novembre 2011 la quatrième journée  de championnat par équipe était programmé. L’ASTT 1 recevait un gros poisson de la poule : l’ ACBB 1. 
+          array('id' => '83','equipe' => '12','journee' => '3','date' => '1319173200','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 3','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '84','equipe' => '1','journee' => '4','date' => '1320472800','lieu' => 'Amiens','adversaire' => 'BOULOGNE BILLANCOURT AC 1','score' => '7','score_adv' => '11','commentaire' => 'Ce samedi 5 novembre 2011 la quatrième journée  de championnat par équipe était programmé. L’ASTT 1 recevait un gros poisson de la poule : l’ ACBB 1. 
 
         Composition des équipes :
         Amiens : 
@@ -2650,7 +2957,7 @@ class DumpController extends FrontController {
         Rendez-vous dans 15 jours pour un déplacement qui se pourrait être décisif à Mayenne.
 
         Alexandre HAIGNERE '),
-        array('id' => '85','equipe' => '2','journee' => '4','date' => '1320472800','lieu' => 'Lille','adversaire' => 'LYS LILLE METROPOLE CP 1','score' => '3','score_adv' => '11','commentaire' => 'Samedi 5 novembre 2011
+          array('id' => '85','equipe' => '2','journee' => '4','date' => '1320472800','lieu' => 'Lille','adversaire' => 'LYS LILLE METROPOLE CP 1','score' => '3','score_adv' => '11','commentaire' => 'Samedi 5 novembre 2011
 
         Lys lez Lannoy / Amiens II 
 
@@ -2703,7 +3010,7 @@ class DumpController extends FrontController {
         Ne lâche pas tes amis !
 
         Laurent Cany'),
-        array('id' => '86','equipe' => '3','journee' => '4','date' => '1320472800','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 2','score' => '13','score_adv' => '7','commentaire' => 'Lard de la guerre
+          array('id' => '86','equipe' => '3','journee' => '4','date' => '1320472800','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 2','score' => '13','score_adv' => '7','commentaire' => 'Lard de la guerre
 
         Pour la quatrième journée, Amiens affrontait Abbeville. Sur les terres du Ponthieu. En fait plutôt dans les sables mouvants, et émouvants, de la salle du Rivage. Dans la chaleur, la moiteur, les cris, les hurlements, et les balles traçantes. Le Vietnam quoi.
 
@@ -2771,11 +3078,11 @@ class DumpController extends FrontController {
         Philippe et Christian battent Léo et Sébastien (-11,10,10,6).
 
         Denis CHATELAIN'),
-        array('id' => '87','equipe' => '4','journee' => '4','date' => '1320559200','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 2','score' => '19','score_adv' => '1','commentaire' => ''),
-        array('id' => '88','equipe' => '5','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'MONTDIDIER PPC 1','score' => '5','score_adv' => '15','commentaire' => ''),
-        array('id' => '89','equipe' => '6','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'LL AMIENS 2','score' => '17','score_adv' => '3','commentaire' => ''),
-        array('id' => '90','equipe' => '7','journee' => '4','date' => '1320559200','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 2','score' => '13','score_adv' => '7','commentaire' => ''),
-        array('id' => '91','equipe' => '8','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'LL AMIENS 3','score' => '6','score_adv' => '12','commentaire' => 'Dimanche 6 novembre,
+          array('id' => '87','equipe' => '4','journee' => '4','date' => '1320559200','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 2','score' => '19','score_adv' => '1','commentaire' => ''),
+          array('id' => '88','equipe' => '5','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'MONTDIDIER PPC 1','score' => '5','score_adv' => '15','commentaire' => ''),
+          array('id' => '89','equipe' => '6','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'LL AMIENS 2','score' => '17','score_adv' => '3','commentaire' => ''),
+          array('id' => '90','equipe' => '7','journee' => '4','date' => '1320559200','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 2','score' => '13','score_adv' => '7','commentaire' => ''),
+          array('id' => '91','equipe' => '8','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'LL AMIENS 3','score' => '6','score_adv' => '12','commentaire' => 'Dimanche 6 novembre,
 
         On prend les mêmes et on recommence ! Rendez-vous pris à 8H30 dans notre salle préférée (la nôtre !) et début de la rencontre à 9H00 contre Léo Lagrange 3. Nous sommes tous arrivés entre 8H10 et 8H45, ce qui n\\\'a pas été le cas de Léo Lagrange, puisqu\\\'à 8H59 on ne comptait qu\\\'un seul joueur présent. Mais en 2 minutes, les 3 autres arrivèrent et après un échauffement à la table et un remplissage de la feuille de match, la rencontre débuta à 9H10. 
         On savait que ce serait dur ! On n\\\'a pas été déçu ! Ça nous a rappelé la journée contre Poix où nous avions perdu 15-3 (et Léo Lagrange a battu Poix !) et là aussi, nous nous attendions à prendre une raclée... Pour faire passer la pilule, j\\\'ai ramené des pains choco et croissants qui ont eu un certain succès (notamment auprès de ch\\\'goup ;) )
@@ -2818,9 +3125,9 @@ class DumpController extends FrontController {
         Malheureusement on ne pouvait pas faire grand-chose pour cette journée. On perd 12-6 au lieu de 14-4 (dans la logique des points). Ce n\\\'est pas une raclée mais ça reste une défaite. La prochaine journée aura lieu à et contre Dreuil, où la victoire sera largement plus jouable mais il nous faudra gagner pour se maintenir en D2 ! 
 
         Jeoffrey Stéphan'),
-        array('id' => '92','equipe' => '9','journee' => '4','date' => '1320559200','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 6','score' => '14','score_adv' => '4','commentaire' => ''),
-        array('id' => '93','equipe' => '10','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'DREUIL TT 3','score' => '14','score_adv' => '4','commentaire' => ''),
-        array('id' => '94','equipe' => '11','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'ROYE PPC 5','score' => '17','score_adv' => '1','commentaire' => 'Composition des équipes pour le match :
+          array('id' => '92','equipe' => '9','journee' => '4','date' => '1320559200','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 6','score' => '14','score_adv' => '4','commentaire' => ''),
+          array('id' => '93','equipe' => '10','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'DREUIL TT 3','score' => '14','score_adv' => '4','commentaire' => ''),
+          array('id' => '94','equipe' => '11','journee' => '4','date' => '1320559200','lieu' => 'Amiens','adversaire' => 'ROYE PPC 5','score' => '17','score_adv' => '1','commentaire' => 'Composition des équipes pour le match :
 
         AMIENS STT 11 :
         BOUTEILLER Hugo 816 pts
@@ -2859,9 +3166,9 @@ class DumpController extends FrontController {
         Après s\\\'être remis de cette victoire, nous avons offert à coup à boire à l\\\'équipe adverse, qui ont du partir assez rapidement car ils avaient de la route à faire.
 
         Hugo Bouteiller'),
-        array('id' => '95','equipe' => '12','journee' => '4','date' => '1320382800','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 2','score' => '12','score_adv' => '6','commentaire' => ''),
-        array('id' => '96','equipe' => '13','journee' => '4','date' => '1320469200','lieu' => 'Amiens','adversaire' => 'CHELLES TT 1','score' => '0','score_adv' => '10','commentaire' => ''),
-        array('id' => '97','equipe' => '14','journee' => '4','date' => '1320472800','lieu' => 'Amiens','adversaire' => 'MSNA MULTI SMASH 1','score' => '6','score_adv' => '10','commentaire' => 'Samedi 5 novembre, nous rencontrons St Nicolas, équipe juste devant nous au classement avec un point de plus.
+          array('id' => '95','equipe' => '12','journee' => '4','date' => '1320382800','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 2','score' => '12','score_adv' => '6','commentaire' => ''),
+          array('id' => '96','equipe' => '13','journee' => '4','date' => '1320469200','lieu' => 'Amiens','adversaire' => 'CHELLES TT 1','score' => '0','score_adv' => '10','commentaire' => ''),
+          array('id' => '97','equipe' => '14','journee' => '4','date' => '1320472800','lieu' => 'Amiens','adversaire' => 'MSNA MULTI SMASH 1','score' => '6','score_adv' => '10','commentaire' => 'Samedi 5 novembre, nous rencontrons St Nicolas, équipe juste devant nous au classement avec un point de plus.
         Cette équipe se composée de BOSSOREIL FONTAINE Pascale, 12, RENIER Elisabeth, 9, HERBILLE Elise, 8 et LEFEVRE Célia, 7.
         L\\\'équipe amiénoise : GUICHARD Delphine, 8, NEEL Aurélie, 9, BERTHELOT Marion, 10 et CARLIE Hélène, 14.
 
@@ -2887,10 +3194,10 @@ class DumpController extends FrontController {
         - à Florent et Arnaud pour leurs conseils et leurs soutiens entre les sets.
 
         Hélène CARLIE'),
-        array('id' => '98','equipe' => '15','journee' => '4','date' => '1320469200','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '99','equipe' => '16','journee' => '4','date' => '1320469200','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 1','score' => '12','score_adv' => '6','commentaire' => ''),
-        array('id' => '100','equipe' => '13','journee' => '5','date' => '1321660800','lieu' => 'Béthune','adversaire' => 'BETHUNE ASTT-BF 1','score' => '3','score_adv' => '10','commentaire' => ''),
-        array('id' => '101','equipe' => '14','journee' => '5','date' => '1321660800','lieu' => 'Alençon','adversaire' => 'ET ALENCON 1','score' => '10','score_adv' => '7','commentaire' => 'Samedi 19 novembre
+          array('id' => '98','equipe' => '15','journee' => '4','date' => '1320469200','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '99','equipe' => '16','journee' => '4','date' => '1320469200','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 1','score' => '12','score_adv' => '6','commentaire' => ''),
+          array('id' => '100','equipe' => '13','journee' => '5','date' => '1321660800','lieu' => 'Béthune','adversaire' => 'BETHUNE ASTT-BF 1','score' => '3','score_adv' => '10','commentaire' => ''),
+          array('id' => '101','equipe' => '14','journee' => '5','date' => '1321660800','lieu' => 'Alençon','adversaire' => 'ET ALENCON 1','score' => '10','score_adv' => '7','commentaire' => 'Samedi 19 novembre
 
         Départ 12h30 et direction Alençon avec dans les sacs, raquettes, licences, paquets de bonbons, clémentines, gâteau au chocolat, cake aux poires ; sans oublier baskets aux pieds pour notre capitaine !
 
@@ -2915,9 +3222,9 @@ class DumpController extends FrontController {
         Après les doubles, nous étions menées 6-4 avant de nous imposer 10-7 ! Très belle victoire qui nous permet d\'espérer le maintien. Les matchs de play-off se joueront contre Bolbec et Mondeville.
 
         Hélène CARLIE'),
-        array('id' => '102','equipe' => '15','journee' => '5','date' => '1321660800','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 1','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '103','equipe' => '16','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 1','score' => '13','score_adv' => '5','commentaire' => ''),
-        array('id' => '104','equipe' => '1','journee' => '5','date' => '1321660800','lieu' => 'Mayenne','adversaire' => 'MAYENNE CA 1','score' => '11','score_adv' => '5','commentaire' => 'La mayennaise à bien tournée !
+          array('id' => '102','equipe' => '15','journee' => '5','date' => '1321660800','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 1','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '103','equipe' => '16','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 1','score' => '13','score_adv' => '5','commentaire' => ''),
+          array('id' => '104','equipe' => '1','journee' => '5','date' => '1321660800','lieu' => 'Mayenne','adversaire' => 'MAYENNE CA 1','score' => '11','score_adv' => '5','commentaire' => 'La mayennaise à bien tournée !
 
         Après le succès contre Reims puis un bon résultat obtenu contre Boulogne Billancourt, une victoire était quasi obligatoire contre les derniers de la poule pour pouvoir espérer se maintenir au plus vite.
 
@@ -2967,7 +3274,7 @@ class DumpController extends FrontController {
         A plus dans le (mini) bus !
 
         Yohan LECOMTE'),
-        array('id' => '105','equipe' => '2','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'DRAVEIL SC TT 1','score' => '4','score_adv' => '11','commentaire' => 'Amiens - Draveil:  "Des amiénois en éveil"
+          array('id' => '105','equipe' => '2','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'DRAVEIL SC TT 1','score' => '4','score_adv' => '11','commentaire' => 'Amiens - Draveil:  "Des amiénois en éveil"
 
         Amiens reçevait Draveil pour une déculotée programée.
         Merci à Louis Vandewoestyne de s\'être sacrifié pour l\'équipe. Au moins il aura pas eu besoin de faire 400 bornes.
@@ -3033,7 +3340,7 @@ class DumpController extends FrontController {
         Et j\'Dub\' aussi !
 
         Vincent Rasselet'),
-        array('id' => '106','equipe' => '3','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'ST QUENTIN TT 2','score' => '11','score_adv' => '9','commentaire' => 'I have a dream
+          array('id' => '106','equipe' => '3','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'ST QUENTIN TT 2','score' => '11','score_adv' => '9','commentaire' => 'I have a dream
 
         Samedi 19 novembre. L’ASTT III rencontrait Saint Quentin II. Caressant secrètement l’espoir d’une cinquième victoire d’affilée en R1. Du jamais vu depuis 1957.
 
@@ -3093,7 +3400,7 @@ class DumpController extends FrontController {
         Philippe et Christian battent Arnaud et Valentin (4,5,9).
 
         Denis CHATELAIN'),
-        array('id' => '107','equipe' => '4','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 2','score' => '16','score_adv' => '4','commentaire' => 'A
+          array('id' => '107','equipe' => '4','journee' => '5','date' => '1321660800','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 2','score' => '16','score_adv' => '4','commentaire' => 'A
         Bathelot Bertrand
         Herly François   
         Lefèvre Loic
@@ -3146,10 +3453,10 @@ class DumpController extends FrontController {
         Jean Paul et Loic battent Alleaume Pascal par WO.
 
         Bertrand Bathelot'),
-        array('id' => '108','equipe' => '5','journee' => '5','date' => '1321660800','lieu' => 'Pinon','adversaire' => 'PINON-ANIZY TT 1','score' => '16','score_adv' => '4','commentaire' => ''),
-        array('id' => '109','equipe' => '6','journee' => '5','date' => '1321747200','lieu' => 'Sérifontaine','adversaire' => 'SERIFONTAINE TT 1','score' => '10','score_adv' => '10','commentaire' => ''),
-        array('id' => '110','equipe' => '7','journee' => '5','date' => '1321747200','lieu' => 'Amiens','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 4','score' => '18','score_adv' => '2','commentaire' => ''),
-        array('id' => '111','equipe' => '8','journee' => '5','date' => '1321747200','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '16','score_adv' => '2','commentaire' => 'Dimanche 20 novembre,
+          array('id' => '108','equipe' => '5','journee' => '5','date' => '1321660800','lieu' => 'Pinon','adversaire' => 'PINON-ANIZY TT 1','score' => '16','score_adv' => '4','commentaire' => ''),
+          array('id' => '109','equipe' => '6','journee' => '5','date' => '1321747200','lieu' => 'Sérifontaine','adversaire' => 'SERIFONTAINE TT 1','score' => '10','score_adv' => '10','commentaire' => ''),
+          array('id' => '110','equipe' => '7','journee' => '5','date' => '1321747200','lieu' => 'Amiens','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 4','score' => '18','score_adv' => '2','commentaire' => ''),
+          array('id' => '111','equipe' => '8','journee' => '5','date' => '1321747200','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '16','score_adv' => '2','commentaire' => 'Dimanche 20 novembre,
 
         Rendez-vous à l\'ASTT à 8h15 pour cette 5ème journée contre nos voisins de Dreuil-Les-Amiens.
 
@@ -3197,9 +3504,9 @@ class DumpController extends FrontController {
         Prochaine journée contre Friville TT, à l\'ASTT, où les matchs seront plus serrés...Affaire à suivre !!
 
         Jeoffrey Stéphan'),
-        array('id' => '112','equipe' => '9','journee' => '5','date' => '1321747200','lieu' => 'Amiens','adversaire' => 'PROYART ASTT 1','score' => '3','score_adv' => '15','commentaire' => ''),
-        array('id' => '113','equipe' => '10','journee' => '5','date' => '1321747200','lieu' => 'Ribemont sur Ancre','adversaire' => 'RIBEMONT TT 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '114','equipe' => '11','journee' => '5','date' => '1321747200','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 2','score' => '12','score_adv' => '6','commentaire' => 'Enguerrand remplaçait Florian.
+          array('id' => '112','equipe' => '9','journee' => '5','date' => '1321747200','lieu' => 'Amiens','adversaire' => 'PROYART ASTT 1','score' => '3','score_adv' => '15','commentaire' => ''),
+          array('id' => '113','equipe' => '10','journee' => '5','date' => '1321747200','lieu' => 'Ribemont sur Ancre','adversaire' => 'RIBEMONT TT 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '114','equipe' => '11','journee' => '5','date' => '1321747200','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 2','score' => '12','score_adv' => '6','commentaire' => 'Enguerrand remplaçait Florian.
         Le match se déroulait à Albert et on est partis un peu en avance de l\'ASTT vers 7h30 pour arriver de bonne heure la-bas et histoire de bien se chauffer. Résultat à 8h15 on était là-bas et on a poireauté quasiment 1/2 heure devant la salle avant que le gardien vienne ouvrir le gymnase. Vu qu\'il faisait même pas 10 ° dehors, on est rentrés pas tellement de bonne humeur, bref nous nous changeons dans les vestiaires puis nous découvrons que l\'équipe adverse n\'a que 3 joueurs : on avait déjà 5-0 d\'avance, ça nous a un petit peu soulagé.
 
         Composition des équipes:
@@ -3237,9 +3544,9 @@ class DumpController extends FrontController {
         Malgré un absent, le résultat est positif, bravo à toute l\'équipe.
 
         Hugo BOUTEILLER'),
-        array('id' => '115','equipe' => '12','journee' => '5','date' => '1321574400','lieu' => 'Glisy','adversaire' => 'GLISY ASTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '116','equipe' => '13','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'SAINT MAUR VGA 2','score' => '2','score_adv' => '10','commentaire' => ''),
-        array('id' => '117','equipe' => '14','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'ENT MONDEVILLE / LA BUTTE 1','score' => '10','score_adv' => '5','commentaire' => 'Samedi 26 novembre
+          array('id' => '115','equipe' => '12','journee' => '5','date' => '1321574400','lieu' => 'Glisy','adversaire' => 'GLISY ASTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '116','equipe' => '13','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'SAINT MAUR VGA 2','score' => '2','score_adv' => '10','commentaire' => ''),
+          array('id' => '117','equipe' => '14','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'ENT MONDEVILLE / LA BUTTE 1','score' => '10','score_adv' => '5','commentaire' => 'Samedi 26 novembre
 
         Pour cette première journée de play-off, nous avons accueillis l\'équipe de Mondeville.
         Cette équipe était formée de REPESSE Véronique, 12, BRODIN Adèle, 8, GUILLAUME Chloé, 7 et DURAND Coralie, 5.
@@ -3264,9 +3571,9 @@ class DumpController extends FrontController {
         Phrase du jour (Julia FLAHAUT à Caroline PETITPREZ) : "tu vas pas m\'pêter le citron" !!
 
         Hélène CARLIE. '),
-        array('id' => '118','equipe' => '15','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '15','score_adv' => '3','commentaire' => ''),
-        array('id' => '119','equipe' => '16','journee' => '6','date' => '1322265600','lieu' => 'Villers-Bretonneux','adversaire' => 'VILLERS - BRETONNEUX PPC 1','score' => '13','score_adv' => '5','commentaire' => ''),
-        array('id' => '120','equipe' => '1','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'LE HAVRE ASPTT 1','score' => '9','score_adv' => '11','commentaire' => 'Pour cette avant-dernière journée, nous avions la délicate réception de l’équipe du Havre. Match qui a priori allait être serré,  Le Havre n’étant qu’une place au-dessus de nous dans la poule.
+          array('id' => '118','equipe' => '15','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '15','score_adv' => '3','commentaire' => ''),
+          array('id' => '119','equipe' => '16','journee' => '6','date' => '1322265600','lieu' => 'Villers-Bretonneux','adversaire' => 'VILLERS - BRETONNEUX PPC 1','score' => '13','score_adv' => '5','commentaire' => ''),
+          array('id' => '120','equipe' => '1','journee' => '6','date' => '1322265600','lieu' => 'Amiens','adversaire' => 'LE HAVRE ASPTT 1','score' => '9','score_adv' => '11','commentaire' => 'Pour cette avant-dernière journée, nous avions la délicate réception de l’équipe du Havre. Match qui a priori allait être serré,  Le Havre n’étant qu’une place au-dessus de nous dans la poule.
 
         Compositions des équipes :
 
@@ -3303,7 +3610,7 @@ class DumpController extends FrontController {
         Défaite 11/09 … « dommage ». Gagner avec deux machines à bulles dans l’équipe c’est dur mais au bout d’un moment les bulles éclatent !  Prochain match décisif pour le maintien avec un déplacement à MERS-EU-LE TREPORT.
 
         Alexandre HAIGNERE '),
-        array('id' => '121','equipe' => '2','journee' => '6','date' => '1322265600','lieu' => 'Coutances','adversaire' => 'COUTANCES JA 2','score' => '11','score_adv' => '7','commentaire' => 'Amiens - Coutances
+          array('id' => '121','equipe' => '2','journee' => '6','date' => '1322265600','lieu' => 'Coutances','adversaire' => 'COUTANCES JA 2','score' => '11','score_adv' => '7','commentaire' => 'Amiens - Coutances
         Chapître 6: La Croisade
 
         Amiens se rendait non pas en Terre inconnue, mais surtout en Terre promise avec l\'ambition de conquérir le maintien. Un chemin de croix qui débutait par un pèlerinage matinal.Rendez-vous 10h30 à l\'ASTT. Avec en chauffeur Mr Sellier et Mr Harlé. On a embarqué au passage un immigré, il avait l\'air bien sympathique et il avait surtout à manger. Merci donc à Fred Dubois d\'avoir fait le déplacement pour nous prêcher la bonne parole à l\'aller. On était donc parti pour "une boucherie" 
@@ -3372,7 +3679,7 @@ class DumpController extends FrontController {
         Avec en prime Le maintien !Et tous avec la R1 !!!
 
         Vincent Rasselet                                               '),
-        array('id' => '122','equipe' => '3','journee' => '6','date' => '1322265600','lieu' => 'Breteuil','adversaire' => 'WAVIGNIES / BRETEUIL 1','score' => '10','score_adv' => '10','commentaire' => 'Objectif nul
+          array('id' => '122','equipe' => '3','journee' => '6','date' => '1322265600','lieu' => 'Breteuil','adversaire' => 'WAVIGNIES / BRETEUIL 1','score' => '10','score_adv' => '10','commentaire' => 'Objectif nul
 
         Samedi 26 novembre 2011, 16 heures. Ici, c’est BRETEUIL.
 
@@ -3442,7 +3749,7 @@ class DumpController extends FrontController {
         Antoine HUON (1225 points) perd Benoit BROCHOT (1900 points) (-9,-5,9,-12), Jean-Baptiste CARLIER (1861 points) (-8,-6,-6) et Bruno CRNIC (1952 points) (-5,-9,9,-8).
 
         Denis CHATELAIN'),
-        array('id' => '123','equipe' => '4','journee' => '6','date' => '1322352000','lieu' => 'Saintines','adversaire' => 'SAINTINES ATT 1','score' => '16','score_adv' => '4','commentaire' => 'Cette semaine le compte rendu sera bref et approximatif car le capitaine a oublié de récupérer son exemplaire de feuille de match.
+          array('id' => '123','equipe' => '4','journee' => '6','date' => '1322352000','lieu' => 'Saintines','adversaire' => 'SAINTINES ATT 1','score' => '16','score_adv' => '4','commentaire' => 'Cette semaine le compte rendu sera bref et approximatif car le capitaine a oublié de récupérer son exemplaire de feuille de match.
 
         Victoire de l\'ASTT 16/4
 
@@ -3466,10 +3773,10 @@ class DumpController extends FrontController {
         Prochain match décisif pour la montée contre Feuquières.
 
         Bertrand Bathelot'),
-        array('id' => '124','equipe' => '5','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'BEAUTOR CHARMES 1','score' => '16','score_adv' => '4','commentaire' => ''),
-        array('id' => '125','equipe' => '6','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'VENIZEL TT 5','score' => '17','score_adv' => '3','commentaire' => ''),
-        array('id' => '126','equipe' => '7','journee' => '6','date' => '1322352000','lieu' => 'Abbeville','adversaire' => 'AMICALE ST JACQUES 1','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '127','equipe' => '8','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'TT FRIVILLE 3','score' => '9','score_adv' => '9','commentaire' => 'Dimanche 27 novembre,
+          array('id' => '124','equipe' => '5','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'BEAUTOR CHARMES 1','score' => '16','score_adv' => '4','commentaire' => ''),
+          array('id' => '125','equipe' => '6','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'VENIZEL TT 5','score' => '17','score_adv' => '3','commentaire' => ''),
+          array('id' => '126','equipe' => '7','journee' => '6','date' => '1322352000','lieu' => 'Abbeville','adversaire' => 'AMICALE ST JACQUES 1','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '127','equipe' => '8','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'TT FRIVILLE 3','score' => '9','score_adv' => '9','commentaire' => 'Dimanche 27 novembre,
 
         Rendez-vous comme d\'habitude à 8h30 à la salle lorsque nous jouons à domicile. Je suis arrivé le premier puis Paul 3 minutes après et Floris à 8h45 environ mais aujourd\'hui on ne savait pas que cette journée serait... bizarre... Car où est Benoît ? Bonne question à laquelle nous n\'avons pas pu répondre... A 8h58 pas de Benoît et pas d\'équipe adverse ! Paul se voyait déjà en train de se rhabiller et de rentrer chez lui mais on a décidé de laisser 15 minutes de rab\'... A peine dit que l\'équipe de Friville arrive ! 1,2,3... Il leur manque un joueur aussi ??? Alors là, j\'avais jamais vu ça : 3 joueurs contre 3 ! Mais en fait ils étaient bien 4 , le dernier est arrivé 2 minutes après les autres... On continue notre échauffement à la table avec Paul et Floris, Friville note ses joueurs et nous propose de jouer la partie en 14 points. On a dit non, on était d\'accord, il nous manque un joueur alors on fait avec ; si on perd, tant pis, de toute façon quel que soit le résultat on ne pouvait ni descendre, ni monter tout comme Friville qui n\'avait rien à perdre ni gagner !
         On lance donc les matchs avec Floris en 1ère place, Jeoffrey en 2ème et Paul toujours scotché à sa bienfaisante 3ème place !
@@ -3502,9 +3809,9 @@ class DumpController extends FrontController {
         Pour la dernière journée on se déplacera à Puzeaux qui est à 4 points derrière nous au classement, la victoire sera donc jouable !
 
         Jeoffrey Stéphan'),
-        array('id' => '128','equipe' => '9','journee' => '6','date' => '1322352000','lieu' => 'Eppeville','adversaire' => 'EPPEVILLE TT 2','score' => '7','score_adv' => '11','commentaire' => ''),
-        array('id' => '129','equipe' => '10','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 7','score' => '14','score_adv' => '4','commentaire' => ''),
-        array('id' => '130','equipe' => '11','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'MUILLOIS PPC 3','score' => '16','score_adv' => '2','commentaire' => 'Ce match se déroulant à Amiens, pas de problème de déplacement, rendez-vous à 8h30 devant la salle. On savait que l\'on jouait contre une équipe qui était dernière du classement donc pas trop de stress quant à l\'enjeu du match.Pour ce match, florian ne pouvait pas jouer, c\'est Enguerrand qui l\'a remplacé. Nous accueillons nos adversaires, nous remplissons la feuille de match puis nous découvrons la composition de leur équipe :
+          array('id' => '128','equipe' => '9','journee' => '6','date' => '1322352000','lieu' => 'Eppeville','adversaire' => 'EPPEVILLE TT 2','score' => '7','score_adv' => '11','commentaire' => ''),
+          array('id' => '129','equipe' => '10','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 7','score' => '14','score_adv' => '4','commentaire' => ''),
+          array('id' => '130','equipe' => '11','journee' => '6','date' => '1322352000','lieu' => 'Amiens','adversaire' => 'MUILLOIS PPC 3','score' => '16','score_adv' => '2','commentaire' => 'Ce match se déroulant à Amiens, pas de problème de déplacement, rendez-vous à 8h30 devant la salle. On savait que l\'on jouait contre une équipe qui était dernière du classement donc pas trop de stress quant à l\'enjeu du match.Pour ce match, florian ne pouvait pas jouer, c\'est Enguerrand qui l\'a remplacé. Nous accueillons nos adversaires, nous remplissons la feuille de match puis nous découvrons la composition de leur équipe :
 
         MUILLOIS PPC 3
         DEVEAUX Patrice 705 pts
@@ -3546,8 +3853,8 @@ class DumpController extends FrontController {
         Bilan : 16-2 bon match de l\'équipe, bravo à tous.
 
         Hugo Bouteiller'),
-        array('id' => '131','equipe' => '12','journee' => '6','date' => '1322179200','lieu' => 'Amiens','adversaire' => 'MUNICIPX AMIENS 1','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '132','equipe' => '1','journee' => '7','date' => '1323475200','lieu' => 'Mers','adversaire' => 'TT MERS TREPORT EU 1','score' => '9','score_adv' => '11','commentaire' => 'La dernière…
+          array('id' => '131','equipe' => '12','journee' => '6','date' => '1322179200','lieu' => 'Amiens','adversaire' => 'MUNICIPX AMIENS 1','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '132','equipe' => '1','journee' => '7','date' => '1323475200','lieu' => 'Mers','adversaire' => 'TT MERS TREPORT EU 1','score' => '9','score_adv' => '11','commentaire' => 'La dernière…
 
         Nous finissons donc cette phase par un petit derby qui tourna malheureusement en faveur des Eudois (défaite 11/09).
 
@@ -3582,8 +3889,8 @@ class DumpController extends FrontController {
         Bonnes fêtes de fin d’année. 
 
         Alexandre HAIGNERE'),
-        array('id' => '133','equipe' => '13','journee' => '7','date' => '1323475200','lieu' => 'Poitiers','adversaire' => 'POITIERS TTACC 86 2','score' => '0','score_adv' => '10','commentaire' => ''),
-        array('id' => '134','equipe' => '14','journee' => '7','date' => '1323475200','lieu' => 'Bolbec','adversaire' => 'TS BOLBEC 2','score' => '10','score_adv' => '5','commentaire' => 'Les filles au pays des Bisounours
+          array('id' => '133','equipe' => '13','journee' => '7','date' => '1323475200','lieu' => 'Poitiers','adversaire' => 'POITIERS TTACC 86 2','score' => '0','score_adv' => '10','commentaire' => ''),
+          array('id' => '134','equipe' => '14','journee' => '7','date' => '1323475200','lieu' => 'Bolbec','adversaire' => 'TS BOLBEC 2','score' => '10','score_adv' => '5','commentaire' => 'Les filles au pays des Bisounours
 
         14h15, tambour battant : en route pour Bolbec. Notre capitaine sort son G.P.S. et... "merde, j\'ai pas l\'adresse" ! Le départ se fera donc à 14h30 !
 
@@ -3619,7 +3926,7 @@ class DumpController extends FrontController {
         Un merci également à tous nos supporters.
 
         Hélène CARLIE'),
-        array('id' => '135','equipe' => '2','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'BOULOGNE SUR MER ABCP 1','score' => '1','score_adv' => '11','commentaire' => 'Amiens - Boulogne-sur-Mer
+          array('id' => '135','equipe' => '2','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'BOULOGNE SUR MER ABCP 1','score' => '1','score_adv' => '11','commentaire' => 'Amiens - Boulogne-sur-Mer
 
         Match sans enjeu, Amiens assuré du maintien, Boulogne assuré de monter.
         La team acceuillait pour cette dernière la venue d\'un nouveau POULAIN. Jean-Paul était donc venu nous soutenir et jouer pour remplacer notre Lolo national.
@@ -3663,9 +3970,9 @@ class DumpController extends FrontController {
         Dans une ambiance électrique !
 
         Vincent RASSELET'),
-        array('id' => '136','equipe' => '15','journee' => '7','date' => '1323475200','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 1','score' => '16','score_adv' => '2','commentaire' => ''),
-        array('id' => '137','equipe' => '16','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'DREUIL TT 1','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '138','equipe' => '3','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 1','score' => '8','score_adv' => '12','commentaire' => 'Die Hard 7. Une journée en enfer
+          array('id' => '136','equipe' => '15','journee' => '7','date' => '1323475200','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 1','score' => '16','score_adv' => '2','commentaire' => ''),
+          array('id' => '137','equipe' => '16','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'DREUIL TT 1','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '138','equipe' => '3','journee' => '7','date' => '1323475200','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 1','score' => '8','score_adv' => '12','commentaire' => 'Die Hard 7. Une journée en enfer
 
 
         Note de l’éditeur pour le fond sonore lecturiel:
@@ -3728,7 +4035,7 @@ class DumpController extends FrontController {
         Antoine HUON (0 victoire en B): The Artist. Joue déjà avec un gros talent. Mais son compteur est resté comme Jean DUJARDIN : muet. Pas grave, ça cartonnera plus en deuxième phase.
 
         Denis CHATELAIN'),
-        array('id' => '139','equipe' => '4','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'FEUQUIERES AP 1','score' => '14','score_adv' => '6','commentaire' => 'Mission  accomplie !!!
+          array('id' => '139','equipe' => '4','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'FEUQUIERES AP 1','score' => '14','score_adv' => '6','commentaire' => 'Mission  accomplie !!!
 
         Une fois de plus, n\'ayant pas pensé à récupérer mon exemplaire de feuille de match, le résumé comportera quelques approximations sur les scores et noms.
         L\'équipe 4  ayant beaucoup plus de nerfs (mon statut d?enseignant m\'empêche d\'illustrer mon propos par une autre partie de l\'anatomie) que l\'équipe 3, nous avons atteint notre mission et accédons à la R2.
@@ -3763,9 +4070,9 @@ class DumpController extends FrontController {
         R2 nous voilà !!!!
 
         Bertrand Bathelot'),
-        array('id' => '140','equipe' => '5','journee' => '7','date' => '1323561600','lieu' => 'La Capelle','adversaire' => 'LA CAPELLE TT 1','score' => '11','score_adv' => '9','commentaire' => ''),
-        array('id' => '141','equipe' => '7','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'VAUCHELLES ASV 2','score' => '11','score_adv' => '9','commentaire' => ''),
-        array('id' => '142','equipe' => '6','journee' => '7','date' => '1323561600','lieu' => 'Godenvillers','adversaire' => 'GODENVILLERS AS 1','score' => '14','score_adv' => '6','commentaire' => 'Bref, Les Cénobites Tranquilles montent en R3.
+          array('id' => '140','equipe' => '5','journee' => '7','date' => '1323561600','lieu' => 'La Capelle','adversaire' => 'LA CAPELLE TT 1','score' => '11','score_adv' => '9','commentaire' => ''),
+          array('id' => '141','equipe' => '7','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'VAUCHELLES ASV 2','score' => '11','score_adv' => '9','commentaire' => ''),
+          array('id' => '142','equipe' => '6','journee' => '7','date' => '1323561600','lieu' => 'Godenvillers','adversaire' => 'GODENVILLERS AS 1','score' => '14','score_adv' => '6','commentaire' => 'Bref, Les Cénobites Tranquilles montent en R3.
 
 
         Aujourd\'hui, je m\'organise.
@@ -3903,7 +4210,7 @@ class DumpController extends FrontController {
 
         A bientôt en R3 !
         Flo Schield\' Bobby.'),
-        array('id' => '143','equipe' => '8','journee' => '7','date' => '1323561600','lieu' => 'Puzeaux','adversaire' => 'PUZEAUX AAE 1','score' => '10','score_adv' => '8','commentaire' => 'Dimanche 11 décembre,
+          array('id' => '143','equipe' => '8','journee' => '7','date' => '1323561600','lieu' => 'Puzeaux','adversaire' => 'PUZEAUX AAE 1','score' => '10','score_adv' => '8','commentaire' => 'Dimanche 11 décembre,
 
         Aujourd\'hui, pour cette dernière journée de la première phase, le père de Floris avait fixé le rendez-vous à 7h30 au club pour se déplacer à 40km de là c\'est à dire à Puzeaux dans le Santerre juste à côté de Chaulnes... Aujourd\'hui encore nous n\'étions que 3 mais Benoît avait prévenu qu\'il ne pourrait pas être là ; pourtant nous n\'avons pas réussi à trouver un 4ème joueur malgré 4 tentatives ! Le destin voulait que l\'on ne joue qu\'à 3... Comme d\'hab, j\'avais « espionné » l\'équipe de Puzeaux et j\'avais prévenu Floris et Paul qu\'en face ça jouerait 9-9-8-7. De toute façon, quel que soit le score, nous étions assurés de nous maintenir ! Nous quittons donc Amiens pour nous diriger vers Puzeaux et sa diversité de paysages... champ de patates à droite, champ de betteraves à gauche, champ de patates à droite, champ de betteraves à gauche etc... On a donc fait une petite virée sympathique dans le Santerre, c\'était tellement sympa qu\'on s\'est perdu à un moment ! Le père de Floris ne s\'inquiétait pas puisqu\'il y avait la gare en face (gare de Chaulnes). Malheureusement c\'est une gare où aucun plan ne figurait …. Bon c\'est pas un problème : il est 8h28 et on est juste à côté de Puzeaux mais les panneaux de direction n\'affichent que 3 villes : Amiens – Roye – Compiègne. Avec ça, on va aller loin ! Notre chauffeur sort donc son netbook avec sa clé 3G mais bercés par une radio dont j\'ai oublié le nom, qui passait en boucle de la guinguette, on a vite déprimé ! A 8h45 on était toujours sur le portail Orange du netbook, bah oui on capte déjà pas la radio, alors internet ! En plus la ville était déserte et puis les habitants peu fréquents ! J\'ai donc appelé ma mère, la situation devenait critique et en 1 minute on a su que Puzeaux se situait à 2,3km de notre position ! Demi-tour, puis on tourne à droite et on avait juste à suivre la route lorsque Paul nous a dit qu\'on allait jouer là (dans un chalet). Comique le Paulo, ceci dit quand on a vu l\'allure de la salle polyvalente (aussi appelée salle des fêtes) j\'me suis demandé si j\'aurais pas préféré le chalet...
         Mais bon on était arrivé c\'est le principal ! 44% des licenciés à Puzeaux étaient présents ! 
@@ -3940,11 +4247,11 @@ class DumpController extends FrontController {
         Aujourd\'hui c\'était une nouvelle recette : on visite les fins fonds de la Picardie, on joue à 3, on gagne et on finit 1h plus tôt que d\'habitude !
 
         Jeoffrey Stéphan'),
-        array('id' => '144','equipe' => '9','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'AAE FORT MAHON 1','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '145','equipe' => '10','journee' => '7','date' => '1323561600','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '146','equipe' => '11','journee' => '7','date' => '1323561600','lieu' => 'Roye','adversaire' => 'ROYE PPC 6','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '147','equipe' => '12','journee' => '7','date' => '1323388800','lieu' => 'Amiens','adversaire' => 'ST SAUFLIEU ASL 1','score' => '5','score_adv' => '13','commentaire' => ''),
-        array('id' => '149','equipe' => '3','journee' => '7','date' => '1323907200','lieu' => 'Amiens','adversaire' => 'Bilan de la 1ère phase','score' => '0','score_adv' => '0','commentaire' => 'Le bilan de la phase
+          array('id' => '144','equipe' => '9','journee' => '7','date' => '1323561600','lieu' => 'Amiens','adversaire' => 'AAE FORT MAHON 1','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '145','equipe' => '10','journee' => '7','date' => '1323561600','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '146','equipe' => '11','journee' => '7','date' => '1323561600','lieu' => 'Roye','adversaire' => 'ROYE PPC 6','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '147','equipe' => '12','journee' => '7','date' => '1323388800','lieu' => 'Amiens','adversaire' => 'ST SAUFLIEU ASL 1','score' => '5','score_adv' => '13','commentaire' => ''),
+          array('id' => '149','equipe' => '3','journee' => '7','date' => '1323907200','lieu' => 'Amiens','adversaire' => 'Bilan de la 1ère phase','score' => '0','score_adv' => '0','commentaire' => 'Le bilan de la phase
 
         Une phase Unbelievable, Amazing, I’m so glad!!!. Oui, moi aussi j’aime beaucoup regarder les actrices américaines lors de la cérémonie des Oscars.
 
@@ -3985,7 +4292,7 @@ class DumpController extends FrontController {
         Christophe HARLE et Jean TAQUET en A (100% de victoires) ; Bruno MARYSSE en B et Vincent RASSELET en A (66% de victoires) : Les prendre dans ton équipe c’est un peu comme les grands films d’action américains. Ça castagne, ça pulse, ça explose. Et à la fin ce sont toujours les gentils qui gagnent.
 
         Denis CHATELAIN '),
-        array('id' => '150','equipe' => '13','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'ENT SOTTEVILLE / VAUDREUIL1','score' => '10','score_adv' => '4','commentaire' => 'Après une première phase compliquée en N2 où nous avons comptabilisé que des défaites, cette première journée en N3 était cruciale pour le moral des troupes.
+          array('id' => '150','equipe' => '13','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'ENT SOTTEVILLE / VAUDREUIL1','score' => '10','score_adv' => '4','commentaire' => 'Après une première phase compliquée en N2 où nous avons comptabilisé que des défaites, cette première journée en N3 était cruciale pour le moral des troupes.
 
         Compositions des équipes :
 
@@ -4013,7 +4320,7 @@ class DumpController extends FrontController {
         Et merrrci aux supporterrrs pourrr les encourrragements.
 
         Hélène CARLIE.'),
-        array('id' => '151','equipe' => '14','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'MSNA MULTI SMAS 1','score' => '6','score_adv' => '10','commentaire' => 'Pour cette seconde phase, les équipes ont été quelque peu modifiées. Notre équipe se compose maintenant de BERTHELOT Marion, 10, NEEL Aurélie, 9, GUICHARD Delphine, 8 et HURE Léa, 6.
+          array('id' => '151','equipe' => '14','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'MSNA MULTI SMAS 1','score' => '6','score_adv' => '10','commentaire' => 'Pour cette seconde phase, les équipes ont été quelque peu modifiées. Notre équipe se compose maintenant de BERTHELOT Marion, 10, NEEL Aurélie, 9, GUICHARD Delphine, 8 et HURE Léa, 6.
         CARLIE Hélène est montée dans l\'équipe au-dessus mais reste titulaire de la notre pour les résumés.
 
         Nous avons reçu l\'équipe de St Nicolas qui se composée de BOSSOREIL FONTAINE Pascale, 12, RENIER Elizabeth, 10, LANGLOIS Pascale, 9 et LEFEVRE Célia, 6.
@@ -4035,10 +4342,10 @@ class DumpController extends FrontController {
         Rendez-vous la semaine prochaine pour un gros déplacement à Equeur !
 
         Hélène CARLIE.'),
-        array('id' => '152','equipe' => '15','journee' => '8','date' => '1327104000','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '13','score_adv' => '5','commentaire' => ''),
-        array('id' => '153','equipe' => '16','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 1','score' => '15','score_adv' => '3','commentaire' => ''),
-        array('id' => '154','equipe' => '17','journee' => '8','date' => '1327104000','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 2','score' => '15','score_adv' => '3','commentaire' => ''),
-        array('id' => '155','equipe' => '1','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'LILLE CHEMINOTS 1','score' => '11','score_adv' => '5','commentaire' => 'La journée des 1ères…….
+          array('id' => '152','equipe' => '15','journee' => '8','date' => '1327104000','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '13','score_adv' => '5','commentaire' => ''),
+          array('id' => '153','equipe' => '16','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 1','score' => '15','score_adv' => '3','commentaire' => ''),
+          array('id' => '154','equipe' => '17','journee' => '8','date' => '1327104000','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 2','score' => '15','score_adv' => '3','commentaire' => ''),
+          array('id' => '155','equipe' => '1','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'LILLE CHEMINOTS 1','score' => '11','score_adv' => '5','commentaire' => 'La journée des 1ères…….
 
         21 janvier 2012 ( 335 jours avant la « fin du monde ») , reprise du championnat pour l’équipe amiénoise en ………………………..  Nationale 3, ( il faut remonter à l’époque des Beegees, les « vrais » pour revoir l’équipe 1 à ce niveau). 
 
@@ -4081,7 +4388,7 @@ class DumpController extends FrontController {
         Le compte à rebours est lancé avec cette 1ère victoire de la TEAM ainsi que celle de Yohan… il a dû prendre cher à la fin de la rencontre dans les douches… mais ceci bien sûr ne nous regarde pas !!
 
         Alexandre Haigneré et Yohan Lecomte'),
-        array('id' => '156','equipe' => '2','journee' => '8','date' => '1327104000','lieu' => 'Saint-Divy','adversaire' => 'SAINT DIVY SPORT 1','score' => '10','score_adv' => '10','commentaire' => 'Pour le 1er stage commando J8, la section ASTT 2 était composée de :
+          array('id' => '156','equipe' => '2','journee' => '8','date' => '1327104000','lieu' => 'Saint-Divy','adversaire' => 'SAINT DIVY SPORT 1','score' => '10','score_adv' => '10','commentaire' => 'Pour le 1er stage commando J8, la section ASTT 2 était composée de :
 
         Captain\' Dudu assisté du Lieutenant Chatelain 1er du nom, des Aspirants Rasselet et Chatelain Jr, accompagnés des valeureux Soldats Dubois et Vaquero.
         Je sais pas vraiment si c\'était la "Dream Team" mais en tout cas c\'était "petite mine" en ce samedi 8h, au QG de l\'ASTT (Petit dossier de presse pour immortaliser le voyage : http://www.casimages.com/galerie.php?id=226171h84702)
@@ -4146,7 +4453,7 @@ class DumpController extends FrontController {
         Qui est un bon point de pris pour le maintien !
 
         Vincent Rasselet'),
-        array('id' => '157','equipe' => '3','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'LONGUEILLOIS TT 1','score' => '4','score_adv' => '16','commentaire' => 'En A : Amiens 2 / Longueuil 8
+          array('id' => '157','equipe' => '3','journee' => '8','date' => '1327104000','lieu' => 'Amiens','adversaire' => 'LONGUEILLOIS TT 1','score' => '4','score_adv' => '16','commentaire' => 'En A : Amiens 2 / Longueuil 8
 
         Christian HENON (1784 points) (1 victoire en A) : bat Michel TROCHUT (1842 points) (-9,7,5,6) et perd Cyril LEGRAND (2122 points, n°759) (-4,7,-7,-7), et Guillaume ROY (1730 points) (8,-4,-4,-10).
         Philippe L’HOTE (1792 points) (0 victoire en A) : perd Cyril LEGRAND (2122 points, n°759) (12,-3,11,-5,-6), Michel TROCHUT (1842 points) (5,-10,-8,-5) et Guillaume ROY (1730 points) (-11,11,-8,-5)
@@ -4158,7 +4465,7 @@ class DumpController extends FrontController {
         Bruno MARYSSE (1751 points (0 victoire en B) : perd Cyrille LEGRIS (1760 points) (11,-7,5,-5,-10), Cédric LEGRAND (1768 points) (8,-9,8,-8,-10) et Peter TRIART (1629 points) (-8,-8,-11).
         Antoine HUON (1349 points) (0 victoire en B) : perd Cyrille LEGRIS (1760 points) (-11,8,-10,9,-7), Cédric LEGRAND (1768 points) (-7,9,9,-8,-3) et Peter TRIART (1629 points) (-11,-10,8,11,-7).
         Double : Bertrand et Bruno perdent Cyrille et Cedric (-12,8,-9,-8).'),
-        array('id' => '158','equipe' => '4','journee' => '8','date' => '1327104000','lieu' => 'Breteuil','adversaire' => 'WAVIGNIES / BRETEUIL 2','score' => '3','score_adv' => '17','commentaire' => 'AAE WAVIGNIES BRETEUIL 2
+          array('id' => '158','equipe' => '4','journee' => '8','date' => '1327104000','lieu' => 'Breteuil','adversaire' => 'WAVIGNIES / BRETEUIL 2','score' => '3','score_adv' => '17','commentaire' => 'AAE WAVIGNIES BRETEUIL 2
 
         En A : 
         ROBINET Aurélien (1752), KAPELA Fabien (1706), HERSENT Christophe (1715)
@@ -4189,10 +4496,10 @@ class DumpController extends FrontController {
         LEFEVRE Loïc : Loïc s\'impose facilement en début de rencontre sur Ambeza puis continu sur sa lancée en poussant Descampeaux au cinquième set (défaite 11-08). 
 
         François HERLY'),
-        array('id' => '159','equipe' => '5','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'CHOISY AU BAC CTT 2','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '160','equipe' => '6','journee' => '8','date' => '1327190400','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '7','score_adv' => '13','commentaire' => ''),
-        array('id' => '161','equipe' => '7','journee' => '8','date' => '1327190400','lieu' => 'Longueau','adversaire' => 'LONGUEAU ESC 2','score' => '5','score_adv' => '15','commentaire' => ''),
-        array('id' => '162','equipe' => '8','journee' => '8','date' => '1327190400','lieu' => 'Saint Valery','adversaire' => 'ASTT ST VALERY 1','score' => '10','score_adv' => '8','commentaire' => 'Dimanche 22 janvier,
+          array('id' => '159','equipe' => '5','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'CHOISY AU BAC CTT 2','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '160','equipe' => '6','journee' => '8','date' => '1327190400','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '7','score_adv' => '13','commentaire' => ''),
+          array('id' => '161','equipe' => '7','journee' => '8','date' => '1327190400','lieu' => 'Longueau','adversaire' => 'LONGUEAU ESC 2','score' => '5','score_adv' => '15','commentaire' => ''),
+          array('id' => '162','equipe' => '8','journee' => '8','date' => '1327190400','lieu' => 'Saint Valery','adversaire' => 'ASTT ST VALERY 1','score' => '10','score_adv' => '8','commentaire' => 'Dimanche 22 janvier,
 
         Ce matin c\'est la reprise ! Pour une reprise c\'est une reprise, rendez-vous fixé à 7h25 à la salle pour se déplacer à Saint-Valery-sur-Somme, le plus long déplacement de cette seconde phase ! L\'objectif est de monter, comme convenu lors de la réunion, donc aujourd\'hui il fallait gagner même si on ne partait pas gagnant sur le papier ! On part donc à 7h35 après que tout le monde a embarqué avec le père de Floris, notre conducteur du jour. On est arrivé à 8h30 à St-Valery mais il nous a fallu 20 minutes pour trouver la salle malgré les indications de 3 passants ; les panneaux étaient plutôt introuvables ! Enfin on trouve le gymnase avec des chauffages qui étaient encore plus bruyants qu\'à Béthencourt ! Pendant que l\'équipe, qu\'on ne présente plus, formée de Paul, Floris et Benoît s\'échauffe, je remplis la feuille de match. Nos adversaires ont gardé le suspense en cachant leur composition d\'équipe, mais finalement ils ont levé le rideau à 9h00 et on a pu lire : 10-10-10-5.
 
@@ -4229,9 +4536,9 @@ class DumpController extends FrontController {
         Première victoire de la 2ème phase qui était obligatoire pour la montée, malgré la remontée au score de nos adversaires en fin de rencontre, il faudra rester concentrés jusqu\'au bout... La semaine prochaine on jouera contre Bouzincourt, les plus forts de la poule où un renfort sera nécessaire à mon avis...
 
         Jeoffrey Stéphan'),
-        array('id' => '163','equipe' => '9','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'BOUZINCOURT PPC 2','score' => '11','score_adv' => '7','commentaire' => ''),
-        array('id' => '164','equipe' => '10','journee' => '8','date' => '1327190400','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 6','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '165','equipe' => '11','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'COMBLES FR 1','score' => '15','score_adv' => '3','commentaire' => 'Match à domicile, nous accueillons Combles FR 1 :
+          array('id' => '163','equipe' => '9','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'BOUZINCOURT PPC 2','score' => '11','score_adv' => '7','commentaire' => ''),
+          array('id' => '164','equipe' => '10','journee' => '8','date' => '1327190400','lieu' => 'Doullens','adversaire' => 'DOULLENS / BERNAVILLE 6','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '165','equipe' => '11','journee' => '8','date' => '1327190400','lieu' => 'Amiens','adversaire' => 'COMBLES FR 1','score' => '15','score_adv' => '3','commentaire' => 'Match à domicile, nous accueillons Combles FR 1 :
         FRERE Jérome 991 pts
         POTELLE Bruno 619 pts
         VERCRUYSSE Rémy 560 pts
@@ -4272,8 +4579,8 @@ class DumpController extends FrontController {
         Beau match, quelques petites faiblesses individuelles sur certains matchs, mais bravo à toute l\'équipe.
 
         Hugo BOUTEILLER'),
-        array('id' => '166','equipe' => '12','journee' => '8','date' => '1327017600','lieu' => 'Canaples','adversaire' => 'CANAPLES CTT 1','score' => '0','score_adv' => '18','commentaire' => ''),
-        array('id' => '167','equipe' => '1','journee' => '9','date' => '1327708800','lieu' => 'Besançon','adversaire' => 'BESANCON PS 1','score' => '11','score_adv' => '0','commentaire' => 'Une rencontre trop z’ouverte
+          array('id' => '166','equipe' => '12','journee' => '8','date' => '1327017600','lieu' => 'Canaples','adversaire' => 'CANAPLES CTT 1','score' => '0','score_adv' => '18','commentaire' => ''),
+          array('id' => '167','equipe' => '1','journee' => '9','date' => '1327708800','lieu' => 'Besançon','adversaire' => 'BESANCON PS 1','score' => '11','score_adv' => '0','commentaire' => 'Une rencontre trop z’ouverte
 
         Pour la seconde journée de cette 2ème phase, un départ matinal (8H30 de la salle) était prévu à la salle pour se rendre en terre franc comtoise.
 
@@ -4326,7 +4633,7 @@ class DumpController extends FrontController {
         Rendez vous la prochaine journée pour accueillir la Team de MONACO !
 
         Alexandre HAIGNERE et Yohan LECOMTE'),
-        array('id' => '168','equipe' => '2','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'VENIZEL TT 1','score' => '11','score_adv' => '4','commentaire' => 'Amiens - Vénizel, une rencontre qui donne des ailes !
+          array('id' => '168','equipe' => '2','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'VENIZEL TT 1','score' => '11','score_adv' => '4','commentaire' => 'Amiens - Vénizel, une rencontre qui donne des ailes !
 
         Amiens accueillait comme il se doit Vénizel pour un duel picard. Pour l\'occasion on avait récupéré un sacré numéro. Non je ne parle pas de Benito Vaquero mais de nôtre Yannick national sorti de son Marais nous faire un p’ti coucou (oui je sais elle est facile). A l\'échauffement on aurait dit timo boll contre son fils. Oui benoit et Yannick jouant ensemble c\'est impressionnant ! Bref y’avait du lourd à la table.
 
@@ -4386,7 +4693,7 @@ class DumpController extends FrontController {
         Prochain déplacement à Draveil, pour grappiller un point, on sait jamais.
 
         Vincent Rasselet'),
-        array('id' => '169','equipe' => '3','journee' => '9','date' => '1327708800','lieu' => 'Villers St Paul','adversaire' => 'VILLERS ST PAUL 1','score' => '14','score_adv' => '6','commentaire' => 'Composition :
+          array('id' => '169','equipe' => '3','journee' => '9','date' => '1327708800','lieu' => 'Villers St Paul','adversaire' => 'VILLERS ST PAUL 1','score' => '14','score_adv' => '6','commentaire' => 'Composition :
 
         VILLERS ST PAUL EN A 19,17 et 15 en B 16,14,17. 
 
@@ -4415,7 +4722,7 @@ class DumpController extends FrontController {
         Prochain match contre St Quentin à domicile.
 
         Signé le capitaine par obligation : Ph L\'hote (petit 17)'),
-        array('id' => '170','equipe' => '4','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'TT MERS TREP EU 2','score' => '13','score_adv' => '7','commentaire' => 'Première et belle victoire en R2. 
+          array('id' => '170','equipe' => '4','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'TT MERS TREP EU 2','score' => '13','score_adv' => '7','commentaire' => 'Première et belle victoire en R2. 
         7 perfs réalisées.
 
         Les équipes :
@@ -4467,10 +4774,10 @@ class DumpController extends FrontController {
         Prochain match à St-Quentin qui s’annonce difficile.
 
         Bertrand Bathelot'),
-        array('id' => '171','equipe' => '5','journee' => '9','date' => '1327795200','lieu' => 'Poix','adversaire' => 'POIX USTT 1','score' => '6','score_adv' => '14','commentaire' => ''),
-        array('id' => '172','equipe' => '6','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 2','score' => '7','score_adv' => '13','commentaire' => ''),
-        array('id' => '173','equipe' => '7','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'POIX USTT 2','score' => '16','score_adv' => '4','commentaire' => ''),
-        array('id' => '174','equipe' => '8','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'BOUZINCOURT PPC 1','score' => '9','score_adv' => '9','commentaire' => 'imanche 29 janvier, 
+          array('id' => '171','equipe' => '5','journee' => '9','date' => '1327795200','lieu' => 'Poix','adversaire' => 'POIX USTT 1','score' => '6','score_adv' => '14','commentaire' => ''),
+          array('id' => '172','equipe' => '6','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'COMPIEGNE TT 2','score' => '7','score_adv' => '13','commentaire' => ''),
+          array('id' => '173','equipe' => '7','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'POIX USTT 2','score' => '16','score_adv' => '4','commentaire' => ''),
+          array('id' => '174','equipe' => '8','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'BOUZINCOURT PPC 1','score' => '9','score_adv' => '9','commentaire' => 'imanche 29 janvier, 
 
         Rendez-vous à la salle à 8h30 où nous jouons à domicile contre une équipe forte sur le papier : Bouzincourt (13-11-11-11) !
         Mais dans la réalité, l\'équipe se compose de trois 11 et un 9, ce qu\'on a fini par savoir à 9h20, après qu\'ils ont rempli la feuille de match... On lance donc les matchs sans oublier qu\'aujourd\'hui la rencontre est importante car si elle se solde par une victoire, nous avons toutes les chances de monter !
@@ -4511,8 +4818,8 @@ class DumpController extends FrontController {
         Ps: Merci à Geoffroy pour son coaching et espérons que Beauval soit plus sympathique que Bouzincourt !
 
         Jeoffrey Stephan'),
-        array('id' => '175','equipe' => '9','journee' => '9','date' => '1327795200','lieu' => 'Boves','adversaire' => 'BOVES ASTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '176','equipe' => '10','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'BEAUVALOIS TT 2','score' => '7','score_adv' => '11','commentaire' => 'L\'équipe perd 11/07 contre Beauvalois TT.
+          array('id' => '175','equipe' => '9','journee' => '9','date' => '1327795200','lieu' => 'Boves','adversaire' => 'BOVES ASTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '176','equipe' => '10','journee' => '9','date' => '1327795200','lieu' => 'Amiens','adversaire' => 'BEAUVALOIS TT 2','score' => '7','score_adv' => '11','commentaire' => 'L\'équipe perd 11/07 contre Beauvalois TT.
 
         Dans le détail :
         - Goupil gagne un 715 et un 685. 
@@ -4520,7 +4827,7 @@ class DumpController extends FrontController {
         - Tran gagne un 706.
 
         Alexandre Goupil'),
-        array('id' => '177','equipe' => '11','journee' => '9','date' => '1327795200','lieu' => 'Muille-Villette','adversaire' => 'MUILLOIS PPC 3','score' => '18','score_adv' => '0','commentaire' => 'Nous nous rendons à Muille-villette, nous avons eu quelques difficultés à trouver la salle, mais nous y sommes parvenus tout de même. Après quelques balles d\'échauffement, nous découvrons que leur équipe a été en fait totalement chamboulée, plusieurs absents ayant été remplacés dans leurs équipes, nous découvrons une équipe telle qu\'est la suivante :
+          array('id' => '177','equipe' => '11','journee' => '9','date' => '1327795200','lieu' => 'Muille-Villette','adversaire' => 'MUILLOIS PPC 3','score' => '18','score_adv' => '0','commentaire' => 'Nous nous rendons à Muille-villette, nous avons eu quelques difficultés à trouver la salle, mais nous y sommes parvenus tout de même. Après quelques balles d\'échauffement, nous découvrons que leur équipe a été en fait totalement chamboulée, plusieurs absents ayant été remplacés dans leurs équipes, nous découvrons une équipe telle qu\'est la suivante :
 
         Muillois PPC 3 :
         GUERIN Christian 558 pts
@@ -4538,8 +4845,8 @@ class DumpController extends FrontController {
         L\'équipe adverse n\'avait manifestement pas pu aligner une équipe à la hauteur de la D3 cela étant du en remplacements de certains de ses joueurs.
 
         Hugo BOUTEILLER'),
-        array('id' => '178','equipe' => '12','journee' => '9','date' => '1327622400','lieu' => 'Amiens','adversaire' => 'TT ST FUSCIEN 2','score' => '13','score_adv' => '5','commentaire' => ''),
-        array('id' => '179','equipe' => '13','journee' => '9','date' => '1327708800','lieu' => 'Deauville','adversaire' => 'AG DEAUVILLAISE 1','score' => '10','score_adv' => '5','commentaire' => 'Dam Dam Déo OOO
+          array('id' => '178','equipe' => '12','journee' => '9','date' => '1327622400','lieu' => 'Amiens','adversaire' => 'TT ST FUSCIEN 2','score' => '13','score_adv' => '5','commentaire' => ''),
+          array('id' => '179','equipe' => '13','journee' => '9','date' => '1327708800','lieu' => 'Deauville','adversaire' => 'AG DEAUVILLAISE 1','score' => '10','score_adv' => '5','commentaire' => 'Dam Dam Déo OOO
         Dam Dam Déo OOOO !!!!
 
         En ce samedi 28 janvier, nous vous invitons aux DEAUVILLE-AMIENS PLAYERS AWARDS.
@@ -4583,7 +4890,7 @@ class DumpController extends FrontController {
         Caroline, Julia : la vengeance est un plat qui se mange froid...
 
         Hélène CARLIE'),
-        array('id' => '180','equipe' => '14','journee' => '9','date' => '1327708800','lieu' => 'Equeur','adversaire' => 'ENT EQUEUR / LA GLACERIE 1','score' => '6','score_adv' => '10','commentaire' => 'Samedi 28 janvier : long déplacement pour les filles ce samedi... direction Cherbourg. 
+          array('id' => '180','equipe' => '14','journee' => '9','date' => '1327708800','lieu' => 'Equeur','adversaire' => 'ENT EQUEUR / LA GLACERIE 1','score' => '6','score_adv' => '10','commentaire' => 'Samedi 28 janvier : long déplacement pour les filles ce samedi... direction Cherbourg. 
         Match important pour mes anciennes partenaires d\'équipe ; elles espèrent une victoire car c\'est l\'une des équipes les plus faible de la poule.
 
         Compositions des équipes :
@@ -4613,10 +4920,10 @@ class DumpController extends FrontController {
         Sinon, vous vous êtes bien réconfortées avec un bon petit mac do et les fameux menus maxi best off Mc Cloporte !!!!
 
         Hélène CARLIE.'),
-        array('id' => '181','equipe' => '15','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'ROYE PPC 1','score' => '11','score_adv' => '7','commentaire' => ''),
-        array('id' => '182','equipe' => '16','journee' => '9','date' => '1327708800','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '183','equipe' => '17','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 1','score' => '12','score_adv' => '6','commentaire' => ''),
-        array('id' => '184','equipe' => '13','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'EVREUX EC 1','score' => '9','score_adv' => '9','commentaire' => 'Ce match s\'annonçait très serré entre les deux équipes et le résultat final en est la preuve : match nul.
+          array('id' => '181','equipe' => '15','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'ROYE PPC 1','score' => '11','score_adv' => '7','commentaire' => ''),
+          array('id' => '182','equipe' => '16','journee' => '9','date' => '1327708800','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '183','equipe' => '17','journee' => '9','date' => '1327708800','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 1','score' => '12','score_adv' => '6','commentaire' => ''),
+          array('id' => '184','equipe' => '13','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'EVREUX EC 1','score' => '9','score_adv' => '9','commentaire' => 'Ce match s\'annonçait très serré entre les deux équipes et le résultat final en est la preuve : match nul.
 
         Beaucoup de changements pour cette journée : changement de territoire, changement de chaussures, changement de plaques, changement de nourriture... Certains d\'entre eux fonctionnent mieux que d\'autres !
 
@@ -4650,7 +4957,7 @@ class DumpController extends FrontController {
         Belle rencontre, haletante jusqu\'au bout. Nous menions 5-2 puis 7-4 et encore 9-7 avant que les adversaires reviennent à 9-9.
 
         Hélène CARLIE'),
-        array('id' => '185','equipe' => '14','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'TS BOLBEC 1','score' => '2','score_adv' => '10','commentaire' => 'Pour cette 10ème journée, les filles ont accueilli l\'équipe de Bolbec.
+          array('id' => '185','equipe' => '14','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'TS BOLBEC 1','score' => '2','score_adv' => '10','commentaire' => 'Pour cette 10ème journée, les filles ont accueilli l\'équipe de Bolbec.
 
         15h30 : Monsieur GACQUER annonçait : "une équipe de filles va jouer dans la salle du bas". La pré nat se sacrifiera pour nous laisser la place en haut. Merci les filles.
 
@@ -4678,10 +4985,10 @@ class DumpController extends FrontController {
         Le maintien s\'éloigne encore un petit peu !
 
         Hélène CARLIE'),
-        array('id' => '186','equipe' => '15','journee' => '10','date' => '1328918400','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '201','equipe' => '17','journee' => '10','date' => '1328918400','lieu' => 'Eppeville','adversaire' => 'EPPEVILLE TT 2','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '200','equipe' => '16','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 1','score' => '5','score_adv' => '13','commentaire' => ''),
-        array('id' => '189','equipe' => '1','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'MONACO AS 1','score' => '9','score_adv' => '11','commentaire' => 'Comme un ouragan...
+          array('id' => '186','equipe' => '15','journee' => '10','date' => '1328918400','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '201','equipe' => '17','journee' => '10','date' => '1328918400','lieu' => 'Eppeville','adversaire' => 'EPPEVILLE TT 2','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '200','equipe' => '16','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 1','score' => '5','score_adv' => '13','commentaire' => ''),
+          array('id' => '189','equipe' => '1','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'MONACO AS 1','score' => '9','score_adv' => '11','commentaire' => 'Comme un ouragan...
 
         Arrivée à 14H50 à la salle pour Alex et première surprise de la journée… la salle était déjà montée et Denis en tenue. Nous remercions donc Denis, Raphaël et Christophe pour nous avoir mâché le travail (j’espère n’avoir oublié personne). Lors de cette rencontre « du milieu » (seconde surprise de la journée) nous avons eu à faire à une team Monégasque hyper motivée (en même temps, traverser toute la France et ne pas l’être…on n’aurait pas compris !!!).
 
@@ -4731,7 +5038,7 @@ class DumpController extends FrontController {
         ‘Now’ plus le droit à l’erreur si nous voulons vraiment monter !!!
 
         Alexandre HAIGNERE et Yohan LECOMTE'),
-        array('id' => '190','equipe' => '2','journee' => '10','date' => '1328918400','lieu' => 'Draveil','adversaire' => 'DRAVEIL SC TT 1','score' => '9','score_adv' => '11','commentaire' => 'Draveil - Amiens : Ici c\'est Paris !
+          array('id' => '190','equipe' => '2','journee' => '10','date' => '1328918400','lieu' => 'Draveil','adversaire' => 'DRAVEIL SC TT 1','score' => '9','score_adv' => '11','commentaire' => 'Draveil - Amiens : Ici c\'est Paris !
 
         En aparté, je tiens à signaler que je ne suis pas en retard. Ils ont reporté le France-Irlande pour cause de froid. Je me suis donc permis de reporté mon résumé pour cause de flemme.
 
@@ -4817,8 +5124,8 @@ class DumpController extends FrontController {
         Double perdu à l\'arraché à la belle par Raph\' et Max.
 
         Vincent'),
-        array('id' => '191','equipe' => '3','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'ST QUENTIN TT 2','score' => '3','score_adv' => '17','commentaire' => ''),
-        array('id' => '192','equipe' => '4','journee' => '10','date' => '1328918400','lieu' => 'Saint-Quentin','adversaire' => 'ST QUENTIN TT 3','score' => '8','score_adv' => '12','commentaire' => 'ASTT4 s’incline 12/8 à Saint Quentin : une défaite 12/8 qui laisse beaucoup de regrets. 
+          array('id' => '191','equipe' => '3','journee' => '10','date' => '1328918400','lieu' => 'Amiens','adversaire' => 'ST QUENTIN TT 2','score' => '3','score_adv' => '17','commentaire' => ''),
+          array('id' => '192','equipe' => '4','journee' => '10','date' => '1328918400','lieu' => 'Saint-Quentin','adversaire' => 'ST QUENTIN TT 3','score' => '8','score_adv' => '12','commentaire' => 'ASTT4 s’incline 12/8 à Saint Quentin : une défaite 12/8 qui laisse beaucoup de regrets. 
 
         Amiens :
         Louis Vandewoestyne 14
@@ -4853,10 +5160,10 @@ class DumpController extends FrontController {
         Le maintien est encore possible mais cela sera difficile.
 
         Bertrand Bathelot'),
-        array('id' => '193','equipe' => '5','journee' => '10','date' => '1329004800','lieu' => 'Longueil Ste Marie','adversaire' => 'LONGUEILLOIS TT 2','score' => '5','score_adv' => '15','commentaire' => ''),
-        array('id' => '194','equipe' => '6','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 2','score' => '11','score_adv' => '9','commentaire' => ''),
-        array('id' => '195','equipe' => '7','journee' => '10','date' => '1329004800','lieu' => 'Saint-Fuscien','adversaire' => 'TT ST FUSCIEN 1','score' => '7','score_adv' => '13','commentaire' => ''),
-        array('id' => '196','equipe' => '8','journee' => '10','date' => '1329004800','lieu' => 'Beauval','adversaire' => 'BEAUVALOIS TT 1','score' => '6','score_adv' => '12','commentaire' => 'Dimanche 12 février,
+          array('id' => '193','equipe' => '5','journee' => '10','date' => '1329004800','lieu' => 'Longueil Ste Marie','adversaire' => 'LONGUEILLOIS TT 2','score' => '5','score_adv' => '15','commentaire' => ''),
+          array('id' => '194','equipe' => '6','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'VILLERS-BRETONNEUX PPC 2','score' => '11','score_adv' => '9','commentaire' => ''),
+          array('id' => '195','equipe' => '7','journee' => '10','date' => '1329004800','lieu' => 'Saint-Fuscien','adversaire' => 'TT ST FUSCIEN 1','score' => '7','score_adv' => '13','commentaire' => ''),
+          array('id' => '196','equipe' => '8','journee' => '10','date' => '1329004800','lieu' => 'Beauval','adversaire' => 'BEAUVALOIS TT 1','score' => '6','score_adv' => '12','commentaire' => 'Dimanche 12 février,
 
         Pour cette 3ème journée de la seconde phase, le rendez-vous était fixé à 8h00 à la salle pour jouer à Beauval à 30km. Après notre victoire contre St-Valery et le nul contre Bouzincourt, nous étions motivés pour jouer contre Beauval malgré les -12° affichés au compteur de la voiture de Paul (son père nous a conduit aujourd\'hui). Après avoir passé 35 minutes au chaud dans la voiture, nous avons trouvé la salle rapidement et affronté le froid sibérien ! Les adversaires étaient déjà là, à l\'échauffement dans le gymnase. 
         Je note la feuille de match en faisant jouer Benoît en 1er, Floris en 2ème, Paul en 3ème et moi en 4è...
@@ -4888,7 +5195,7 @@ class DumpController extends FrontController {
         Bon ben voilà.... On repart tous très déçus après cette rencontre, on s\'attendait à une victoire, même assez large avec nos bons résultats sur les 2 dernières rencontres, mais cette défaite ne nous permet plus de jouer la montée, on se contentera du maintien et l\'équipe tournera très certainement...
 
         Jeoffrey Stéphan'),
-        array('id' => '197','equipe' => '10','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 7','score' => '14','score_adv' => '4','commentaire' => 'Notre équipe de D3 (10) s\'impose 14/04 face à Abbeville.
+          array('id' => '197','equipe' => '10','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'ABBEVILLE AC 7','score' => '14','score_adv' => '4','commentaire' => 'Notre équipe de D3 (10) s\'impose 14/04 face à Abbeville.
 
         Dans le détail : 
 
@@ -4901,7 +5208,7 @@ class DumpController extends FrontController {
 
         Alexandre Goupil
         '),
-        array('id' => '198','equipe' => '11','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 4','score' => '12','score_adv' => '6','commentaire' => 'Nous disputons ce match à domicile, nous découvrons la composition de l\'équipe adverse :
+          array('id' => '198','equipe' => '11','journee' => '10','date' => '1329004800','lieu' => 'Amiens','adversaire' => 'EPPEVILLE TT 4','score' => '12','score_adv' => '6','commentaire' => 'Nous disputons ce match à domicile, nous découvrons la composition de l\'équipe adverse :
 
         Eppeville TT 4 :
         GATIEN Baptiste 646 pts
@@ -4946,9 +5253,9 @@ class DumpController extends FrontController {
         Bravo à l\'équipe.
 
         Hugo BOUTEILLER'),
-        array('id' => '199','equipe' => '12','journee' => '10','date' => '1328832000','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '202','equipe' => '9','journee' => '10','date' => '1329004800','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 3','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '203','equipe' => '1','journee' => '11','date' => '1330732800','lieu' => 'Pays Courvillois','adversaire' => 'PAYS COURVILLOIS 1','score' => '11','score_adv' => '5','commentaire' => 'Une rencontre pépère…
+          array('id' => '199','equipe' => '12','journee' => '10','date' => '1328832000','lieu' => '/','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '202','equipe' => '9','journee' => '10','date' => '1329004800','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 3','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '203','equipe' => '1','journee' => '11','date' => '1330732800','lieu' => 'Pays Courvillois','adversaire' => 'PAYS COURVILLOIS 1','score' => '11','score_adv' => '5','commentaire' => 'Une rencontre pépère…
 
         Après notre dernière défaite 11/9 contre Monaco à domicile, la team avait à cœur de rectifier le tir et ainsi retrouver le chemin de la victoire.
 
@@ -5001,7 +5308,7 @@ class DumpController extends FrontController {
         Un bon petit repas avec l’équipe adverse pour seulement 10 euros !! (on fait même gagner de l’argent au club, T’EN VEUX toi).
 
         Yohan LECOMTE'),
-        array('id' => '204','equipe' => '2','journee' => '11','date' => '1330732800','lieu' => 'Amiens','adversaire' => 'JOUE LES TOURS TT 1','score' => '9','score_adv' => '11','commentaire' => 'Amiens - Joué les Tours, ça vaut le détour !
+          array('id' => '204','equipe' => '2','journee' => '11','date' => '1330732800','lieu' => 'Amiens','adversaire' => 'JOUE LES TOURS TT 1','score' => '9','score_adv' => '11','commentaire' => 'Amiens - Joué les Tours, ça vaut le détour !
 
         Pour cette 11ème journée, Amiens recevait Joué les Tours, sympathique premier de la poule.
         Ca sentait la branlée à plein nez.
@@ -5085,7 +5392,7 @@ class DumpController extends FrontController {
         Pour éviter la R1 !
 
         Vincent Rasselet'),
-        array('id' => '205','equipe' => '3','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'COUDUN SL 1','score' => '10','score_adv' => '10','commentaire' => 'Tiens, voilà du Coudun
+          array('id' => '205','equipe' => '3','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'COUDUN SL 1','score' => '10','score_adv' => '10','commentaire' => 'Tiens, voilà du Coudun
 
         Pour cette quatrième rencontre de la seconde phase, match incontournable pour espérer un éventuel maintien, Antoine HUON, 13 ans, s’était laissé pousser la barbe. Il portait le képi blanc, et avait enfilé ses rangers. Les regards qui se croisent. C’est toujours les mêmes gestes. D’abord la jambe gauche, toujours. Les chaussettes, les chaussures. Puis la jambe droite, toujours: http://www.youtube.com/watch?v=srk5xQ4Ny1k.
 
@@ -5152,7 +5459,7 @@ class DumpController extends FrontController {
         Bruno et Pierre perdent Julien et Guillaume (-6,-10,-9).
 
         Denis CHATELAIN'),
-        array('id' => '206','equipe' => '4','journee' => '11','date' => '1329523200','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 1','score' => '13','score_adv' => '7','commentaire' => 'Une victoire contre Montdidier qui nous laisse en course pour le maintien.
+          array('id' => '206','equipe' => '4','journee' => '11','date' => '1329523200','lieu' => 'Montdidier','adversaire' => 'MONTDIDIER PPC 1','score' => '13','score_adv' => '7','commentaire' => 'Une victoire contre Montdidier qui nous laisse en course pour le maintien.
 
         Amiens STT
         En A
@@ -5193,10 +5500,10 @@ class DumpController extends FrontController {
         Une victoire qui nous laisse espérer pour le maintien mais qui ne suffira probablement pas, il faudra aller en chercher une autre.
 
         Bertrand Bathelot'),
-        array('id' => '207','equipe' => '5','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 1','score' => '6','score_adv' => '14','commentaire' => ''),
-        array('id' => '208','equipe' => '6','journee' => '11','date' => '1329609600','lieu' => 'Vauchelles','adversaire' => 'VAUCHELLES ASV 1','score' => '10','score_adv' => '10','commentaire' => ''),
-        array('id' => '209','equipe' => '7','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'CANCHY ASC 1','score' => '13','score_adv' => '7','commentaire' => ''),
-        array('id' => '210','equipe' => '8','journee' => '11','date' => '1329609600','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '9','score_adv' => '9','commentaire' => 'Dimanche 19 février,
+          array('id' => '207','equipe' => '5','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'LONGUEAU ESC 1','score' => '6','score_adv' => '14','commentaire' => ''),
+          array('id' => '208','equipe' => '6','journee' => '11','date' => '1329609600','lieu' => 'Vauchelles','adversaire' => 'VAUCHELLES ASV 1','score' => '10','score_adv' => '10','commentaire' => ''),
+          array('id' => '209','equipe' => '7','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'CANCHY ASC 1','score' => '13','score_adv' => '7','commentaire' => ''),
+          array('id' => '210','equipe' => '8','journee' => '11','date' => '1329609600','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 1','score' => '9','score_adv' => '9','commentaire' => 'Dimanche 19 février,
 
         Aujourd\'hui pour cette 5ème journée on jouait contre Dreuil à Dreuil. Le rendez-vous était fixé à 8h20 à la salle et après 10 minutes de route on était déjà dans le gymnase... Ils ont installé les tables et on a commencé après avoir rempli la feuille de match...
 
@@ -5222,8 +5529,8 @@ class DumpController extends FrontController {
         Comme d\'habitude on commence bien et on termine mal, mais il nous faudra une victoire supplémentaire pour nous maintenir à coup sûr.
 
         Jeoffrey Stephan'),
-        array('id' => '211','equipe' => '9','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 5','score' => '7','score_adv' => '11','commentaire' => ''),
-        array('id' => '212','equipe' => '10','journee' => '11','date' => '1329609600','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 7','score' => '10','score_adv' => '8','commentaire' => 'Victoire de l\'équipe 10, 10-08 contre Flixecourt.
+          array('id' => '211','equipe' => '9','journee' => '11','date' => '1329609600','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 5','score' => '7','score_adv' => '11','commentaire' => ''),
+          array('id' => '212','equipe' => '10','journee' => '11','date' => '1329609600','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 7','score' => '10','score_adv' => '8','commentaire' => 'Victoire de l\'équipe 10, 10-08 contre Flixecourt.
 
         Dans le détail :
         - Goupil : 2 + double, bat un 719 et un 534.
@@ -5234,7 +5541,7 @@ class DumpController extends FrontController {
         Greg et moi invaincus en double ... à signaler ! ;).
 
         Alexandre Goupil'),
-        array('id' => '213','equipe' => '11','journee' => '11','date' => '1329609600','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 3','score' => '17','score_adv' => '1','commentaire' => 'La rencontre devait normalement se dérouler à pierrepont mais les salles étaient toutes prises donc le match s\'est déroulé en réalité a Amiens.
+          array('id' => '213','equipe' => '11','journee' => '11','date' => '1329609600','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 3','score' => '17','score_adv' => '1','commentaire' => 'La rencontre devait normalement se dérouler à pierrepont mais les salles étaient toutes prises donc le match s\'est déroulé en réalité a Amiens.
 
         De plus, Enguerrand ne pouvant pas jouer, nous avons fait appel à Christophe PENDANT (1083) pour le remplacer.
 
@@ -5281,8 +5588,8 @@ class DumpController extends FrontController {
         Score global très satisfaisant 17-1 grâce à Christophe merci à lui pour sa disponibilité !
 
         Hugo BOUTEILLER'),
-        array('id' => '214','equipe' => '12','journee' => '11','date' => '1329436800','lieu' => 'Amiens','adversaire' => 'MUNICIPAUX AMIENS 1','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '215','equipe' => '13','journee' => '11','date' => '1330732800','lieu' => 'Seclin','adversaire' => 'SECLIN PPP 2','score' => '10','score_adv' => '4','commentaire' => 'Pour cette rencontre, notre équipe était incomplète. Notre petite Julia était partie au ski (pas de chute ! Juste une belle marque de lunettes !). Elle a donc été remplacée par Sophie TRAN.
+          array('id' => '214','equipe' => '12','journee' => '11','date' => '1329436800','lieu' => 'Amiens','adversaire' => 'MUNICIPAUX AMIENS 1','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '215','equipe' => '13','journee' => '11','date' => '1330732800','lieu' => 'Seclin','adversaire' => 'SECLIN PPP 2','score' => '10','score_adv' => '4','commentaire' => 'Pour cette rencontre, notre équipe était incomplète. Notre petite Julia était partie au ski (pas de chute ! Juste une belle marque de lunettes !). Elle a donc été remplacée par Sophie TRAN.
         Départ pour Seclin 13h30
         - première étape : rue Gauthier de Rumilly pour prendre Sophie ;
         - deuxième étape : gare d\'Amiens où Charline nous attendait ;
@@ -5307,11 +5614,11 @@ class DumpController extends FrontController {
         Victoire 10-4 ! Maintien assuré !
 
         Hélène CARLIE'),
-        array('id' => '216','equipe' => '14','journee' => '11','date' => '1330732800','lieu' => 'Alençon','adversaire' => 'ET ALENCON 1','score' => '5','score_adv' => '10','commentaire' => ''),
-        array('id' => '217','equipe' => '15','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'TT MERS TREPORT EU 1','score' => '17','score_adv' => '1','commentaire' => ''),
-        array('id' => '218','equipe' => '16','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '219','equipe' => '17','journee' => '11','date' => '1329523200','lieu' => 'Muille-Villette','adversaire' => 'MUILLOIS PPC 2','score' => '15','score_adv' => '3','commentaire' => ''),
-        array('id' => '220','equipe' => '1','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'GOUVIEUX LAMORLAYE SOTT 1','score' => '11','score_adv' => '6','commentaire' => 'Aujourd’hui, c’est derby ! Pour le compte de la 12ème journée nous accueillons donc une équipe très compétitive de l’Oise avec le retour d’un de ces leadeurs, Arnaud AUGER. Après l’échauffement, grosse réunion au sein de la team pour savoir qui va en A et qui va en B. 
+          array('id' => '216','equipe' => '14','journee' => '11','date' => '1330732800','lieu' => 'Alençon','adversaire' => 'ET ALENCON 1','score' => '5','score_adv' => '10','commentaire' => ''),
+          array('id' => '217','equipe' => '15','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'TT MERS TREPORT EU 1','score' => '17','score_adv' => '1','commentaire' => ''),
+          array('id' => '218','equipe' => '16','journee' => '11','date' => '1329523200','lieu' => 'Amiens','adversaire' => 'FOURDRINOY-CAVILLON 1','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '219','equipe' => '17','journee' => '11','date' => '1329523200','lieu' => 'Muille-Villette','adversaire' => 'MUILLOIS PPC 2','score' => '15','score_adv' => '3','commentaire' => ''),
+          array('id' => '220','equipe' => '1','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'GOUVIEUX LAMORLAYE SOTT 1','score' => '11','score_adv' => '6','commentaire' => 'Aujourd’hui, c’est derby ! Pour le compte de la 12ème journée nous accueillons donc une équipe très compétitive de l’Oise avec le retour d’un de ces leadeurs, Arnaud AUGER. Après l’échauffement, grosse réunion au sein de la team pour savoir qui va en A et qui va en B. 
         Capitaine Yannick trancha !
         Ce sera les trois fantastiques en A et les trois fantaisistes en B. 
 
@@ -5349,7 +5656,7 @@ class DumpController extends FrontController {
         Ainsi que son fameux kock au 20 que nous attendons toujours d’ailleurs !!
 
         Alexandre HAIGNERE'),
-        array('id' => '221','equipe' => '2','journee' => '12','date' => '1331942400','lieu' => 'Saint-Julien','adversaire' => 'SAINT JULIEN TT 1','score' => '5','score_adv' => '11','commentaire' => 'St-Julien - Amiens : un coup pour rien !
+          array('id' => '221','equipe' => '2','journee' => '12','date' => '1331942400','lieu' => 'Saint-Julien','adversaire' => 'SAINT JULIEN TT 1','score' => '5','score_adv' => '11','commentaire' => 'St-Julien - Amiens : un coup pour rien !
 
         En ce samedi matin 8h45 devant l\'ASTT, on s\'était dit rendez-vous à St-Julien, pour le maintien.
         Une victoire et on les plaçait derrière nous a coup sur.
@@ -5410,8 +5717,8 @@ class DumpController extends FrontController {
         On a besoin de vous !
 
         Vincent Rasselet'),
-        array('id' => '222','equipe' => '3','journee' => '12','date' => '1331942400','lieu' => 'Compiègne','adversaire' => 'COMPIEGNE TT 1','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '223','equipe' => '4','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'SOISSONS ASPTT 1','score' => '12','score_adv' => '8','commentaire' => 'Une victoire 12/8 qui est une très bonne opération mais qui ne suffit probablement pas pour assurer le maintien.
+          array('id' => '222','equipe' => '3','journee' => '12','date' => '1331942400','lieu' => 'Compiègne','adversaire' => 'COMPIEGNE TT 1','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '223','equipe' => '4','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'SOISSONS ASPTT 1','score' => '12','score_adv' => '8','commentaire' => 'Une victoire 12/8 qui est une très bonne opération mais qui ne suffit probablement pas pour assurer le maintien.
 
         Amiens
 
@@ -5445,10 +5752,10 @@ class DumpController extends FrontController {
         Prochain match contre Moreuil qui s’annonce difficile, objectif aller chercher le point du match nul qui assurerait probablement le maintien.
 
         Bertrand Bathelot'),
-        array('id' => '224','equipe' => '5','journee' => '12','date' => '1332028800','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 1','score' => '2','score_adv' => '18','commentaire' => ''),
-        array('id' => '225','equipe' => '6','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'PINON-ANIZY TT 1','score' => '15','score_adv' => '4','commentaire' => ''),
-        array('id' => '226','equipe' => '7','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'LL AMIENS 2','score' => '13','score_adv' => '7','commentaire' => ''),
-        array('id' => '227','equipe' => '8','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 4','score' => '14','score_adv' => '4','commentaire' => 'Dimanche 18 mars,
+          array('id' => '224','equipe' => '5','journee' => '12','date' => '1332028800','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 1','score' => '2','score_adv' => '18','commentaire' => ''),
+          array('id' => '225','equipe' => '6','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'PINON-ANIZY TT 1','score' => '15','score_adv' => '4','commentaire' => ''),
+          array('id' => '226','equipe' => '7','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'LL AMIENS 2','score' => '13','score_adv' => '7','commentaire' => ''),
+          array('id' => '227','equipe' => '8','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'MOREUIL PPC 4','score' => '14','score_adv' => '4','commentaire' => 'Dimanche 18 mars,
         Aujourd\'hui on jouait à la salle contre une équipe de notre niveau : Moreuil. Comme à notre habitude tout le monde était là à l\'avance ; nous étions donc fin prêts pour attaquer la journée et l\'emporter si possible !
         Petit changement aujourd\'hui, Benoît et moi avons inversé nos places par rapport à notre dernière rencontre contre Dreuil qui s\'est terminé par un nul...
         En premier Jeoffrey, Floris en 2e, Paul en 3e et Benoît en dernier.
@@ -5473,15 +5780,15 @@ class DumpController extends FrontController {
         Une victoire 14-4 au final contre une équipe de Moreuil un peu en-dessous de notre niveau mais pourtant très sympathique ! Une 2e victoire qui nous amène à la 3e place de la poule synonyme de maintient. On ne peut ni monter ni descendre donc les prochaines journées se feront sans pression !
 
         Jeoffrey Stéphan'),
-        array('id' => '228','equipe' => '9','journee' => '12','date' => '1332028800','lieu' => 'Vauchelles','adversaire' => 'VAUCHELLES ASV 3','score' => '11','score_adv' => '7','commentaire' => ''),
-        array('id' => '229','equipe' => '10','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'ASTT ST VALERY 3','score' => '14','score_adv' => '4','commentaire' => 'Victoire de l\'equipe 10 (D3) contre St Valéry 14-04 !
+          array('id' => '228','equipe' => '9','journee' => '12','date' => '1332028800','lieu' => 'Vauchelles','adversaire' => 'VAUCHELLES ASV 3','score' => '11','score_adv' => '7','commentaire' => ''),
+          array('id' => '229','equipe' => '10','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'ASTT ST VALERY 3','score' => '14','score_adv' => '4','commentaire' => 'Victoire de l\'equipe 10 (D3) contre St Valéry 14-04 !
 
         Un sans faute de Erwan , Greg et Alex, les invaincus du jour !
 
         Alexandre Goupil'),
-        array('id' => '230','equipe' => '11','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'LL AMIENS 5','score' => '12','score_adv' => '6','commentaire' => ''),
-        array('id' => '231','equipe' => '12','journee' => '12','date' => '1331856000','lieu' => 'Amiens','adversaire' => 'BEAUVALOIS TT 3','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '232','equipe' => '13','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'ROUBAIX AP 1','score' => '10','score_adv' => '7','commentaire' => 'Samedi 17 mars : le retour fracassant de Julia !
+          array('id' => '230','equipe' => '11','journee' => '12','date' => '1332028800','lieu' => 'Amiens','adversaire' => 'LL AMIENS 5','score' => '12','score_adv' => '6','commentaire' => ''),
+          array('id' => '231','equipe' => '12','journee' => '12','date' => '1331856000','lieu' => 'Amiens','adversaire' => 'BEAUVALOIS TT 3','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '232','equipe' => '13','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'ROUBAIX AP 1','score' => '10','score_adv' => '7','commentaire' => 'Samedi 17 mars : le retour fracassant de Julia !
 
         Cette journée était capitale pour nous pour la course à la montée. Nous recevions l’équipe de Roubaix qui se positionnée juste derrière nous à un point au classement général.
 
@@ -5511,11 +5818,11 @@ class DumpController extends FrontController {
         Je vous donne rendez-vous le 31 mars salle Labaume pour le match de la montée face à St Pierre !
 
         Hélène Carlié'),
-        array('id' => '233','equipe' => '14','journee' => '12','date' => '1331856000','lieu' => 'Amiens','adversaire' => 'VILLERS ST PAUL 1','score' => '10','score_adv' => '0','commentaire' => ''),
-        array('id' => '234','equipe' => '15','journee' => '12','date' => '1331942400','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 1','score' => '13','score_adv' => '5','commentaire' => ''),
-        array('id' => '235','equipe' => '16','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '236','equipe' => '17','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '237','equipe' => '1','journee' => '13','date' => '1333148400','lieu' => 'Schiltigheim','adversaire' => 'SCHILTIGHEIM TT 2','score' => '11','score_adv' => '7','commentaire' => 'A l’Est........
+          array('id' => '233','equipe' => '14','journee' => '12','date' => '1331856000','lieu' => 'Amiens','adversaire' => 'VILLERS ST PAUL 1','score' => '10','score_adv' => '0','commentaire' => ''),
+          array('id' => '234','equipe' => '15','journee' => '12','date' => '1331942400','lieu' => 'Friville','adversaire' => 'TT FRIVILLE 1','score' => '13','score_adv' => '5','commentaire' => ''),
+          array('id' => '235','equipe' => '16','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'DOULLENS / BERNAVILLE 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '236','equipe' => '17','journee' => '12','date' => '1331942400','lieu' => 'Amiens','adversaire' => 'Exempt','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '237','equipe' => '1','journee' => '13','date' => '1333148400','lieu' => 'Schiltigheim','adversaire' => 'SCHILTIGHEIM TT 2','score' => '11','score_adv' => '7','commentaire' => 'A l’Est........
 
         Avant-dernière journée du championnat pour cette année 2011/2012, et déplacement en banlieue strasbourgeoise, plus exactement à Schiltigheim (à vos souhaits !).
 
@@ -5578,11 +5885,11 @@ class DumpController extends FrontController {
         Rendez-vous la prochaine fois pour la dernière journée de championnat de cette année 2011/2012 à domicile, afin d’accéder à la Nationale 2.
 
         Yohan LECOMTE'),
-        array('id' => '238','equipe' => '2','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => '7 ILES PERROS 1','score' => '11','score_adv' => '4','commentaire' => ''),
-        array('id' => '239','equipe' => '3','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'VILLERS - BRETONNEUX PPC 1','score' => '1','score_adv' => '19','commentaire' => ''),
-        array('id' => '240','equipe' => '4','journee' => '13','date' => '1333148400','lieu' => 'Moreuil','adversaire' => 'MOREUIL PPC 1','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '241','equipe' => '5','journee' => '13','date' => '1333234800','lieu' => 'Amiens','adversaire' => 'SERIFONTAINE TT 1','score' => '14','score_adv' => '6','commentaire' => ''),
-        array('id' => '242','equipe' => '6','journee' => '13','date' => '1333234800','lieu' => 'Vénizel','adversaire' => 'VENIZEL TT 3','score' => '6','score_adv' => '14','commentaire' => 'Non vous ne rêvez pas, ceci est bien un résumé de match de R3. Bon je suis capitaine de d1 mais pour la R3, je peux bien faire un résumé. Pour ce match, nous nous déplaçions à Venizel dans la voiture à Yoann. Six dans la C4 picasso ça passe large même si ceux qui sont montés à l\'arrière à coté des sacs l\'ont paye CASH (on en reparlera). Après un départ du géant glisy à 11h45, nous arrivâmes à Venizel avec un bon  3/4 d\'heure d\'avance (hein Alex ?). Dans la voiture, on s\'était dis : "si on fait 5/5 en A et en B c\'est jouable !"mais tout ne se passa  pas comme prévu.
+          array('id' => '238','equipe' => '2','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => '7 ILES PERROS 1','score' => '11','score_adv' => '4','commentaire' => ''),
+          array('id' => '239','equipe' => '3','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'VILLERS - BRETONNEUX PPC 1','score' => '1','score_adv' => '19','commentaire' => ''),
+          array('id' => '240','equipe' => '4','journee' => '13','date' => '1333148400','lieu' => 'Moreuil','adversaire' => 'MOREUIL PPC 1','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '241','equipe' => '5','journee' => '13','date' => '1333234800','lieu' => 'Amiens','adversaire' => 'SERIFONTAINE TT 1','score' => '14','score_adv' => '6','commentaire' => ''),
+          array('id' => '242','equipe' => '6','journee' => '13','date' => '1333234800','lieu' => 'Vénizel','adversaire' => 'VENIZEL TT 3','score' => '6','score_adv' => '14','commentaire' => 'Non vous ne rêvez pas, ceci est bien un résumé de match de R3. Bon je suis capitaine de d1 mais pour la R3, je peux bien faire un résumé. Pour ce match, nous nous déplaçions à Venizel dans la voiture à Yoann. Six dans la C4 picasso ça passe large même si ceux qui sont montés à l\'arrière à coté des sacs l\'ont paye CASH (on en reparlera). Après un départ du géant glisy à 11h45, nous arrivâmes à Venizel avec un bon  3/4 d\'heure d\'avance (hein Alex ?). Dans la voiture, on s\'était dis : "si on fait 5/5 en A et en B c\'est jouable !"mais tout ne se passa  pas comme prévu.
 
         Les compos d\'équipes :
 
@@ -5629,10 +5936,10 @@ class DumpController extends FrontController {
         ps : Si Marseille bat Paris la semaine prochaine vous aurez droit à une surprise pour le résumé dans 2 semaines !
 
         Matthieu Lamérant'),
-        array('id' => '243','equipe' => '7','journee' => '13','date' => '1333234800','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 4','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '244','equipe' => '8','journee' => '13','date' => '1333234800','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 4','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '245','equipe' => '9','journee' => '13','date' => '1333234800','lieu' => 'Amiens','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 5','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '246','equipe' => '10','journee' => '13','date' => '1333234800','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 3','score' => '17','score_adv' => '1','commentaire' => 'Victoire de l\'équipe 10 (D3) , 17-01 contre Dreuil TT.
+          array('id' => '243','equipe' => '7','journee' => '13','date' => '1333234800','lieu' => 'Flixecourt','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 4','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '244','equipe' => '8','journee' => '13','date' => '1333234800','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 4','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '245','equipe' => '9','journee' => '13','date' => '1333234800','lieu' => 'Amiens','adversaire' => 'VILLE LE MARCLET / FLIXECOURT 5','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '246','equipe' => '10','journee' => '13','date' => '1333234800','lieu' => 'Dreuil','adversaire' => 'DREUIL TT 3','score' => '17','score_adv' => '1','commentaire' => 'Victoire de l\'équipe 10 (D3) , 17-01 contre Dreuil TT.
 
         Dans le détail : 
 
@@ -5649,8 +5956,8 @@ class DumpController extends FrontController {
         Merci a eux deux d\'avoir accepté le remplacement ! Sympas.
 
         Alexandre Goupil'),
-        array('id' => '247','equipe' => '11','journee' => '13','date' => '1333234800','lieu' => 'Roye','adversaire' => 'ROYE PPC 8','score' => '18','score_adv' => '0','commentaire' => ''),
-        array('id' => '249','equipe' => '13','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'ENT ST PIERRE 2','score' => '7','score_adv' => '11','commentaire' => 'Hélène, tais-toi !!!
+          array('id' => '247','equipe' => '11','journee' => '13','date' => '1333234800','lieu' => 'Roye','adversaire' => 'ROYE PPC 8','score' => '18','score_adv' => '0','commentaire' => ''),
+          array('id' => '249','equipe' => '13','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'ENT ST PIERRE 2','score' => '7','score_adv' => '11','commentaire' => 'Hélène, tais-toi !!!
 
         En ce samedi 31 mars, nous recevions l’équipe de St Pierre. Match au combien important puisque l’équipe victorieuse s’assure de la montée en N2.
 
@@ -5677,12 +5984,12 @@ class DumpController extends FrontController {
         Défaite 10-7 !
 
         Hélène CARLIE'),
-        array('id' => '250','equipe' => '14','journee' => '13','date' => '1333148400','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 1','score' => '9','score_adv' => '9','commentaire' => ''),
-        array('id' => '251','equipe' => '15','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'LL AMIENS 1','score' => '14','score_adv' => '4','commentaire' => ''),
-        array('id' => '252','equipe' => '16','journee' => '13','date' => '1333148400','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 1','score' => '16','score_adv' => '2','commentaire' => ''),
-        array('id' => '253','equipe' => '17','journee' => '13','date' => '1333148400','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 3','score' => '15','score_adv' => '3','commentaire' => ''),
-        array('id' => '254','equipe' => '12','journee' => '13','date' => '1333062000','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 4','score' => '8','score_adv' => '10','commentaire' => ''),
-        array('id' => '255','equipe' => '1','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'LYS LILLE METROPOLE CP 1','score' => '11','score_adv' => '4','commentaire' => 'La dernière pour une première
+          array('id' => '250','equipe' => '14','journee' => '13','date' => '1333148400','lieu' => 'Beauvais','adversaire' => 'BEAUVAIS TT 1','score' => '9','score_adv' => '9','commentaire' => ''),
+          array('id' => '251','equipe' => '15','journee' => '13','date' => '1333148400','lieu' => 'Amiens','adversaire' => 'LL AMIENS 1','score' => '14','score_adv' => '4','commentaire' => ''),
+          array('id' => '252','equipe' => '16','journee' => '13','date' => '1333148400','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 1','score' => '16','score_adv' => '2','commentaire' => ''),
+          array('id' => '253','equipe' => '17','journee' => '13','date' => '1333148400','lieu' => 'Albert','adversaire' => 'ALBERT BRAY 3','score' => '15','score_adv' => '3','commentaire' => ''),
+          array('id' => '254','equipe' => '12','journee' => '13','date' => '1333062000','lieu' => 'Pierrepont','adversaire' => 'PIERREPONT USL 4','score' => '8','score_adv' => '10','commentaire' => ''),
+          array('id' => '255','equipe' => '1','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'LYS LILLE METROPOLE CP 1','score' => '11','score_adv' => '4','commentaire' => 'La dernière pour une première
 
         Amiens Sport Tennis de Table – CP Lys Lille Métropole : La dernière ! Euuuhhh…..non ( http://youtu.be/V9wBtPWBbeo  ) en fait, c’était l’avant dernière. Et oui, grâce à cette victoire 11/04 nous allons participer aux play-off : un truc trop frais. 
         15H10 : je fais mon arrivée à la salle en même temps que Yohan, semble -t-il … 
@@ -5726,7 +6033,7 @@ class DumpController extends FrontController {
         Nous attendons donc le mois de mai afin d’en découdre avec les meilleures équipes de N3, et aussi de présenter le dernier résumé de la saison qui promet d’être haut en couleur !
 
         Alexandre Haigneré'),
-        array('id' => '256','equipe' => '2','journee' => '14','date' => '1334358000','lieu' => 'Rouen','adversaire' => 'ROUEN SPO 3','score' => '11','score_adv' => '9','commentaire' => 'Samedi 14 avril 2012, Rouen III / Amiens II, the come-back of the résumouche !
+          array('id' => '256','equipe' => '2','journee' => '14','date' => '1334358000','lieu' => 'Rouen','adversaire' => 'ROUEN SPO 3','score' => '11','score_adv' => '9','commentaire' => 'Samedi 14 avril 2012, Rouen III / Amiens II, the come-back of the résumouche !
 
         Salle Henri Pélissier. Et ça sent déjà la poudre. Ce forçat de la route vainqueur du Tour en 1923, a en effet été lamentablement tué par sa maîtresse, après une course … en uniforme donc, parce que c’est beau, un Pélissier en uniforme, comme me l’a soufflé un spectateur rouennais. Espérons qu’il n’y ait pas trop de balles perdues pour les Samariens, que les Sex Pistols Rasselet et Blatrix mitraillent les normands, que les Colts Chatelain et Dubois, comme Sivers, tombent à pic, et que les 40 mm d’Harlé et Sellier, s’ils ont un peu de Mister Hyde en eux, fassent mouche : aïe pour moi !
 
@@ -5775,8 +6082,8 @@ class DumpController extends FrontController {
         Dicton du jour : A la Saint Maxime, écris ta dernière rime.
 
         Laurent CANY'),
-        array('id' => '257','equipe' => '3','journee' => '14','date' => '1334358000','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 2','score' => '7','score_adv' => '13','commentaire' => ''),
-        array('id' => '258','equipe' => '4','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ROYE PPC 1','score' => '11','score_adv' => '9','commentaire' => 'Mission maintien accomplie.
+          array('id' => '257','equipe' => '3','journee' => '14','date' => '1334358000','lieu' => 'Abbeville','adversaire' => 'ABBEVILLE AC 2','score' => '7','score_adv' => '13','commentaire' => ''),
+          array('id' => '258','equipe' => '4','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ROYE PPC 1','score' => '11','score_adv' => '9','commentaire' => 'Mission maintien accomplie.
 
         Pour être sûr du maintien nous devions au moins faire match nul contre Roye jusqu’à présent invaincu. Nous avons fait mieux avec une belle victoire collective.
 
@@ -5822,9 +6129,9 @@ class DumpController extends FrontController {
         Un bilan très positif sur la phase.
 
         Bertrand Bathelot'),
-        array('id' => '259','equipe' => '5','journee' => '14','date' => '1334444400','lieu' => 'Clermont','adversaire' => 'CLERMONT EP 2','score' => '2','score_adv' => '18','commentaire' => ''),
-        array('id' => '260','equipe' => '6','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'BEAUVAIS TT 2','score' => '9','score_adv' => '11','commentaire' => ''),
-        array('id' => '261','equipe' => '7','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'TT MERS TREP EU 3','score' => '11','score_adv' => '9','commentaire' => 'Oui je fais des résumés de matchs seulement quand je gagne et alors ? 
+          array('id' => '259','equipe' => '5','journee' => '14','date' => '1334444400','lieu' => 'Clermont','adversaire' => 'CLERMONT EP 2','score' => '2','score_adv' => '18','commentaire' => ''),
+          array('id' => '260','equipe' => '6','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'BEAUVAIS TT 2','score' => '9','score_adv' => '11','commentaire' => ''),
+          array('id' => '261','equipe' => '7','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'TT MERS TREP EU 3','score' => '11','score_adv' => '9','commentaire' => 'Oui je fais des résumés de matchs seulement quand je gagne et alors ? 
 
         Une belle rencontre se déroula ce dimanche matin, un match sans trop d\'enjeu pour la troisième place.
 
@@ -5857,9 +6164,9 @@ class DumpController extends FrontController {
         Un tournant se passe après ce match, l\'ancienne génération laisse place à la nouvelle. Paul (Bieber) Boinet et Léo (tranquilou) Hersent nous ont montré toute l\'étendue de leur talent tandis que Paul et Kévin s\'en vont sûrement vers de nouveaux horizons.
 
         Matthieu Lamérant'),
-        array('id' => '262','equipe' => '8','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'MUILLOIS PPC 2','score' => '12','score_adv' => '6','commentaire' => ''),
-        array('id' => '263','equipe' => '9','journee' => '14','date' => '1334444400','lieu' => 'Doullens','adversaire' => 'DOULL/BERNAVILL 4','score' => '5','score_adv' => '13','commentaire' => ''),
-        array('id' => '264','equipe' => '10','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'BETHENCOURT US 3','score' => '7','score_adv' => '11','commentaire' => 'L\'equipe 10(D3), perd contre Bethencourt 11/07.
+          array('id' => '262','equipe' => '8','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'MUILLOIS PPC 2','score' => '12','score_adv' => '6','commentaire' => ''),
+          array('id' => '263','equipe' => '9','journee' => '14','date' => '1334444400','lieu' => 'Doullens','adversaire' => 'DOULL/BERNAVILL 4','score' => '5','score_adv' => '13','commentaire' => ''),
+          array('id' => '264','equipe' => '10','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'BETHENCOURT US 3','score' => '7','score_adv' => '11','commentaire' => 'L\'equipe 10(D3), perd contre Bethencourt 11/07.
 
         Dans le détail :
         - Goupil fait 3/4, bat deux 8 et un 7.
@@ -5868,9 +6175,9 @@ class DumpController extends FrontController {
         - Bled fait 3/4, bat deux 8 et un 7.
 
         Alexandre Goupil'),
-        array('id' => '265','equipe' => '11','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'ALBERT BRAY 3','score' => '5','score_adv' => '13','commentaire' => ''),
-        array('id' => '266','equipe' => '12','journee' => '14','date' => '1334271600','lieu' => 'Amiens','adversaire' => 'ST SAUFLIEU ASL 1','score' => '3','score_adv' => '15','commentaire' => ''),
-        array('id' => '267','equipe' => '13','journee' => '14','date' => '1334358000','lieu' => 'Rouen','adversaire' => 'SPO ROUEN 1','score' => '9','score_adv' => '9','commentaire' => 'Samedi 14 avril : objectif NUL !!
+          array('id' => '265','equipe' => '11','journee' => '14','date' => '1334444400','lieu' => 'Amiens','adversaire' => 'ALBERT BRAY 3','score' => '5','score_adv' => '13','commentaire' => ''),
+          array('id' => '266','equipe' => '12','journee' => '14','date' => '1334271600','lieu' => 'Amiens','adversaire' => 'ST SAUFLIEU ASL 1','score' => '3','score_adv' => '15','commentaire' => ''),
+          array('id' => '267','equipe' => '13','journee' => '14','date' => '1334358000','lieu' => 'Rouen','adversaire' => 'SPO ROUEN 1','score' => '9','score_adv' => '9','commentaire' => 'Samedi 14 avril : objectif NUL !!
 
         Pour cette dernière journée de championnat, nous nous sommes déplacées à Rouen. Une bonne ambiance s\'annonçait étant donné que l\'équipe 2 masculine y allait également. Même objectif pour les deux équipes : un nul ! Le match nul nous permettrait d\'accéder à la N2 et pour les garçons le maintien en N3.
 
@@ -5918,15 +6225,15 @@ class DumpController extends FrontController {
         Merci les filles pour cette seconde phase.
 
         Hélène CARLIE'),
-        array('id' => '268','equipe' => '14','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ENT ST PIERRE 3','score' => '5','score_adv' => '10','commentaire' => ''),
-        array('id' => '269','equipe' => '15','journee' => '14','date' => '1334358000','lieu' => 'Péronne','adversaire' => 'TT PERONNE 1','score' => '14','score_adv' => '4','commentaire' => ''),
-        array('id' => '270','equipe' => '16','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'POIX USTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
-        array('id' => '271','equipe' => '17','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ROYE PPC 2','score' => '16','score_adv' => '2','commentaire' => '')
+          array('id' => '268','equipe' => '14','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ENT ST PIERRE 3','score' => '5','score_adv' => '10','commentaire' => ''),
+          array('id' => '269','equipe' => '15','journee' => '14','date' => '1334358000','lieu' => 'Péronne','adversaire' => 'TT PERONNE 1','score' => '14','score_adv' => '4','commentaire' => ''),
+          array('id' => '270','equipe' => '16','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'POIX USTT 1','score' => '10','score_adv' => '8','commentaire' => ''),
+          array('id' => '271','equipe' => '17','journee' => '14','date' => '1334358000','lieu' => 'Amiens','adversaire' => 'ROYE PPC 2','score' => '16','score_adv' => '2','commentaire' => '')
         );
 
         // `astt`.`Resumes`
         $Resumes = array(
-        array('evenement' => '12','competition' => 'Cr','type' => '0','date' => '1319147567','texte' => '1er Tour des individuels Régional à Chauny !
+          array('evenement' => '12','competition' => 'Cr','type' => '0','date' => '1319147567','texte' => '1er Tour des individuels Régional à Chauny !
 
 
         Après une bonne journée de coaching avec mon 2-4 (Cyril De Catheu), j\'ai failli oublié de me coucher.
@@ -5972,7 +6279,7 @@ class DumpController extends FrontController {
         A la Saint Edwige on se retrouve entre beegees ! 
 
         Ps: A noter la participation en régionale de Yohan Lecomte, Léo Bodinel, Antoine Huon et Caroline Petitprez pour le prochain tour'),
-        array('evenement' => '11','competition' => 'CS','type' => '0','date' => '1319455444','texte' => '63 joueurs de l’Amiens STT ont participé les 15 et 16 octobre au 1er tour du critérium fédéral.
+          array('evenement' => '11','competition' => 'CS','type' => '0','date' => '1319455444','texte' => '63 joueurs de l’Amiens STT ont participé les 15 et 16 octobre au 1er tour du critérium fédéral.
 
         En N1 moins de 11 ans, Julien Martin finit 5e, Louis Chaerle et Tristan Hersent 9e, Léo Hersent ne sort pas des poules.
         En N1 moins de 12 ans, Louis Chaerle, Léo Hersent et Tristan Hersent terminent 33e, Andréï Deguingand et Julien Martin 17e.
@@ -6006,7 +6313,7 @@ class DumpController extends FrontController {
 
         En D2 juniors garçons, Rémi Couillet finit 1er et Sylvain Pruvot 4e.
         En D2 seniors messieurs : Groupe 1 : Marc Flament 4e, Thibault De Visme 12e, Olivier Cocquet 14e. Groupe 2 : Yoann Cailloin 2e, Ali Combo Combo 3e, Geoffroy Gilot 10e, Alexandre Goupil 18e, Grégory Chhe 20e.'),
-        array('evenement' => '29','competition' => 'Cr','type' => '0','date' => '1323242733','texte' => 'Voici le résumé du tour d\'indiv\' du dimanche joué à l\'ASTT !
+          array('evenement' => '29','competition' => 'Cr','type' => '0','date' => '1323242733','texte' => 'Voici le résumé du tour d\'indiv\' du dimanche joué à l\'ASTT !
 
         Dimanche 4 décembre
         Se lever aux aurores pour jouer comme des Saints. Tel était l\'objectif des Amiénois en ce jour. Non pas pour accéder à la 1ère place du championnat de Pro A. 
@@ -6091,6 +6398,7 @@ class DumpController extends FrontController {
 
         Vincent Rasselet')
         );
+
         
         
         
@@ -6357,5 +6665,174 @@ class DumpController extends FrontController {
 
         return $this->render('FSBASTTFrontBundle:Dump:success.html.twig');
     }
-
+    
+    public function formatEventsAction()
+    {
+        $events = array(
+            "VALUES (1346356800, 1346356800, 'Trophée National', 'Trophée National', '', 1347107400, 0)",
+            "VALUES (1346356800, 1346356800, 'Trophée National', 'Trophée National', '', 1347174000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J1', 'Championnat par équipe - adultes J1', '', 1348250400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J1', 'Championnat par équipe - jeunes J1', '', 1348318800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J1', 'Championnat par équipe - adultes J1', '', 1348318800, 0)",
+            "VALUES (1346356800, 1346356800, 'Journée Nationale du Ping', 'Journée Nationale du Ping', '', 1348317000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J1', 'Championnat par équipe - adultes J1', '', 1348383600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J2', 'Championnat par équipe - adultes J2', '', 1349460000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J2', 'Championnat par équipe - jeunes J2', '', 1349528400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J2', 'Championnat par équipe - adultes J2', '', 1349528400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J2', 'Championnat par équipe - adultes J2', '', 1349593200, 0)",
+            "VALUES (1346356800, 1346356800, '1er tour du critérium fédéral', '1er tour du critérium fédéral', '', 1347539400, 0)",
+            "VALUES (1346356800, 1346356800, '1er tour du critérium fédéral', '1er tour du critérium fédéral', '', 1347606000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J3', 'Championnat par équipe - adultes J3', '', 1350669600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J3', 'Championnat par équipe - jeunes J3', '', 1350738000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J3', 'Championnat par équipe - adultes J3', '', 1350738000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J3', 'Championnat par équipe - adultes J3', '', 1350802800, 0)",
+            "VALUES (1346356800, 1346356800, 'J1 Critérium Poussins-Benjamins', 'J1 Critérium Poussins-Benjamins, '', 1382880600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J4', 'Championnat par équipe - adultes J4', '', 1352487600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J4', 'Championnat par équipe - jeunes J4', '', 1352556000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J4', 'Championnat par équipe - adultes J4', '', 1352556000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J4', 'Championnat par équipe - adultes J4', '', 1352620800, 0)",
+            "VALUES (1346356800, 1346356800, 'Tournoi Stéphane Baert', 'Tournoi Stéphane Baert', '', 1351270800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J5', 'Championnat par équipe - adultes J5', '', 1353092400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J5', 'Championnat par équipe - jeunes J5', '', 1353160800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J5', 'Championnat par équipe - adultes J5', '', 1353160800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J5', 'Championnat par équipe - adultes J5', '', 1353225600, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Féminin Départemental', 'Critérium Féminin Départemental', '', 1353763800, 0)",
+            "VALUES (1346356800, 1346356800, 'Top Départemental Détection', 'Top détection départemental', '', 1353830400, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Vétérans Départemental', 'Critérium Vétérans Départemental', '', 1353830400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J6', 'Championnat par équipe - adultes J6', '', 1354302000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J6', 'Championnat par équipe - jeunes J6', '', 1354370400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J6', 'Championnat par équipe - adultes J6', '', 1354370400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J6', 'Championnat par équipe - adultes J6', '', 1354435200, 0)",
+            "VALUES (1346356800, 1346356800, '2e tour du critérium fédéral', '2e tour du critérium fédéral', '', 1354973400, 0)",
+            "VALUES (1346356800, 1346356800, '2e tour du critérium fédéral', '2e tour du critérium fédéral', '', 1355040000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J7', 'Championnat par équipe - adultes s J7', '', 1355511600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J7', 'Championnat par équipe - jeunes J7', '', 1355580000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J7', 'Championnat par équipe - adultes s J7', '', 1355580000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J7', 'Championnat par équipe - adultes s J7', '', 1355644800, 0)",
+            "VALUES (1346356800, 1346356800, '3e tour du critérium fédéral', '3e tour du critérium fédéral', '', 1357997400, 0)",
+            "VALUES (1346356800, 1346356800, '3e tour du critérium fédéral', '3e tour du critérium fédéral', '', 1358064000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J8', 'Championnat par équipe - adultes J8', '', 1326913200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J8', 'Championnat par équipe - jeunes J8', '', 1358604000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J8', 'Championnat par équipe - adultes J8', '', 1358604000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J8', 'Championnat par équipe - adultes J8', '', 1358668800, 0)",
+            "VALUES (1346356800, 1346356800, 'J2 Critérium Poussins-Benjamins', 'J2 Critérium Poussins-Benjamins, '', 1359207000, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Féminin Régional', 'Critérium Féminin Régional', '', 1359207000, 0)",
+            "VALUES (1346356800, 1346356800, 'Top Régional Détection', 'Top Régional Détection - sur sélection uniquement', '', 1359273600, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Vétérans Régional', 'Critérium Vétérans Régional', '', 1359273600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J9', 'Championnat par équipe - adultes J9', '', 1359745200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J9', 'Championnat par équipe - jeunes J9', '', 1359813600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J9', 'Championnat par équipe - adultes J9', '', 1359813600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J9', 'Championnat par équipe - adultes J9', '', 1359878400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J10', 'Championnat par équipe - adultes J10', '', 1360350000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J10', 'Championnat par équipe - jeunes J10', '', 1360418400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J10', 'Championnat par équipe - adultes J10', '', 1360418400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J10', 'Championnat par équipe - adultes J10', '', 1360483200, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Vétérans National', 'Critérium Vétérans National', '', 1361520000, 0)",
+            "VALUES (1346356800, 1346356800, '4e tour du critérium fédéral - National', '4e tour du critérium fédéral - Pour les nationaux uniquement', '', 1361606400, 0)",
+            "VALUES (1346356800, 1346356800, 'Top de Zone Détection', 'Top de Zone Détection - sur sélection uniquement', '', 1361606400, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Vétérans National', 'Critérium Vétérans National', '', 1361606400, 0)",
+            "VALUES (1346356800, 1346356800, '4e tour du critérium fédéral - National', '4e tour du critérium fédéral - Pour les nationaux uniquement', '', 1361692800, 0)",
+            "VALUES (1346356800, 1346356800, 'Top de Zone Détection', 'Top de Zone Détection - sur sélection uniquement', '', 1361692800, 0)",
+            "VALUES (1346356800, 1346356800, 'Critérium Vétérans National', 'Critérium Vétérans National', '', 1361692800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France des Régions Minimes - Cadets', 'Championnat de France des Régions Minimes - Cadets', '', 1361865600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France des Régions Minimes - Cadets', 'Championnat de France des Régions Minimes - Cadets', '', 1361952000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France des Régions Minimes - Cadets', 'Championnat de France des Régions Minimes - Cadets', '', 1362038400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France des Régions Minimes - Cadets', 'Championnat de France des Régions Minimes - Cadets', '', 1362124800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J11', 'Championnat par équipe - adultes J11', '', 1362164400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J11', 'Championnat par équipe - jeunes J11', '', 1362232800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J11', 'Championnat par équipe - adultes J11', '', 1362232800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J11', 'Championnat par équipe - adultes J11', '', 1362297600, 0)",
+            "VALUES (1346356800, 1346356800, '4e tour du critérium fédéral - Régional et Départemental', '4e tour du critérium fédéral - Pour les régionaux et départementaux', '', 1362835800, 0)",
+            "VALUES (1346356800, 1346356800, '4e tour du critérium fédéral - Régional et Départemental', '4e tour du critérium fédéral - Pour les régionaux et départementaux', '', 1362902400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J12', 'Championnat par équipe - adultes J12', '', 1363374000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J12', 'Championnat par équipe - jeunes J12', '', 1363442400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J12', 'Championnat par équipe - adultes J12', '', 1363442400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J12', 'Championnat par équipe - adultes J12', '', 1363507200, 0)",
+            "VALUES (1346356800, 1346356800, 'Interclubs Départementaux', 'Interclubs Départementaux', '', 1364025600, 0)",
+            "VALUES (1346356800, 1346356800, 'Finales par Classement Départementales', 'Finales par Classement Départementales', '', 1364112000, 0)",
+            "VALUES (1346356800, 1346356800, 'Coupe Vétérans Régionale', 'Coupe Vétérans Régionale', '', 1364630400, 0)",
+            "VALUES (1346356800, 1346356800, 'J3 Critérium Poussins-Benjamins', 'J3 Critérium Poussins-Benjamins, '', 1364650200, 0)",
+            "VALUES (1346356800, 1346356800, '5e tour du critérium fédéral - National 1', '5e tour du critérium fédéral - Pour les N1 uniquement', '', 1364713200, 0)",
+            "VALUES (1346356800, 1346356800, '5e tour du critérium fédéral - National 1', '5e tour du critérium fédéral - Pour les N1 uniquement', '', 1364799600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J13', 'Championnat par équipe - adultes J13', '', 1365184800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J13', 'Championnat par équipe - jeunes J13', '', 1365253200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J13', 'Championnat par équipe - adultes J13', '', 1365253200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J13', 'Championnat par équipe - adultes J13', '', 1365318000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de Picardie', 'Championnat de Picardie', '', 1365836400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de Picardie', 'Championnat de Picardie', '', 1365922800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J14', 'Championnat par équipe - adultes J14', '', 1366999200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - jeunes J14', 'Championnat par équipe - jeunes J14', '', 1367067600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J14', 'Championnat par équipe - adultes J14', '', 1367067600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat par équipe - adultes J14', 'Championnat par équipe - adultes J14', '', 1367132400, 0)",
+            "VALUES (1346356800, 1346356800, 'Interclubs Régionaux', 'Interclubs Régionaux', '', 1367391600, 0)",
+            "VALUES (1346356800, 1346356800, 'J4 Critérium Poussins-Benjamins', 'J4 Critérium Poussins-Benjamins, '', 1367670600, 0)",
+            "VALUES (1346356800, 1346356800, 'Finales par Classement Régionales', 'Finales par Classement Régionales', '', 1367737200, 0)",
+            "VALUES (1346356800, 1346356800, 'Interdépartementaux', 'Interdépartementaux', '', 1367996400, 0)",
+            "VALUES (1346356800, 1346356800, 'Challenge Poussins / Benjamins / Minimes Départemental', 'Challenge Poussins / Benjamins / Minimes Départemental', '', 1368255600, 0)",
+            "VALUES (1346356800, 1346356800, 'Journée des Titres', 'Journée des Titres', '', 1368255600, 0)",
+            "VALUES (1346356800, 1346356800, 'Journée des Titres', 'Journée des Titres', '', 1368342000, 0)",
+            "VALUES (1346356800, 1346356800, 'Challenge Bernard Jeu Régional', 'Challenge Bernard Jeu Régional', '', 1368342000, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Minimes', 'Championnat de France Minimes', '', 1369378800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Juniors', 'Championnat de France Juniors', '', 1369378800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Minimes', 'Championnat de France Minimes', '', 1369465200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Juniors', 'Championnat de France Juniors', '', 1369465200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Minimes', 'Championnat de France Minimes', '', 1369551600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Juniors', 'Championnat de France Juniors', '', 1369551600, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de la Somme', 'Championnat de la Somme', '', 1369551600, 0)",
+            "VALUES (1346356800, 1346356800, 'Interclubs Nationaux Benjamins - Minimes', 'Interclubs Nationaux Benjamins - Minimes', '', 1370070000, 0)",
+            "VALUES (1346356800, 1346356800, 'Coupe Vétérans Nationale', 'Coupe Vétérans Nationale', '', 1370070000, 0)",
+            "VALUES (1346356800, 1346356800, 'Interclubs Nationaux Benjamins - Minimes', 'Interclubs Nationaux Benjamins - Minimes', '', 1370156400, 0)",
+            "VALUES (1346356800, 1346356800, 'Coupe Vétérans Nationale', 'Coupe Vétérans Nationale', '', 1370156400, 0)",
+            "VALUES (1346356800, 1346356800, 'Challenge Poussins / Benjamins / Minimes Régional', 'Challenge Poussins / Benjamins / Minimes Régional', '', 1370156400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Benjamins', 'Championnat de France Benjamins', '', 1370588400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Cadets', 'Championnat de France Cadets', '', 1370588400, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Benjamins', 'Championnat de France Benjamins', '', 1370674800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Cadets', 'Championnat de France Cadets', '', 1370674800, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Benjamins', 'Championnat de France Benjamins', '', 1370761200, 0)",
+            "VALUES (1346356800, 1346356800, 'Championnat de France Cadets', 'Championnat de France Cadets', '', 1370761200, 0)",
+            "VALUES (1346356800, 1346356800, 'Tournoi National Open', 'Tournoi National Open', '', 1371279600, 0)",
+            "VALUES (1346356800, 1346356800, 'Tournoi National Open', 'Tournoi National Open', '', 1371366000, 0)",
+            "VALUES (1346356800, 1346356800, 'Challenge Bernard Jeu National', 'Challenge Bernard Jeu National', '', 1371884400, 0)",
+            "VALUES (1346356800, 1346356800, 'Challenge Bernard Jeu National', 'Challenge Bernard Jeu National', '', 1371970800, 0)",
+            "VALUES (1346356800, 1346356800, 'Finales par Classement Nationales', 'Finales par Classement Nationales', '', 1372489200, 0)",
+            "VALUES (1346356800, 1346356800, 'Finales par Classement Nationales', 'Finales par Classement Nationales', '', 1372575600, 0)",
+        );
+        
+        foreach ($events as $eventIndice => $event) {
+            $partsOfEvent = explode(',', $event);
+            
+            $datesTimes = array(
+                substr($partsOfEvent[0], 8),
+                $partsOfEvent[1],
+                $partsOfEvent[5]
+            );
+            
+            foreach ($datesTimes as $dateIndice => $date) {
+                $datetime = new \DateTime();
+                $datetime->setTimestamp($date);
+                $datesTimes[$dateIndice] = $datetime;
+            }
+            
+            $partsOfEvent[0] = ($eventIndice == 0 ? 'VALUES ' : '').'(\''.$datesTimes[0]->format('Y-m-d H:i:s').'\'';
+            $partsOfEvent[1] = ' \''.$datesTimes[1]->format('Y-m-d H:i:s').'\'';
+            $partsOfEvent[5] = ' \''.$datesTimes[2]->format('Y-m-d H:i:s').'\'';
+            
+            $partsOfEvent[7] = $partsOfEvent[6];
+            $partsOfEvent[6] = $partsOfEvent[5];
+            $partsOfEvent[5] = $partsOfEvent[4];
+            $partsOfEvent[4] = $partsOfEvent[3];
+            $partsOfEvent[3] = $partsOfEvent[2];
+            $partsOfEvent[2] = ' 0';
+            
+            $events[$eventIndice] = utf8_decode(implode(',', $partsOfEvent)).',';
+            
+            
+        }
+        
+        echo '<pre>';
+        foreach ($events as $event) {
+            echo $event.'<br />';
+        }
+        exit(var_dump('<br />'));
+    }
 }

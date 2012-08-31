@@ -3,10 +3,7 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use FSB\ASTT\CoreBundle\Entity\Event;
-use FSB\ASTT\CoreBundle\Entity\News;
 
 /**
  * FrontController : Parent controller for all the front pages

@@ -3,7 +3,6 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
-use FSB\ASTT\CoreBundle\Entity\Partner;
 
 class PartnersController extends FrontController
 {

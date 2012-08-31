@@ -115,14 +115,26 @@ body {
     border-bottom: 1px solid black;
 }
 
-.news-img-left {
-    float: left;
-    margin: 0 5px;
+.news_title {
+    text-align: center;
 }
 
-.news-img-right {
-    float: right;
-    margin: 0 5px;
+.news_infos {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.news img {
+    border: 2px solid #cccccc;
+}
+
+.news_description {
+    text-align: justify;
+}
+
+.other_news_links {
+    text-align: justify;
 }
 
 /* LIVRE OR */
@@ -204,4 +216,10 @@ td.grey {
 
 #colorpickerselector div {
     border-radius: 5px;
+}
+
+/* TABLES CALENDAR */
+.table th,
+.table td {
+    text-align: center;
 }

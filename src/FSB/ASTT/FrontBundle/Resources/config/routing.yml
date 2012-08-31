@@ -145,9 +145,13 @@ FSBASTTFrontBundle_themepage:
     defaults: { _controller: FSBASTTFrontBundle:Themes:index }
 
 # Others
-FSBASTTFrontBundle_sqldump_page:
-    pattern: /dump/{table}
-    defaults: { _controller: FSBASTTFrontBundle:Dump:index }
+#FSBASTTFrontBundle_sqldump_page:
+#    pattern: /dump/{table}
+#    defaults: { _controller: FSBASTTFrontBundle:Dump:index }
+    
+#FSBASTTFrontBunle_format_events_page:
+#    pattern: /format/events
+#    defaults: { _controller: FSBASTTFrontBundle:Dump:formatEvents }
 
 FSBASTTFrontBundle_designpage:
     pattern: /design

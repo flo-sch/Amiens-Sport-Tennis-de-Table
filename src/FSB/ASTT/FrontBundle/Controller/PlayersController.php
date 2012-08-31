@@ -3,8 +3,6 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
-use FSB\ASTT\CoreBundle\Entity\Team;
-use FSB\ASTT\CoreBundle\Entity\Player;
 
 class PlayersController extends FrontController
 {

@@ -138,7 +138,6 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 
 .news {
     width: 49%;
-    border: 1px dashed black;
     margin: 10px 0;
     border-radius: 10px;
     height: 100%;
@@ -157,18 +156,24 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     float: right;;
 }
 
-.news_title {
-    text-align: center;
+.news-img-center {
+    display: block;
+    margin: auto;
 }
 
-.news_infos {
-    margin: 0 20px;
-    font-style: italic;
-    text-decoration: underline;
+.news-img-left {
+    display: block;
+    float: left;
+    margin: 0 5px;
+}
+
+.news-img-right {
+    display: block;
+    float: right;
+    margin: 0 5px;
 }
 
 .news_description {
-    text-align: justify;
     margin: 8px 20px;
 }
 
@@ -180,7 +185,6 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 .other_news_links {
     clear: both;
     width: 80%;
-    text-align: justify;
 }
 
 /* NEWS PANEL */

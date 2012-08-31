@@ -3,8 +3,6 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
-use AntiMattr\GoogleBundle\Maps\StaticMap;
-use AntiMattr\GoogleBundle\Maps\Marker;
 
 class AccessController extends FrontController
 {
