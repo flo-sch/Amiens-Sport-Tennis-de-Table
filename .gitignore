@@ -22,7 +22,7 @@ app/config/parameters.ini
 nbproject/*
 
 # Public Images
-web/images/*
+web/images/album/*
 
 # DS_Store files
 *.DS_Store
