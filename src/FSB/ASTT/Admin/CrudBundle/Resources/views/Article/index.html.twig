@@ -2,8 +2,7 @@
 
 {% block main %}
     <h1>Liste des articles de presse</h1>
-
-    <a class="btn btn-primary" href="{{ path('article_new') }}">Ajouter un article</a>
+    
     <table class="records_list table table-striped table-bordered table-condensed">
         <thead>
             <tr>
@@ -26,10 +25,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('article_show', { 'id': entity.id }) }}">Détail</a>
+                            <a href="{{ path('article_show', { 'id': entity.id }) }}">Détail</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('article_edit', { 'id': entity.id }) }}">Editer</a>
+                            <a href="{{ path('article_edit', { 'id': entity.id }) }}">Editer</a>
                         </li>
                     </ul>
                 </td>

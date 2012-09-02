@@ -194,11 +194,13 @@ class EventsCalendar
             }
         }
         
-        $nbDaysInLastWeek = count($this->events[$semaine]);
+        if ((count($this->events) - 1) == $semaine) {
+            $nbDaysInLastWeek = count($this->events[$semaine]);
         
-        for ($j = 7; $j > $nbDaysInLastWeek; $j--) {
-            $this->events[$semaine][($i - $this->startDay + 1)] = date('d', mktime(0, 0, 0, date('m', $time), ($i - $this->startDay + 1), date('Y', $time)));
-            $i++;
+            for ($j = 7; $j > $nbDaysInLastWeek; $j--) {
+                $this->events[$semaine][($i - $this->startDay + 1)] = date('d', mktime(0, 0, 0, date('m', $time), ($i - $this->startDay + 1), date('Y', $time)));
+                $i++;
+            }
         }
     }
     

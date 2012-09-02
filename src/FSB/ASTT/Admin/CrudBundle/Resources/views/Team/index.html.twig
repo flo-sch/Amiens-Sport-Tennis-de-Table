@@ -3,7 +3,6 @@
 {% block main %}
     <h1>Liste des équipes</h1>
     
-    <a class="btn btn-primary" href="{{ path('team_new') }}">Ajouter une équipe</a>
     <table class="records_list table table-striped table-bordered table-condensed">
         <thead>
             <tr>
@@ -24,14 +23,14 @@
                 <td>{{ entity.civility }}</td>
                 <td>{{ entity.division }}</td>
                 <td>{{ entity.nbPlayers }}</td>
-                <td><a class="btn btn-info" href="{{ entity.officialLink }}" title="Voir les résultats officiels" target="_blank">Lien officiel FFTT</a></td>
+                <td><a href="{{ entity.officialLink }}" title="Voir les résultats officiels" target="_blank">Lien officiel FFTT</a></td>
                 <td>
                     <ul>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('team_show', { 'id': entity.id }) }}">Détail</a>
+                            <a href="{{ path('team_show', { 'id': entity.id }) }}">Détail</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('team_edit', { 'id': entity.id }) }}">Editer</a>
+                            <a href="{{ path('team_edit', { 'id': entity.id }) }}">Editer</a>
                         </li>
                     </ul>
                 </td>

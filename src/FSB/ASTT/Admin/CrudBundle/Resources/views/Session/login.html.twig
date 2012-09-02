@@ -1,11 +1,30 @@
 {% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
 
-{% block main %}    
-    <h1>Connexion à l'interface d'administration</h1>
+{% block nav_authentified %}
+
+{% endblock %}
+
+{% block main %}
+    {% if error %}
+        <div class="alert alert-error">
+            <a href="#" class="close" data-dismiss="alert">×</a>
+            <strong>Error!</strong> {{ error.message }}
+        </div>
+    {% endif %}
     
-    <form action="{{ path('FSBASTTAdminCrudBundle_login_check') }}" method="post" {{ form_enctype(form) }}>
-        {{ form_errors(form) }}
-        {{ form_widget(form) }}
+    <h1>Connexion au panel d'administration</h1>
+
+    <form action="{{ path('FSBASTTAdminCrudBundle_login_check') }}" method="post">
+        <div>
+            <label for="username">Utilisateur :</label>
+            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+        </div>
+        
+        <div>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="_password" required="required" />
+        </div>
+        
         <button class="btn btn-success" type="submit">Connexion</button>
     </form>
 {% endblock %}

@@ -3,7 +3,6 @@
 {% block main %}
     <h1>Liste des joueurs</h1>
     
-    <a class="btn btn-primary" href="{{ path('player_new') }}">Ajouter un joueur</a>
     <table class="records_list table table-striped table-bordered table-condensed">
         <thead>
             <tr>
@@ -34,10 +33,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('player_show', { 'id': entity.id }) }}">Détail</a>
+                            <a href="{{ path('player_show', { 'id': entity.id }) }}">Détail</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('player_edit', { 'id': entity.id }) }}">Editer</a>
+                            <a href="{{ path('player_edit', { 'id': entity.id }) }}">Editer</a>
                         </li>
                     </ul>
                 </td>

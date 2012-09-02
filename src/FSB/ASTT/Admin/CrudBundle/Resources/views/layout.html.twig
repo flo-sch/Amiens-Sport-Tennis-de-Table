@@ -16,86 +16,88 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">ASTT - Admin</a>
+            <a class="brand" href="{{ path('FSBASTTFrontBundle_homepage') }}">ASTT - Admin</a>
             <div class="nav-collapse">
-                <ul class="nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('article') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('article_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evénements <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('event') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('event_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Interviews <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('interview') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('interview_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('link') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('link_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('message') }}"><i class="icon-th-list"></i> Liste</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actus <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('news') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('news_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partenaires <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('partner') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('partner_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Joueurs <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('player') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('player_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Résultats <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('result') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('result_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Résumés <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('summary') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('summary_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipes <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ path('team') }}"><i class="icon-th-list"></i> Liste</a></li>
-                            <li><a href="{{ path('team_new') }}"><i class="icon-ok"></i> Création</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                {% block nav_authentified %}
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('article') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('article_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evénements <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('event') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('event_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Interviews <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('interview') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('interview_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('link') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('link_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('message') }}"><i class="icon-th-list"></i> Liste</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actus <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('news') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('news_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partenaires <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('partner') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('partner_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Joueurs <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('player') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('player_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Résultats <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('result') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('result_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Résumés <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('summary') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('summary_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipes <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('team') }}"><i class="icon-th-list"></i> Liste</a></li>
+                                <li><a href="{{ path('team_new') }}"><i class="icon-ok"></i> Création</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                {% endblock %}
                 <ul class="nav pull-right">
                     <li><a href="{{ path('FSBASTTAdminCrudBundle_logout') }}" title="Déconnexion">Déconnexion</a></li>
                 </ul>
@@ -119,5 +121,6 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/jquery-1.7.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap.min.js') }}"></script>
 {% endblock %}

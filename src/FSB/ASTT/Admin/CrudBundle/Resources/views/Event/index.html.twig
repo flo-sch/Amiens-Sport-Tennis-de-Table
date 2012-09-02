@@ -2,8 +2,7 @@
 
 {% block main %}
     <h1>Liste des événements</h1>
-
-    <a class="btn btn-primary" href="{{ path('event_new') }}">Ajouter un événement</a>
+    
     <table class="records_list table table-striped table-bordered table-condensed">
         <thead>
             <tr>
@@ -28,10 +27,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('event_show', { 'id': entity.id }) }}">Détail</a>
+                            <a href="{{ path('event_show', { 'id': entity.id }) }}">Détail</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('event_edit', { 'id': entity.id }) }}">Edition</a>
+                            <a href="{{ path('event_edit', { 'id': entity.id }) }}">Edition</a>
                         </li>
                     </ul>
                 </td>

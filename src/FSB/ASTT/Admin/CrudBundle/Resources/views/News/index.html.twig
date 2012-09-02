@@ -2,8 +2,6 @@
 
 {% block main %}
     <h1>Liste des actualités</h1>
-
-    <a class="btn btn-primary" href="{{ path('news_new') }}">Ajouter une actualité</a>
     
     <table class="records_list table table-striped table-bordered table-condensed">
         <thead>
@@ -35,10 +33,10 @@
                 <td>
                     <ul>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('news_show', { 'id': entity.id }) }}">Détail</a>
+                            <a href="{{ path('news_show', { 'id': entity.id }) }}">Détail</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ path('news_edit', { 'id': entity.id }) }}">Editer</a>
+                            <a href="{{ path('news_edit', { 'id': entity.id }) }}">Editer</a>
                         </li>
                     </ul>
                 </td>
