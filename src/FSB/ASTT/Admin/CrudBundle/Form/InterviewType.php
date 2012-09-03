@@ -17,7 +17,7 @@ class InterviewType extends AbstractType
             ->add('date', 'date', array('label' => 'Date', 'required' => true, 'widget' => 'single_text', 'format' => 'MM/dd/yyyy', 'attr' => array('class' => 'datepicker')))
             ->add('player', 'entity', array('label' => 'Joueur interviewé', 'required' => true, 'empty_value' => 'Choisissez le joueur interviewé', 'class' => 'FSBASTTCoreBundle:Player',
                 'query_builder' => function(\FSB\ASTT\CoreBundle\Repository\PlayerRepository $er) {
-                    return $er->findActivePlayer();
+                    return $er->findActivePlayers(true);
                 }
             ))
         ;

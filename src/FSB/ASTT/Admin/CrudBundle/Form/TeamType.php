@@ -20,7 +20,7 @@ class TeamType extends AbstractType
             ->add('officialLink', 'url', array('label' => 'Lien officiel fftt.com', 'required' => true))
             ->add('leader', 'entity', array('label' => 'Capitaine', 'required' => false, 'empty_value' => 'Choisissez un joueur', 'class' => 'FSBASTTCoreBundle:Player',
                 'query_builder' => function(\FSB\ASTT\CoreBundle\Repository\PlayerRepository $er) {
-                    return $er->findActivePlayer();
+                    return $er->findActivePlayers(true);
                 }
             ))
         ;

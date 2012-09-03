@@ -23,7 +23,7 @@ class NewsType extends AbstractType
             ->add('screen', 'file', array('label' => 'Visuel', 'required' => false))
             ->add('weBestPlayer', 'entity', array('label' => 'Joueur du WE ?', 'required' => false, 'empty_value' => 'Choisissez un joueur', 'class' => 'FSBASTTCoreBundle:Player',
                 'query_builder' => function(\FSB\ASTT\CoreBundle\Repository\PlayerRepository $er) {
-                    return $er->findActivePlayer();
+                    return $er->findActivePlayers(true);
                 }
             ))
         ;

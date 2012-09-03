@@ -83,7 +83,6 @@ class TeamController extends Controller
             $em->flush();
 
             return $this->redirect($this->generateUrl('team_show', array('id' => $entity->getId())));
-            
         }
 
         return $this->render('FSBASTTAdminCrudBundle:Team:new.html.twig', array(
