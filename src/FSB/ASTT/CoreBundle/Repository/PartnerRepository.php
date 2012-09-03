@@ -38,4 +38,17 @@ class PartnerRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('p')
+            ->from('FSB\ASTT\CoreBundle\Entity\Partner', 'p')
+            ->where('p.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

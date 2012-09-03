@@ -65,4 +65,17 @@ class TeamRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('t')
+            ->from('FSB\ASTT\CoreBundle\Entity\Team', 't')
+            ->where('t.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

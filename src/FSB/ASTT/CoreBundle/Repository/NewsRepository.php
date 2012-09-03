@@ -52,4 +52,17 @@ class NewsRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('n')
+            ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
+            ->where('n.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

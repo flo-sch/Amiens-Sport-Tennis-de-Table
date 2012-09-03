@@ -38,4 +38,17 @@ class ArticleRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('a')
+            ->from('FSB\ASTT\CoreBundle\Entity\Article', 'a')
+            ->where('a.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

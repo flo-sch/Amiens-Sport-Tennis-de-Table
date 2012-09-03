@@ -51,4 +51,17 @@ class SummaryRepository extends EntityRepository {
         
         return $qb->getQuery()->getSingleResult();
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('s')
+            ->from('FSB\ASTT\CoreBundle\Entity\Summary', 's')
+            ->where('s.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

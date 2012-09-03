@@ -39,4 +39,17 @@ class ResultRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('r')
+            ->from('FSB\ASTT\CoreBundle\Entity\Result', 'r')
+            ->where('r.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

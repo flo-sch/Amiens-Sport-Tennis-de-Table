@@ -40,4 +40,17 @@ class LinkRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('l')
+            ->from('FSB\ASTT\CoreBundle\Entity\Link', 'l')
+            ->where('l.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

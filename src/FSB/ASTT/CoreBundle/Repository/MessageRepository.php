@@ -38,4 +38,17 @@ class MessageRepository extends EntityRepository {
     {
         return $this->find($id);
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('m')
+            ->from('FSB\ASTT\CoreBundle\Entity\Message', 'm')
+            ->where('m.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

@@ -80,4 +80,17 @@ class EventRepository extends EntityRepository {
         
         return $qb->getQuery()->getResult();
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('e')
+            ->from('FSB\ASTT\CoreBundle\Entity\Event', 'e')
+            ->where('e.deleted = :deleted')
+            ->setParameter('deleted', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }

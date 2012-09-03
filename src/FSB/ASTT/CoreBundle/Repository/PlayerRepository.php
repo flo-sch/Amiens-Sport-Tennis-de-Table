@@ -79,4 +79,17 @@ class PlayerRepository extends EntityRepository {
         
         return $qb->getQuery()->getSingleResult();
     }
+    
+    public function findAll()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('p')
+            ->from('FSB\ASTT\CoreBundle\Entity\Player', 'p')
+            ->where('p.hidden = :hidden')
+            ->setParameter('hidden', false)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
 }
