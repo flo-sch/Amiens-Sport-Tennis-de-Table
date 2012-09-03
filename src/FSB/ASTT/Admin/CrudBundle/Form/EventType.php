@@ -14,8 +14,8 @@ class EventType extends AbstractType
             //->add('updatedAt')
             //->add('deleted')
             ->add('title', 'text', array('label' => 'Titre', 'required' => true, 'max_length' => 255))
-            ->add('description', 'textarea', array('label' => 'Description', 'required' => true))
-            ->add('place', 'text', array('label' => 'Lieu', 'required' => true))
+            ->add('description', 'textarea', array('label' => 'Description', 'required' => false))
+            ->add('place', 'text', array('label' => 'Lieu', 'required' => false))
             ->add('date', 'date', array('label' => 'Date', 'required' => true, 'widget' => 'single_text', 'format' => 'MM/dd/yyyy', 'attr' => array('class' => 'datepicker')))
             ->add('isTournament', 'checkbox', array('label' => 'Cet événement est-il un trophée national ?', 'required' => false))
         ;
