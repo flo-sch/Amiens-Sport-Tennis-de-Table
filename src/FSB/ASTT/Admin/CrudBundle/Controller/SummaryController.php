@@ -47,7 +47,6 @@ class SummaryController extends Controller
         return $this->render('FSBASTTAdminCrudBundle:Summary:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
-
         ));
     }
 
