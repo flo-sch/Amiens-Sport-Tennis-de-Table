@@ -157,7 +157,8 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 }
 
 .news img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 180px;
 }
 
 .news-img-center {
@@ -289,6 +290,10 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 .results-summary a {
     float: right;
     margin: 0 1px;
+}
+
+.table td.results-summary-description {
+    text-align: justify;
 }
 
 /* INTERVIEWS */
