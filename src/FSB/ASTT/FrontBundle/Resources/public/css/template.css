@@ -156,6 +156,10 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     float: right;;
 }
 
+.news img {
+    width: 200px;
+}
+
 .news-img-center {
     display: block;
     margin: auto;
