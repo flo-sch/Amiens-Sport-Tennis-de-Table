@@ -78,10 +78,9 @@ class NewsController extends Controller
         $form    = $this->createForm(new NewsType(), $entity);
         $form->bindRequest($request);
         
-        $data = $form->getData();
-        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+            $data = $form->getData();
             
             if ($data->getScreen() instanceof UploadedFile) {
                 $screenTmpName = $data->getScreen()->getPathName();
@@ -149,9 +148,9 @@ class NewsController extends Controller
         
         $editForm->bindRequest($request);
         
-        $data = $editForm->getData();
-        
         if ($editForm->isValid()) {
+            $data = $editForm->getData();
+            
             if ($data->getScreen() instanceof UploadedFile) {
                 $screenTmpName = $data->getScreen()->getPathName();
                 $screenFileName = $data->getScreen()->getClientOriginalName();

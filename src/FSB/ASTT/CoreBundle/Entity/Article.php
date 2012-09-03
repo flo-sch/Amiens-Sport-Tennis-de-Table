@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Article
 {
+    public static $ArticlesUploadDir = 'files/articles';
     /**
      * @var integer $id
      */

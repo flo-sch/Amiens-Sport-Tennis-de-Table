@@ -76,9 +76,19 @@ class ArticleController extends Controller
         $request = $this->getRequest();
         $form    = $this->createForm(new ArticleType(), $entity);
         $form->bindRequest($request);
-
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+            $data = $form->getData();
+            
+            if ($data->getFile() instanceof UploadedFile) {
+                $fileTmpName = $data->getFile()->getPathName();
+                $fileName = $data->getFile()->getClientOriginalName();
+                $file = new File($fileTmpName);
+                $file->move(Articles::$ArticlesUploadDir, $fileName);
+                $entity->setFile($fileName);
+            }
+            
             $em->persist($entity);
             $em->flush();
 
@@ -124,7 +134,6 @@ class ArticleController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
         
-        $last = $em->getRepository('FSBASTTCoreBundle:Article')->findOneById($id);
         $entity = $em->getRepository('FSBASTTCoreBundle:Article')->find($id);
 
         if (!$entity) {
@@ -141,14 +150,16 @@ class ArticleController extends Controller
         if ($editForm->isValid()) {
             $data = $editForm->getData();
             
-            if ($data->getFile() == null) {
-                var_dump($last);
-                $data->setFile($last->getFile());
+            if ($data->getFile() instanceof UploadedFile) {
+                $fileTmpName = $data->getFile()->getPathName();
+                $fileName = $data->getFile()->getClientOriginalName();
+                $file = new File($fileTmpName);
+                $file->move(Articles::$ArticlesUploadDir, $fileName);
+                $entity->setFile($fileName);
             }
-            exit(var_dump($data));
             
             $em->persist($entity);
-            //$em->flush();
+            $em->flush();
 
             return $this->redirect($this->generateUrl('article_edit', array('id' => $id)));
         }
