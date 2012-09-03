@@ -3,7 +3,8 @@
 namespace FSB\ASTT\Admin\CrudBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\File\File;
 use FSB\ASTT\CoreBundle\Entity\News;
 use FSB\ASTT\Admin\CrudBundle\Form\NewsType;
 
@@ -76,9 +77,20 @@ class NewsController extends Controller
         $request = $this->getRequest();
         $form    = $this->createForm(new NewsType(), $entity);
         $form->bindRequest($request);
-
+        
+        $data = $form->getData();
+        
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+            
+            if ($data->getScreen() instanceof UploadedFile) {
+                $screenTmpName = $data->getScreen()->getPathName();
+                $screenFileName = $data->getScreen()->getClientOriginalName();
+                $screenFile = new File($screenTmpName);
+                $screenFile->move(News::$ScreensUploadDir, $screenFileName);
+                $entity->setScreen($screenFileName);
+            }
+            
             $em->persist($entity);
             $em->flush();
 
@@ -132,12 +144,22 @@ class NewsController extends Controller
 
         $editForm   = $this->createForm(new NewsType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
-
+        
         $request = $this->getRequest();
-
+        
         $editForm->bindRequest($request);
-
+        
+        $data = $editForm->getData();
+        
         if ($editForm->isValid()) {
+            if ($data->getScreen() instanceof UploadedFile) {
+                $screenTmpName = $data->getScreen()->getPathName();
+                $screenFileName = $data->getScreen()->getClientOriginalName();
+                $screenFile = new File($screenTmpName);
+                $screenFile->move(News::$ScreensUploadDir, $screenFileName);
+                $entity->setScreen($screenFileName);
+            }
+            
             $em->persist($entity);
             $em->flush();
 
