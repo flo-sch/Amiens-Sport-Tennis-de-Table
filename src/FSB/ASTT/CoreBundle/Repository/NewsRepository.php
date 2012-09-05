@@ -4,15 +4,15 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class NewsRepository extends EntityRepository {
-    
+class NewsRepository extends EntityRepository
+{
     public function findAllDisplayedSorteredByDates() {
         $qb = $this->_em->createQueryBuilder();
         
         $qb->select('n')
             ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
             ->where('n.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->addOrderBy('n.starttime', 'DESC');
         
         return $qb->getQuery()->getResult();
@@ -26,7 +26,7 @@ class NewsRepository extends EntityRepository {
         $qb->select('n')
             ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
             ->where('n.deleted = :deleted AND (n.starttime <= :time AND n.endtime >= :time)')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('time', $time)
             ->addOrderBy('n.starttime', 'DESC');
         
@@ -41,7 +41,7 @@ class NewsRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
             ->where('n.deleted = :deleted')
             ->andWhere('n.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

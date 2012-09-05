@@ -21,7 +21,7 @@ class SummaryController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $entities = $em->getRepository('FSBASTTCoreBundle:Summary')->findAll();
+        $entities = $em->getRepository('FSBASTTCoreBundle:Summary')->findAllDisplayedSorteredByDate();
 
         return $this->render('FSBASTTAdminCrudBundle:Summary:index.html.twig', array(
             'entities' => $entities

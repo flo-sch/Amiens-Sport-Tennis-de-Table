@@ -4,7 +4,21 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class PartnerRepository extends EntityRepository {
+class PartnerRepository extends EntityRepository
+{
+    public function findAllDisplayedSorteredByDates()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('p')
+            ->from('FSB\ASTT\CoreBundle\Entity\Partner', 'p')
+            ->where('p.deleted = :deleted')
+            ->setParameter('deleted', false)
+            ->orderBy('p.createdAt', 'DESC')
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
     
     public function findAllDisplayed()
     {
@@ -13,8 +27,9 @@ class PartnerRepository extends EntityRepository {
         $qb->select('p')
             ->from('FSB\ASTT\CoreBundle\Entity\Partner', 'p')
             ->where('p.deleted = :deleted')
-            ->setParameter('deleted', 0)
-            ->orderBy('p.title', 'ASC');
+            ->setParameter('deleted', false)
+            ->orderBy('p.title', 'ASC')
+        ;
         
         return $qb->getQuery()->getResult();
     }
@@ -27,7 +42,7 @@ class PartnerRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Partner', 'p')
             ->where('p.deleted = :deleted')
             ->andWhere('p.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

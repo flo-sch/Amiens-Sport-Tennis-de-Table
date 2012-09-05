@@ -4,8 +4,8 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class InterviewRepository extends EntityRepository {
-    
+class InterviewRepository extends EntityRepository
+{
     public function findAllDisplayedSorteredByDate($orderByDate = 'DESC')
     {
         $qb = $this->_em->createQueryBuilder();
@@ -13,7 +13,7 @@ class InterviewRepository extends EntityRepository {
         $qb->select('i')
             ->from('FSB\ASTT\CoreBundle\Entity\Interview', 'i')
             ->where('i.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->orderBy('i.date', $orderByDate);
         
         return $qb->getQuery()->getResult();
@@ -27,7 +27,7 @@ class InterviewRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Interview', 'i')
             ->where('i.deleted = :deleted')
             ->andWhere('i.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

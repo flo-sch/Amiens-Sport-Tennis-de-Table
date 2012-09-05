@@ -4,8 +4,8 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class SummaryRepository extends EntityRepository {
-    
+class SummaryRepository extends EntityRepository
+{
     public function findAllDisplayedSorteredByDate($orderByDate = 'DESC')
     {
         $qb = $this->_em->createQueryBuilder();
@@ -13,7 +13,7 @@ class SummaryRepository extends EntityRepository {
         $qb->select('s')
             ->from('FSB\ASTT\CoreBundle\Entity\Summary', 's')
             ->where('s.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->orderBy('s.date', $orderByDate);
         
         return $qb->getQuery()->getResult();
@@ -28,7 +28,7 @@ class SummaryRepository extends EntityRepository {
             ->where('s.deleted = :deleted')
             ->andWhere('s.type = :type')
             ->andWhere('s.tournament = :tournament')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('type', $type)
             ->setParameter('tournament', $tournament)
             ->orderBy('s.tournament', $orderByTournament)
@@ -45,7 +45,7 @@ class SummaryRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Summary', 's')
             ->where('s.deleted = :deleted')
             ->andWhere('s.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

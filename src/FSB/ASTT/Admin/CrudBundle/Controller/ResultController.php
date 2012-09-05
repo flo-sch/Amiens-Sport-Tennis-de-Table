@@ -21,7 +21,7 @@ class ResultController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $entities = $em->getRepository('FSBASTTCoreBundle:Result')->findAll();
+        $entities = $em->getRepository('FSBASTTCoreBundle:Result')->findAllDisplayedSorteredByDate();
 
         return $this->render('FSBASTTAdminCrudBundle:Result:index.html.twig', array(
             'entities' => $entities

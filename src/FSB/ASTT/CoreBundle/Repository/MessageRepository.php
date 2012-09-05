@@ -4,8 +4,8 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class MessageRepository extends EntityRepository {
-    
+class MessageRepository extends EntityRepository
+{
     public function findAllDisplayedSorteredByCreatedAt()
     {
         $qb = $this->_em->createQueryBuilder();
@@ -13,7 +13,7 @@ class MessageRepository extends EntityRepository {
         $qb->select('m')
             ->from('FSB\ASTT\CoreBundle\Entity\Message', 'm')
             ->where('m.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->orderBy('m.createdAt', 'DESC');
         
         return $qb->getQuery()->getResult();
@@ -27,7 +27,7 @@ class MessageRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Message', 'm')
             ->where('m.deleted = :deleted')
             ->andWhere('m.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

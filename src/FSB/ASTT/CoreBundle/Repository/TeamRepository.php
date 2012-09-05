@@ -4,8 +4,21 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class TeamRepository extends EntityRepository {
-    
+class TeamRepository extends EntityRepository
+{
+    public function findAllDisplayedSorteredByDates()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('t')
+            ->from('FSB\ASTT\CoreBundle\Entity\Team', 't')
+            ->where('t.deleted = :deleted')
+            ->setParameter('deleted', false)
+            ->orderBy('t.createdAt', 'DESC')
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
     public function findAllDisplayedByCivility($civility, $queryBuilderOnly = false)
     {
         $qb = $this->_em->createQueryBuilder();
@@ -14,7 +27,7 @@ class TeamRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Team', 't')
             ->where('t.deleted = :deleted')
             ->andWhere('t.civility = :civility')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('civility', $civility)
             ->orderBy('t.civility', 'DESC')
             ->addOrderBy('t.number', 'ASC');
@@ -34,7 +47,7 @@ class TeamRepository extends EntityRepository {
         $qb->select('t')
             ->from('FSB\ASTT\CoreBundle\Entity\Team', 't')
             ->where('t.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->orderBy('t.civility', 'DESC')
             ->addOrderBy('t.number', 'ASC')
         ;
@@ -54,7 +67,7 @@ class TeamRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Team', 't')
             ->where('t.deleted = :deleted')
             ->andWhere('t.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

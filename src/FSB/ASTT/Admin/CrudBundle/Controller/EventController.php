@@ -21,7 +21,7 @@ class EventController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $entities = $em->getRepository('FSBASTTCoreBundle:Event')->findAll();
+        $entities = $em->getRepository('FSBASTTCoreBundle:Event')->findAllDisplayedSorteredByDate();
 
         return $this->render('FSBASTTAdminCrudBundle:Event:index.html.twig', array(
             'entities' => $entities

@@ -4,8 +4,6 @@ namespace FSB\ASTT\Admin\CrudBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use FSB\ASTT\CoreBundle\Entity\Message;
-
 /**
  * Message controller.
  *

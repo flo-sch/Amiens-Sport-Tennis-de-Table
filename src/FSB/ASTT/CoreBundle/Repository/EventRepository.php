@@ -4,8 +4,8 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class EventRepository extends EntityRepository {
-    
+class EventRepository extends EntityRepository
+{
     public function findAllDisplayedSorteredByDate($queryBuilderOnly = false, $limit = 1000)
     {
         $qb = $this->_em->createQueryBuilder();
@@ -13,7 +13,7 @@ class EventRepository extends EntityRepository {
         $qb->select('e')
             ->from('FSB\ASTT\CoreBundle\Entity\Event', 'e')
             ->where('e.deleted = :deleted')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->orderBy('e.date', 'DESC')
             ->setMaxResults($limit)
         ;
@@ -33,7 +33,7 @@ class EventRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Event', 'e')
             ->where('e.deleted = :deleted')
             ->andWhere('e.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         
@@ -54,7 +54,7 @@ class EventRepository extends EntityRepository {
             ->where('e.deleted = :deleted')
             ->andWhere('e.date >= :starttime')
             ->andWhere('e.date <= :endtime')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('starttime', $starttime)
             ->setParameter('endtime', $endtime)
         ;
@@ -72,10 +72,10 @@ class EventRepository extends EntityRepository {
             ->andWhere('e.date >= :starttime')
             ->andWhere('e.date <= :endtime')
             ->andWhere('e.isTournament = :isTournament')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('starttime', $starttime)
             ->setParameter('endtime', $endtime)
-            ->setParameter('isTournament', 1)
+            ->setParameter('isTournament', true)
         ;
         
         return $qb->getQuery()->getResult();

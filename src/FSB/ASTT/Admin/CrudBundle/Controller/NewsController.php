@@ -22,7 +22,7 @@ class NewsController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $entities = $em->getRepository('FSBASTTCoreBundle:News')->findAll();
+        $entities = $em->getRepository('FSBASTTCoreBundle:News')->findAllDisplayedSorteredByDates();
 
         return $this->render('FSBASTTAdminCrudBundle:News:index.html.twig', array(
             'entities' => $entities

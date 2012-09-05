@@ -4,7 +4,21 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class ResultRepository extends EntityRepository {
+class ResultRepository extends EntityRepository
+{
+    public function findAllDisplayedSorteredByDate()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('r')
+            ->from('FSB\ASTT\CoreBundle\Entity\Result', 'r')
+            ->where('r.deleted = :deleted')
+            ->setParameter('deleted', false)
+            ->orderBy('r.createdAt', 'DESC')
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
     
     public function findAllByTeam($team)
     {
@@ -28,7 +42,7 @@ class ResultRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Result', 'r')
             ->where('r.deleted = :deleted')
             ->andWhere('r.id = :id')
-            ->setParameter('deleted', 0)
+            ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
         

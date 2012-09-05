@@ -21,7 +21,7 @@ class InterviewController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $entities = $em->getRepository('FSBASTTCoreBundle:Interview')->findAll();
+        $entities = $em->getRepository('FSBASTTCoreBundle:Interview')->findAllDisplayedSorteredByDate();
 
         return $this->render('FSBASTTAdminCrudBundle:Interview:index.html.twig', array(
             'entities' => $entities

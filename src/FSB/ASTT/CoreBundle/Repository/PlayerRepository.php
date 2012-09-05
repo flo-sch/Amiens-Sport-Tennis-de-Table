@@ -4,7 +4,21 @@ namespace FSB\ASTT\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class PlayerRepository extends EntityRepository {
+class PlayerRepository extends EntityRepository
+{
+    public function findAllDisplayedSorteredByDate()
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('p')
+            ->from('FSB\ASTT\CoreBundle\Entity\Partner', 'p')
+            ->where('p.deleted = :deleted')
+            ->setParameter('deleted', false)
+            ->orderBy('p.createdAt', 'DESC')
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
     
     public function findByTeam($teamId)
     {
@@ -16,7 +30,7 @@ class PlayerRepository extends EntityRepository {
             ->andWhere('p.mainTeam = :team')
             ->orWhere('p.secondTeam = :team')
             ->orWhere('p.thirdTeam = :team')
-            ->setParameter('hidden', 0)
+            ->setParameter('hidden', false)
             ->setParameter('team', $teamId)
             ->orderBy('p.lastname', 'ASC')
             ->addOrderBy('p.firstname', 'ASC');
@@ -31,7 +45,7 @@ class PlayerRepository extends EntityRepository {
         $qb->select('p')
             ->from('FSB\ASTT\CoreBundle\Entity\Player', 'p')
             ->where('p.hidden = :hidden')
-            ->setParameter('hidden', 0)
+            ->setParameter('hidden', false)
             ->orderBy('p.lastname', 'ASC')
             ->addOrderBy('p.firstname', 'ASC');
         
@@ -53,7 +67,7 @@ class PlayerRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Player', 'p')
             ->where('p.hidden = :hidden')
             ->andWhere('p.id = :id')
-            ->setParameter('hidden', 0)
+            ->setParameter('hidden', false)
             ->setParameter('id', $id)
         ;
         
@@ -73,7 +87,7 @@ class PlayerRepository extends EntityRepository {
             ->from('FSB\ASTT\CoreBundle\Entity\Player', 'p')
             ->where('p.hidden = :hidden')
             ->andWhere('p.licence = :licence')
-            ->setParameter('hidden', 0)
+            ->setParameter('hidden', false)
             ->setParameter('licence', $licence)
         ;
         
