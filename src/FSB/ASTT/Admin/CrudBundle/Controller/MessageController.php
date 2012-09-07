@@ -73,7 +73,7 @@ class MessageController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('messages'));
+        return $this->redirect($this->generateUrl('message'));
     }
 
     private function createDeleteForm($id)

@@ -1,7 +1,4 @@
 security:
-    #encoders:
-        #Symfony\Component\Security\Core\User\User: plaintext
-
     encoders:
         Symfony\Component\Security\Core\User\User:
             algorithm:   sha1
@@ -14,6 +11,7 @@ security:
 
     providers:
         astt:
+            name: astt
             users:
                 arnaud: { password: 4a64bdd9da55875b0c673bc2bd2ebd6733934b0c, roles: [ 'ROLE_ADMIN' ] }
 
@@ -28,11 +26,15 @@ security:
         
         admin_area:
             pattern: ^/admin
+            provider: astt
             form_login:
                 login_path: /admin/login
                 check_path: /admin/login_check
                 default_target_path: /admin/news
                 post_only: true
+                use_referer: false
+                always_use_default_target_path: true
+                default_target_path: /admin/news
             logout:
                 path: /admin/logout
                 target: /admin/login
