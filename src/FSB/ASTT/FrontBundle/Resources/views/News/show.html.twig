@@ -15,10 +15,10 @@
                     {% if news.place %}{{ news.place|title }}{% endif %}
                 {% endif %}
             </h5>
-            <p>{{ news.description|e('html')|nl2br }}</p>
             {% if news.screen %}
                 <img src="{{ asset('images/news/' ~ news.screen) }}" alt="{{ news.title|capitalize }}" />
             {% endif %}
+            <p>{{ news.description|e('html')|nl2br }}</p>
         </div>
     {% endif %}
 {% endblock %}

@@ -132,6 +132,10 @@ FSBASTTFrontBundle_partnerspage:
     defaults: { _controller: FSBASTTFrontBundle:Partners:index }
 
 # Global
+FSBASTTFrontBundle_news_archivepage:
+    pattern: /news/archive
+    defaults: { _controller: FSBASTTFrontBundle:News:archive }
+    
 FSBASTTFrontBundle_newspage:
     pattern: /news/{id}
     defaults: { _controller: FSBASTTFrontBundle:News:show }

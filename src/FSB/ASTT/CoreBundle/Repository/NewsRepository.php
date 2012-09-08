@@ -6,19 +6,37 @@ use Doctrine\ORM\EntityRepository;
 
 class NewsRepository extends EntityRepository
 {
-    public function findAllDisplayedSorteredByDates() {
+    public function findAllDisplayedSorteredByDates()
+    {
         $qb = $this->_em->createQueryBuilder();
         
         $qb->select('n')
             ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
             ->where('n.deleted = :deleted')
             ->setParameter('deleted', false)
-            ->addOrderBy('n.starttime', 'DESC');
+            ->orderBy('n.date', 'DESC')
+        ;
         
         return $qb->getQuery()->getResult();
     }
     
-    public function findAllDisplayedOnTime() {
+    public function findLastDisplayedSorteredByDates($nbResults)
+    {
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('n')
+            ->from('FSB\ASTT\CoreBundle\Entity\News', 'n')
+            ->where('n.deleted = :deleted')
+            ->setParameter('deleted', false)
+            ->orderBy('n.starttime', 'DESC')
+            ->setMaxResults($nbResults)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
+    
+    public function findAllDisplayedOnTime()
+    {
         $time = new \Datetime('now');
         
         $qb = $this->_em->createQueryBuilder();
@@ -28,7 +46,8 @@ class NewsRepository extends EntityRepository
             ->where('n.deleted = :deleted AND (n.starttime <= :time AND n.endtime >= :time)')
             ->setParameter('deleted', false)
             ->setParameter('time', $time)
-            ->addOrderBy('n.starttime', 'DESC');
+            ->orderBy('n.starttime', 'DESC')
+        ;
         
         return $qb->getQuery()->getResult();
     }

@@ -161,6 +161,12 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     max-height: 180px;
 }
 
+.news.display-single img {
+    max-width: 100%;
+    max-height: none;
+    margin: 10px 0;
+}
+
 .news-img-center {
     display: block;
     margin: auto;
@@ -230,6 +236,17 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 }
 
 .spacer { clear: both; }
+
+/* NEWS */
+.news-list {
+    list-style: none;
+    width: 60%;
+    margin: auto;
+}
+
+.news-list li {
+    
+}
 
 /* ACCESS */
 #map {
@@ -406,26 +423,33 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     
 }
 
+.footer #footerTabContent .tab-pane {
+    position: relative;
+}
+
 .footer #footerTabContent .events_list {
-    overflow: hidden;
-    height: 210px;
+    position: relative;
+    top: 0;
+    left: 3%;
     width: 60%;
-    margin: 0 2% 0 3%;
+    height: 210px;
+    margin: 0 2% 0 0;
     padding: 0 4px;
-    float: left;
+    overflow: hidden;
 }
 
 .footer #footerTabContent .events_links {
     list-style: none;
-    margin: 7px 20px 5px 20px;
+    margin: 18px 20px 0 20px;
 }
 
 .footer #footerTabContent .footer_calendar {
+    position: absolute;
+    top: 0;
+    right: 2%;
     width: 30%;
-    margin: 0 3% 0 0;
     height: 210px;
     padding: 0 4px;
-    float: right;
 }
 
 .footer #footerTabContent .footer_calendar .table {
@@ -435,6 +459,39 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 .footer #footerTabContent .coverflow {
     width: 95%;
     height: 220px;
+}
+
+.footer #footerTabContent .footer_news {
+    position: relative;
+    top: 0;
+    left: 3%;
+    width: 60%;
+    height: 210px;
+    margin: 0 2% 0 0;
+    padding: 0 4px;
+    overflow: hidden;
+}
+
+.footer #footerTabContent .footer_news .news-links {
+    list-style: none;
+    margin: 18px 20px 0 20px;
+}
+
+.footer #footerTabContent .footer-archive-link {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer #footerTabContent .footer-archive-link p {
+    margin: 65px 0 0 0;
+}
+
+.footer #footerTabContent .footer-archive-link a {
+    margin: 30px auto 0 auto;
 }
 
 .footer #footerTabContent .footer_themes {

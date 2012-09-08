@@ -86,6 +86,7 @@
 {% block footer %}
     <ul id="footerTab" class="nav nav-tabs">
         <li class="centered active"><a href="#events" data-toggle="tab">A venir</a></li>
+        <li class="centered"><a href="#news" data-toggle="tab">News - Archives</a></li>
         <!--<li class="centered"><a href="#medias" data-toggle="tab">En images</a></li>-->
         <li class="centered"><a href="#themes" data-toggle="tab">Thèmes</a></li>
     </ul>
@@ -147,12 +148,27 @@
             {% endblock %}
         </div>
         -->
+        <div class="tab-pane fade" id="news">
+            {% block footer_news %}
+                <div class="footer_news well">
+                    <ul class="news-links">
+                    {% for key, news in footer_news %}
+                        <li><a href="{{ path('FSBASTTFrontBundle_newspage', { 'id': news.id }) }}">{{ news.title|capitalize }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="footer-archive-link well">
+                    <p>Vous désirez voir plus d'actualités ?</p>
+                    <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_news_archivepage') }}">Voir les archives</a>
+                </div>
+            {% endblock %}
+        </div>
         <div class="tab-pane fade" id="themes">
             {% block footer_themes %}
                 <div class="footer_themes well centered">
                     {% for key, theme in footer_themes %}
                         <div class="theme">
-                            <a class="btn btn-theme" href="{{ path('FSBASTTFrontBundle_themepage', { 'name': theme|lower }) }}" title="Changer le thème du site en : {{ theme }}">{{ theme|upper }}</a>
+                            <a class="" href="{{ path('FSBASTTFrontBundle_themepage', { 'name': theme|lower }) }}" title="Changer le thème du site en : {{ theme }}">{{ theme|upper }}</a>
                         </div>
                     {% endfor %}
                 </div>

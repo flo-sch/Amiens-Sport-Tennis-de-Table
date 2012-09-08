@@ -6,12 +6,17 @@ use FSB\ASTT\FrontBundle\Controller\FrontController;
 
 class NewsController extends FrontController
 {
-    public function indexAction()
+    public function archiveAction()
     {
-        $pageTitle = 'Actualités';
+        $pageTitle = 'Actualités - Archives';
         
-        return $this->render('FSBASTTFrontBundle:News:index.html.twig', array(
-            'page_title' => $pageTitle
+        $em = $this->getDoctrine()->getEntityManager();
+        
+        $news = $em->getRepository('FSBASTTCoreBundle:News')->findAllDisplayedSorteredByDates();
+        
+        return $this->render('FSBASTTFrontBundle:News:archive.html.twig', array(
+            'page_title' => $pageTitle,
+            'all_news' => $news
         ));
     }
     

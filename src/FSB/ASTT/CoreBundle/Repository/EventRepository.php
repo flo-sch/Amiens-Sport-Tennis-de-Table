@@ -25,6 +25,26 @@ class EventRepository extends EntityRepository
         }
     }
     
+    public function findAllNext($nbResults = 10)
+    {
+        $today = new \DateTime();
+        $today->setTime(0, 0, 0);
+        
+        $qb = $this->_em->createQueryBuilder();
+        
+        $qb->select('e')
+            ->from('FSB\ASTT\CoreBundle\Entity\Event', 'e')
+            ->where('e.deleted = :deleted')
+            ->andWhere('e.date > :date')
+            ->setParameter('deleted', false)
+            ->setParameter('date', $today)
+            ->orderBy('e.date', 'ASC')
+            ->setMaxResults($nbResults)
+        ;
+        
+        return $qb->getQuery()->getResult();
+    }
+    
     public function find($id)
     {
         $qb = $this->_em->createQueryBuilder();

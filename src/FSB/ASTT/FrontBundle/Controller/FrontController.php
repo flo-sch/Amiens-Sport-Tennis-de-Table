@@ -28,9 +28,10 @@ class FrontController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
         
-        $events = $em->getRepository('FSBASTTCoreBundle:Event')->findAllDisplayedSorteredByDate(false, 11);
+        $events = $em->getRepository('FSBASTTCoreBundle:Event')->findAllNext(10);
         $medias = array();
         $themes = array('base', 'amelia', 'cerulean', 'cyborg', 'journal', 'readable', 'simplex', 'slate', 'spacelab', 'spruce', 'superhero', 'united');
+        $news = $em->getRepository('FSBASTTCoreBundle:News')->findLastDisplayedSorteredByDates(10);
         $news_flux = $em->getRepository('FSBASTTCoreBundle:News')->findAllDisplayedSorteredByDates();
         
         $css_theme = $this->getRequest()->cookies->get('css_theme');
@@ -51,6 +52,9 @@ class FrontController extends Controller
         }
         if (!array_key_exists('footer_themes', $parameters)) {
             $parameters['footer_themes'] = $themes;
+        }
+        if (!array_key_exists('footer_news', $parameters)) {
+            $parameters['footer_news'] = $news;
         }
         if (!array_key_exists('news_flux', $parameters)) {
             $parameters['news_flux'] = $news_flux;

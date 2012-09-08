@@ -1,0 +1,19 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block news_flux_container %}
+
+{% endblock %}
+
+{% block content %}
+    {% if all_news %}
+        <ul class="news-list">
+            {% for key, news in all_news %}
+                <li><a href="{{ path('FSBASTTFrontBundle_newspage', { 'id': news.id }) }}">[{{ news.date|date('d/m/Y') }}{% if news.place %} - {{ news.place|capitalize }}{% endif %}] {{ news.title|capitalize }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
