@@ -44,7 +44,7 @@ class MessagesController extends FrontController
             
             $session->setFlash('success', 'Votre message a bien été enregistré.');
             
-            return $this->redirect($this->generateUrl('FSBASTTFrontBundle_livre_or_page'));
+            return $this->redirect($this->generateUrl('FSBASTTFrontBundle_guestbook_page'));
         } else {
             $session->setFlash('error', 'Votre message n\'a pas pu être inséré.');
         }

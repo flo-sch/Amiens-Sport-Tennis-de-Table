@@ -3,7 +3,8 @@
 namespace FSB\ASTT\Admin\CrudBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\File\File;
 use FSB\ASTT\CoreBundle\Entity\Article;
 use FSB\ASTT\Admin\CrudBundle\Form\ArticleType;
 
@@ -85,7 +86,7 @@ class ArticleController extends Controller
                 $fileTmpName = $data->getFile()->getPathName();
                 $fileName = $data->getFile()->getClientOriginalName();
                 $file = new File($fileTmpName);
-                $file->move(Articles::$ArticlesUploadDir, $fileName);
+                $file->move(Article::$ArticlesUploadDir, $fileName);
                 $entity->setFile($fileName);
             }
             
@@ -154,7 +155,7 @@ class ArticleController extends Controller
                 $fileTmpName = $data->getFile()->getPathName();
                 $fileName = $data->getFile()->getClientOriginalName();
                 $file = new File($fileTmpName);
-                $file->move(Articles::$ArticlesUploadDir, $fileName);
+                $file->move(Article::$ArticlesUploadDir, $fileName);
                 $entity->setFile($fileName);
             }
             

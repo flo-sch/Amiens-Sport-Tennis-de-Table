@@ -14,7 +14,7 @@
             <a class="btn btn-primary absolute onRight onBottom" href="{{ path('FSBASTTFrontBundle_accesspage') }}">Trouver la salle</a>
         {% else %}
             <h2>Les informations pour le tournoi de cette année n'ont pas encore été publiées.</h2>
-            <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_club_tournament_get_results_page') }}" title="Voir les résultats de l'édition précédente [{{ previous_season }}]">Voir les résultats de l'édition précédente [{{ previous_season }}]</a>
+            <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_club_tournament_get_results_page') }}" title="Voir les résultats de l'édition précédente [{{ results_season }}]">Voir les résultats de l'édition précédente [{{ results_season }}]</a>
         {% endif %}
     </div>
 {% endblock %}

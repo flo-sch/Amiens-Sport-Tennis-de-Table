@@ -77,7 +77,8 @@ class TournamentsController extends FrontController
         return $this->render('FSBASTTFrontBundle:Tournaments:trophee_national.html.twig', array(
             'page_title' => $pageTitle,
             'national_trophee' => $national_trophee,
-            'infos' => $infos
+            'infos' => $infos,
+            'results_season' => (date('m') < 9 ? $this->getSportSeason(-1) : $this->getSportSeason(0))
         ));
     }
     
@@ -95,7 +96,7 @@ class TournamentsController extends FrontController
     
     public function getResultsAction()
     {
-        $season = (date('m') == 9 ? $this->getSportSeason(-1) : $this->getSportSeason(0));
+        $season = (date('m') < 9 ? $this->getSportSeason(-1) : $this->getSportSeason(0));
         return $this->downloadFile('resultats.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Resultats-'.$season.'.pdf');
     }
     

@@ -110,16 +110,15 @@ class FrontController extends Controller
         $response->headers->set('Expires', '0'); 
         $response->headers->set('Cache-Control', 'must-revalidate, post-check=0, pre-check=0'); 
         $response->headers->set('Content-Description', 'File Transfer');
-        $response->headers->set('Content-type', 'application/force-download');
+        $response->headers->set('Content-Type', 'application/force-download');
         $response->headers->set('Content-Transfer-Encoding', 'binary;');
         $response->headers->set('Content-Disposition', 'attachment; filename='.$downloadedName);
-        $response->headers->set('Content-length', $filesize);
-        
-        $response->sendHeaders();
+        $response->headers->set('Content-Length', $filesize);
 	
         $response->setContent(file_get_contents($file));
+        $response->send();
         
-        return $response->sendContent();
+        exit();
     }
 }
 
