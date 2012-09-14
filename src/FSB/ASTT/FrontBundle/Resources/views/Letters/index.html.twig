@@ -9,20 +9,18 @@
         <thead>
             <tr>
                 <th>Titre</th>
-                <th>Sujet</th>
                 <th>Date</th>
                 <th>Voir</th>
                 <th>Télécharger</th>
             </tr>
         </thead>
         <tbody>
-            {% for article in articles %}
+            {% for letter in letters %}
                 <tr>
-                    <td>{{ article.title|capitalize }}</td>
-                    <td>{{ article.subject|capitalize }}</td>
-                    <td>{% if article.date %}{{ article.date|date('d/m/Y') }}{% endif%}</td>
-                    <td><a href="{{ asset('files/articles/' ~ article.file) }}" target="_blank">ASTT-Article-{{ article.title }}</a></td>
-                    <td><a href="{{ path('FSBASTTFrontBundle_articles_downloadpage', { 'id': article.id }) }}">Télécharger</a></td>
+                    <td>{{ letter.title|capitalize }}</td>
+                    <td>{% if letter.date %}{{ letter.date|date('d/m/Y') }}{% endif%}</td>
+                    <td><a href="{{ asset('files/letters/' ~ letter.file) }}" target="_blank">ASTT-Lettre-{{ letter.title }}</a></td>
+                    <td><a href="{{ path('FSBASTTFrontBundle_letters_downloadpage', { 'id': letter.id }) }}">Télécharger</a></td>
                 </tr>
             {% endfor %}
         </tbody>

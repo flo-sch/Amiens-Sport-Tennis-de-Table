@@ -3,6 +3,7 @@
 namespace FSB\ASTT\FrontBundle\Controller;
 
 use FSB\ASTT\FrontBundle\Controller\FrontController;
+use FSB\ASTT\CoreBundle\Entity\Article;
 
 class ArticlesController extends FrontController
 {
@@ -30,6 +31,8 @@ class ArticlesController extends FrontController
             throw $this->createNotFoundException('L\'article que vous demandez n\'existe pas, ou plus, ou pas encore.');
         }
         
-        return $this->downloadFile($article->getFile(), 'articles/', 'ASTT-Article-'.$article->getTitle().'.pdf');
+        $file_infos = pathinfo(Article::$ArticlesUploadDir.$article->getFile());
+        
+        return $this->downloadFile($article->getFile(), 'articles/', 'ASTT-Article-'.$article->getTitle().'.'.$file_infos['extension']);
     }
 }

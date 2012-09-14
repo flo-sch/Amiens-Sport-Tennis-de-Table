@@ -123,9 +123,17 @@ FSBASTTFrontBundle_articlespage:
     pattern: /articles
     defaults: { _controller: FSBASTTFrontBundle:Articles:index }
 
-FSBASTTFrontBundle_downloadpage:
+FSBASTTFrontBundle_articles_downloadpage:
     pattern: /articles/{id}/get
     defaults: { _controller: FSBASTTFrontBundle:Articles:download }
+
+FSBASTTFrontBundle_letterspage:
+    pattern: /letters
+    defaults: { _controller: FSBASTTFrontBundle:Letters:index }
+
+FSBASTTFrontBundle_letters_downloadpage:
+    pattern: /letters/{id}/get
+    defaults: { _controller: FSBASTTFrontBundle:Letters:download }
 
 FSBASTTFrontBundle_partnerspage:
     pattern: /partners
