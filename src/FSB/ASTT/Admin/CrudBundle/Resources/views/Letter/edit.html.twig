@@ -1,0 +1,22 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Edition d'une lettre du club</h1>
+
+    <form action="{{ path('letter_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        {{ form_widget(edit_form) }}
+        <button class="btn btn-success" type="submit">Editer</button>
+    </form>
+
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('letter') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <form action="{{ path('letter_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

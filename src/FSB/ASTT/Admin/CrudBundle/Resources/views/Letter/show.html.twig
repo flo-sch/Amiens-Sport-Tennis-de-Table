@@ -1,0 +1,26 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Lettre du club</h1>
+    
+    <div class="letter display-single">
+        <h3>{{ entity.title|capitalize }}</h3>
+        <h5>Le {{ entity.date|date('d/m/Y') }}</h5>
+        <p><a class="btn btn-info" href="{{ asset('files/letters/' ~ entity.file) }}">{{ entity.file }}</a></p>
+    </div>
+    
+    <ul class="record_actions">
+        <li>
+            <a class="btn btn-info" href="{{ path('letter') }}">Revenir à la liste</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('letter_edit', { 'id': entity.id }) }}">Editer</a>
+        </li>
+        <li>
+            <form action="{{ path('letter_delete', { 'id': entity.id }) }}" method="post">
+                {{ form_widget(delete_form) }}
+                <button class="btn btn-warning" type="submit">Supprimer</button>
+            </form>
+        </li>
+    </ul>
+{% endblock %}

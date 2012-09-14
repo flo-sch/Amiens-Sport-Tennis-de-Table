@@ -1,0 +1,30 @@
+letter:
+    pattern:  /
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:index" }
+
+letter_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:show" }
+
+letter_new:
+    pattern:  /new
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:new" }
+
+letter_create:
+    pattern:  /create
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:create" }
+    requirements: { _method: post }
+
+letter_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:edit" }
+
+letter_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:update" }
+    requirements: { _method: post }
+
+letter_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Letter:delete" }
+    requirements: { _method: post }

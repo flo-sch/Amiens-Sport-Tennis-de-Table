@@ -24,6 +24,10 @@ FSBASTTAdminCrudBundle_interview:
     resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/interview.yml"
     prefix: /interviews/
 
+FSBASTTAdminCrudBundle_letter:
+    resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/letter.yml"
+    prefix: /letters/
+
 FSBASTTAdminCrudBundle_link:
     resource: "@FSBASTTAdminCrudBundle/Resources/config/routing/link.yml"
     prefix: /links/
