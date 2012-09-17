@@ -1,0 +1,10 @@
+{% extends('FSBASTTAdminCrudBundle::layout.html.twig') %}
+
+{% block main %}
+    <h1>Importer des joueurs depuis un fichier CSV</h1>
+    
+    <form action="{{ path('player_import_checkform') }}" method="post" {{ form_enctype(import_form) }}>
+        {{ form_widget(import_form) }}
+        <button class="btn btn-success" type="submit">Importer</button>
+    </form>
+{% endblock %}

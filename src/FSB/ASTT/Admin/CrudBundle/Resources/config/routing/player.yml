@@ -28,3 +28,12 @@ player_delete:
     pattern:  /{id}/delete
     defaults: { _controller: "FSBASTTAdminCrudBundle:Player:delete" }
     requirements: { _method: post }
+
+player_import:
+    pattern: /import
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Player:import" }
+
+player_import_checkform:
+    pattern: /import/check
+    defaults: { _controller: "FSBASTTAdminCrudBundle:Player:importCheck" }
+    requirements: { _method: post }

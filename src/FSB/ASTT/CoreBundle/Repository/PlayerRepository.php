@@ -106,4 +106,18 @@ class PlayerRepository extends EntityRepository
         
         return $qb->getQuery()->getResult();
     }
+    
+    public function removeAllPlayers()
+    {
+        $db = $this->_em->createQueryBuilder();
+        
+        $db->update('FSB\ASTT\CoreBundle\Entity\Player p')
+            ->set('p.hidden', ':hidden')
+            ->where('p.hidden = :lasthidden')
+            ->setParameter('hidden', true)
+            ->setParameter('lasthidden', false)
+        ;
+        
+        return $db->getQuery()->execute();
+    }
 }

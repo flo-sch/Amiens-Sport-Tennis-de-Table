@@ -179,11 +179,91 @@ class PlayerController extends Controller
 
         return $this->redirect($this->generateUrl('player'));
     }
+    
+    
+    public function importAction()
+    {
+        $form = $this->createImportForm();
+        
+        return $this->render('FSBASTTAdminCrudBundle:Player:import.html.twig', array(
+            'import_form' => $form->createView()
+        ));
+    }
+    
+    public function importCheckAction()
+    {
+        $form = $this->createImportForm();
+        $request = $this->getRequest();
+        
+        $form->bindRequest($request);
+        
+        $civilities = array(
+            'M' => 'M',
+            'F' => 'W'
+        );
+        
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getEntityManager();
+            $data = $form->getData();
+            
+            $csvFile = $data['file'];
+            $csvContent = file($csvFile->getPathName());
+            unset($csvContent[0]);
+            
+            foreach ($csvContent as $playerLine) {
+                $playerInfos = explode(';', $playerLine);
+                $player = new Player();
+                $player->setLicence($playerInfos[0]);
+                $player->setCivility($civilities[$playerInfos[9]]);
+                $names = explode(' ', $playerInfos[1]);
+                if (count($names) == 4) {
+                    $player->setLastname(utf8_encode($names[0]).' '.utf8_encode($names[1]));
+                    $player->setFirstname(utf8_encode($names[2]));
+                } else {
+                    $player->setLastname($names[0]);
+                    $player->setFirstname($names[1]);
+                }
+                $birthdateInfos = explode('/', $playerInfos[5]);
+                $birthdate = new \DateTime();
+                $birthdate->setDate(($birthdateInfos[2] <= date('y') ? '20'.$birthdateInfos[2] : '19'.$birthdateInfos[2]), $birthdateInfos[1], $birthdateInfos[0]);
+                $birthdate->setTime(12, 0, 0);
+                $player->setBirthday($birthdate);
+                $categoryInfos = explode(' ', $playerInfos[8]);
+                if (count($categoryInfos) == 4) {
+                    $player->setCategory(substr($categoryInfos[0], 0, 1).$categoryInfos[1]);
+                } else {
+                    $player->setCategory(substr($categoryInfos[0], 0, 1));
+                }
+                $pointsInfos = explode('/', $playerInfos[10]);
+                $player->setClassement(substr($pointsInfos[1], 1, 1));
+                $player->setPoints(intval(substr($pointsInfos[0], 0, -1)));
+                $em->persist($player);
+            }
+            
+            $em->getRepository('FSBASTTCoreBundle:Player')->removeAllPlayers();
+            $em->flush();
+            
+            $session = $this->getRequest()->getSession();
+            $session->setFlash('success', 'Les joueurs ont été correctement importés !');
+            
+            return $this->redirect($this->generateUrl('player'));
+        }
+        
+        return $this->redirect($this->generateUrl('player_import'));
+    }
 
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder(array('id' => $id))
             ->add('id', 'hidden')
+            ->getForm()
+        ;
+    }
+    
+    private function createImportForm()
+    {
+        return $this->createFormBuilder()
+            ->add('file', 'file')
             ->getForm()
         ;
     }
