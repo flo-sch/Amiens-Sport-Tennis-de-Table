@@ -26,8 +26,9 @@ class ResultRepository extends EntityRepository
         
         $qb->select('r')
             ->from('FSB\ASTT\CoreBundle\Entity\Result', 'r')
-            ->where('r.deleted = 0')
-            ->where('r.team = :team')
+            ->where('r.deleted = :deleted')
+            ->andWhere('r.team = :team')
+            ->setParameter('deleted', false)
             ->setParameter('team', $team)
             ->orderBy('r.week', 'DESC');
         
