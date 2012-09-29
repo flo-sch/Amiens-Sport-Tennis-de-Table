@@ -189,6 +189,14 @@ class PlayerController extends Controller
             'import_form' => $form->createView()
         ));
     }
+
+    private function createDeleteForm($id)
+    {
+        return $this->createFormBuilder(array('id' => $id))
+            ->add('id', 'hidden')
+            ->getForm()
+        ;
+    }
     
     public function importCheckAction()
     {
@@ -210,37 +218,59 @@ class PlayerController extends Controller
             $csvContent = file($csvFile->getPathName());
             unset($csvContent[0]);
             
+            $allreadyMemberIds = array();
             foreach ($csvContent as $playerLine) {
+                //
+                // Fucking tableau excel de merde !!! C'est vraiment des glands les informaticiens de la ligue !!!!!!
+                //
                 $playerInfos = explode(';', $playerLine);
-                $player = new Player();
-                $player->setLicence($playerInfos[0]);
-                $player->setCivility($civilities[$playerInfos[9]]);
+
+                $licence = $playerInfos[0];
+
+                $civility = $civilities[$playerInfos[9]];
+
                 $names = explode(' ', $playerInfos[1]);
-                if (count($names) == 4) {
-                    $player->setLastname(utf8_encode($names[0]).' '.utf8_encode($names[1]));
-                    $player->setFirstname(utf8_encode($names[2]));
-                } else {
-                    $player->setLastname($names[0]);
-                    $player->setFirstname($names[1]);
-                }
+                $lastname = ((count($names) == 4) ? utf8_encode($names[0]).' '.utf8_encode($names[1]) : utf8_encode($names[0]));
+                $firstname = ((count($names) == 4) ? utf8_encode($names[2]) : utf8_encode($names[1]));
+
                 $birthdateInfos = explode('/', $playerInfos[5]);
                 $birthdate = new \DateTime();
                 $birthdate->setDate(($birthdateInfos[2] <= date('y') ? '20'.$birthdateInfos[2] : '19'.$birthdateInfos[2]), $birthdateInfos[1], $birthdateInfos[0]);
                 $birthdate->setTime(12, 0, 0);
-                $player->setBirthday($birthdate);
+
                 $categoryInfos = explode(' ', $playerInfos[8]);
-                if (count($categoryInfos) == 4) {
-                    $player->setCategory(substr($categoryInfos[0], 0, 1).$categoryInfos[1]);
+                $category = substr($categoryInfos[0], 0, 1).((count($categoryInfos) == 4) ? $categoryInfos[1] : '');
+
+                $pointsInfos = explode(' / ', $playerInfos[10]);
+                $classement = ((strlen($pointsInfos[1]) >= 8) ? 'N' : intval(substr($pointsInfos[1], 0)));
+                $points = intval(substr($pointsInfos[0], 0, -1));
+
+                $player = $em->getRepository('FSBASTTCoreBundle:Player')->findOneByLicence($licence);
+
+                if (!$player) {
+                    $player = new Player();
+                    $player->setLicence($playerInfos[0]);
                 } else {
-                    $player->setCategory(substr($categoryInfos[0], 0, 1));
+                    array_push($allreadyMemberIds, $player->getId());
                 }
-                $pointsInfos = explode('/', $playerInfos[10]);
-                $player->setClassement(substr($pointsInfos[1], 1, 1));
-                $player->setPoints(intval(substr($pointsInfos[0], 0, -1)));
+
+                $player->setCivility($civility);
+                $player->setLastname($lastname);
+                $player->setFirstname($firstname);
+                $player->setBirthday($birthdate);
+                $player->setCategory($category);
+                $player->setClassement($classement);
+                $player->setPoints($points);
                 $em->persist($player);
             }
-            
-            $em->getRepository('FSBASTTCoreBundle:Player')->removeAllPlayers();
+
+            $leavingPlayersIds = $em->getRepository('FSBASTTCoreBundle:Player')->findPlayersNotInIdArray($allreadyMemberIds);
+            $leavingPlayers = array();
+            foreach ($leavingPlayersIds as $leavingPlayer) {
+                array_push($leavingPlayers, intval($leavingPlayer['id']));
+            }
+            $em->getRepository('FSBASTTCoreBundle:Player')->removePlayersByIdArray($leavingPlayers);
+
             $em->flush();
             
             $session = $this->getRequest()->getSession();
@@ -250,14 +280,6 @@ class PlayerController extends Controller
         }
         
         return $this->redirect($this->generateUrl('player_import'));
-    }
-
-    private function createDeleteForm($id)
-    {
-        return $this->createFormBuilder(array('id' => $id))
-            ->add('id', 'hidden')
-            ->getForm()
-        ;
     }
     
     private function createImportForm()

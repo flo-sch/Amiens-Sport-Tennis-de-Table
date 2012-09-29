@@ -300,6 +300,10 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     text-align: center;
 }
 
+.team-photo {
+    width: 400px;
+}
+
 .results-summary {
     float: left;
 }

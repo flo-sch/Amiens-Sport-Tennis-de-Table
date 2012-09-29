@@ -20,7 +20,7 @@ class InformationsController extends FrontController
         $pageTitle = 'Historique';
 
 
-        return $this->render('FSBASTTFrontBundle:Informations:historique.html.twig', array(
+        return $this->render('FSBASTTFrontBundle:Informations:history.html.twig', array(
             'page_title' => $pageTitle
         ));
     }

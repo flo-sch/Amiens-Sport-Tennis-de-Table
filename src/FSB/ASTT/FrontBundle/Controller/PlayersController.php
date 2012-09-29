@@ -38,12 +38,13 @@ class PlayersController extends FrontController
             throw $this->createNotFoundException('Cette équipe n\'existe pas.');
         }
         
-        $rep = 'images/joueurs/';
+        $rep = 'images/players/';
         $allowed_formats = array('.jpg', '.JPG', '.jpeg', '.JPEG', '.gif', '.png', '.PNG');
         $format = '';
         foreach ($allowed_formats as $af) {
             if (file_exists($rep.$player->getLicence().$af)) {
                 $format = $af;
+                break;
             }
         }
         

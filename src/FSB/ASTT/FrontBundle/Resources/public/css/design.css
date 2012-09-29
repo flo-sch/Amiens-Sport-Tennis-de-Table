@@ -137,6 +137,12 @@ body {
     text-align: justify;
 }
 
+/* TEAMS */
+.team-photo {
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
 /* LIVRE OR */
 .messages .message {
     border-top: 1px dashed black;

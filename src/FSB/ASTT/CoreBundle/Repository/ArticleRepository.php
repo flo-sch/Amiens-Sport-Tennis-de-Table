@@ -30,8 +30,15 @@ class ArticleRepository extends EntityRepository
             ->setParameter('deleted', false)
             ->setParameter('id', $id)
         ;
-        
-        return $qb->getQuery()->getSingleResult();
+
+        try {
+            $result = $qb->getQuery()->getSingleResult();
+        }
+        catch (\Doctrine\Orm\NoResultException $NRE) {
+            $result = NULL;
+        }
+
+        return $result;
     }
     
     public function findOneById($id)

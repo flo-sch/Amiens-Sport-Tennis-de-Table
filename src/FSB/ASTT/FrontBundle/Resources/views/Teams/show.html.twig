@@ -29,6 +29,11 @@
                 {% endfor %}
             </tbody>
         </table>
+        {% if photo %}
+            <div class="photo-wrapper">
+                <img src="{{ asset('images/teams/' ~ photo) }}" class="team-photo" alt="Photo de l'équipe" />
+            </div>
+        {% endif %}
     {% else %}
         <h3>Aucun joueur n'est membre de cette équipe pour le moment.</h3>
     {% endif %}

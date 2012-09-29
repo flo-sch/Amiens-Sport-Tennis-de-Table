@@ -70,8 +70,15 @@ class PlayerRepository extends EntityRepository
             ->setParameter('hidden', false)
             ->setParameter('id', $id)
         ;
-        
-        return $qb->getQuery()->getSingleResult();
+
+        try {
+            $result = $qb->getQuery()->getSingleResult();
+        }
+        catch (\Doctrine\Orm\NoResultException $NRE) {
+            $result = NULL;
+        }
+
+        return $result;
     }
     
     public function findOneById($id)
@@ -90,8 +97,15 @@ class PlayerRepository extends EntityRepository
             ->setParameter('hidden', false)
             ->setParameter('licence', $licence)
         ;
-        
-        return $qb->getQuery()->getSingleResult();
+
+        try {
+            $result = $qb->getQuery()->getSingleResult();
+        }
+        catch (\Doctrine\Orm\NoResultException $NRE) {
+            $result = NULL;
+        }
+
+        return $result;
     }
     
     public function findAll()
@@ -107,17 +121,30 @@ class PlayerRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
     
-    public function removeAllPlayers()
+    public function removePlayersByIdArray($ids = array())
     {
-        $db = $this->_em->createQueryBuilder();
+        $qb = $this->_em->createQueryBuilder();
         
-        $db->update('FSB\ASTT\CoreBundle\Entity\Player p')
+        $qb->update('FSB\ASTT\CoreBundle\Entity\Player p')
             ->set('p.hidden', ':hidden')
-            ->where('p.hidden = :lasthidden')
+            ->where($qb->expr()->in('p.id', ':ids'))
             ->setParameter('hidden', true)
-            ->setParameter('lasthidden', false)
+            ->setParameter('ids', $ids)
         ;
         
-        return $db->getQuery()->execute();
+        return $qb->getQuery()->execute();
+    }
+
+    public function findPlayersNotInIdArray($ids = array())
+    {
+        $qb = $this->_em->createQueryBuilder();
+
+        $qb->select('p.id')
+            ->from('FSB\ASTT\CoreBundle\Entity\Player', 'p')
+            ->where($qb->expr()->notIn('p.id', ':ids'))
+            ->setParameter('ids', $ids)
+        ;
+
+        return $qb->getQuery()->getResult();
     }
 }

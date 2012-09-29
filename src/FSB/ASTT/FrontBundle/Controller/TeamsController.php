@@ -37,11 +37,22 @@ class TeamsController extends FrontController
         }
         
         $players = $em->getRepository('FSBASTTCoreBundle:Player')->findByTeam($team->getId());
-        
+
+        $rep = 'images/teams/';
+        $allowed_formats = array('.jpg', '.JPG', '.jpeg', '.JPEG', '.gif', '.png', '.PNG');
+        $photo = NULL;
+        foreach ($allowed_formats as $af) {
+            if (file_exists($rep.$team->getId().$af)) {
+                $photo = $team->getId().$af;
+                break;
+            }
+        }
+
         return $this->render('FSBASTTFrontBundle:Teams:show.html.twig', array(
             'page_title' => $pageTitle,
             'team' => $team,
-            'players' => $players
+            'players' => $players,
+            'photo' => $photo
         ));
     }
     
