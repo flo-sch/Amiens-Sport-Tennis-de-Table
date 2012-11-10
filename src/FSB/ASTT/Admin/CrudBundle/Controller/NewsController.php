@@ -141,6 +141,8 @@ class NewsController extends Controller
             throw $this->createNotFoundException('Unable to find News entity.');
         }
 
+        $last_screen = $entity->getScreen();
+
         $editForm   = $this->createForm(new NewsType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
         
@@ -150,13 +152,15 @@ class NewsController extends Controller
         
         if ($editForm->isValid()) {
             $data = $editForm->getData();
-            
-            if ($data->getScreen() instanceof UploadedFile) {
+
+            if ($data->getScreen() && $data->getScreen() instanceof UploadedFile) {
                 $screenTmpName = $data->getScreen()->getPathName();
                 $screenFileName = $data->getScreen()->getClientOriginalName();
                 $screenFile = new File($screenTmpName);
                 $screenFile->move(News::$ScreensUploadDir, $screenFileName);
                 $entity->setScreen($screenFileName);
+            } else {
+                $entity->setScreen($last_screen);
             }
             
             $em->persist($entity);

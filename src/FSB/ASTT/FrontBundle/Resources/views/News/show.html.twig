@@ -7,7 +7,7 @@
 {% block content %}
     {% if news %}
         <div class="news display-single centered">
-            <h3>{{ news.title|capitalize }}</h3>
+            <h3>{{ news.title }}</h3>
             <h5>
                 {% if news.date %}Le {{ news.date|date('d-m-Y') }}
                     {% if news.place %} - {{ news.place|capitalize }}{% endif %}

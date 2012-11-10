@@ -141,6 +141,8 @@ class ArticleController extends Controller
             throw $this->createNotFoundException('Unable to find Article entity.');
         }
 
+        $last_file = $entity->getFile();
+
         $editForm   = $this->createForm(new ArticleType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
 
@@ -151,12 +153,14 @@ class ArticleController extends Controller
         if ($editForm->isValid()) {
             $data = $editForm->getData();
             
-            if ($data->getFile() instanceof UploadedFile) {
+            if ($data->getFile() && $data->getFile() instanceof UploadedFile) {
                 $fileTmpName = $data->getFile()->getPathName();
                 $fileName = $data->getFile()->getClientOriginalName();
                 $file = new File($fileTmpName);
                 $file->move(Article::$ArticlesUploadDir, $fileName);
                 $entity->setFile($fileName);
+            } else {
+                $entity->setFile($last_file);
             }
             
             $em->persist($entity);

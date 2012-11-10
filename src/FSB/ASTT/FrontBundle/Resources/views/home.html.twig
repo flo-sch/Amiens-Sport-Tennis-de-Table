@@ -31,7 +31,7 @@
                             <div class="news_row">
                         {% endif %}
                                 <div class="news news_{{ key }} well">
-                                    <h4 class="news_title">{{ element.title|capitalize }}</h4>
+                                    <h4 class="news_title">{{ element.title }}</h4>
                                     <h5 class="news_infos">
                                         {% if element.date %}Le {{ element.date|date('d-m-Y') }}
                                             {% if element.place %} - {{ element.place|capitalize }}{% endif %}
