@@ -1,0 +1,15 @@
+{% extends('FSBASTTFrontBundle::template.news.html.twig') %}
+
+{% block page_title %}
+    {{ page_title }}
+{% endblock %}
+
+{% block content %}
+    <div class="global-wrapper display-single centered">
+        Pour vous inscrire, ou inscrire votre enfant au club,
+        Il vous suffit de télécharger le formulaire d'inscription ci-joint,
+        et de l'apporter complété accompagné du réglement.
+        <br />
+        <a class='btn btn-primary' href='{{ path('FSBASTTFrontBundle_registration_getpage') }}'>Formulaire d'inscription</a>
+    </div>
+{% endblock %}

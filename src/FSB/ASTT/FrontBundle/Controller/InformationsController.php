@@ -19,7 +19,6 @@ class InformationsController extends FrontController
     {
         $pageTitle = 'Historique';
 
-
         return $this->render('FSBASTTFrontBundle:Informations:history.html.twig', array(
             'page_title' => $pageTitle
         ));
@@ -28,6 +27,25 @@ class InformationsController extends FrontController
     public function scheduleAction()
     {
         return $this->downloadFile('planning.pdf', $this->getSportSeason(0).'/', 'ASTT-horaires-'.$this->getSportSeason(0).'.pdf');
+    }
+
+    public function organizationAction()
+    {
+        return $this->downloadFile('organigramme.pdf', $this->getSportSeason(0).'/', 'ASTT-organigramme-'.$this->getSportSeason(0).'.pdf');
+    }
+
+    public function registrationAction()
+    {
+        $pageTitle = 'Inscription';
+
+        return $this->render('FSBASTTFrontBundle:Informations:register.html.twig', array(
+            'page_title' => $pageTitle
+        ));
+    }
+
+    public function getRegistrationFormAction()
+    {
+        return $this->downloadFile('inscription.pdf', $this->getSportSeason(0).'/', 'ASTT-inscription-'.$this->getSportSeason(0).'.pdf');
     }
     
     public function pricesAction()

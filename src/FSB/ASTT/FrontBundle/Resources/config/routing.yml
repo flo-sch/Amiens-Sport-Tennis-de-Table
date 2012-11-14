@@ -15,6 +15,10 @@ FSBASTTFrontBundle_historiquepage:
     pattern: /history
     defaults: { _controller: FSBASTTFrontBundle:Informations:historique }
 
+FSBASTTFrontBundle_organizationpage:
+    pattern: /organization
+    defaults: { _controller: FSBASTTFrontBundle:Informations:organization }
+
 # Sportif
 FSBASTTFrontBundle_training_schedulepage:
     pattern: /schedules
@@ -23,6 +27,14 @@ FSBASTTFrontBundle_training_schedulepage:
 FSBASTTFrontBundle_training_pricespage:
     pattern: /tarifs
     defaults: { _controller: FSBASTTFrontBundle:Informations:prices }
+
+FSBASTTFrontBundle_registrationpage:
+    pattern: /registration
+    defaults: { _controller: FSBASTTFrontBundle:Informations:registration }
+
+FSBASTTFrontBundle_registration_getpage:
+    pattern: /registration/get
+    defaults: { _controller: FSBASTTFrontBundle:Informations:getRegistrationForm }
 
 FSBASTTFrontBundle_babypingpage:
     pattern: /babyping
