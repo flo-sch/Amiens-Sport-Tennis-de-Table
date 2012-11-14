@@ -6,7 +6,7 @@
     <div class="letter display-single">
         <h3>{{ entity.title|capitalize }}</h3>
         <h5>Le {{ entity.date|date('d/m/Y') }}</h5>
-        <p><a class="btn btn-info" href="{{ asset('files/letters/' ~ entity.file) }}">{{ entity.file }}</a></p>
+        <p><a href="{{ asset('files/letters/' ~ entity.file) }}">{{ entity.file }}</a></p>
     </div>
     
     <ul class="record_actions">

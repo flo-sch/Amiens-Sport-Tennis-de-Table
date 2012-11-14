@@ -16,6 +16,7 @@
                 <th>Adversaire</th>
                 <th>Score</th>
                 <th>Description</th>
+                <th>Fichier associé</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -25,11 +26,12 @@
                 <td><a href="{{ path('result_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.team }}</td>
                 <td>{{ entity.week }}</td>
-                <td>{% if entity.date %}{{ entity.date|date('d/m/Y') }}{% endif%}</td>
+                <td>{% if entity.date %}{{ entity.date|date('d/m/Y') }}{% endif %}</td>
                 <td>{{ entity.place }}</td>
                 <td>{{ entity.opponent }}</td>
                 <td>{{ entity.team }} --- {{ entity.teamScore }} - {{ entity.opponentScore }} --- {{ entity.opponent }}</td>
                 <td>{{ entity.description[0:300]|e('html')|nl2br }}</td>
+                <td>{% if entity.file %}<a href='{{ asset('files/results/' ~ entity.file) }}' target='_blank'>{{ entity.file }}</a>{% endif %}</td>
                 <td>
                     <ul>
                         <li>

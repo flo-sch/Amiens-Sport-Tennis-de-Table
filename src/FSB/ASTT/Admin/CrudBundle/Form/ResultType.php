@@ -25,6 +25,7 @@ class ResultType extends AbstractType
             ->add('opponent', 'text', array('label' => 'Adversaire', 'required' => true, 'max_length' => 100))
             ->add('opponentScore', 'integer', array('label' => 'Score de l\'adversaire', 'required' => true, 'invalid_message' => 'Le score doit être compris entre 0 et 20', 'invalid_message_parameters' => array('%num%' > 20)))
             ->add('description', 'textarea', array('label' => 'Résumé', 'required' => false))
+            ->add('file', 'file', array('label' => 'Fichier', 'required' => false))
         ;
     }
 

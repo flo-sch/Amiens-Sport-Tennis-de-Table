@@ -32,7 +32,12 @@
                         <td>{{ result.place|capitalize }}</td>
                         <td>{{ result.opponent|capitalize }}</td>
                         <td>{{ result.teamScore }} - {{ result.opponentScore }}</td>
-                        <td class="results-summary-description">{{ result.description|e('html')|nl2br }}</td>
+                        <td class="results-summary-description">
+                            {{ result.description|e('html')|nl2br }}
+                            {% if result.file %}
+                                <div><a href='{{ asset('files/results/' ~ result.file) }}' target='_blank'>Voir le fichier joint</a></div>
+                            {% endif %}
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>

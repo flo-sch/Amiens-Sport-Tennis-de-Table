@@ -51,6 +51,11 @@ FSB\ASTT\CoreBundle\Entity\Result:
     description:
       type: text
       nullable: false
+    file:
+      type: string
+      length: 500
+      fixed: false
+      nullable: true
   oneToOne:
     team:
       targetEntity: Team

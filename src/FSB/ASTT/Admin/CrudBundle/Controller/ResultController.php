@@ -3,7 +3,8 @@
 namespace FSB\ASTT\Admin\CrudBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\File\File;
 use FSB\ASTT\CoreBundle\Entity\Result;
 use FSB\ASTT\Admin\CrudBundle\Form\ResultType;
 
@@ -79,6 +80,15 @@ class ResultController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+
+            if ($data->getFile() instanceof UploadedFile) {
+                $fileTmpName = $data->getFile()->getPathName();
+                $fileName = $data->getFile()->getClientOriginalName();
+                $file = new File($fileTmpName);
+                $file->move(Result::$ResultsUploadDir, $fileName);
+                $entity->setFile($fileName);
+            }
+
             $em->persist($entity);
             $em->flush();
 
@@ -130,6 +140,8 @@ class ResultController extends Controller
             throw $this->createNotFoundException('Unable to find Result entity.');
         }
 
+        $last_file = $entity->getFile();
+
         $editForm   = $this->createForm(new ResultType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
 
@@ -138,6 +150,18 @@ class ResultController extends Controller
         $editForm->bindRequest($request);
 
         if ($editForm->isValid()) {
+            $data = $editForm->getData();
+
+            if ($data->getFile() && $data->getFile() instanceof UploadedFile) {
+                $fileTmpName = $data->getFile()->getPathName();
+                $fileName = $data->getFile()->getClientOriginalName();
+                $file = new File($fileTmpName);
+                $file->move(Result::$ResultsUploadDir, $fileName);
+                $entity->setFile($fileName);
+            } else {
+                $entity->setFile($last_file);
+            }
+            
             $em->persist($entity);
             $em->flush();
 

@@ -7,7 +7,7 @@
         <h3>{{ entity.title|capitalize }}</h3>
         <h4>{{ entity.subject|capitalize }}</h4>
         <h5>Le {{ entity.date|date('d/m/Y') }}</h5>
-        <p><a class="btn btn-info" href="{{ asset('files/articles/' ~ entity.file) }}">{{ entity.file }}</a></p>
+        <p><a href="{{ asset('files/articles/' ~ entity.file) }}">{{ entity.file }}</a></p>
     </div>
     
     <ul class="record_actions">

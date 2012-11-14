@@ -9,6 +9,7 @@
         <div>Adversaire : {{ entity.opponent }}</div>
         <div>Score: {{ entity.team }} --- {{ entity.teamScore }} - {{ entity.opponentScore }} --- {{ entity.opponent }}</div>
         <p>{{ entity.description[0:300]|e('html')|nl2br }}</p>
+        {% if entity.file %}<p><a href="{{ asset('files/results/' ~ entity.file) }}" target="_blank">{{ entity.file }}</a></p>{% endif %}
     </div>
 
     <ul class="record_actions">

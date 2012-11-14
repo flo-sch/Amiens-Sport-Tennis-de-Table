@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Result
 {
+    public static $ResultsUploadDir = 'files/results';
     /**
      * @var integer $id
      */
@@ -69,6 +70,10 @@ class Result
      */
     private $team;
 
+    /**
+     * @var string $file
+     */
+    private $file;
 
     /**
      * __construct
@@ -313,6 +318,26 @@ class Result
     public function getTeam()
     {
         return $this->team;
+    }
+
+    /**
+     * Set file
+     *
+     * @param string $file
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+    }
+
+    /**
+     * Get file
+     *
+     * @return string 
+     */
+    public function getFile()
+    {
+        return $this->file;
     }
     
     /**

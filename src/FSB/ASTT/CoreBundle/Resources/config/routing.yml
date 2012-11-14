@@ -1,3 +1,0 @@
-FSBASTTCoreBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FSBASTTCoreBundle:Default:index }
