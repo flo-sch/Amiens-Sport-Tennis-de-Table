@@ -19,9 +19,15 @@ class MessageController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
 
         $entities = $em->getRepository('FSBASTTCoreBundle:Message')->findAllDisplayedSorteredByCreatedAt();
-        
+        $deleteForms = array();
+
+        foreach ($entities as $entity) {
+            $deleteForms[] = $this->createDeleteForm($entity->getId())->createView();
+        }
+
         return $this->render('FSBASTTAdminCrudBundle:Message:index.html.twig', array(
             'entities' => $entities,
+            'delete_forms' => $deleteForms
         ));
     }
 

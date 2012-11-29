@@ -15,7 +15,7 @@
             </tr>
         </thead>
         <tbody>
-        {% for entity in entities %}
+        {% for entityIndex, entity in entities %}
             <tr>
                 <td><a href="{{ path('message_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{% if entity.createdAt %}{{ entity.createdAt|date('d/m/Y H:i:s') }}{% endif%}</td>
@@ -26,6 +26,12 @@
                     <ul>
                         <li>
                             <a href="{{ path('message_show', { 'id': entity.id }) }}">Détail</a>
+                        </li>
+                        <li>
+                            <form action="{{ path('message_delete', { 'id': entity.id }) }}" method="post">
+                                {{ form_widget(delete_forms[entityIndex]) }}
+                                <button type="submit" class="btn btn-link">Supprimer</button>
+                            </form>
                         </li>
                     </ul>
                 </td>
