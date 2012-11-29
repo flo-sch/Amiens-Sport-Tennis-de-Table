@@ -48,7 +48,6 @@ class ResultController extends Controller
         return $this->render('FSBASTTAdminCrudBundle:Result:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
-
         ));
     }
 
@@ -79,8 +78,9 @@ class ResultController extends Controller
         $form->bindRequest($request);
 
         if ($form->isValid()) {
+            $data = $form->getData();
             $em = $this->getDoctrine()->getEntityManager();
-
+            
             if ($data->getFile() instanceof UploadedFile) {
                 $fileTmpName = $data->getFile()->getPathName();
                 $fileName = $data->getFile()->getClientOriginalName();
