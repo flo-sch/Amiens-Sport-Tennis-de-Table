@@ -5,16 +5,25 @@
 {% endblock %}
 
 {% block content %}
-    <div class="menu_interviews">
-        {% for key, interview in interviews %}
-            <li><a href="{{ path('FSBASTTFrontBundle_interviewspage', { 'id': interview.id }) }}" title="Voir l'interview de {{ interview.player }}">{{ interview.player }}</a></li>
-        {% endfor %}
-    </div>
-    <div class="interview display-single  centered">
-        <h3>{{ interview.player }}</h3>
-        <h5>{{ interview.date|date('d-m-Y') }}</h5>
-        <p>
-            {{ interview.description|e('html')|nl2br }}
-        </p>
-    </div>
+    {% if interviews %}
+        <div class="menu_interviews">
+            {% for key, interview in interviews %}
+                <li><a href="{{ path('FSBASTTFrontBundle_interviewspage', { 'id': interview.id }) }}" title="Voir l'interview de {{ interview.player }}">{{ interview.player }}</a></li>
+            {% endfor %}
+        </div>
+        <div class="interview display-single centered">
+            <h3>{{ interview.player }}</h3>
+            <h5>{{ interview.date|date('d-m-Y') }}</h5>
+            <p>
+                {{ interview.description|e('html')|nl2br }}
+            </p>
+        </div>
+    {% else %}
+        <div class='interview display-single centered'>
+            <div class='alert alert-info'>
+                <a class='close' href='#' data-dismiss='alert'>x</a>
+                <div><strong>Info!</strong> Aucune interview n'est publiée pour le moment.</div>
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}

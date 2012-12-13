@@ -13,11 +13,7 @@ class InterviewsController extends FrontController
         $em = $this->getDoctrine()->getEntityManager();
         
         $interviews = $em->getRepository('FSBASTTCoreBundle:Interview')->findAllDisplayedSorteredByDate();
-        
-        if (!$interviews) {
-            throw $this->createNotFoundException('Aucune interview n\'a été publiée pour le moment.');
-        }
-        
+                
         $interview = $em->getRepository('FSBASTTCoreBundle:Interview')->findOneById($id);
         
         return $this->render('FSBASTTFrontBundle:Interviews:index.html.twig', array(
