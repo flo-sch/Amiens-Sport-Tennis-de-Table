@@ -5,10 +5,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="event display-single centered">
-        <h3>{{ event.title|capitalize }}</h3>
-        <h5>{{ event.date|date('d/m/Y') }}{% if event.place %} à {{ event.place|capitalize }}{% endif %}</h5>
-        <p>{{ event.description|e('html')|nl2br }}</p>
-        <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_calendarpage') }}">Voir le calendrier</a>
+	<div class='row-fluid'>
+	    <div class="event span8 offset2 centered">
+	        <h3>{{ event.title|capitalize }}</h3>
+	        <h5>{{ event.date|date('d/m/Y') }}{% if event.place %} à {{ event.place|capitalize }}{% endif %}</h5>
+	        <p>{{ event.description|e('html')|nl2br }}</p>
+	        <a class="btn btn-info" href="{{ path('FSBASTTFrontBundle_calendarpage') }}">Voir le calendrier</a>
+	    </div>
     </div>
 {% endblock %}
