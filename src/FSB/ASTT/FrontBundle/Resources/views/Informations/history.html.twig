@@ -5,19 +5,9 @@
 {% endblock %}
 
 {% block content %}
-    <div class="global-wrapper display-single centered">
-        <h3>Presidents</h3>
-
-        <div class='histo-img'>
-            <img src="{{ asset('images/history/Histo2.jpg') }}" alt='France Chine 1984'>
-            <p>France-Chine en 1984</p>
-        </div>
-        <div class='histo-img'>
-            <img src="{{ asset('images/history/Histo2.jpg') }}" alt='Championnats de France 1998'>
-            <p>Championnat de France</p>
-        </div>
-
-        <ul class='presidents'>
+    <h3 class='centered'>Presidents</h3>
+    <div class='row-fluid centered'>
+        <ul class='presidents span4 offset2'>
             <li>1944 à 1968 : Albéric LABAUME</li>
             <li>1968 à 1969 : Jean RENAUX</li>
             <li>1970 à 1971 : Albéric LABAUME</li>
@@ -29,9 +19,20 @@
             <li>2008 à 2012 : Dany BOURRE</li>
             <li>Depuis 2012 : Claudette VAQUETTE</li>
         </ul>
-
-        <h3>Historique</h3>
-        <ul class='historique'>
+        <div class='span4'>
+            <div class='histo-img'>
+                <img src="{{ asset('images/history/Histo2.jpg') }}" alt='France Chine 1984'>
+                <p>France-Chine en 1984</p>
+            </div>
+            <div class='histo-img'>
+                <img src="{{ asset('images/history/Histo2.jpg') }}" alt='Championnats de France 1998'>
+                <p>Championnat de France</p>
+            </div>
+        </div>
+    </div>
+    <h3 class='centered'>Historique</h3>
+    <div class='row-fluid centered'>
+        <ul class='historique span8 offset2'>
             <li>1945 : Création du club par Albéric Labaume et Pierre Halattre.</li>
             <li>
                 1953 : Jacques Gambier champion de France junior.

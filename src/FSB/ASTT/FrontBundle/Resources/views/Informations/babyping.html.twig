@@ -5,9 +5,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="global-wrapper display-single centered">
-        <img class="babyping-img" src="{{ asset('images/baby_ping/babyping1.jpg') }}" alt='Baby Pongistes' />
-        <p>
+    <div class="row-fluid centered">
+        <div class='span2 offset2'>
+            <img class="babyping-img" src="{{ asset('images/baby_ping/babyping1.jpg') }}" alt='Baby Pongistes' />
+            <img class="babyping-img" src="{{ asset('images/baby_ping/babyping2.jpg') }}" alt='Baby Pongistes' />
+        </div>
+        <p class='span6 content-text'>
             Vous vous posez des questions sur les difficultés à enseigner le tennis de table dès 4 ans,
             <br />
             vous trouverez ici un début de réponse à vos interrogations.
@@ -26,8 +29,7 @@
             L'activité est encadrée par Christophe Harlé, entraîneur fédéral.
             <br />
             Les parents ? Ils peuvent assister au déroulement du cours. A quel moment de la semaine ? Le mercredi après-midi.
-        </p>
-
-        <img class="babyping-img" src="{{ asset('images/baby_ping/babyping2.jpg') }}" alt='Baby Pongistes' />
+            </p>
+        </div>
     </div>
 {% endblock %}

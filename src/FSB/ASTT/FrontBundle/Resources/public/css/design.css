@@ -229,3 +229,7 @@ td.grey {
 .table td {
     text-align: center;
 }
+
+.content-text {
+    text-align: justify;
+}
