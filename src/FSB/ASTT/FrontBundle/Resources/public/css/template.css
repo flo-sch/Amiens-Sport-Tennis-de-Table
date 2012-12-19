@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* HEADER */
 #header {
     position: relative;
@@ -288,12 +293,7 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 /* BABY-PING && HANDISPORT */
 .content .handisport-img,
 .content .babyping-img {
-    margin: 0 45px 0 0;
-}
-
-.content .babyping-img {
     width: 100%;
-    margin: 0 45px 10px 0;
 }
 
 /* TEAMS */
@@ -366,17 +366,6 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
 
 .messages .message {
     padding: 10px 0 5px 0;
-}
-
-/* CALENDAR */
-.table-calendar {
-    width: 31%;
-    margin: 20px 1% 0 1%;
-    float: left;
-}
-
-.table-calendar:nth-child(3n+2) {
-    clear: left;
 }
 
 /* TROPHEE NATIONAL */
