@@ -5,32 +5,34 @@
 {% endblock %}
 
 {% block content %}
-    <div class="messages-header">
-        <ul class="nav nav-tabs">
-            <li class="centered"><a href="#form-anonymous" data-toggle="tab">Poster un message anonyme</a></li>
-            <li class="centered"><a href="#form-logged" data-toggle="tab">Utiliser un profil</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade form_messages" id="form-anonymous">
-                <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form_anonym) }}>
-                    {{ form_widget(form_anonym) }}
-                    <button class="btn btn-success" type="submit">Poster</button>
-                </form>
-            </div>
-            <div class="tab-pane fade form_messages" id="form-logged">
-                
+    <div class="row-fluid">
+        <div class='span6 offset3'>
+            <ul class="nav nav-tabs">
+                <li class="centered"><a href="#form-anonymous" data-toggle="tab">Poster un message anonyme</a></li>
+                <li class="centered"><a href="#form-logged" data-toggle="tab">Utiliser un profil</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade form_messages" id="form-anonymous">
+                    <form action="{{ path('FSBASTTFrontBundle_guestbook_checkformpage') }}" method="post" {{ form_enctype(form_anonym) }}>
+                        {{ form_widget(form_anonym) }}
+                        <button class="btn btn-success" type="submit">Poster</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade form_messages" id="form-logged">
+                    
+                </div>
             </div>
         </div>
     </div>
-    <div class="messages">
-        {% for key, message in messages %}
-            <div class="message">
+    {% for key, message in messages %}
+        <div class="row-fluid">
+            <div class="message span8 offset2">
                 <h4>{{ message.author|capitalize }}{% if message.club %} [{{ message.club }}]{% endif %}</h4>
                 <h5>Ecrit le {{ message.createdAt|date('d-m-Y') }}</h5>
                 <p>
                     {{ message.description|e('html')|nl2br }}
                 </p>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
 {% endblock %}

@@ -6,19 +6,21 @@
 
 {% block content %}
     {% if news %}
-        <div class="news display-single centered">
-            <h3>{{ news.title }}</h3>
-            <h5>
-                {% if news.date %}Le {{ news.date|date('d-m-Y') }}
-                    {% if news.place %} - {{ news.place|capitalize }}{% endif %}
-                {% else %}
-                    {% if news.place %}{{ news.place|title }}{% endif %}
+        <div class='row-fluid'>
+            <div class="news span8 offset2 centered">
+                <h3>{{ news.title }}</h3>
+                <h5>
+                    {% if news.date %}Le {{ news.date|date('d-m-Y') }}
+                        {% if news.place %} - {{ news.place|capitalize }}{% endif %}
+                    {% else %}
+                        {% if news.place %}{{ news.place|title }}{% endif %}
+                    {% endif %}
+                </h5>
+                {% if news.screen %}
+                    <img src="{{ asset('images/news/' ~ news.screen) }}" alt="{{ news.title|capitalize }}" />
                 {% endif %}
-            </h5>
-            {% if news.screen %}
-                <img src="{{ asset('images/news/' ~ news.screen) }}" alt="{{ news.title|capitalize }}" />
-            {% endif %}
-            <p>{{ news.description|e('html')|nl2br }}</p>
+                <p>{{ news.description|e('html')|nl2br }}</p>
+            </div>
         </div>
     {% endif %}
 {% endblock %}
