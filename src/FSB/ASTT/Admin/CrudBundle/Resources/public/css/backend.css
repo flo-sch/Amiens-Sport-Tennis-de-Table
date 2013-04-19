@@ -40,3 +40,7 @@
 table.records_list {
     margin: 18px 0;
 }
+
+input[type='submit'].no-padding {
+    padding: 0;
+}

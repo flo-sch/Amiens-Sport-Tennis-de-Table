@@ -30,7 +30,7 @@
                         <li>
                             <form action="{{ path('message_delete', { 'id': entity.id }) }}" method="post">
                                 {{ form_widget(delete_forms[entityIndex]) }}
-                                <button type="submit" class="btn btn-link">Supprimer</button>
+                                <input type="submit" class="btn btn-link no-padding" name="submit" value="Supprimer" />
                             </form>
                         </li>
                     </ul>
