@@ -34,4 +34,16 @@ FSB\ASTT\CoreBundle\Entity\Message:
     description:
       type: text
       nullable: false
+    clientIp:
+      type: string
+      length: 50
+      fixed: false
+      nullable: true
+      column: client_ip
+    clientHost:
+      type: string
+      length: 500
+      fixed: false
+      nullable: true
+      column: client_host
   lifecycleCallbacks: {  }

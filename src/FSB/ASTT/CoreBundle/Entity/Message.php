@@ -43,6 +43,16 @@ class Message
      * @var text $description
      */
     private $description;
+
+    /**
+     * @var text $clientIp
+     */
+    private $clientIp;
+
+    /**
+     * @var text $clientHost
+     */
+    private $clientHost;
     
     /**
      * Constructor
@@ -54,6 +64,7 @@ class Message
         $this->createdAt = new \Datetime('now');
         $this->updatedAt = new \Datetime('now');
         $this->deleted = false;
+        $this->clientIp = null;
     }
     
     /**
@@ -184,6 +195,46 @@ class Message
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set client IP
+     *
+     * @param string $clientIp
+     */
+    public function setClientIp($clientIp)
+    {
+        $this->clientIp = $clientIp;
+    }
+
+    /**
+     * Get client IP
+     *
+     * @return string 
+     */
+    public function getClientIp()
+    {
+        return $this->clientIp;
+    }
+
+    /**
+     * Set client Host name
+     *
+     * @param string $clientHost
+     */
+    public function setClientHost($clientHost)
+    {
+        $this->clientHost = $clientHost;
+    }
+
+    /**
+     * Get client Host name
+     *
+     * @return string 
+     */
+    public function getClientHost()
+    {
+        return $this->clientHost;
     }
     
     /**

@@ -6,6 +6,8 @@ use FSB\ASTT\FrontBundle\Controller\FrontController;
 use FSB\ASTT\CoreBundle\Entity\Message;
 use FSB\ASTT\FrontBundle\Form\MessageType;
 
+require_once __DIR__.'/../Resources/helpers/simple_html_dom.php';
+
 class MessagesController extends FrontController
 {
     public function indexAction()
@@ -39,6 +41,25 @@ class MessagesController extends FrontController
         
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+
+            $data = $form->getData();
+            $noHtmlFields = array('author', 'club', 'description');
+            foreach ($noHtmlFields as $field) {
+                $getter = 'get'.ucfirst($field);
+                $fieldHTMLContent = new \simple_html_dom();
+                $fieldHTMLContent->load($data->$getter());
+                if (count($fieldHTMLContent->find('a, span, div, p, ul, li, img, table, iframe, script'))) {
+                    $session->setFlash('error', 'Ce message ne sera pas inséré, il est complètement inutile et très malvenu de tenter d\'insérer du contenu HTML !!! Seriez-vous un robot ?');
+                    return $this->indexAction();
+                } elseif ((preg_match('/url=/', $fieldHTMLContent)) || (preg_match('/URL=/', $fieldHTMLContent))) {
+                    $session->setFlash('error', 'Ce message ne sera pas inséré, il est complètement inutile et très malvenu de tenter d\'insérer du contenu HTML !!! Seriez-vous un robot ?');
+                    return $this->indexAction();
+                }
+            }
+
+            $entity->setClientIp($request->getClientIp());
+            $hostName = @gethostbyaddr($request->getClientIp());
+            $entity->setClientHost($hostName);
             $em->persist($entity);
             $em->flush();
             
@@ -51,7 +72,7 @@ class MessagesController extends FrontController
         
         return $this->render('FSBASTTFrontBundle:Messages:index.html.twig', array(
             'page_title' => $pageTitle,
-            'form' => $form->createView()
+            'form_anonym' => $form->createView()
         ));
         
     }
