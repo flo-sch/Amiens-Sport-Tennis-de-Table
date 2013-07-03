@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="{{ asset('bundles/fsbasttadmincrud/css/backend.css') }}" />
 {% endblock %}
 
-{% block class_nav %}navbar{% endblock %}
+{% block class_nav %}navbar navbar-inverse{% endblock %}
 
 {% block nav %}
     <div class="navbar-inner">
@@ -129,7 +129,7 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/jquery-1.7.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/jquery-1.9.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/bootstrap-datepicker.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fsbasttfront/js/main.js') }}"></script>

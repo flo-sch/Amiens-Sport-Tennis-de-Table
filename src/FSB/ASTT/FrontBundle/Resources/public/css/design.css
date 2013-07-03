@@ -166,6 +166,10 @@ body {
     cursor: pointer;
 }
 
+.carousel-control {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* FOOTER */
 .footer #footerTabContent .events_list {
     

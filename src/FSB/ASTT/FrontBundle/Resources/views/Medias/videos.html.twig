@@ -3,3 +3,30 @@
 {% block page_title %}
     {{ page_title }}
 {% endblock %}
+
+{% block content %}
+	<div id="player"></div>
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	<script type='text/javascript'>
+		var tag = document.createElement('script'),
+			firstScriptTag = document.getElementsByTagName('script')[0],
+			player;
+
+		tag.src = "//www.youtube.com/iframe_api";
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+			    videoId: 'iEt4qBYniCw',
+		    	events: {
+					'onReady': function (e) {
+						e.target.playVideo();
+					}
+				}
+			});
+		}
+	</script>
+{% endblock %}
