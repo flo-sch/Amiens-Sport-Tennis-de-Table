@@ -434,13 +434,19 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     width: 60%;
     height: 210px;
     margin: 0 2% 0 0;
-    padding: 0 4px;
+    padding: 5px 10px;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer #footerTabContent .events_links {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
     list-style: none;
-    margin: 18px 20px 0 20px;
 }
 
 .footer #footerTabContent .footer_calendar {
@@ -468,13 +474,19 @@ ul.nav.front-nav li.dropdown.open ul.dropdown-menu li {
     width: 60%;
     height: 210px;
     margin: 0 2% 0 0;
-    padding: 0 4px;
+    padding: 5px 10px;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer #footerTabContent .footer_news .news-links {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
     list-style: none;
-    margin: 18px 20px 0 20px;
 }
 
 .footer #footerTabContent .footer-archive-link {

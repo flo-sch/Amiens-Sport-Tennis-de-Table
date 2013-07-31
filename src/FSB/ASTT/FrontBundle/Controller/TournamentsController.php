@@ -84,13 +84,13 @@ class TournamentsController extends FrontController
     
     public function getSeriesAction()
     {
-        $season = (date('m') > 8 ? $this->getSportSeason(0) : $this->getSportSeason(1));
+        $season = $this->getSportSeason(0);
         return $this->downloadFile('series.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Series-'.$season.'.pdf');
     }
     
     public function getRulesAction()
     {
-        $season = (date('m') > 8 ? $this->getSportSeason(0) : $this->getSportSeason(1));
+        $season = $this->getSportSeason(0);
         return $this->downloadFile('reglement.pdf', $season.'/trophee_national/', 'ASTT-Trophee-National-Reglement-'.$season.'.pdf');
     }
     

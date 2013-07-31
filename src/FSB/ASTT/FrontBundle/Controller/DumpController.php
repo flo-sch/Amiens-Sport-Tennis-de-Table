@@ -6835,4 +6835,121 @@ class DumpController extends FrontController {
         }
         exit(var_dump('<br />'));
     }
+
+    public function eventsCsvToSqlAction()
+    {
+        $csv = array(
+            'Championnat par équipes national, régional, départemental - Journée 1;2013-09-21;;;',
+            'Championnat par équipes national, régional, départemental - Journée 1;2013-09-22;;;',
+            'Assemblée générale de la ligue de Picardie;2013-09-28;;;',
+            'Championnat par équipes national, régional, départemental - Journée 2;2013-10-05;;;',
+            'Championnat par équipes national, régional, départemental - Journée 2;2013-10-06;;;',
+            'Critérium fédéral national, régional, départemental - 1er tour;2013-10-12;;N1M : Ceyrat;N1F : Mulhouse',
+            'Critérium fédéral national, régional, départemental - 1er tour;2013-10-13;;N1M : Ceyrat;N1F : Mulhouse',
+            'Championnat par équipes national, régional, départemental - Journée 3;2013-10-19;;;',
+            'Championnat par équipes national, régional, départemental - Journée 3;2013-10-20;;;',
+            'Formation "Entraîneur départemental";2013-10-26;;;',
+            'Formation "Entraîneur départemental";2013-10-27;;;',
+            'Tournoi "Stéphane Baert";2013-10-31;Amiens Sport TT;;',
+            'Assemblée générale de la FFTT;2013-11-09;Paris;;',
+            'Championnat par équipes national, régional, départemental - Journée 4;2013-11-09;;;',
+            'Championnat par équipes national, régional, départemental - Journée 4;2013-11-10;;;',
+            'Critérium féminin départemental;2013-11-16;;;',
+            'Interclubs départementaux;2013-11-16;;;',
+            'Critérium vétérans départemental;2013-11-17;;;',
+            'Top départemental détection;2013-11-17;;;',
+            'Championnat par équipes national, régional, départemental - Journée 5;2013-11-23;;;',
+            'Championnat par équipes national, régional, départemental - Journée 5;2013-11-24;;;',
+            'Championnat par équipes national, régional, départemental - Journée 6;2013-11-30;;;',
+            'Championnat par équipes national, régional, départemental - Journée 6;2013-12-01;;;',
+            'Critérium fédéral national, régional, départemental - 2e tour;2013-12-07;;N1M : Auch;N1F : Maromme',
+            'Critérium fédéral national, régional, départemental - 2e tour;2013-12-08;;N1M : Auch;N1F : Maromme',
+            'Championnat par équipes national, régional, départemental - Journée 7;2013-12-14;;;',
+            'Championnat par équipes national, régional, départemental - Journée 7;2013-12-15;;;',
+            'Interclubs régionaux;2014-01-05;;;',
+            'Critérium fédéral national, régional, départemental - 3e tour;2014-01-11;;N1M : Bourges;N1F : Mont de Marsan',
+            'Critérium fédéral national, régional, départemental - 3e tour;2014-01-12;;N1M : Bourges;N1F : Mont de Marsan',
+            'Championnat par équipes national, régional, départemental - Journée 8;2014-01-18;;;',
+            'Championnat par équipes national, régional, départemental - Journée 8;2014-01-19;;;',
+            'Premier Pas Pongiste;2014-01-22;Amiens Sport TT;;',
+            'Critérium féminin régional;2014-01-25;;;',
+            'Top régional détection;2014-01-26;;;',
+            'Critérium poussins-benjamins départemental - 1er tour;2014-02-01;;;',
+            'Critérium vétérans régional;2014-02-02;;;',
+            'Championnat par équipes national, régional, départemental - Journée 9;2014-02-08;;;',
+            'Championnat par équipes national, régional, départemental - Journée 9;2014-02-09;;;',
+            'Critérium fédéral national, régional, départemental - 4e tour;2014-02-15;;N1M : Bressuire (79);N1F : Thionville',
+            'Critérium fédéral national, régional, départemental - 4e tour;2014-02-16;;N1M : Bressuire (79);N1F : Thionville',
+            'Championnat par équipes national - Journée 10;2014-02-22;;;',
+            'Championnats de France seniors;2014-02-28;La Roche sur Yon;;',
+            'Championnats de France seniors;2014-03-01;La Roche sur Yon;;',
+            'Championnat par équipes régional et départemental - Journée 10;2014-03-08;;;',
+            'Championnat par équipes régional et départemental - Journée 10;2014-03-09;;;',
+            'Championnat par équipes national, régional, départemental - Journée 11;2014-03-15;;;',
+            'Championnat par équipes national, régional, départemental - Journée 11;2014-03-16;;;',
+            'Critérium poussins-benjamins départemental - 2e tour;2014-03-22;;;',
+            'Top de zone détection;2014-03-22;;;',
+            'Top de zone détection;2014-03-23;;;',
+            'Championnat par équipes national, régional, départemental - Journée 12;2014-03-29;;;',
+            'Championnat par équipes national, régional, départemental - Journée 12;2014-03-30;;;',
+            'Critérium fédéral national - 5e tour;2014-04-05;;N1M : Mèze;N1F : Mayenne',
+            'Critérium fédéral national - 5e tour;2014-04-06;;N1M : Mèze;N1F : Mayenne',
+            'Finales par classement départementales;2014-04-06;;;',
+            'Championnat par équipes national, régional, départemental - Journée 13;2014-04-12;;;',
+            'Championnat par équipes national, régional, départemental - Journée 13;2014-04-13;;;',
+            'Championnats de France vétérans;2014-04-19;à préciser (Lorraine);;',
+            'Championnats de France vétérans;2014-04-20;à préciser (Lorraine);;',
+            'Championnats de France vétérans;2014-04-21;à préciser (Lorraine);;',
+            'Championnat par équipes national et départemental - Journée 14;2014-04-26;;;',
+            'Championnat par équipes national et départemental - Journée 14;2014-04-27;;;',
+            'Challenge Bernard Jeu régional;2014-05-04;;;',
+            'Championnats de France minimes et juniors;2014-05-09;La Flèche (72);;',
+            'Championnats de France minimes et juniors;2014-05-10;La Flèche (72);;',
+            'Championnats de France minimes et juniors;2014-05-11;La Flèche (72);;',
+            'Championnats de la Somme;2014-05-11;;;',
+            'Championnat par équipes régional - Journée 14;2014-05-17;;;',
+            'Titres nationaux par équipes;2014-05-17;Poitiers;;',
+            'Championnat par équipes régional - Journée 14;2014-05-18;;;',
+            'Titres nationaux par équipes;2014-05-18;Poitiers;;',
+            'Challenge poussins-benjamins-minimes départemental;2014-05-18;;;',
+            'Critérium poussins-benjamins départemental - Finale;2014-05-24;;;',
+            'Interclubs nationaux;2014-05-24;Mer;;',
+            'Interclubs nationaux;2014-05-25;Mer;;',
+            'Finales par classement régionales;2014-05-25;;;',
+            'Championnats de France benjamins et cadets;2014-05-30;à préciser (Rhône Alpes);;',
+            'Championnats de France benjamins et cadets;2014-05-31;à préciser (Rhône Alpes);;',
+            'Championnats de France benjamins et cadets;2014-06-01;à préciser (Rhône Alpes);;',
+            'Challenge poussins-benjamins-minimes régional;2014-06-01;;;',
+            'Championnats de Picardie;2014-06-07;;;',
+            'Championnats de Picardie;2014-06-08;;;',
+            'Challenge Bernard Jeu national;2014-06-14;Thiais (94);;',
+            'Challenge Bernard Jeu national;2014-06-15;Thiais (94);;',
+            'Tournoi Open;2014-06-21;Paris;;',
+            'Tournoi Open;2014-06-22;Paris;;',
+            'Finales par classement nationales;2014-06-28;Villeneuve sur Lot (47);;',
+            'Finales par classement nationales;2014-06-29;Villeneuve sur Lot (47);;',
+            'Assemblée générale de l\'Amiens Sport TT;2014-06-27;Amiens Sport TT;;',
+            'Interdépartementaux;2014-06-29;;;'
+        );
+        
+        $em = $this->getDoctrine()->getEntityManager();
+
+        foreach ($csv as $eventLine) {
+            $eventInfos = explode(';', $eventLine);
+
+            $event = new Event();
+            $event->setTitle($eventInfos[0]);
+            $place = '' . (strlen($eventInfos[2]) > 0 ? $eventInfos[2] : '') . (strlen($eventInfos[3]) > 0 ? ' '.$eventInfos[3] : '') . (strlen($eventInfos[4]) > 0 ? ' '.$eventInfos[4] : '');
+            $event->setPlace($place);
+            $date = new \DateTime($eventInfos[1]);
+            $event->setDate($date);
+            $event->setIsTournament(false);
+
+            $em->persist($event);
+        }
+
+        $em->flush();
+
+        return $this->render('FSBASTTFrontBundle:Dump:success.html.twig');
+    }
 }

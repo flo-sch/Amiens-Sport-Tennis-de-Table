@@ -7,6 +7,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FSB\ASTT\CoreBundle\Entity\Player;
 use FSB\ASTT\Admin\CrudBundle\Form\PlayerType;
 
+ini_set('auto_detect_line_endings', true);
+
 /**
  * Player controller.
  *
@@ -244,7 +246,7 @@ class PlayerController extends Controller
                 $pointsInfos = explode(' / ', $playerInfos[10]);
                 $classement = ((strlen($pointsInfos[1]) >= 8) ? 'N' : intval(substr($pointsInfos[1], 0)));
                 $points = intval(substr($pointsInfos[0], 0, -1));
-
+                
                 $player = $em->getRepository('FSBASTTCoreBundle:Player')->findOneByLicence($licence);
 
                 if (!$player) {
@@ -264,12 +266,14 @@ class PlayerController extends Controller
                 $em->persist($player);
             }
 
-            $leavingPlayersIds = $em->getRepository('FSBASTTCoreBundle:Player')->findPlayersNotInIdArray($allreadyMemberIds);
-            $leavingPlayers = array();
-            foreach ($leavingPlayersIds as $leavingPlayer) {
-                array_push($leavingPlayers, intval($leavingPlayer['id']));
+            if (count($allreadyMemberIds) > 0) {
+                $leavingPlayersIds = $em->getRepository('FSBASTTCoreBundle:Player')->findPlayersNotInIdArray($allreadyMemberIds);
+                $leavingPlayers = array();
+                foreach ($leavingPlayersIds as $leavingPlayer) {
+                    array_push($leavingPlayers, intval($leavingPlayer['id']));
+                }
+                $em->getRepository('FSBASTTCoreBundle:Player')->removePlayersByIdArray($leavingPlayers);
             }
-            $em->getRepository('FSBASTTCoreBundle:Player')->removePlayersByIdArray($leavingPlayers);
 
             $em->flush();
             

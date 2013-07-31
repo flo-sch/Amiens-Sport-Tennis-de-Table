@@ -75,7 +75,7 @@ class FrontController extends Controller
     public function getSportSeason($season = 0)
     {
         $season = (int) $season;
-        $sport_season = (date('m') > 8 ? (date('Y') + $season).'-'.(date('Y') + $season + 1) : (date('Y') + $season - 1).'-'.(date('Y') + $season));
+        $sport_season = (((date('m') > 7) || (date('m') == 7 && date('d') >= 10)) ? (date('Y') + $season).'-'.(date('Y') + $season + 1) : (date('Y') + $season - 1).'-'.(date('Y') + $season));
         return $sport_season;
     }
     

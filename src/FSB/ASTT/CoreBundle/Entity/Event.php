@@ -241,4 +241,24 @@ class Event
     {
         return $this->title;
     }
+
+    /**
+     * toArray
+     * 
+     * @return array 
+     */
+    public function toArray()
+    {
+        return array(
+            'id' => $this->getId(),
+            'createdAt' => $this->getCreatedAt(),
+            'updatedAt' => $this->getUpdatedAt(),
+            'deleted' => $this->getDeleted(),
+            'title' => $this->getTitle(),
+            'description' => $this->getDescription(),
+            'place' => $this->getPlace(),
+            'date' => $this->getDate(),
+            'tournament' => $this->getIsTournament()
+        );
+    }
 }

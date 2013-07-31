@@ -177,6 +177,11 @@ FSBASTTFrontBundle_themepage:
 #    pattern: /format/events
 #    defaults: { _controller: FSBASTTFrontBundle:Dump:formatEvents }
 
+FSBASTTFrontBundle_events_CSVtoSQL_page:
+    pattern: /csvToSql/events
+    defaults:
+        _controller: FSBASTTFrontBundle:Dump:eventsCsvToSql
+
 FSBASTTFrontBundle_designpage:
     pattern: /design
     defaults: { _controller: FSBASTTFrontBundle:Design:index }
